@@ -42,19 +42,19 @@ db_schema:
     server: full
     columns:
     - name: slot_id
-      admin_ui: {order: -1, width: 200}
+      admin_ui: {width: 200, order: 0}
+      type: number
+    - name: user_id
+      admin_ui: {width: 200, order: 1}
       type: number
     - name: username
-      admin_ui: {order: -0.25, width: 200}
+      admin_ui: {width: 200, order: 2}
       type: string
     - name: book_date
-      admin_ui: {width: 200}
+      admin_ui: {width: 200, order: 3}
       type: string
     - name: book_time
-      admin_ui: {width: 200}
+      admin_ui: {width: 200, order: 4}
       type: string
-    - name: user_id
-      admin_ui: {order: -0.5, width: 200}
-      type: number
     title: book_slot
 uplink_visible: true

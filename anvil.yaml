@@ -144,6 +144,9 @@ db_schema:
     - name: service_provider_id
       admin_ui: {order: -1, width: 200}
       type: string
+    - name: Column14
+      admin_ui: {width: 200, order: 13}
+      type: bool
     title: ambulance_register_form
   gym_register_form:
     client: none

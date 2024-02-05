@@ -19,3 +19,8 @@ def create_media_object(content_type, file_data_base64, file_name):
     file_data = base64.b64decode(file_data_base64)
     media_object = anvil.media.BlobMedia(content_type, file_data, file_name)
     return media_object
+
+@anvil.server.callable
+def check_internet_status():
+    # Perform a simple server call to check connectivity
+    return True

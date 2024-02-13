@@ -57,4 +57,136 @@ db_schema:
       admin_ui: {width: 200, order: 4}
       type: string
     title: book_slot
+  ambulance_register_form:
+    title: ambulance_register_form
+    client: none
+    server: full
+    columns:
+    - name: service_provider_id
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_name
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_email
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_password
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_phoneno
+      admin_ui: {width: 200}
+      type: number
+    - name: service_provider_address
+      admin_ui: {width: 200}
+      type: string
+    - name: Nation
+      admin_ui: {width: 200}
+      type: string
+    - name: State
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_pincode
+      admin_ui: {width: 200}
+      type: number
+    - name: Vehicle_No
+      admin_ui: {width: 200}
+      type: string
+    - name: registered_year
+      admin_ui: {width: 200}
+      type: string
+    - name: Vehicle_RC
+      admin_ui: {width: 200}
+      type: media
+    - name: Driver_DL
+      admin_ui: {width: 200}
+      type: media
+  gym_register_form:
+    title: gym_register_form
+    client: none
+    server: full
+    columns:
+    - name: service_provider_id
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_name
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_email
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_password
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_phoneno
+      admin_ui: {width: 200}
+      type: number
+    - name: service_provider_address
+      admin_ui: {width: 200}
+      type: string
+    - name: Nation
+      admin_ui: {width: 200}
+      type: string
+    - name: State
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_pincode
+      admin_ui: {width: 200}
+      type: number
+    - name: Gym_Name
+      admin_ui: {width: 200}
+      type: string
+    - name: establisted_year
+      admin_ui: {width: 200}
+      type: string
+    - name: Gym_Registration
+      admin_ui: {width: 200}
+      type: media
+    - name: SSI_Registration
+      admin_ui: {width: 200}
+      type: media
+  hospital_register_form:
+    title: hospital_register_form
+    client: none
+    server: full
+    columns:
+    - name: service_provider_id
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_name
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_email
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_password
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_phoneno
+      admin_ui: {width: 200}
+      type: number
+    - name: service_provider_address
+      admin_ui: {width: 200}
+      type: string
+    - name: Nation
+      admin_ui: {width: 200}
+      type: string
+    - name: State
+      admin_ui: {width: 200}
+      type: string
+    - name: service_provider_pincode
+      admin_ui: {width: 200}
+      type: number
+    - name: hospital_name
+      admin_ui: {width: 200}
+      type: string
+    - name: establisted_year
+      admin_ui: {width: 200}
+      type: string
+    - name: Medical_Practitioner_License
+      admin_ui: {width: 200}
+      type: media
+    - name: Building_Permit_and_License
+      admin_ui: {width: 200}
+      type: media
 uplink_visible: true

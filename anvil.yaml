@@ -57,136 +57,54 @@ db_schema:
       admin_ui: {width: 200, order: 4}
       type: string
     title: book_slot
-  ambulance_register_form:
-    title: ambulance_register_form
+  oxiclinics:
     client: none
     server: full
     columns:
-    - name: service_provider_id
-      admin_ui: {width: 200}
+    - name: id
+      admin_ui: {width: 200, order: 0}
       type: string
-    - name: service_provider_name
-      admin_ui: {width: 200}
+    - name: name
+      admin_ui: {width: 200, order: 1}
       type: string
-    - name: service_provider_email
-      admin_ui: {width: 200}
+    - name: email
+      admin_ui: {width: 200, order: 2}
       type: string
-    - name: service_provider_password
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_phoneno
-      admin_ui: {width: 200}
+    - name: phone
+      admin_ui: {width: 200, order: 3}
       type: number
-    - name: service_provider_address
-      admin_ui: {width: 200}
+    - name: address
+      admin_ui: {width: 200, order: 4}
       type: string
-    - name: Nation
-      admin_ui: {width: 200}
+    - name: password
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: Oxiclinics_Name
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: established_year
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: District
+      admin_ui: {width: 200, order: 8}
       type: string
     - name: State
-      admin_ui: {width: 200}
+      admin_ui: {width: 200, order: 9}
       type: string
-    - name: service_provider_pincode
-      admin_ui: {width: 200}
+    - name: pincode
+      admin_ui: {width: 200, order: 10}
       type: number
-    - name: Vehicle_No
-      admin_ui: {width: 200}
+    - name: address_2
+      admin_ui: {width: 200, order: 11}
       type: string
-    - name: registered_year
-      admin_ui: {width: 200}
-      type: string
-    - name: Vehicle_RC
-      admin_ui: {width: 200}
-      type: media
-    - name: Driver_DL
-      admin_ui: {width: 200}
-      type: media
-  gym_register_form:
-    title: gym_register_form
-    client: none
-    server: full
-    columns:
-    - name: service_provider_id
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_name
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_email
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_password
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_phoneno
-      admin_ui: {width: 200}
+    - name: capsules
+      admin_ui: {width: 200, order: 12}
       type: number
-    - name: service_provider_address
-      admin_ui: {width: 200}
-      type: string
-    - name: Nation
-      admin_ui: {width: 200}
-      type: string
-    - name: State
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_pincode
-      admin_ui: {width: 200}
-      type: number
-    - name: Gym_Name
-      admin_ui: {width: 200}
-      type: string
-    - name: establisted_year
-      admin_ui: {width: 200}
-      type: string
-    - name: Gym_Registration
-      admin_ui: {width: 200}
+    - name: medical_licence
+      admin_ui: {order: 13, width: 200}
       type: media
-    - name: SSI_Registration
-      admin_ui: {width: 200}
+    - name: building_licence
+      admin_ui: {order: 14, width: 200}
       type: media
-  hospital_register_form:
-    title: hospital_register_form
-    client: none
-    server: full
-    columns:
-    - name: service_provider_id
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_name
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_email
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_password
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_phoneno
-      admin_ui: {width: 200}
-      type: number
-    - name: service_provider_address
-      admin_ui: {width: 200}
-      type: string
-    - name: Nation
-      admin_ui: {width: 200}
-      type: string
-    - name: State
-      admin_ui: {width: 200}
-      type: string
-    - name: service_provider_pincode
-      admin_ui: {width: 200}
-      type: number
-    - name: hospital_name
-      admin_ui: {width: 200}
-      type: string
-    - name: establisted_year
-      admin_ui: {width: 200}
-      type: string
-    - name: Medical_Practitioner_License
-      admin_ui: {width: 200}
-      type: media
-    - name: Building_Permit_and_License
-      admin_ui: {width: 200}
-      type: media
+    title: oxiclinics
 uplink_visible: true

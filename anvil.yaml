@@ -110,6 +110,101 @@ db_schema:
   oxiwheels:
     client: none
     server: full
-    columns: []
-    title: Table 4
+    columns:
+    - name: id
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: name
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: email
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: password
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: phone
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: address
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: Oxiwheels_Name
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: model_year
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: State
+      admin_ui: {width: 200, order: 8}
+      type: string
+    - name: District
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: pincode
+      admin_ui: {width: 200, order: 10}
+      type: number
+    - name: address_2
+      admin_ui: {width: 200, order: 11}
+      type: string
+    - name: capsules
+      admin_ui: {width: 200, order: 12}
+      type: number
+    - name: vehicle_rc
+      admin_ui: {width: 200, order: 13}
+      type: media
+    - name: driving_licence
+      admin_ui: {width: 200, order: 14}
+      type: media
+    title: oxiwheels
+  oxigyms:
+    client: none
+    server: full
+    columns:
+    - name: id
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: name
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: email
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: password
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: phone
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: address
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: Oxigyms_Name
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: established_year
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: State
+      admin_ui: {width: 200, order: 8}
+      type: string
+    - name: District
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: pincode
+      admin_ui: {width: 200, order: 10}
+      type: number
+    - name: address_2
+      admin_ui: {width: 200, order: 11}
+      type: string
+    - name: capsules
+      admin_ui: {width: 200, order: 12}
+      type: number
+    - name: gym_licence
+      admin_ui: {width: 200, order: 13}
+      type: media
+    - name: building_licence
+      admin_ui: {width: 200, order: 14}
+      type: media
+    title: oxigyms
 uplink_visible: true

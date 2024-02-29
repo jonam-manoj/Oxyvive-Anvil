@@ -15,7 +15,7 @@ def BookSlot(slot_id, user_id, username,book_date,book_time):
 
 @anvil.server.callable
 def Oxiclinics(id, name, email, password, phone, address, Oxiclinics_Name, established_year, District, State, pincode, address_2, capsules, medical_licence, building_licence):
-  app_tables.oxiclinics.add_row(id=id, name=name, email=email, password=password, phone=phone,address=address,Oxiclinics_Name=Oxiclinics_Name,established_year=established_year,District=District,State=State,pincode=pincode,address_2=address_2,capsules=capsules,medical_licence=medical_licence,building_licence=building_licence)
+  app_tables.oxiclinics.add_row(id=id, name=name, email=email, password=password, phone=phone, address=address, Oxiclinics_Name=Oxiclinics_Name, established_year=established_year, District=District, State=State, pincode=pincode, address_2=address_2, capsules=capsules, medical_licence=medical_licence, building_licence=building_licence)
 
 @anvil.server.callable
 def create_media_object(content_type, file_data_base64, file_name):

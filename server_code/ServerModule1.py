@@ -14,8 +14,16 @@ def BookSlot(slot_id, user_id, username,book_date,book_time):
   app_tables.bookslot.add_row(slot_id=slot_id, user_id=user_id, username=username, book_date=book_date, book_time=book_time)
 
 @anvil.server.callable
-def Oxiclinics(id,name,email,password,phone,address,Oxiclinics_Name,established_year,District,State,pincode,address_2,capsules,medical_licence,building_licence):
-  app_tables.oxiclinics.add_row(id=id, name=name, email=email, password=password,phone=phone,address=address,Oxiclinics_Name=Oxiclinics_Name,established_year=established_year,District=District,State=State,pincode=pincode,address_2=address_2,capsules=capsules,medical_licence=medical_licence,building_licence=building_licence)
+def Oxiclinics(id, name, email, password, phone, address, Oxiclinics_Name, established_year, District, State, pincode, address_2, capsules, medical_licence, building_licence):
+  app_tables.oxiclinics.add_row(id=id, name=name, email=email, password=password, phone=phone, address=address, Oxiclinics_Name=Oxiclinics_Name, established_year=established_year, District=District, State=State, pincode=pincode, address_2=address_2, capsules=capsules, medical_licence=medical_licence, building_licence=building_licence)
+
+@anvil.server.callable
+def Oxiwheels(id, name, email, password, phone, address, Oxiwheels_Name, model_year, District, State, pincode, address_2, capsules, vehicle_rc, driving_licence):
+  app_tables.oxiwheels.add_row(id=id, name=name, email=email, password=password, phone=phone, address=address, Oxiwheels_Name=Oxiwheels_Name, model_year=model_year, District=District, State=State, pincode=pincode, address_2=address_2, capsules=capsules, vehicle_rc=vehicle_rc, driving_licence=driving_licence)
+
+@anvil.server.callable
+def Oxigyms(id, name, email, password, phone, address, Oxigyms_Name, established_year, District, State, pincode, address_2, capsules, gym_licence, building_licence):
+  app_tables.oxigyms.add_row(id=id, name=name, email=email, password=password, phone=phone, address=address, Oxigyms_Name=Oxigyms_Name, established_year=established_year, District=District, State=State, pincode=pincode, address_2=address_2, capsules=capsules, gym_licence=gym_licence, building_licence=building_licence)
 
 @anvil.server.callable
 def create_media_object(content_type, file_data_base64, file_name):

@@ -24,7 +24,16 @@ components:
   - name: label_1
     properties: {text: OXIVIVE, bold: true, font_size: 20, foreground: red, spacing_above: large}
     type: Label
-    layout_properties: {x: 79.97500305250287, y: 19.61250190809369, width: 970}
+    layout_properties: {x: 79.97500305250287, y: 19.61250190809369, width: 96.4000244140625}
+  - name: flow_panel_2
+    properties: {}
+    type: FlowPanel
+    layout_properties: {x: 684.2500732429326, y: 12.85000305250287, width: 503}
+    components:
+    - name: label_4
+      properties: {text: Home}
+      type: Label
+      layout_properties: {}
 - name: xy_panel_2
   properties: {height: 361.79998779296875}
   type: XYPanel
@@ -35,18 +44,17 @@ components:
       height: 374.5999755859375, display_mode: zoom_to_fill}
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1464.1879877929687}
-  - name: label_2
-    properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 31,
-      italic: false, font: Libre Franklin}
-    type: Label
-    layout_properties: {x: 992.037512242794, y: 192.8250091560185, width: 156.4499969482422}
-    data_bindings:
-    - {property: font, code: 'self.item[''Libre Franklin'']', writeback: false}
   - name: label_3
     properties: {text: where science meets technology, foreground: white, bold: true,
-      font_size: 30, font: a, italic: true, background: red}
+      font_size: 25, font: '', italic: true, background: red}
     type: Label
-    layout_properties: {x: 987.8749756217003, y: 255.100033570081, width: 423.1750183105469}
+    layout_properties: {x: 1020.7250488288701, y: 287.94997787475586, width: 396.3625183105469}
+  - name: label_2
+    properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 30,
+      italic: false, font: ''}
+    type: Label
+    layout_properties: {x: 1025.6876342780888, y: 233.6750144958496, width: 156.4499969482422}
+    data_bindings: []
 - name: spacer_1
   properties: {height: 170.79998779296875}
   type: Spacer

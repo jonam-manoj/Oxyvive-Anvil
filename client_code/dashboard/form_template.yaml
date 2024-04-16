@@ -1,0 +1,24 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {tooltip: '', background: '', foreground: '', border: '', visible: true,
+    role: null, html: ''}
+components:
+- name: image_1
+  properties: {role: null, vertical_align: center, height: 75, tooltip: '', border: '',
+    foreground: '', visible: true, display_mode: shrink_to_fit, alt_text: '', spacing_above: small,
+    source: _/theme/shot.png, spacing_below: small, background: '', horizontal_align: left}
+  type: Image
+  layout_properties:
+    col_widths: {}
+    grid_position: FQIKJC,XLZOTU
+    slot: default
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: default}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components: []

@@ -65,4 +65,5 @@ components:
     icon_align: right, background: '#fa1900', bold: true, icon: 'fa:angle-double-right'}
   type: Button
   layout_properties: {grid_position: 'NMENOJ,AMPZYN'}
+  event_bindings: {click: servicers_next_button_1_click}
 is_package: true

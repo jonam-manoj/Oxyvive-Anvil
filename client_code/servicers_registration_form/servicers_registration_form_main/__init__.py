@@ -12,4 +12,9 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
   
     # Any code you write here will run before the form opens.
 
+  def servicers_next_button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('servicers_registration_form.services_register_add_service')
+    pass
+
  

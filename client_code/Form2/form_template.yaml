@@ -47,12 +47,12 @@ components:
       type: Label
       layout_properties: {}
 - name: xy_panel_2
-  properties: {height: 361.79998779296875}
+  properties: {height: 487.79998779296875}
   type: XYPanel
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
   - name: image_2
-    properties: {source: _/theme/Medical-research-542935478.jpg, height: 553.3999633789062,
+    properties: {source: _/theme/Medical-research-542935478.jpg, height: 481.39996337890625,
       display_mode: zoom_to_fill}
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1464.1879877929687}
@@ -62,19 +62,29 @@ components:
     properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 30,
       italic: false, font: '', underline: false}
     type: Label
-    layout_properties: {x: 490.2125366218388, y: 82.97500305250287, width: 156.4499969482422}
+    layout_properties: {x: 490.3124816901982, y: 131.07499389722943, width: 156.4499969482422}
     data_bindings: []
   - name: label_3
     properties: {text: where science meets technology, foreground: white, bold: true,
       font_size: 30, font: '', italic: false, background: ''}
     type: Label
-    layout_properties: {x: 628.3750122077763, y: 83.52499084547162, width: 501.3500061035156}
+    layout_properties: {x: 626.8750122077763, y: 127.59998779371381, width: 501.3500061035156}
   - name: label_8
     properties: {text: 'At Oxivive, we''re not just slowing down the aging process
         - we''re smashing the clock and unlocking your body''s hidden potential with
         SHOT therapy.', foreground: white, font_size: 20, align: center, italic: true}
     type: Label
-    layout_properties: {x: 359.9625061042607, y: 220.98749923706055, width: 950.375}
+    layout_properties: {x: 364.0624816901982, y: 184.287533570081, width: 950.375}
+  - name: button_3
+    properties: {text: 'Learn more- Anti aging ', background: 'theme:Primary 700',
+      foreground: white, role: primary-color}
+    type: Button
+    layout_properties: {x: 419.5999877937138, y: 345.4000301361084, width: 249.58750915527344}
+  - name: button_4
+    properties: {text: LEARN MORE- better healing, role: primary-color, background: 'theme:Primary
+        700', foreground: white}
+    type: Button
+    layout_properties: {x: 768.3499877937138, y: 344.5625057220459, width: 272.7250061035156}
 - name: flow_panel_1
   properties: {}
   type: FlowPanel

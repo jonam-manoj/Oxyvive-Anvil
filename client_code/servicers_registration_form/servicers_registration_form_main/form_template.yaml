@@ -31,7 +31,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'KSPMAS,KPTOLQ'}
 - name: servicers_password_text_box
-  properties: {}
+  properties: {font_size: -4}
   type: TextBox
   layout_properties: {grid_position: 'KSPMAS,NTBYTW'}
 - name: show_password_check_box

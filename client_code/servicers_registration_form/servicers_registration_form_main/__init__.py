@@ -9,9 +9,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+  
     # Any code you write here will run before the form opens.
 
-  def primary_color_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+ 

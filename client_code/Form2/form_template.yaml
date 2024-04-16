@@ -37,9 +37,11 @@ components:
     layout_properties: {x: 0, y: 4.500004578381777, width: 1464.1879877929687}
   - name: label_2
     properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 31,
-      italic: false, font: a}
+      italic: false, font: Libre Franklin}
     type: Label
     layout_properties: {x: 992.037512242794, y: 192.8250091560185, width: 156.4499969482422}
+    data_bindings:
+    - {property: font, code: 'self.item[''Libre Franklin'']', writeback: false}
   - name: label_3
     properties: {text: where science meets technology, foreground: white, bold: true,
       font_size: 30, font: a, italic: true, background: red}

@@ -34,6 +34,9 @@ components:
       properties: {text: Home}
       type: Label
       layout_properties: {}
+    - name: label_5
+      properties: {}
+      type: Label
 - name: xy_panel_2
   properties: {height: 361.79998779296875}
   type: XYPanel

@@ -26,42 +26,55 @@ components:
     type: Label
     layout_properties: {x: 79.97500305250287, y: 19.61250190809369, width: 96.4000244140625}
   - name: flow_panel_2
-    properties: {}
+    properties: {spacing: large}
     type: FlowPanel
-    layout_properties: {x: 684.2500732429326, y: 12.85000305250287, width: 503}
+    layout_properties: {x: 937.1000488288701, y: 20.900000382214785, width: 264.5874938964844}
     components:
     - name: label_4
-      properties: {text: Home}
+      properties: {text: Home, bold: false}
       type: Label
       layout_properties: {}
     - name: label_5
-      properties: {}
+      properties: {text: About, bold: false}
       type: Label
+      layout_properties: {}
+    - name: label_6
+      properties: {text: Features, bold: false}
+      type: Label
+      layout_properties: {}
+    - name: label_7
+      properties: {text: Team, bold: false}
+      type: Label
+      layout_properties: {}
 - name: xy_panel_2
   properties: {height: 361.79998779296875}
   type: XYPanel
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
   - name: image_2
-    properties: {source: 'https://www.aamc.org/sites/default/files/Medical-research-542935478.jpg',
-      height: 374.5999755859375, display_mode: zoom_to_fill}
+    properties: {source: _/theme/Medical-research-542935478.jpg, height: 553.3999633789062,
+      display_mode: zoom_to_fill}
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1464.1879877929687}
-  - name: label_3
-    properties: {text: where science meets technology, foreground: white, bold: true,
-      font_size: 25, font: '', italic: true, background: red}
-    type: Label
-    layout_properties: {x: 1020.7250488288701, y: 287.94997787475586, width: 396.3625183105469}
+    data_bindings:
+    - {property: alt_text, code: 'self.item[''h'']', writeback: false}
   - name: label_2
     properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 30,
-      italic: false, font: ''}
+      italic: false, font: '', underline: false}
     type: Label
-    layout_properties: {x: 1025.6876342780888, y: 233.6750144958496, width: 156.4499969482422}
+    layout_properties: {x: 490.2125366218388, y: 82.97500305250287, width: 156.4499969482422}
     data_bindings: []
-- name: spacer_1
-  properties: {height: 170.79998779296875}
-  type: Spacer
-  layout_properties: {grid_position: 'BNSAYO,KEFRSY'}
+  - name: label_3
+    properties: {text: where science meets technology, foreground: white, bold: true,
+      font_size: 30, font: '', italic: false, background: ''}
+    type: Label
+    layout_properties: {x: 628.3750122077763, y: 83.52499084547162, width: 501.3500061035156}
+  - name: label_8
+    properties: {text: 'At Oxivive, we''re not just slowing down the aging process
+        - we''re smashing the clock and unlocking your body''s hidden potential with
+        SHOT therapy.', foreground: white, font_size: 20, align: center, italic: true}
+    type: Label
+    layout_properties: {x: 359.9625061042607, y: 220.98749923706055, width: 950.375}
 - name: flow_panel_1
   properties: {}
   type: FlowPanel

@@ -1,11 +1,86 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
 components:
+- name: back_button_2
+  properties: {text: back, align: left, foreground: 'theme:Primary 700', bold: true,
+    icon: 'fa:backward'}
+  type: Button
+  layout_properties: {grid_position: 'HQDPTD,SVUOHV', full_width_row: true}
+  event_bindings: {click: back_button_2_click}
 - name: servicers_navigation_bar_1
   properties: {}
   type: form:servicers_registration_form.servicers_navigation_bar
   layout_properties: {grid_position: 'VYSWGZ,BULNLD', full_width_row: true}
+- name: hospital_name_label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Hospital Name :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'XEGFHC,IYFKMQ'}
 - name: text_box_1
   properties: {}
   type: TextBox
   layout_properties: {grid_position: 'XEGFHC,GDYEBA'}
+- name: establised_year_label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Established Year : ', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'AZCYKR,RPMQIM'}
+- type: DatePicker
+  properties: {}
+  name: date_picker_1
+  layout_properties: {grid_position: 'AZCYKR,XVNSIJ'}
+- name: state_label
+  properties: {align: center, text: 'State :', bold: true}
+  type: Label
+  layout_properties: {grid_position: 'VKEAFN,DENLRV'}
+- name: text_box_3
+  properties: {}
+  type: TextBox
+  layout_properties: {grid_position: 'VKEAFN,DXCMVE'}
+- name: district_label
+  properties: {align: center, text: 'District :', bold: true}
+  type: Label
+  layout_properties: {grid_position: 'RZPNFK,SBNUKF'}
+- name: text_box_4
+  properties: {}
+  type: TextBox
+  layout_properties: {grid_position: 'RZPNFK,PJBXLF'}
+- name: pincode_label
+  properties: {align: center, text: 'Pincode : ', bold: true}
+  type: Label
+  layout_properties: {grid_position: 'NUPXPB,ULZPHC'}
+- name: text_box_5
+  properties: {type: number}
+  type: TextBox
+  layout_properties: {grid_position: 'NUPXPB,JAEVZV'}
+- name: address_label
+  properties: {align: center, text: 'Address : ', bold: true}
+  type: Label
+  layout_properties: {grid_position: 'DJBJHE,PHDZLA'}
+- name: text_box_7
+  properties: {}
+  type: TextBox
+  layout_properties: {grid_position: 'DJBJHE,UBARDE'}
+- name: no_capsule_label
+  properties: {align: center, text: 'No of Capsule : ', bold: true}
+  type: Label
+  layout_properties: {grid_position: 'LBJZLG,IHDZJQ'}
+- name: text_box_8
+  properties: {type: number}
+  type: TextBox
+  layout_properties: {grid_position: 'LBJZLG,KMWBOP'}
+- name: grid_panel_1
+  properties: {}
+  type: GridPanel
+  layout_properties: {grid_position: 'FAPTVP,WKGARS'}
+- name: next_button_1
+  properties: {text: Next, align: center, icon: 'fa:forward', foreground: 'theme:Primary
+      700', bold: true, icon_align: right, spacing_below: small, spacing_above: large}
+  type: Button
+  layout_properties: {grid_position: 'NUOPBI,RZORRS'}
 is_package: true

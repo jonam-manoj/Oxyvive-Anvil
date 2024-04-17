@@ -64,27 +64,27 @@ components:
     layout_properties: {grid_position: 'DYHIWD,IPDWMD'}
     components:
     - name: button_5
-      properties: {text: button_5}
+      properties: {text: button_5, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,FYPKDP'}
       event_bindings: {click: button_5_click}
     - name: button_8
-      properties: {text: button_8}
+      properties: {text: button_8, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,FYPKDP HWOJST,KIBCRU'}
     - name: button_6
-      properties: {text: button_6}
+      properties: {text: button_6, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,BXHGCP'}
     - name: button_9
-      properties: {text: button_9}
+      properties: {text: button_9, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,BXHGCP YEVNUG,EIONSO'}
     - name: button_7
-      properties: {text: button_7}
+      properties: {text: button_7, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,WOLLQR AKPIHO,INTOLH'}
     - name: button_10
-      properties: {text: button_10}
+      properties: {text: button_10, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,WOLLQR LQLSFS,ABSTLO'}

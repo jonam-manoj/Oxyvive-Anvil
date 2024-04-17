@@ -9,88 +9,82 @@ components:
   name: content_panel
   layout_properties: {slot: default}
   components:
-  - name: flow_panel_1_copy
-    properties: {spacing_below: small, spacing_above: none, spacing: large}
-    type: FlowPanel
-    layout_properties: {grid_position: 'RJCLAH,UZQROA', full_width_row: true}
+  - name: xy_panel_1
+    properties: {height: 67.60000610351562}
+    type: XYPanel
+    layout_properties: {grid_position: 'IKDSZM,CNMFBE', full_width_row: true}
     components:
     - name: image_1
-      properties: {role: null, vertical_align: center, height: 82.79998779296875,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        alt_text: '', spacing_above: small, source: _/theme/shot.png, spacing_below: small,
-        background: '', horizontal_align: right}
+      properties: {source: _/theme/shot.png, horizontal_align: left, height: 90, display_mode: zoom_to_fill}
       type: Image
-      layout_properties: {}
+      layout_properties: {x: 0, y: 0, width: 74.0875015258789}
     - name: label_1_copy
-      properties: {text: OXIVIVE, bold: true, font_size: 20, foreground: red, spacing_above: large,
-        align: left}
+      properties: {text: OXIVIVE, bold: true, font_size: 20, foreground: red, spacing_above: large}
       type: Label
-      layout_properties: {}
-    - name: spacer_1
-      properties: {height: 32}
-      type: Spacer
-      layout_properties: {width: 738.688}
-    - name: label_1
-      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-        visible: true, text: Home, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      type: Label
-    - name: label_5
-      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-        visible: true, text: Notifations, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      type: Label
-    - name: label_4
-      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-        visible: true, text: Bookings, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      type: Label
-    - name: label_2
-      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-        visible: true, text: Profile, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      type: Label
-    - name: label_6
-      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-        visible: true, text: Reports, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      type: Label
-    - name: label_7
-      properties: {role: null, align: right, tooltip: '', border: '', foreground: '',
-        visible: true, text: Support, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      type: Label
-    - name: button_1
-      properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
-        foreground: '', visible: true, text: Logout, font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-          700', bold: false, underline: false, icon: ''}
-      type: Button
+      layout_properties: {x: 84.08750991895795, y: 26.55000190809369, width: 466}
   - name: label_3
     properties: {align: center, text: Book a Slot, bold: true, foreground: 'theme:Primary
         700', font_size: 20}
     type: Label
-    layout_properties: {grid_position: 'OLTNFF,VBFVNY'}
-  - name: button_2
-    properties: {text: button_2}
-    type: Button
-    layout_properties: {grid_position: 'SYYLFH,YDJORZ'}
-    event_bindings: {click: button_2_click}
-  - name: button_3
-    properties: {text: button_3}
-    type: Button
-    layout_properties: {grid_position: 'SYYLFH,NNFIRH'}
-  - name: button_4
-    properties: {text: button_4}
-    type: Button
-    layout_properties: {grid_position: 'SYYLFH,OESBKS'}
-  - name: button_5
-    properties: {text: button_5}
-    type: Button
-    layout_properties: {grid_position: 'SYYLFH,QJFOOC'}
+    layout_properties: {grid_position: 'OLTNFF,VBFVNY', full_width_row: true}
+  - name: card_1
+    properties: {role: card, foreground: '', background: 'theme:Primary 700'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'PCZVMJ,PNJUWC'}
+    components:
+    - name: button_1
+      properties: {text: button_1, border: '', foreground: '', role: raised, visible: true,
+        background: 'theme:Gray 200'}
+      type: Button
+      layout_properties: {grid_position: 'YUKIRJ,CBBTYA'}
+      event_bindings: {click: button_1_click}
+      data_bindings: []
+    - name: button_2
+      properties: {text: button_2, background: 'theme:Gray 200', role: raised}
+      type: Button
+      layout_properties: {grid_position: 'YUKIRJ,SRQNLC'}
+    - name: button_3
+      properties: {text: button_3, background: 'theme:Gray 200', role: raised}
+      type: Button
+      layout_properties: {grid_position: 'YUKIRJ,THIFOK'}
+    - name: button_4
+      properties: {text: button_4, background: 'theme:Gray 200', role: raised}
+      type: Button
+      layout_properties: {grid_position: 'YUKIRJ,XVYUPT'}
+  - name: label_1
+    properties: {align: center, text: Choose a Day, foreground: 'theme:Primary 700',
+      bold: true, font_size: 15, underline: true}
+    type: Label
+    layout_properties: {grid_position: 'MFBRGU,FFRAQB', full_width_row: true}
+    data_bindings:
+    - {property: underline, code: 'self.item[''1'']', writeback: false}
+  - name: card_2
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DYHIWD,IPDWMD'}
+    components:
+    - name: button_5
+      properties: {text: button_5}
+      type: Button
+      layout_properties: {grid_position: 'EPMDZF,FYPKDP'}
+      event_bindings: {click: button_5_click}
+    - name: button_8
+      properties: {text: button_8}
+      type: Button
+      layout_properties: {grid_position: 'EPMDZF,FYPKDP HWOJST,KIBCRU'}
+    - name: button_6
+      properties: {text: button_6}
+      type: Button
+      layout_properties: {grid_position: 'EPMDZF,BXHGCP'}
+    - name: button_9
+      properties: {text: button_9}
+      type: Button
+      layout_properties: {grid_position: 'EPMDZF,BXHGCP YEVNUG,EIONSO'}
+    - name: button_7
+      properties: {text: button_7}
+      type: Button
+      layout_properties: {grid_position: 'EPMDZF,WOLLQR AKPIHO,INTOLH'}
+    - name: button_10
+      properties: {text: button_10}
+      type: Button
+      layout_properties: {grid_position: 'EPMDZF,WOLLQR LQLSFS,ABSTLO'}

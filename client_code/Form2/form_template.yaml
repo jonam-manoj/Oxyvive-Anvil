@@ -24,35 +24,137 @@ components:
   - name: label_1
     properties: {text: OXIVIVE, bold: true, font_size: 20, foreground: red, spacing_above: large}
     type: Label
-    layout_properties: {x: 79.97500305250287, y: 19.61250190809369, width: 970}
+    layout_properties: {x: 79.97500305250287, y: 19.61250190809369, width: 96.4000244140625}
+  - name: flow_panel_2
+    properties: {spacing: large}
+    type: FlowPanel
+    layout_properties: {x: 937.1000488288701, y: 20.900000382214785, width: 264.5874938964844}
+    components:
+    - name: link_4
+      properties: {text: Home}
+      type: Link
+      layout_properties: {}
+      event_bindings: {click: link_4_click}
+    - name: link_5
+      properties: {text: About}
+      type: Link
+      layout_properties: {}
+    - name: link_6
+      properties: {text: Features}
+      type: Link
+      layout_properties: {}
+    - name: link_7
+      properties: {text: Team}
+      type: Link
+      layout_properties: {}
 - name: xy_panel_2
-  properties: {height: 361.79998779296875}
+  properties: {height: 436.1999816894531}
   type: XYPanel
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
   - name: image_2
-    properties: {source: 'https://www.aamc.org/sites/default/files/Medical-research-542935478.jpg',
-      height: 374.5999755859375, display_mode: zoom_to_fill}
+    properties: {source: _/theme/Medical-research-542935478.jpg, height: 377.5999755859375,
+      display_mode: zoom_to_fill}
     type: Image
-    layout_properties: {x: 0, y: 4.500004578381777, width: 1464.1879877929687}
+    layout_properties: {x: 0, y: 4.500004578381777, width: 1462.7869267578126}
+    data_bindings: []
   - name: label_2
-    properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 31,
-      italic: false, font: Libre Franklin}
+    properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 26,
+      italic: false, font: '', underline: false}
     type: Label
-    layout_properties: {x: 992.037512242794, y: 192.8250091560185, width: 156.4499969482422}
-    data_bindings:
-    - {property: font, code: 'self.item[''Libre Franklin'']', writeback: false}
+    layout_properties: {x: 529.9750259406865, y: 113.96250915527344, width: 112.8375015258789}
+    data_bindings: []
   - name: label_3
     properties: {text: where science meets technology, foreground: white, bold: true,
-      font_size: 30, font: a, italic: true, background: red}
+      font_size: 26, font: '', italic: true, background: ''}
     type: Label
-    layout_properties: {x: 987.8749756217003, y: 255.100033570081, width: 423.1750183105469}
-- name: spacer_1
-  properties: {height: 170.79998779296875}
-  type: Spacer
-  layout_properties: {grid_position: 'BNSAYO,KEFRSY'}
+    layout_properties: {x: 660.9374511726201, y: 108.84999084472656, width: 423.75}
+  - name: label_8
+    properties: {text: 'At Oxivive, we''re not just slowing down the aging process
+        - we''re smashing the clock and unlocking your body''s hidden potential with
+        SHOT therapy.', foreground: white, font_size: 16, align: center, italic: true}
+    type: Label
+    layout_properties: {x: 402.14997558668256, y: 158.0749969482422, width: 838.7750244140625}
+- name: label_9
+  properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
+    font_size: 30, underline: true}
+  type: Label
+  layout_properties: {grid_position: 'ZXDWXA,ETPUVF'}
+- name: image_4
+  properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/medical-team-of-hospital-2681144-2233472.png?f=webp',
+    height: 260.1999816894531}
+  type: Image
+  layout_properties: {grid_position: 'ALRDNU,YKIZTT GHBULS,NRJJGZ'}
+- name: label_10
+  properties: {align: center, text: OXICLINIC, bold: true, foreground: RED, font_size: 20}
+  type: Label
+  layout_properties: {grid_position: 'ALRDNU,YKIZTT PQGFGD,VIDIAF'}
+- name: label_13
+  properties: {text: Unleash your mind's full potential with our cutting-edge anti-aging treatments.,
+    align: left, italic: true}
+  type: Label
+  layout_properties: {grid_position: 'ALRDNU,YKIZTT NCJSIN,FPXXRS'}
+- name: link_1
+  properties: {text: Learn More >>, underline: true}
+  type: Link
+  layout_properties: {grid_position: 'ALRDNU,YKIZTT YHOAZW,IRFULJ'}
+- name: image_4_copy_2
+  properties: {source: 'https://img.freepik.com/free-vector/athletes-doing-fitness-exercise-gym-with-panoramic-windows-isolated-flat-vector-illustration-cartoon-people-cardio-training-weight-lifting_74855-8225.jpg',
+    height: 258.3999328613281, vertical_align: bottom}
+  type: Image
+  layout_properties: {grid_position: 'ALRDNU,CJGTRH RVABUF,ERUNQD'}
+- name: label_11
+  properties: {text: OXIGYM, align: center, bold: true, foreground: RED, font_size: 20}
+  type: Label
+  layout_properties: {grid_position: 'ALRDNU,CJGTRH CLMFTV,IZPNIR'}
+- name: label_15
+  properties: {text: 'Say goodbye to aches, pains, and fatigue. Being physically healthy
+      is a priority.', italic: true, align: left}
+  type: Label
+  layout_properties: {grid_position: 'ALRDNU,CJGTRH ZXWYOS,OBTUPN'}
+- name: link_2
+  properties: {text: Learn More >>, underline: true}
+  type: Link
+  layout_properties: {grid_position: 'ALRDNU,CJGTRH DUFHZX,UOJNPX'}
+- name: image_4_copy
+  properties: {source: 'https://static.vecteezy.com/system/resources/previews/006/916/129/non_2x/ambulance-emergency-illustration-vector.jpg',
+    height: 256.20001220703125}
+  type: Image
+  layout_properties: {grid_position: 'ALRDNU,AZNIDV VLKVBU,KKXTNA'}
+- name: label_12
+  properties: {text: OXIWHEELS, align: center, bold: true, foreground: RED, font_size: 20}
+  type: Label
+  layout_properties: {grid_position: 'ALRDNU,AZNIDV RJFBNY,ZRRSGW'}
+- name: label_14
+  properties: {text: Reveal your inner glow with our anti-aging treatments., italic: true,
+    align: left}
+  type: Label
+  layout_properties: {grid_position: 'ALRDNU,AZNIDV GCZVGJ,BQCUDB'}
+- name: link_3
+  properties: {text: Learn More >>, underline: true}
+  type: Link
+  layout_properties: {grid_position: 'ALRDNU,AZNIDV DLHEQP,TTFJYN'}
 - name: flow_panel_1
-  properties: {}
+  properties: {spacing: huge}
   type: FlowPanel
-  layout_properties: {grid_position: 'FQSEUK,SMPJHH', full_width_row: true}
+  layout_properties: {grid_position: 'EYGOGB,BFILGL', full_width_row: true}
+  components:
+  - name: image_3
+    properties: {}
+    type: Image
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+  - name: spacer_2
+    properties: {height: 32}
+    type: Spacer
+- name: flow_panel_3
+  properties: {background: '#40486d'}
+  type: FlowPanel
+  layout_properties: {grid_position: 'KWTLEQ,HGGAAJ', full_width_row: true}
+  components:
+  - name: label_16
+    properties: {text: © 2024 OXIVIVE., align: center, foreground: white}
+    type: Label
+    layout_properties: {}
 is_package: true

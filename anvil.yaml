@@ -4,7 +4,9 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
+
 startup: {type: form, module: slot_book}
+
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive

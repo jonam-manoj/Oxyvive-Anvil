@@ -30,6 +30,10 @@ class slot_book(slot_bookTemplate):
         #         button.enabled = False  
   
     def button_1_click(self, **event_args):
+      # button_name = self.primary_color_1
+      # button = getattr(self, button_name)
+      # button.visible = True
+      self.primary_color_1.visible=True
       current_time = datetime.now().time()
       times = ["09:00 AM", "11:00 AM", "1:00 PM", "3:00 PM", "5:00 PM", "7:00 PM"]
       for i in range(5, 11):  # Assuming you have buttons named button_5 to button_11
@@ -51,6 +55,7 @@ class slot_book(slot_bookTemplate):
 
     def button_2_click(self, **event_args):
       """This method is called when the button is clicked"""
+      self.primary_color_1.visible=True
       current_time = datetime.now().time()
       times = ["09:00 AM", "11:00 AM", "1:00 PM", "3:00 PM", "5:00 PM", "7:00 PM"]
       for i in range(5, 11):  # Assuming you have buttons named button_5 to button_11
@@ -58,9 +63,8 @@ class slot_book(slot_bookTemplate):
           button = getattr(self, button_name)
           # Assuming times list is predefined
           button.text = times[i - 5] if i - 5 < len(times) else "No Time"  # Display time if available, otherwise display "No Time"
-          button_time = datetime.strptime(button.text, "%I:%M %p").time()
-          if current_time > button_time:
-              button.enabled = False  
+          
+          button.enabled = True 
       for i in range(5, 11):
             button_name = f'button_{i}'
             button = getattr(self, button_name)
@@ -68,6 +72,16 @@ class slot_book(slot_bookTemplate):
 
     def button_3_click(self, **event_args):
       """This method is called when the button is clicked"""
+      self.primary_color_1.visible=True
+      current_time = datetime.now().time()
+      times = ["09:00 AM", "11:00 AM", "1:00 PM", "3:00 PM", "5:00 PM", "7:00 PM"]
+      for i in range(5, 11):  # Assuming you have buttons named button_5 to button_11
+          button_name = f'button_{i}'
+          button = getattr(self, button_name)
+          # Assuming times list is predefined
+          button.text = times[i - 5] if i - 5 < len(times) else "No Time"  # Display time if available, otherwise display "No Time"
+          
+          button.enabled = True 
       for i in range(5, 11):
             button_name = f'button_{i}'
             button = getattr(self, button_name)
@@ -75,6 +89,16 @@ class slot_book(slot_bookTemplate):
 
     def button_4_click(self, **event_args):
       """This method is called when the button is clicked"""
+      self.primary_color_1.visible=True
+      current_time = datetime.now().time()
+      times = ["09:00 AM", "11:00 AM", "1:00 PM", "3:00 PM", "5:00 PM", "7:00 PM"]
+      for i in range(5, 11):  # Assuming you have buttons named button_5 to button_11
+          button_name = f'button_{i}'
+          button = getattr(self, button_name)
+          # Assuming times list is predefined
+          button.text = times[i - 5] if i - 5 < len(times) else "No Time"  # Display time if available, otherwise display "No Time"
+          
+          button.enabled = True 
       for i in range(5, 11):
             button_name = f'button_{i}'
             button = getattr(self, button_name)

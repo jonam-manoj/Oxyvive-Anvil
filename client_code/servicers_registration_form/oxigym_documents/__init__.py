@@ -1,11 +1,11 @@
-from ._anvil_designer import oxiclinic_documentsTemplate
+from ._anvil_designer import oxigym_documentsTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class oxiclinic_documents(oxiclinic_documentsTemplate):
+class oxigym_documents(oxigym_documentsTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -14,7 +14,7 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
 
   def back_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('servicers_registration_form.servicers_register_add_oxiclinic')
+    open_form('servicers_registration_form.servicers_register_add_oxiwheel')
 
   def Submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""

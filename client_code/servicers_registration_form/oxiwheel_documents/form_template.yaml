@@ -21,7 +21,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'FDSCHH,OYJYWP'}
 - name: label_3
-  properties: {align: left, text: 'Upload Medical Practitioner License ', bold: true}
+  properties: {align: left, text: Upload Vehicle RC, bold: true}
   type: Label
   layout_properties: {grid_position: 'DFDNWW,SNQDBO'}
 - name: medical_file_loader_1
@@ -29,7 +29,7 @@ components:
   type: FileLoader
   layout_properties: {grid_position: 'DFDNWW,TCWTMY'}
 - name: label_5
-  properties: {align: left, text: 'Upload Building Permit and Licenses ', bold: true}
+  properties: {align: left, text: Upload Driving License, bold: true}
   type: Label
   layout_properties: {grid_position: 'LXRTNZ,UPUFQQ'}
 - name: building_file_loader_2

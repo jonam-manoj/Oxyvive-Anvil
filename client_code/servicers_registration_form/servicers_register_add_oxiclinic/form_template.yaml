@@ -19,7 +19,7 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'XEGFHC,IYFKMQ'}
-- name: text_box_1
+- name: hospital_name
   properties: {}
   type: TextBox
   layout_properties: {grid_position: 'XEGFHC,GDYEBA'}
@@ -32,13 +32,13 @@ components:
   layout_properties: {grid_position: 'AZCYKR,RPMQIM'}
 - type: DatePicker
   properties: {}
-  name: date_picker_1
+  name: oxiclini_established_year
   layout_properties: {grid_position: 'AZCYKR,XVNSIJ'}
 - name: state_label
   properties: {align: left, text: 'State :', bold: true}
   type: Label
   layout_properties: {grid_position: 'VKEAFN,DENLRV'}
-- name: text_box_3
+- name: state
   properties: {}
   type: TextBox
   layout_properties: {grid_position: 'VKEAFN,DXCMVE'}
@@ -46,7 +46,7 @@ components:
   properties: {align: left, text: 'District :', bold: true}
   type: Label
   layout_properties: {grid_position: 'RZPNFK,SBNUKF'}
-- name: text_box_4
+- name: district
   properties: {}
   type: TextBox
   layout_properties: {grid_position: 'RZPNFK,PJBXLF'}
@@ -54,7 +54,7 @@ components:
   properties: {align: left, text: 'Pincode : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'NUPXPB,ULZPHC'}
-- name: text_box_5
+- name: oxiclinic_pincode
   properties: {type: number}
   type: TextBox
   layout_properties: {grid_position: 'NUPXPB,JAEVZV'}
@@ -62,7 +62,7 @@ components:
   properties: {align: left, text: 'Address : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'DJBJHE,PHDZLA'}
-- name: text_box_7
+- name: oxiclinic_address
   properties: {}
   type: TextBox
   layout_properties: {grid_position: 'DJBJHE,UBARDE'}
@@ -70,7 +70,7 @@ components:
   properties: {align: left, text: 'No of Capsule : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'LBJZLG,IHDZJQ'}
-- name: text_box_8
+- name: oxiclinic_capsules
   properties: {type: number}
   type: TextBox
   layout_properties: {grid_position: 'LBJZLG,KMWBOP'}

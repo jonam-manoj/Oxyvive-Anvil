@@ -38,8 +38,11 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
       service_register_data = {'name': name, 'email': email,
                                   'phone': phone, 'address': address,
                                   'password': password, }
+      rows = app_tables.users.search()
+      id = len(rows) + 1
+      app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address)
       """This method is called when the button is clicked"""
-      open_form('servicers_registration_form.services_register_add_service')
+      open_form('servicers_registration_form.services_register_add_service',id=id)
     
     # password validation
   def validate_password(self, password):

@@ -6,14 +6,15 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class servicers_register_add_oxiclinic(servicers_register_add_oxiclinicTemplate):
-  def __init__(self, **properties):
+  def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.user_id = user_id
 
     # Any code you write here will run before the form opens
   def back_button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('servicers_registration_form.services_register_add_service')
+    open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def next_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -31,4 +32,4 @@ class servicers_register_add_oxiclinic(servicers_register_add_oxiclinicTemplate)
       print(self.item)
       oxiclinc_details =[hospital_name, establised_year, state, district, pincode, address, capsule]
       print(oxiclinc_details)
-      open_form('servicers_registration_form.oxiclinic_documents',oxiclinc_details=oxiclinc_details)
+      open_form('servicers_registration_form.oxiclinic_documents',oxiclinc_details=oxiclinc_details, user_id =self.u)

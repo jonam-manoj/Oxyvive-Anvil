@@ -6,8 +6,9 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class oxiclinic_documents(oxiclinic_documentsTemplate):
-  def __init__(self, oxiclinc_details, **properties):
+  def __init__(self, oxiclinc_details, user_id, **properties):
     self.oxiclinc_details=oxiclinc_details
+    self.user_id = user_id
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
@@ -20,12 +21,29 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
 
   def Submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    if not self.file_name_1 and not self.file_name_2:
+    if not self.first_file_name and not self.second_file_name:
       pass
     else:
-      print(self.oxiclinc_details)
+      user_details = app_tables.users.get(id=self.user_id)
+      print(user_details)
       oxiclinc_details = self.oxiclinc_details
-      open_form('servicers_registration_form.services_register_add_service', oxiclinc_details = oxiclinc_details)
+      app_tables.oxiclinics.add_row(id=str(user_details['id']),
+                                   name=user_details['username'],
+                                   email=user_details['email'],
+                                   password=user_details['password'],
+                                   phone=int(user_details['phone']),
+                                   pincode=int(oxiclinc_details[4]),
+                                   Oxiclinics_Name=oxiclinc_details[0],
+                                   established_year=str(oxiclinc_details[1]),
+                                   State=oxiclinc_details[2],
+                                   District=oxiclinc_details[3],
+                                   address_2=oxiclinc_details[5],
+                                   capsules=int(oxiclinc_details[6]),
+                                   medical_licence=oxiclinc_details[7],
+                                   building_licence=oxiclinc_details[8])
+                                  
+      
+      open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def medical_file_loader_1_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""

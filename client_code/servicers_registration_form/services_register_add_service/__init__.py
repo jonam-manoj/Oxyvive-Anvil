@@ -6,9 +6,12 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class services_register_add_service(services_register_add_serviceTemplate):
-  def __init__(self, **properties):
+  def __init__(self, oxiclinc_details, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.oxiclinic = []
+    self.oxiclinic = oxiclinc_details
+    print(self.oxiclinic)
 
     # Any code you write here will run before the form opens.
 

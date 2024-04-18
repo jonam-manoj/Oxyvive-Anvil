@@ -1,6 +1,7 @@
 container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
+  data_bindings: []
 components:
 - name: back_button_2
   properties: {text: back, align: left, foreground: 'theme:Primary 700', bold: true,

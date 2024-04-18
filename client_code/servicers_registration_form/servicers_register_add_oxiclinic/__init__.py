@@ -19,8 +19,8 @@ class servicers_register_add_oxiclinic(servicers_register_add_oxiclinicTemplate)
     """This method is called when the button is clicked"""
     hospital_name =self.hospital_name.text
     establised_year =self.oxiclini_established_year.date
-    state = self.oxiclinic_state.text
-    district =self.oxiclinic_district.text
+    state = self.state.text
+    district =self.district.text
     pincode = self.oxiclinic_pincode.text
     address = self.oxiclinic_address.text
     capsule = self.oxiclinic_capsules.text
@@ -28,5 +28,7 @@ class servicers_register_add_oxiclinic(servicers_register_add_oxiclinicTemplate)
     if not hospital_name and not address and not capsule and not district and not establised_year and not pincode and not state:
       pass
     else:
+      print(self.item)
       oxiclinc_details =[hospital_name, establised_year, state, district, pincode, address, capsule]
-      open_form('servicers_registration_form.oxiclinic_documents')
+      print(oxiclinc_details)
+      open_form('servicers_registration_form.oxiclinic_documents',oxiclinc_details=oxiclinc_details)

@@ -17,19 +17,19 @@ class servicers_register_add_oxiwheel(servicers_register_add_oxiwheelTemplate):
     open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def next_button_1_click(self, **event_args):
-    vehical_no =self.vehical_no.text
+    vehicle_no =self.vehicle_no.text
     model_year =self.model_year.date
     state = self.state.text
     district =self.district.text
     pincode = self.pincode.text
     address = self.address.text
-    capsule = self.capsules.text
+    capsules = self.capsules.text
 
-    if not vehical_no and not address and not capsule and not district and not model_year and not pincode and not state:
+    if not vehicle_no and not address and not capsules and not district and not model_year and not pincode and not state:
       pass
     else:
       print(self.item)
-      oxiwheel_details =[vehical_no, model_year, state, district, pincode, address, capsule]
+      oxiwheel_details =[vehicle_no, model_year, state, district, pincode, address, capsules]
       print(oxiwheel_details)
       open_form('servicers_registration_form.oxiwheel_documents',oxiwheel_details=oxiwheel_details, user_id =self.user_id)
 

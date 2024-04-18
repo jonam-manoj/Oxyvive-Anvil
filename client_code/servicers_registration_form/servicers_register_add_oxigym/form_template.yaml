@@ -32,7 +32,7 @@ components:
   layout_properties: {grid_position: 'AZCYKR,RPMQIM'}
 - type: DatePicker
   properties: {}
-  name: date_picker_1
+  name: established_year
   layout_properties: {grid_position: 'AZCYKR,XVNSIJ'}
 - name: state_label
   properties: {align: left, text: 'State :', bold: true}
@@ -67,11 +67,11 @@ components:
   type: TextBox
   layout_properties: {grid_position: 'DJBJHE,UBARDE'}
 - name: no_capsule_label
-  properties: {align: left, text: 'No. of Capsule : ', bold: true}
+  properties: {align: left, text: 'No. of Capsules : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'LBJZLG,IHDZJQ'}
-- name: capsule
-  properties: {type: number, placeholder: No. of capsule}
+- name: capsules
+  properties: {type: number, placeholder: No. of Capsules}
   type: TextBox
   layout_properties: {grid_position: 'LBJZLG,KMWBOP'}
 - name: grid_panel_1

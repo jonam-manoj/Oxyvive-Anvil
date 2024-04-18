@@ -41,6 +41,7 @@ components:
   properties: {}
   type: FileLoader
   layout_properties: {grid_position: 'LXRTNZ,IRBJGK FTLPGX,LVQCRG'}
+  event_bindings: {change: building_file_loader_2_change}
 - name: file_name_2
   properties: {align: center}
   type: Label

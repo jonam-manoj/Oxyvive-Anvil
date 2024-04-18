@@ -13,7 +13,8 @@ class oxigym_documents(oxigym_documentsTemplate):
     self.oxigym_details=oxigym_details
 
     # Any code you write here will run before the form opens.
-
+  first_file_name = None
+  second_file_name = None
   def back_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('servicers_registration_form.servicers_register_add_oxiwheel')
@@ -26,20 +27,21 @@ class oxigym_documents(oxigym_documentsTemplate):
       user_details = app_tables.users.get(id=self.user_id)
       print(user_details)
       oxigym_details = self.oxigym_details
-      app_tables.oxiclinics.add_row(id=str(user_details['id']),
+      print(oxigym_details)
+      app_tables.oxigyms.add_row(id=str(user_details['id']),
                                    name=user_details['username'],
                                    email=user_details['email'],
                                    password=user_details['password'],
                                    phone=int(user_details['phone']),
                                    pincode=int(oxigym_details[4]),
-                                   Oxiclinics_Name=oxigym_details[0],
+                                   Oxigyms_Name=oxigym_details[0],
                                    established_year=str(oxigym_details[1]),
                                    State=oxigym_details[2],
                                    District=oxigym_details[3],
                                    address_2=oxigym_details[5],
                                    capsules=int(oxigym_details[6]),
-                                   medical_licence=oxigym_details[7],
-                                   building_licence=oxigym_details[8])
+                                   building_licence=oxigym_details[7],
+                                   gym_licence=oxigym_details[8])
                                   
       
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
@@ -49,9 +51,11 @@ class oxigym_documents(oxigym_documentsTemplate):
     self.first_file_name =file.get_name()
     self.file_name_1.text = self.first_file_name
     self.oxigym_details.append(file)
+    print(self.first_file_name)
 
   def building_file_loader_2_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
     self.second_file_name =file.get_name()
     self.file_name_2.text = self.second_file_name
     self.oxigym_details.append(file)
+    print(self.second_file_name)

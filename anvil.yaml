@@ -87,7 +87,7 @@ db_schema:
       type: media
   oxigyms:
     title: oxigyms
-    client: none
+    client: full
     server: full
     columns:
     - name: id
@@ -137,7 +137,7 @@ db_schema:
       type: media
   oxiwheels:
     title: oxiwheels
-    client: none
+    client: full
     server: full
     columns:
     - name: id

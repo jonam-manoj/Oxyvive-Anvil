@@ -6,9 +6,10 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class servicers_register_add_oxigym(servicers_register_add_oxigymTemplate):
-  def __init__(self, user_id **properties):
+  def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.user_id =user_id
 
     # Any code you write here will run before the form opens.
   def back_button_2_click(self, **event_args):
@@ -23,13 +24,13 @@ class servicers_register_add_oxigym(servicers_register_add_oxigymTemplate):
     district =self.district.text
     pincode = self.pincode.text
     address = self.address.text
-    capsule = self.capsules.text
+    capsules = self.capsules.text
 
-    if not gym_name and not address and not capsule and not district and not establised_year and not pincode and not state:
+    if not gym_name and not address and not capsules and not district and not establised_year and not pincode and not state:
       pass
     else:
       print(self.item)
-      oxigym_details =[gym_name, establised_year, state, district, pincode, address, capsule]
+      oxigym_details =[gym_name, establised_year, state, district, pincode, address, capsules]
       print(oxigym_details)
       open_form('servicers_registration_form.oxigym_documents',oxigym_details=oxigym_details, user_id =self.user_id)
 

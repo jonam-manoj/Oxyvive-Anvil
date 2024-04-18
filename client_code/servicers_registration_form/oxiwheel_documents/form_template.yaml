@@ -27,8 +27,12 @@ components:
 - name: medical_file_loader_1
   properties: {background: '', foreground: 'theme:Primary 700'}
   type: FileLoader
-  layout_properties: {grid_position: 'DFDNWW,TCWTMY'}
+  layout_properties: {grid_position: 'DFDNWW,TCWTMY CDDJIV,HTOFXG'}
   event_bindings: {change: medical_file_loader_1_change}
+- name: file_name_1
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'DFDNWW,TCWTMY UDPEKL,FPBCDR'}
 - name: label_5
   properties: {align: left, text: Upload Driving License, bold: true}
   type: Label
@@ -36,9 +40,13 @@ components:
 - name: building_file_loader_2
   properties: {}
   type: FileLoader
-  layout_properties: {grid_position: 'LXRTNZ,IRBJGK'}
+  layout_properties: {grid_position: 'LXRTNZ,IRBJGK FTLPGX,LVQCRG'}
+- name: file_name_2
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'LXRTNZ,IRBJGK CFJIWL,PVMPWY'}
 - name: label_4
-  properties: {}
+  properties: {align: center}
   type: Label
   layout_properties: {grid_position: 'XZWHEV,MNRJWL'}
 - name: Submit_button

@@ -27,7 +27,11 @@ components:
 - name: medical_file_loader_1
   properties: {background: '', foreground: 'theme:Primary 700'}
   type: FileLoader
-  layout_properties: {grid_position: 'DFDNWW,TCWTMY'}
+  layout_properties: {grid_position: 'DFDNWW,TCWTMY GABVIU,LYURGL'}
+- name: file_name_1
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'DFDNWW,TCWTMY QHBBSS,BWBOBD'}
 - name: label_5
   properties: {align: left, text: Upload Gym License, bold: true}
   type: Label
@@ -35,7 +39,11 @@ components:
 - name: building_file_loader_2
   properties: {}
   type: FileLoader
-  layout_properties: {grid_position: 'LXRTNZ,IRBJGK'}
+  layout_properties: {grid_position: 'LXRTNZ,IRBJGK LMZTAL,WSEBRV'}
+- name: file_name_2
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'LXRTNZ,IRBJGK HMFUIK,DGFKLR'}
 - name: label_4
   properties: {}
   type: Label

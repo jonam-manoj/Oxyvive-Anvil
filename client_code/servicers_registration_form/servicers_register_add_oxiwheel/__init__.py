@@ -25,7 +25,7 @@ class servicers_register_add_oxiwheel(servicers_register_add_oxiwheelTemplate):
     address = self.address.text
     capsule = self.capsules.text
 
-    if not hospital_name and not address and not capsule and not district and not establised_year and not pincode and not state:
+    if not vehical_no and not address and not capsule and not district and not model_year and not pincode and not state:
       pass
     else:
       print(self.item)

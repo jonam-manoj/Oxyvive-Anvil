@@ -46,7 +46,7 @@ components:
   properties: {align: center}
   type: Label
   layout_properties: {grid_position: 'LXRTNZ,IRBJGK CFJIWL,PVMPWY'}
-- name: label_4
+- name: hint_text
   properties: {align: center}
   type: Label
   layout_properties: {grid_position: 'XZWHEV,MNRJWL'}

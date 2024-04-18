@@ -22,7 +22,7 @@ class oxigym_documents(oxigym_documentsTemplate):
   def Submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     if not self.first_file_name and not self.second_file_name:
-      pass
+      self.hint_text.text='Upload Documents '
     else:
       user_details = app_tables.users.get(id=self.user_id)
       print(user_details)

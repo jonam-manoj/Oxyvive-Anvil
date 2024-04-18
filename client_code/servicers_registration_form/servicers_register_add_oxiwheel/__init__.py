@@ -26,7 +26,7 @@ class servicers_register_add_oxiwheel(servicers_register_add_oxiwheelTemplate):
     capsules = self.capsules.text
 
     if not vehicle_no and not address and not capsules and not district and not model_year and not pincode and not state:
-      pass
+      self.hint_text.text='All fields are required'
     else:
       print(self.item)
       oxiwheel_details =[vehicle_no, model_year, state, district, pincode, address, capsules]

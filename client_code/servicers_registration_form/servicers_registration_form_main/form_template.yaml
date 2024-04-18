@@ -15,7 +15,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'FPMTTO,FHEHJI'}
 - name: servicers_name_text_box
-  properties: {role: null}
+  properties: {role: null, placeholder: Full Name}
   type: TextBox
   layout_properties: {grid_position: 'FPMTTO,WKODLX'}
 - name: servicers_email_label
@@ -23,7 +23,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'DHSNRC,ZFGYJP'}
 - name: servicers_email_text_box
-  properties: {type: email}
+  properties: {type: email, placeholder: Email}
   type: TextBox
   layout_properties: {grid_position: 'DHSNRC,FHJXBI'}
 - name: servicers_password_label
@@ -31,7 +31,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'KSPMAS,KPTOLQ'}
 - name: servicers_password_text_box
-  properties: {font_size: -4}
+  properties: {font_size: -4, placeholder: Password}
   type: TextBox
   layout_properties: {grid_position: 'KSPMAS,NTBYTW'}
 - name: show_password_check_box
@@ -48,7 +48,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'BJYCOY,VFSMIM'}
 - name: servicers_phone_text_box
-  properties: {type: tel}
+  properties: {type: tel, placeholder: Phone no.}
   type: TextBox
   layout_properties: {grid_position: 'BJYCOY,EIVSAQ'}
 - name: servicers_address_label
@@ -56,7 +56,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'ONBCXG,WXSNPA'}
 - name: servicers_address_text_box
-  properties: {}
+  properties: {placeholder: Address}
   type: TextBox
   layout_properties: {grid_position: 'ONBCXG,OKAHYM'}
 - name: hint_text_2

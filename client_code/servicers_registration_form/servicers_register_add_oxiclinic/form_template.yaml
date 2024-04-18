@@ -75,6 +75,10 @@ components:
   properties: {type: number, placeholder: No. of Capsules}
   type: TextBox
   layout_properties: {grid_position: 'LBJZLG,KMWBOP'}
+- name: hint_text
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'HNYPYU,XVPZHY'}
 - name: grid_panel_1
   properties: {}
   type: GridPanel

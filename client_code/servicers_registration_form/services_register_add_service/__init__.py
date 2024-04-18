@@ -20,6 +20,7 @@ class services_register_add_service(services_register_add_serviceTemplate):
     open_form('servicers_registration_form.servicers_registration_form_main')
 
   def add_oxiclinic_button_click(self, **event_args):
+    
     """This method is called when the button is clicked"""
     open_form('servicers_registration_form.servicers_register_add_oxiclinic')
 

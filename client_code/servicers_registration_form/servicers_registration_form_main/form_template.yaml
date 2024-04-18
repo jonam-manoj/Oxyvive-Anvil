@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{}'}
+  properties: {col_widths: '{"OUNSEE":40,"VZGJAS":20}'}
 components:
 - name: servicers_navigation_bar_1
   properties: {}
@@ -11,49 +11,58 @@ components:
   type: Label
   layout_properties: {grid_position: 'EAGZZU,MVTHMM'}
 - name: servicers_name_label
-  properties: {text: 'Full name :', align: center, bold: true}
+  properties: {text: 'Full name :', align: left, bold: true}
   type: Label
   layout_properties: {grid_position: 'FPMTTO,FHEHJI'}
 - name: servicers_name_text_box
-  properties: {}
+  properties: {role: null, placeholder: Full Name}
   type: TextBox
   layout_properties: {grid_position: 'FPMTTO,WKODLX'}
 - name: servicers_email_label
-  properties: {align: center, text: 'Email : ', bold: true}
+  properties: {align: left, text: 'Email : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'DHSNRC,ZFGYJP'}
 - name: servicers_email_text_box
-  properties: {}
+  properties: {type: email, placeholder: Email}
   type: TextBox
   layout_properties: {grid_position: 'DHSNRC,FHJXBI'}
 - name: servicers_password_label
-  properties: {align: center, text: 'Password : ', bold: true}
+  properties: {align: left, text: 'Password : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'KSPMAS,KPTOLQ'}
 - name: servicers_password_text_box
-  properties: {font_size: -4}
+  properties: {font_size: -4, placeholder: Password}
   type: TextBox
   layout_properties: {grid_position: 'KSPMAS,NTBYTW'}
 - name: show_password_check_box
-  properties: {text: Show password, align: right, checked: true}
+  properties: {text: Show password, align: right, checked: false}
   type: CheckBox
   layout_properties: {grid_position: 'YTHKEE,OUNSEE'}
+  event_bindings: {change: show_password_check_box_change}
+- name: hint_text
+  properties: {foreground: 'theme:Primary 700', background: ''}
+  type: Label
+  layout_properties: {grid_position: 'YTHKEE,VZGJAS'}
 - name: servicers_phone_label
-  properties: {align: center, text: 'Phone no : ', bold: true}
+  properties: {align: left, text: 'Phone no : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'BJYCOY,VFSMIM'}
 - name: servicers_phone_text_box
-  properties: {}
+  properties: {type: tel, placeholder: Phone no.}
   type: TextBox
   layout_properties: {grid_position: 'BJYCOY,EIVSAQ'}
 - name: servicers_address_label
-  properties: {align: center, text: 'Address : ', bold: true}
+  properties: {align: left, text: 'Address : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'ONBCXG,WXSNPA'}
 - name: servicers_address_text_box
-  properties: {}
+  properties: {placeholder: Address}
   type: TextBox
   layout_properties: {grid_position: 'ONBCXG,OKAHYM'}
+- name: hint_text_2
+  properties: {align: center, foreground: 'theme:Primary 700'}
+  type: Label
+  layout_properties: {grid_position: 'AAZIQC,NNQVVY'}
 - name: servicers_prev_button_1
   properties: {role: raised, align: right, border: '', foreground: 'theme:White',
     text: Preview, font_size: 15, background: '#fa1900', bold: true, icon: 'fa:angle-double-left'}

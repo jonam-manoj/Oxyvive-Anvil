@@ -1,10 +1,5 @@
 unique_ids:
   forms:
-    dashboard: U72ZFRVP2P2GUDXFQYTF4Z3NMAN3YEL3
-    servicers_registration_form.servicers_register_add_oxiclinic: '1713253859961616759791483.0367'
-    dashboard.oxy_wheels_booking_form_1: '1713420066784541059561972.0624'
-    servicers_registration_form.servicers_navigation_bar: '1713243117909432662543884.68164'
-    dashboard.gym_booking_form_1: '1713419996524547438426903.10364'
     slot_book: '1713334561858906627281156.3474'
     Form2: IKQ2JL4RGDDAAVZCW26FZOJKQIGPPDBB
     servicers_registration_form.services_register_add_service: '1713246998774954332897107.2911'
@@ -12,10 +7,25 @@ unique_ids:
     servicers_registration_form.servicers_registration_form_main: '1713240235053300522602261.4747'
   modules:
     servicers_registration_form: 27G5MWNGDBQRI2CCV274XTJYESSWZYTU
+
   server_modules:
     ServerModule1: '1705559350608388220597137.436'
   assets:
-    Gym-Logo.jpg: '171325162453487580455700.74425'
+    oxiwheel.png: '1713326856729644075420610.1224'
+    hospital-oxicinic_2.png: '1713334173777533437724494.08954'
+    hospital.png: '1713326290263659450189964.0884'
+    hospital-oxicinic.png: OEAICOBJ4JRTDS5NRCSWKHQJ2VJISG2O
+    theme.css: 5JAFC4S2LROWQUW67ZP73XUPQOTVD5YW
+    oxi_gym.png: '1713325910437297061259972.9827'
+    oxi_wheel.png: '1713325895208134139708314.74397'
+
+    standard-page.html: F6QBNXLIG2YMDUO2KQV4XB7OXQFVESW2
+    shot.png: '1713179813623874438013336.4507'
+    hospital-building.jpg: '1713249307912384657245633.46783'
+    ambuleone.png: '1713251609252681579119297.411'
+    oxi_wheel_2.png: '1713327027751226079469281.81998'
+    oxi_wheel_3.png: '171333405332346443886671.9048'
+
     Medical-research-542935478.jpg: '171326831819418310725757.262337'
     ambuleone.png: '1713251609252681579119297.411'
     hospital-building.jpg: '1713249307912384657245633.46783'

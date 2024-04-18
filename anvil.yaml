@@ -4,7 +4,6 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: dashboard}
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive
@@ -37,7 +36,7 @@ db_schema:
       type: string
   oxiclinics:
     title: oxiclinics
-    client: none
+    client: full
     server: full
     columns:
     - name: id
@@ -87,7 +86,7 @@ db_schema:
       type: media
   oxigyms:
     title: oxigyms
-    client: none
+    client: full
     server: full
     columns:
     - name: id
@@ -137,7 +136,7 @@ db_schema:
       type: media
   oxiwheels:
     title: oxiwheels
-    client: none
+    client: full
     server: full
     columns:
     - name: id
@@ -187,7 +186,7 @@ db_schema:
       type: media
   users:
     title: users
-    client: none
+    client: full
     server: full
     columns:
     - name: id
@@ -208,4 +207,7 @@ db_schema:
     - name: pincode
       admin_ui: {width: 200}
       type: number
+    - name: address
+      admin_ui: {width: 200, order: 6}
+      type: string
 uplink_visible: true

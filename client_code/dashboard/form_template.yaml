@@ -120,6 +120,7 @@ components:
           500', bold: true}
       type: Button
       layout_properties: {grid_position: ',KGMNTZ CUGLYO,KBCUPY'}
+      event_bindings: {click: primary_color_1_copy_click}
     - name: image_4
       properties: {source: _/theme/Gym-Logo.jpg, height: 251, horizontal_align: right}
       type: Image
@@ -130,6 +131,7 @@ components:
           500', bold: true}
       type: Button
       layout_properties: {grid_position: ',ARJDZA POLGTT,RDZDSG'}
+      event_bindings: {click: primary_color_1_copy_2_click}
     - name: label_8
       properties: {text: Hospital Address, align: center}
       type: Label

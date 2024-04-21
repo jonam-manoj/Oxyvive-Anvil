@@ -58,23 +58,23 @@ components:
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1462.7869267578126}
     data_bindings: []
-  - name: label_2
-    properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 26,
-      italic: false, font: '', underline: false}
+  - name: label_8
+    properties: {text: 'At Oxivive, we''re not just slowing down the aging process
+        - we''re smashing the clock and unlocking your body''s hidden potential with
+        SHOT therapy.', foreground: white, font_size: 16, align: right, italic: true}
     type: Label
-    layout_properties: {x: 529.9750259406865, y: 113.96250915527344, width: 112.8375015258789}
-    data_bindings: []
+    layout_properties: {x: 402.14997558668256, y: 158.0749969482422, width: 838.7750244140625}
   - name: label_3
     properties: {text: where science meets technology, foreground: white, bold: true,
       font_size: 26, font: '', italic: true, background: ''}
     type: Label
-    layout_properties: {x: 660.9374511726201, y: 108.84999084472656, width: 423.75}
-  - name: label_8
-    properties: {text: 'At Oxivive, we''re not just slowing down the aging process
-        - we''re smashing the clock and unlocking your body''s hidden potential with
-        SHOT therapy.', foreground: white, font_size: 16, align: center, italic: true}
+    layout_properties: {x: 810.9765625, y: 107.21353149414062, width: 423.75}
+  - name: label_2
+    properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 26,
+      italic: false, font: '', underline: false}
     type: Label
-    layout_properties: {x: 402.14997558668256, y: 158.0749969482422, width: 838.7750244140625}
+    layout_properties: {x: 689.21875, y: 105.703125, width: 112.82551574707031}
+    data_bindings: []
 - name: label_9
   properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
     font_size: 30, underline: true}

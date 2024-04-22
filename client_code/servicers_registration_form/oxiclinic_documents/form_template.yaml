@@ -20,6 +20,10 @@ components:
     foreground: 'theme:Primary 700'}
   type: Label
   layout_properties: {grid_position: 'FDSCHH,OYJYWP'}
+- name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'GXYFKC,JUQSNS'}
 - name: label_3
   properties: {align: left, text: 'Upload Medical Practitioner License ', bold: true}
   type: Label

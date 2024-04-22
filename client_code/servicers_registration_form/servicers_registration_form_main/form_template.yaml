@@ -10,6 +10,10 @@ components:
   properties: {text: Create new account, font_size: 18, bold: true, align: center}
   type: Label
   layout_properties: {grid_position: 'EAGZZU,MVTHMM'}
+- name: spacer_2
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'OCVXPT,YVLZXQ'}
 - name: servicers_name_label
   properties: {text: 'Full name :', align: left, bold: true}
   type: Label
@@ -17,7 +21,12 @@ components:
 - name: servicers_name_text_box
   properties: {role: null, placeholder: Full Name}
   type: TextBox
-  layout_properties: {grid_position: 'FPMTTO,WKODLX'}
+  layout_properties: {grid_position: 'FPMTTO,WKODLX PCXANG,OMQAGE'}
+  event_bindings: {change: servicers_name_text_box_change}
+- name: name_hint
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'FPMTTO,WKODLX VLPBEW,NHUFVE'}
 - name: servicers_email_label
   properties: {align: left, text: 'Email : ', bold: true}
   type: Label
@@ -25,15 +34,21 @@ components:
 - name: servicers_email_text_box
   properties: {type: email, placeholder: Email}
   type: TextBox
-  layout_properties: {grid_position: 'DHSNRC,FHJXBI'}
+  layout_properties: {grid_position: 'DHSNRC,FHJXBI LPIWBF,NDWKZI'}
+  event_bindings: {change: servicers_email_text_box_change}
+- name: email_hint
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'DHSNRC,FHJXBI EBWMBE,MNRBLE'}
 - name: servicers_password_label
   properties: {align: left, text: 'Password : ', bold: true}
   type: Label
   layout_properties: {grid_position: 'KSPMAS,KPTOLQ'}
 - name: servicers_password_text_box
-  properties: {font_size: -4, placeholder: Password}
+  properties: {font_size: -4, placeholder: Password, hide_text: true}
   type: TextBox
   layout_properties: {grid_position: 'KSPMAS,NTBYTW'}
+  event_bindings: {change: servicers_password_text_box_change}
 - name: show_password_check_box
   properties: {text: Show password, align: right, checked: false}
   type: CheckBox
@@ -50,7 +65,12 @@ components:
 - name: servicers_phone_text_box
   properties: {type: tel, placeholder: Phone no.}
   type: TextBox
-  layout_properties: {grid_position: 'BJYCOY,EIVSAQ'}
+  layout_properties: {grid_position: 'BJYCOY,EIVSAQ ALNQSL,WRTBTL'}
+  event_bindings: {change: servicers_phone_text_box_change}
+- name: phone_hint
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'BJYCOY,EIVSAQ EKKGRX,JACGWZ'}
 - name: servicers_address_label
   properties: {align: left, text: 'Address : ', bold: true}
   type: Label
@@ -58,7 +78,16 @@ components:
 - name: servicers_address_text_box
   properties: {placeholder: Address}
   type: TextBox
-  layout_properties: {grid_position: 'ONBCXG,OKAHYM'}
+  layout_properties: {grid_position: 'ONBCXG,OKAHYM LQIHJE,NPXFKP'}
+  event_bindings: {change: servicers_address_text_box_change}
+- name: address_hint
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'ONBCXG,OKAHYM PDFGGC,HDXKSZ'}
+- name: spacer_1
+  properties: {height: 55.600006103515625}
+  type: Spacer
+  layout_properties: {grid_position: 'RNYGRE,SBIGQA'}
 - name: hint_text_2
   properties: {align: center, foreground: 'theme:Primary 700'}
   type: Label
@@ -75,4 +104,9 @@ components:
   type: Button
   layout_properties: {grid_position: 'NMENOJ,AMPZYN'}
   event_bindings: {click: servicers_next_button_1_click}
+- name: link_1
+  properties: {align: center, foreground: 'theme:Primary 700', text: 'Already have
+      an account? Sign in'}
+  type: Link
+  layout_properties: {grid_position: 'KZKSCS,NGYMLO'}
 is_package: true

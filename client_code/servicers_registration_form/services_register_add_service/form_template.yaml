@@ -82,11 +82,10 @@ components:
     font_size: 12, bold: true}
   type: Button
   layout_properties: {grid_position: 'DBEUOP,VLUTAC'}
-- name: grid_panel_1
-  properties: {}
-  type: GridPanel
-  layout_properties: {grid_position: 'FEFNSS,TNYYQI'}
-  components: []
+- name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'PAGFJW,AVWSQX'}
 - name: servicers_register_button
   properties: {text: Register, background: '#fa1900', foreground: 'theme:White', role: raised,
     align: center}

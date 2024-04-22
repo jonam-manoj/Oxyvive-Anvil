@@ -18,8 +18,7 @@ components:
     layout_properties: {x: 1304.0874755866826, y: 22.487498093396425, width: 127.1875}
     event_bindings: {click: button_2_click}
   - name: button_1
-    properties: {text: 'Login       ', background: red, foreground: white, role: raised,
-      bold: true}
+    properties: {text: Login, background: red, foreground: white, role: raised, bold: true}
     type: Button
     layout_properties: {x: 1180.3999755866826, y: 23.38749961927533, width: 158}
     event_bindings: {click: button_1_click}

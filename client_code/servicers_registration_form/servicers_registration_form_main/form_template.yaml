@@ -105,5 +105,5 @@ components:
       an account? Sign in', underline: true}
   type: Link
   layout_properties: {grid_position: 'KZKSCS,NGYMLO'}
-  event_bindings: {click: link_1_click}
+  event_bindings: {click: have_account_link_click}
 is_package: true

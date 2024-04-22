@@ -139,9 +139,9 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     """This method is called when the link is clicked"""
     open_form('login')
 
-  def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
-    pass
+  
+
+  
       
   
       

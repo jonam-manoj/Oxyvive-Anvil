@@ -11,7 +11,7 @@ class signup(signupTemplate):
 
   def primary_color_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("dashboard")
+    
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""

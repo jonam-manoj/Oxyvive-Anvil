@@ -63,23 +63,56 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT VXMWFA,XXUHFD'}
   - name: label_3
-    properties: {text: Email, bold: true, align: left, font_size: 15}
+    properties: {text: 'Email :', bold: true, align: left, font_size: 15}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT PJAROG,DXLPKD'}
   - name: text_box_2
-    properties: {}
+    properties: {type: email}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT PJAROG,ZGHYYN'}
+  - name: label_5
+    properties: {text: 'Password :', bold: true, font_size: 15}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDHJU,KRBUIS'}
+  - name: text_box_3
+    properties: {visible: true, hide_text: true}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDHJU,VZXMHB'}
+  - name: label_7
+    properties: {text: 'Phone no :', font_size: 15, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT IKNMML,JPJCFR'}
+  - name: text_box_4
+    properties: {type: number}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT IKNMML,SPUMKM'}
+  - name: label_8
+    properties: {text: 'Pincode :', font_size: 15, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT NCGGEQ,PYOEWN'}
+  - name: text_box_5
+    properties: {type: number}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT NCGGEQ,LEYWLM'}
   - name: spacer_1
     properties: {height: 25}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT YOLLPR,XLPCLH'}
   - name: primary_color_1
-    properties: {text: signup, role: primary-color, background: red, foreground: white,
+    properties: {text: 'signup        ', role: primary-color, background: red, foreground: white,
       bold: true}
     type: Button
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT VVXMIX,CSFUYF'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT JDRPQQ,BAPKEN'}
     event_bindings: {click: primary_color_1_click}
+  - name: link_1
+    properties: {text: 'Already have an account ? Login', underline: true, font_size: 13}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT DDFCXI,QBOKFP'}
+  - name: link_2
+    properties: {align: right, text: 'Service provider? SIgn in', underline: true,
+      font_size: 13}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT DDFCXI,AMSUDX'}
   - name: xy_panel_2
     properties: {height: 79.79998779296875}
     type: XYPanel

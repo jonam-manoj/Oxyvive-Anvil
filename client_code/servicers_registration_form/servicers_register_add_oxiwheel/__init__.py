@@ -31,6 +31,7 @@ class servicers_register_add_oxiwheel(servicers_register_add_oxiwheelTemplate):
       print(self.item)
       oxiwheel_details =[vehicle_no, model_year, state, district, pincode, address, capsules]
       print(oxiwheel_details)
+     
       open_form('servicers_registration_form.oxiwheel_documents',oxiwheel_details=oxiwheel_details, user_id =self.user_id)
 
     

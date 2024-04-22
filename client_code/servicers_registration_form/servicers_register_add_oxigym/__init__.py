@@ -32,6 +32,7 @@ class servicers_register_add_oxigym(servicers_register_add_oxigymTemplate):
       print(self.item)
       oxigym_details =[gym_name, establised_year, state, district, pincode, address, capsules]
       print(oxigym_details)
+      
       open_form('servicers_registration_form.oxigym_documents',oxigym_details=oxigym_details, user_id =self.user_id)
 
     

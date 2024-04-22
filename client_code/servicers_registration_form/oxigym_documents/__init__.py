@@ -43,7 +43,7 @@ class oxigym_documents(oxigym_documentsTemplate):
                                    building_licence=oxigym_details[7],
                                    gym_licence=oxigym_details[8])
                                   
-      
+      alert("You added oxigym successfully")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def medical_file_loader_1_change(self, file, **event_args):

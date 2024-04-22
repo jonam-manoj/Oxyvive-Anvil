@@ -1,0 +1,29 @@
+is_package: true
+container:
+  type: DataRowPanel
+  data_bindings:
+  - {property: tag, code: 'self.item[''city'']'}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: text, code: 'self.item[''serial_no'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: VJQQOR}
+  data_bindings:
+  - {property: text, code: 'self.item[''Oxiclinics_Name'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: OJLQEN}
+  data_bindings:
+  - {property: text, code: 'self.item[''State'']'}
+- type: Button
+  properties: {text: DElete, background: 'theme:Primary 700', foreground: 'theme:White',
+    role: raised}
+  name: button_1
+  layout_properties: {column: ZYQNVH}

@@ -6,6 +6,8 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import re
 
+# import bcrypt
+
 class servicers_registration_form_main(servicers_registration_form_mainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -23,26 +25,35 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
     is_valid_password, password_error_message = self.validate_password(password)
     if not name:
-      self.hint_text_2.text = 'please enter the name '
+      self.servicers_name_text_box_change()
     elif not email or not re.match(email_regex, email):
-      self.hint_text_2.text = 'Invalid email format. '  
+      self.servicers_email_text_box_change()  
     elif not is_valid_password:
       print(password_error_message)
-      self.hint_text.text = password_error_message
+      self.servicers_password_text_box_change()
     elif not phone or len(phone) != 10:
-      self.hint_text_2.text = 'Invalid Phone number.'
+      self.servicers_phone_text_box_change()
     elif not address:
-      self.hint_text_2.text ='Fill the address field'
+      self.servicers_address_text_box_change()
     else:
+
+      # hash_pashword = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+      # hash_pashword = hash_pashword.decode('utf-8')
+      try: 
+        # If not present, proceed to insert the new user
+        rows = app_tables.users.search()
+        id = f"SP{len(rows):04d}"
+        app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address)
+        """This method is called when the button is clicked"""
+        open_form('servicers_registration_form.services_register_add_service',id=id)
+      except Exception as e:
+        print(e)
+        pass
       
-      service_register_data = {'name': name, 'email': email,
-                                  'phone': phone, 'address': address,
-                                  'password': password, }
-      rows = app_tables.users.search()
-      id = len(rows) + 1
-      app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address)
-      """This method is called when the button is clicked"""
-      open_form('servicers_registration_form.services_register_add_service',id=id)
+      # service_register_data = {'name': name, 'email': email,
+      #                             'phone': phone, 'address': address,
+      #                             'password': password, }
+      
     
     # password validation
   def validate_password(self, password):
@@ -68,6 +79,73 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
 
   def show_password_check_box_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
-    self.servicers_password_text_box.hide_text
+    checked = self.show_password_check_box.checked
+    if not  checked:
+      self.servicers_password_text_box.hide_text = True
+    else:
+      self.servicers_password_text_box.hide_text = False
+      
+
+  def servicers_name_text_box_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    name = self.servicers_name_text_box.text
+    if not name:
+      self.name_hint.text = 'please enter the name '
+    else:
+      self.name_hint.text = ''
+
+  def servicers_email_text_box_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    email = self.servicers_email_text_box.text
+    email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    existing_email = app_tables.users.get(email=email)
+    if not email or not re.match(email_regex, email):
+      self.email_hint.text = 'Invalid email format. '
+    else:
+      self.email_hint.text = ''
+    if existing_email:
+      self.email_hint.text = "Email already registered"
+
+  def servicers_password_text_box_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    password = self.servicers_password_text_box.text
+    is_valid_password, password_error_message = self.validate_password(password)
+    if not is_valid_password:
+      self.hint_text.text = password_error_message
+    else:
+      self.hint_text.foreground ='#05d628'
+      self.hint_text.text = 'Strong password'
+
+  def servicers_phone_text_box_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    phone = self.servicers_phone_text_box.text
+    existing_phone = app_tables.users.get(phone=float(phone))
+    if not phone or len(phone) != 10:
+      self.phone_hint.text = 'Invalid Phone number.'
+    else:
+      self.phone_hint.text = ''
+    if existing_phone:
+      self.phone_hint.text = "Phone number already registered"
+
+  def servicers_address_text_box_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    address = self.servicers_address_text_box.text
+    if not address:
+      self.address_hint.text ='Fill the address field'
+    else:
+      self.address_hint.text =''
+
+  def have_account_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('login')
+
+  
+
+  
+      
+  
+      
+    
+      
 
  

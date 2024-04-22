@@ -43,7 +43,7 @@ class oxiwheel_documents(oxiwheel_documentsTemplate):
                                    vehicle_rc=oxiwheel_details[7],
                                    driving_licence=oxiwheel_details[8])
                                   
-      
+      alert("You added oxiwheel successfully")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def medical_file_loader_1_change(self, file, **event_args):

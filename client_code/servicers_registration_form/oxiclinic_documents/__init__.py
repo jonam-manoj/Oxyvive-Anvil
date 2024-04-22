@@ -42,7 +42,7 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
                                    medical_licence=oxiclinc_details[7],
                                    building_licence=oxiclinc_details[8])
                                   
-      
+      alert("You added oxiclinic successfully")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def medical_file_loader_1_change(self, file, **event_args):

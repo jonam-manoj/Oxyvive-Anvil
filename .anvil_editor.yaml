@@ -11,6 +11,7 @@ unique_ids:
     slot_book: '1713334561858906627281156.3474'
     servicers_registration_form.oxiwheel_documents: I2Y3GNWPJFDQHLL5NMGNSFJ5FNBSLZ7Z
     servicers_registration_form.oxiclinic_documents: UXQ3XZ4PSPNKWJZNOUHFQYYN24ALOXUE
+    servicers.servicers_dashboard: '1713784778987316003074767.38965'
     servicers_registration_form.services_register_add_service: '1713246998774954332897107.2911'
     home: IKQ2JL4RGDDAAVZCW26FZOJKQIGPPDBB
     dashboard.hospital_booking_form_1: '1713417591778851084365636.7953'
@@ -19,6 +20,7 @@ unique_ids:
     servicers_registration_form.oxigym_documents: 6ZCAVH3GOG6STWLKQGPJK5OJTHTLKRIK
     servicers_registration_form.servicers_registration_form_main: '1713240235053300522602261.4747'
   modules:
+    servicers: '1713784754129909004768059.6565'
     servicers_registration_form: 27G5MWNGDBQRI2CCV274XTJYESSWZYTU
   server_modules:
     ServerModule1: '1705559350608388220597137.436'
@@ -38,3 +40,4 @@ unique_ids:
     ambuleone.png: '1713251609252681579119297.411'
     oxi_wheel_2.png: '1713327027751226079469281.81998'
     oxi_wheel_3.png: '171333405332346443886671.9048'
+  scripts: {}

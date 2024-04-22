@@ -42,7 +42,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
       try: 
         # If not present, proceed to insert the new user
         rows = app_tables.users.search()
-        id = len(rows) + 1
+        id = f"SP{len(rows):04d}"
         app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address)
         """This method is called when the button is clicked"""
         open_form('servicers_registration_form.services_register_add_service',id=id)
@@ -135,11 +135,15 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     else:
       self.address_hint.text =''
 
+  def have_account_link_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('login')
+
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    
+    pass
       
-    
+  
       
     
       

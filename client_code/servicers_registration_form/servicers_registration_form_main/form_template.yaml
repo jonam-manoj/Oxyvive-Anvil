@@ -100,7 +100,7 @@ components:
   type: Button
   layout_properties: {grid_position: 'NMENOJ,AMPZYN'}
   event_bindings: {click: servicers_next_button_1_click}
-- name: link_1
+- name: have_account_link
   properties: {align: center, foreground: 'theme:Primary 700', text: 'Already have
       an account? Sign in', underline: true}
   type: Link

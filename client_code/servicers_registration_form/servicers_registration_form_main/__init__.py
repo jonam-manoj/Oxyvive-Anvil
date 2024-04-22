@@ -6,6 +6,8 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import re
 
+# import bcrypt
+
 class servicers_registration_form_main(servicers_registration_form_mainTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -35,23 +37,15 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
       self.servicers_address_text_box_change()
     else:
 
-      hash_pashword = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
-      hash_pashword = hash_pashword.decode('utf-8')
-      try:
-            existing_email = app_tables.users.get(email=email)
-            existing_phone = app_tables.users.get(phone=float(phone))
-    
-            if existing_email:
-                self.email_hint.text = "Email already registered"
-            elif existing_phone:
-                self.phone_hint.text = "Phone number already registered"
-            else:
-                # If not present, proceed to insert the new user
-                rows = app_tables.users.search()
-                id = len(rows) + 1
-                app_tables.users.add_row(id = id, username = name, email = email, password = hash_pashword, phone = int(phone),address=address)
-                """This method is called when the button is clicked"""
-                open_form('servicers_registration_form.services_register_add_service',id=id)
+      # hash_pashword = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+      # hash_pashword = hash_pashword.decode('utf-8')
+      try: 
+        # If not present, proceed to insert the new user
+        rows = app_tables.users.search()
+        id = len(rows) + 1
+        app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address)
+        """This method is called when the button is clicked"""
+        open_form('servicers_registration_form.services_register_add_service',id=id)
       except Exception as e:
         print(e)
         pass
@@ -104,10 +98,13 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     """This method is called when the text in this text box is edited"""
     email = self.servicers_email_text_box.text
     email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    existing_email = app_tables.users.get(email=email)
     if not email or not re.match(email_regex, email):
       self.email_hint.text = 'Invalid email format. '
     else:
       self.email_hint.text = ''
+    if existing_email:
+      self.email_hint.text = "Email already registered"
 
   def servicers_password_text_box_change(self, **event_args):
     """This method is called when the text in this text box is edited"""
@@ -122,10 +119,13 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
   def servicers_phone_text_box_change(self, **event_args):
     """This method is called when the text in this text box is edited"""
     phone = self.servicers_phone_text_box.text
+    existing_phone = app_tables.users.get(phone=float(phone))
     if not phone or len(phone) != 10:
       self.phone_hint.text = 'Invalid Phone number.'
     else:
       self.phone_hint.text = ''
+    if existing_phone:
+      self.phone_hint.text = "Phone number already registered"
 
   def servicers_address_text_box_change(self, **event_args):
     """This method is called when the text in this text box is edited"""

@@ -32,4 +32,5 @@ class servicers_register_add_oxiclinic(servicers_register_add_oxiclinicTemplate)
       print(self.item)
       oxiclinc_details =[hospital_name, establised_year, state, district, pincode, address, capsule]
       print(oxiclinc_details)
+      alert("You added oxiclinic successfully")
       open_form('servicers_registration_form.oxiclinic_documents',oxiclinc_details=oxiclinc_details, user_id =self.user_id)

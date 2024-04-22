@@ -134,6 +134,10 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
       self.address_hint.text ='Fill the address field'
     else:
       self.address_hint.text =''
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    
       
     
       

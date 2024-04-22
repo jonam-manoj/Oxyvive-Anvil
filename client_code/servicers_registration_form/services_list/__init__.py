@@ -6,17 +6,17 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class services_list(services_listTemplate):
-  def __init__(self, **properties):
+  def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.user_id = '4'
+    self.user_id = user_id
     
     # Any code you write here will run before the form opens.
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
    
-    rows = app_tables.oxiclinics.search(id=self.user_id) 
+    rows = app_tables.oxiclinics.search(id=str(self.user_id)) 
     
     List_oxiclinics = []
     for i, row in enumerate(rows, start=1):
@@ -36,7 +36,7 @@ class services_list(services_listTemplate):
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    rows =app_tables.oxiwheels.search(id=self.user_id)
+    rows =app_tables.oxiwheels.search(id=str(self.user_id))
     List_oxiclinics = []
     for i, row in enumerate(rows, start=1):
       # Initialize dictionary to store row data
@@ -55,7 +55,7 @@ class services_list(services_listTemplate):
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""  
-    rows =app_tables.oxigyms.search(id=self.user_id)
+    rows =app_tables.oxigyms.search(id=str(self.user_id))
     
     List_oxiclinics = []
     for i, row in enumerate(rows, start=1):

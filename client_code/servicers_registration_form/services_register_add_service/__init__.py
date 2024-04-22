@@ -32,6 +32,17 @@ class services_register_add_service(services_register_add_serviceTemplate):
 
   def services_list_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('servicers_registration_form.services_list')
+    open_form('servicers_registration_form.services_list',user_id=self.user_id)
+
+  def servicers_register_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    oxiclinic = app_tables.oxiclinics.get(id=str(self.user_id))
+    oxiwheel = app_tables.oxiwheels.get(id =str( self.user_id))
+    oxigym = app_tables.oxigyms.get(id =str( self.user_id))
+
+    if oxiclinic or oxiwheel or oxigym:
+      open_form('login')
+    else:
+      alert('If you want complete registration, please add at least one service')
 
   

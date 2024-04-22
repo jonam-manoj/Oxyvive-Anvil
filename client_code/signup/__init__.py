@@ -1,8 +1,8 @@
-from ._anvil_designer import loginTemplate
+from ._anvil_designer import signupTemplate
 from anvil import *
 import anvil.server
 
-class login(loginTemplate):
+class signup(signupTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -13,8 +13,6 @@ class login(loginTemplate):
     """This method is called when the button is clicked"""
     open_form("dashboard")
 
-  def link_2_click(self, **event_args):
+  def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("signup")
-
-
+    open_form("login")

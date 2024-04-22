@@ -108,6 +108,7 @@ components:
     properties: {text: 'Already have an account ? Login', underline: true, font_size: 13}
     type: Link
     layout_properties: {grid_position: 'BRBJFU,DJYSIT DDFCXI,QBOKFP'}
+    event_bindings: {click: link_1_click}
   - name: link_2
     properties: {align: right, text: 'Service provider? SIgn in', underline: true,
       font_size: 13}

@@ -13,4 +13,8 @@ class login(loginTemplate):
     """This method is called when the button is clicked"""
     open_form("dashboard")
 
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("signup")
+
 

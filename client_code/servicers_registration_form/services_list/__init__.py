@@ -10,21 +10,24 @@ class services_list(services_listTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.user_id = '4'
-    rows = app_tables.oxiclinics.search(id=self.user_id)
-    i= 1
+    rows = app_tables.oxiclinics.search(id=self.user_id) 
+    rows =app_tables.oxigyms.search(id=self.user_id)
+    rows =app_tables.oxiwheels.search(id=self.user_id)
     List_oxiclinics = []
-    for row in rows:
-      if row is not None:
-      # Initialize list
-        user_info = []
-      # Append data to the list
-        user_info.append(i)  # Assuming the serial number column is named 'serial_number'
-        user_info.append(row['Oxiclinics_Name'])
-        user_info.append(row['State'])
-        List_oxiclinics.append(user_info)
-      i=i+1
+    for i, row in enumerate(rows, start=1):
+      # Initialize dictionary to store row data
+      user_info = {}
+      
+      # Assign data to dictionary keys
+      user_info['serial_no'] = i  # Assuming you want to include a serial number
+      user_info['Oxiclinics_Name'] = row['Oxiclinics_Name']
+      user_info['State'] = row['State']
+      
+      # Append dictionary to list
+      List_oxiclinics.append(user_info)
 
-    self.repeating_panel_1.items=List_oxiclinics
+    # Set repeating panel items
+    self.repeating_panel_1.items = List_oxiclinics
     
       
 

@@ -41,26 +41,21 @@ components:
   layout_properties: {grid_position: 'ZNBZAO,MQKYRN'}
   components:
   - name: image_2
-    properties: {source: 'https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg',
-      height: 379.1999816894531}
+    properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/login-page-4468581-3783954.png?f=webp',
+      height: 410.79998779296875}
     type: Image
     layout_properties: {grid_position: 'BRBJFU,PFBYKP'}
   - name: label_4
-    properties: {text: 'WELCOME BACK :)', align: left, font_size: 22, bold: true,
+    properties: {text: Create new account, align: left, font_size: 22, bold: true,
       foreground: '#40486d'}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT EWSNRQ,APYNJB'}
-  - name: label_5
-    properties: {text: To keep connected with us  please login with your personal info....,
-      italic: true, font_size: 17, align: left}
-    type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT NVBBIZ,JMHVMF'}
   - name: spacer_2
-    properties: {height: 28.399993896484375}
+    properties: {height: 3.199981689453125}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT MKEBTO,QRCRRG'}
   - name: label_2
-    properties: {text: 'Email :', bold: true, align: left, font_size: 15}
+    properties: {text: ' Full Name :', bold: true, align: left, font_size: 15}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT VXMWFA,VABFRP'}
   - name: text_box_1
@@ -68,34 +63,59 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT VXMWFA,XXUHFD'}
   - name: label_3
-    properties: {text: Password, bold: true, align: left, font_size: 15}
+    properties: {text: 'Email :', bold: true, align: left, font_size: 15}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT PJAROG,DXLPKD'}
   - name: text_box_2
-    properties: {}
+    properties: {type: email}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT PJAROG,ZGHYYN'}
+  - name: label_5
+    properties: {text: 'Password :', bold: true, font_size: 15}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDHJU,KRBUIS'}
+  - name: text_box_3
+    properties: {visible: true, hide_text: true}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDHJU,VZXMHB'}
+  - name: label_7
+    properties: {text: 'Phone no :', font_size: 15, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT IKNMML,JPJCFR'}
+  - name: text_box_4
+    properties: {type: number}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT IKNMML,SPUMKM'}
+  - name: label_8
+    properties: {text: 'Pincode :', font_size: 15, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT NCGGEQ,PYOEWN'}
+  - name: text_box_5
+    properties: {type: number}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT NCGGEQ,LEYWLM'}
   - name: spacer_1
     properties: {height: 25}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT YOLLPR,XLPCLH'}
   - name: primary_color_1
-    properties: {text: 'Login        ', role: primary-color, background: red, foreground: white,
+    properties: {text: 'signup        ', role: primary-color, background: red, foreground: white,
       bold: true}
     type: Button
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT VVXMIX,CSFUYF'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT JDRPQQ,BAPKEN'}
     event_bindings: {click: primary_color_1_click}
   - name: link_1
-    properties: {text: 'Forget password ?', underline: true}
+    properties: {text: 'Already have an account ? Login', underline: true, font_size: 13}
     type: Link
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT OKZPDC,IONJQJ'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT DDFCXI,QBOKFP'}
+    event_bindings: {click: link_1_click}
   - name: link_2
-    properties: {align: right, text: 'New user ? Click here to Signup', underline: true}
+    properties: {align: right, text: 'Service provider? SIgn in', underline: true,
+      font_size: 13}
     type: Link
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT OKZPDC,LOJOOO'}
-    event_bindings: {click: link_2_click}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT DDFCXI,AMSUDX'}
   - name: xy_panel_2
-    properties: {height: 80.5999755859375}
+    properties: {height: 79.79998779296875}
     type: XYPanel
     layout_properties: {grid_position: 'BRBJFU,DJYSIT BQPRDV,BOLXRO'}
     components:
@@ -113,7 +133,7 @@ components:
       layout_properties: {x: 184.14997558668256, y: 36, width: 39.66250228881836}
       event_bindings: {click: link_9_click}
     - name: label_6
-      properties: {text: 'or login using :', align: left, bold: true, foreground: '#40486d'}
+      properties: {text: 'or signup using :', align: left, bold: true, foreground: '#40486d'}
       type: Label
-      layout_properties: {x: 197.9499633796513, y: 5.387500762939453, width: 116.1875}
+      layout_properties: {x: 193.1500366218388, y: 0, width: 116.1875}
 is_package: true

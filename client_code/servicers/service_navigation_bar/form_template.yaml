@@ -26,18 +26,22 @@ components:
         foreground: 'theme:White', role: null}
       type: Link
       layout_properties: {}
+      event_bindings: {click: link_1_click}
     - name: link_2
       properties: {align: center, text: Notification, italic: false, bold: true, foreground: 'theme:White'}
       type: Link
       layout_properties: {}
+      event_bindings: {click: link_2_click}
     - name: link_3
       properties: {text: Profile, align: center, bold: true, foreground: 'theme:White'}
       type: Link
       layout_properties: {}
+      event_bindings: {click: link_3_click}
     - name: link_4
       properties: {align: center, text: Support, bold: true, foreground: 'theme:White'}
       type: Link
       layout_properties: {}
+      event_bindings: {click: link_4_click}
     - name: link_5
       properties: {text: Add services, bold: true, align: center, foreground: 'theme:White'}
       type: Link

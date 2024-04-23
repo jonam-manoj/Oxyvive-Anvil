@@ -3,42 +3,106 @@ components:
 - name: service_navigation_bar_1
   properties: {}
   type: form:servicers.service_navigation_bar
-  layout_properties: {grid_position: 'XCNYUK,JTCYMG'}
+  layout_properties: {grid_position: 'XCNYUK,JTCYMG', full_width_row: true}
 - name: card_1
-  properties: {role: card}
+  properties: {role: null, col_widths: '{"NMJLRV":15}'}
   type: ColumnPanel
-  layout_properties: {grid_position: 'JFHDPB,SUQYEF'}
+  layout_properties: {grid_position: 'CRMVGY,DMJJSS'}
   components:
   - name: xy_panel_1
-    properties: {height: 147.20001220703125}
+    properties: {height: 203.39993286132812, border: ''}
     type: XYPanel
     layout_properties: {grid_position: 'RYIEQV,NMJLRV'}
     components:
     - name: image_1
-      properties: {role: image, vertical_align: center, height: 138.60000610351562,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        alt_text: profile, spacing_above: small, source: _/theme/hospital-building.jpg,
-        spacing_below: small, background: '', horizontal_align: center}
+      properties: {role: image, vertical_align: center, height: 190, tooltip: '',
+        border: '', foreground: '', visible: true, display_mode: shrink_to_fit, alt_text: profile,
+        spacing_above: small, source: _/theme/hospital-building.jpg, spacing_below: small,
+        background: '', horizontal_align: center}
       type: Image
-      layout_properties: {x: 399.0499954223633, y: 6.5625, width: 161.788}
-  - name: c_id
-    properties: {align: center}
-    type: Label
-    layout_properties: {grid_position: 'KIDJUK,WDTPMJ'}
-  - name: name
-    properties: {align: center}
-    type: Label
-    layout_properties: {grid_position: 'BKKCQI,YFXVKE'}
-  - name: email
-    properties: {align: center}
-    type: Label
-    layout_properties: {grid_position: 'OURMEH,VIWCHS'}
-  - name: phone
-    properties: {align: center}
-    type: Label
-    layout_properties: {grid_position: 'YIACSX,DBJHCK'}
-  - name: address
-    properties: {align: center}
-    type: Label
-    layout_properties: {grid_position: 'UJDDRP,HNWJVH'}
+      layout_properties: {x: 368.0500305183232, y: 11.199996948242188, width: 179.312}
+    - name: file_loader_1
+      properties:
+        role: null
+        show_state: false
+        align: center
+        tooltip: ''
+        border: ''
+        file_types: “.png,.jpg,.jpeg”
+        enabled: true
+        files: []
+        foreground: theme:Gray 800
+        visible: true
+        text: ''
+        font_size: null
+        font: ''
+        spacing_above: small
+        icon_align: left
+        spacing_below: small
+        italic: false
+        file: null
+        background: ''
+        bold: false
+        underline: false
+        multiple: false
+        icon: fa:camera
+      type: FileLoader
+      layout_properties: {x: 529.9500358588994, y: 157.03750305250287, width: 49.587501525878906}
+      data_bindings: []
+- name: c_id
+  properties: {align: right, text: c_id 123, bold: true, font_size: 15}
+  type: Label
+  layout_properties: {grid_position: 'YGHBSQ,KWXOPR'}
+- name: link_1
+  properties: {icon: 'fa:pencil', icon_align: left_edge}
+  type: Link
+  layout_properties: {grid_position: 'YGHBSQ,OOEHUO'}
+- name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'GRAAAE,ZFVQRR'}
+- name: name
+  properties: {align: right, text: Oxivive, bold: true, font_size: 15}
+  type: Label
+  layout_properties: {grid_position: 'WWPNWR,BHRUIZ'}
+- name: link_2
+  properties: {icon: 'fa:pencil', icon_align: left_edge}
+  type: Link
+  layout_properties: {grid_position: 'WWPNWR,TTXAKX'}
+- name: spacer_2
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'MZVOPQ,EBMXHN'}
+- name: email
+  properties: {align: right, text: oxi@gmail.com, bold: true, font_size: 15}
+  type: Label
+  layout_properties: {grid_position: 'WNMDXT,ZXEZUP'}
+- name: link_3
+  properties: {icon: 'fa:pencil', icon_align: left_edge}
+  type: Link
+  layout_properties: {grid_position: 'WNMDXT,LLPMIT'}
+- name: spacer_3
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'KSKLOR,BHLBFB'}
+- name: phone
+  properties: {align: right, text: '1234567890', bold: true, font_size: 15}
+  type: Label
+  layout_properties: {grid_position: 'ZVTRCJ,VAFQDD'}
+- name: link_4
+  properties: {icon: 'fa:pencil', icon_align: left_edge}
+  type: Link
+  layout_properties: {grid_position: 'ZVTRCJ,OWWWHC'}
+- name: spacer_4
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'CUUAIX,UEHBOJ'}
+- name: address
+  properties: {align: right, text: Bengaluru, bold: true, font_size: 15}
+  type: Label
+  layout_properties: {grid_position: 'QLLQZD,CNUKHG'}
+- name: link_5
+  properties: {icon: 'fa:pencil', icon_align: left_edge}
+  type: Link
+  layout_properties: {grid_position: 'QLLQZD,UZXETA'}
 is_package: true

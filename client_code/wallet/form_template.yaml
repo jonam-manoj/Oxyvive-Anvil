@@ -12,7 +12,7 @@ components:
   - name: navbar_links_copy
     properties: {}
     type: FlowPanel
-    layout_properties: {grid_position: 'JGUUYS,CXMZLG'}
+    layout_properties: {grid_position: 'JGUUYS,CXMZLG', full_width_row: true}
     components:
     - name: content_panel_copy
       properties: {col_widths: '{"TPXKFB":10,"CHPZQQ":10,"AOJPWP":10,"RQPZLH":30}'}
@@ -32,7 +32,12 @@ components:
       - name: headline_1
         properties: {role: headline, align: center, text: Oxyvive Wallet, bold: true}
         type: Label
-        layout_properties: {grid_position: 'GGUPED,PJNKNU'}
+        layout_properties: {grid_position: 'RNDVOS,VHNXFR'}
+      - name: image_1
+        properties: {source: _/theme/wallet-930552.jpg, display_mode: zoom_to_fill,
+          visible: true, height: 246.19998168945312}
+        type: Image
+        layout_properties: {grid_position: 'KGFFMK,GIIBBF'}
       - name: label_1
         properties: {text: Balance, bold: true, background: '', foreground: 'theme:Primary
             700'}

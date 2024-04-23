@@ -50,11 +50,11 @@ components:
           properties: {role: headline, align: center, text: Oxyvive Wallet, bold: true,
             foreground: 'theme:Black', font_size: 39, italic: true, underline: false}
           type: Label
-          layout_properties: {x: 67.53750305250287, y: 17.749996948987246, width: 337.1875}
+          layout_properties: {x: 101.36249237135053, y: 114.58749389648438, width: 405.7875061035156}
       - name: spacer_3
         properties: {height: 32}
         type: Spacer
-        layout_properties: {grid_position: 'DDYSJB,JCALNB'}
+        layout_properties: {grid_position: 'KLFSVS,IVQQBR'}
       - name: column_panel_1
         properties: {col_widths: '{"NEPZSW":5,"MRMPOU":5,"ARFYSJ":50}', background: '#fbc1c1',
           role: card, foreground: ''}

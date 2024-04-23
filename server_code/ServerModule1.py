@@ -48,7 +48,12 @@ def check_internet_status():
 #     )
 #     return user_row
 @anvil.server.callable
-def login_user(email, password):
-    # Search for a user with the provided email and password
-    user = app_tables.users.get(email=email, password=password)
-    return user
+def check_login_credentials(email, password):
+    # Retrieve the user record based on the provided email address
+    user = app_tables.users.get(email=email)
+    
+    # Check if a user exists with the provided email address and password matches
+    if user and user['password'] == password:
+        return True
+    else:
+        return False

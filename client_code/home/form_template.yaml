@@ -55,7 +55,7 @@ components:
   components:
   - name: image_2
     properties: {source: _/theme/Medical-research-542935478.jpg, height: 377.5999755859375,
-      display_mode: zoom_to_fill}
+      display_mode: zoom_to_fill, visible: true}
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1462.7869267578126}
     data_bindings: []

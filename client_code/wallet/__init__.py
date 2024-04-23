@@ -7,15 +7,15 @@ class wallet(walletTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    user_id = self.id.text
-    if user_id:
-        # Query the database directly
-        user_row = app_tables.users.get(user_id=id)
-        if user_row is not None:
-            balance = user_row['wallet_balance']
-            self.label_4.text = f"Wallet Balance: {balance}"
-        else:
-            self.label_4.text = "User not found."  
+    # user_id = self.id.text
+    # if user_id:
+    #     # Query the database directly
+    #     user_row = app_tables.users.get(user_id=id)
+    #     if user_row is not None:
+    #         balance = user_row['wallet_balance']
+    #         self.label_4.text = f"Wallet Balance: {balance}"
+    #     else:
+    #         self.label_4.text = "User not found."  
     # Any code you write here will run before the form opens.
   def button_4_show(self, **event_args):
     """This method is called when the Button is shown on the screen"""

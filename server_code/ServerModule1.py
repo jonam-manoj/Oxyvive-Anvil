@@ -36,14 +36,19 @@ def create_media_object(content_type, file_data_base64, file_name):
 def check_internet_status():
     # Perform a simple server call to check connectivity
     return True
-@anvil.server.callable
-def add_info(email, username, password, phone,pincode):
-    user_row = app_tables.users.add_row(
-        email=email,
-        username=username,
-        password=password,
+# @anvil.server.callable
+# def add_info(email, username, password, phone,pincode):
+#     user_row = app_tables.users.add_row(
+#         email=email,
+#         username=username,
+#         password=password,
  
-        phone=phone,
-        pincode=pincode
-    )
-    return user_row
+#         phone=phone,
+#         pincode=pincode
+#     )
+#     return user_row
+@anvil.server.callable
+def login_user(email, password):
+    # Search for a user with the provided email and password
+    user = app_tables.users.get(email=email, password=password)
+    return user

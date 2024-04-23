@@ -14,24 +14,17 @@ components:
     type: XYPanel
     layout_properties: {grid_position: 'RYIEQV,NMJLRV'}
     components:
-    - name: image_1
-      properties: {role: image, vertical_align: center, height: 190, tooltip: '',
-        border: '', foreground: '', visible: true, display_mode: shrink_to_fit, alt_text: profile,
-        spacing_above: small, source: _/theme/hospital-building.jpg, spacing_below: small,
-        background: '', horizontal_align: center}
-      type: Image
-      layout_properties: {x: 368.0500305183232, y: 11.199996948242188, width: 179.312}
     - name: file_loader_1
       properties:
         role: null
-        show_state: false
+        show_state: true
         align: center
         tooltip: ''
         border: ''
-        file_types: “.png,.jpg,.jpeg”
+        file_types: null
         enabled: true
         files: []
-        foreground: theme:Gray 800
+        foreground: ''
         visible: true
         text: ''
         font_size: null
@@ -47,8 +40,14 @@ components:
         multiple: false
         icon: fa:camera
       type: FileLoader
-      layout_properties: {x: 529.9500358588994, y: 157.03750305250287, width: 49.587501525878906}
-      data_bindings: []
+      layout_properties: {x: 504.95002365112305, y: 166.58750915527344, width: 37.7875}
+    - name: image_1
+      properties: {role: image, vertical_align: center, height: 190, tooltip: '',
+        border: '', foreground: '', visible: true, display_mode: shrink_to_fit, alt_text: profile,
+        spacing_above: small, source: _/theme/hospital-building.jpg, spacing_below: small,
+        background: '', horizontal_align: center}
+      type: Image
+      layout_properties: {x: 352.0500152595341, y: 13.387496948242188, width: 182}
 - name: c_id
   properties: {align: right, text: c_id 123, bold: true, font_size: 15}
   type: Label

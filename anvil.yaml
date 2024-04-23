@@ -211,7 +211,4 @@ db_schema:
     - name: id
       admin_ui: {width: 200, order: 1.5}
       type: string
-    - name: wallet_balance
-      admin_ui: {width: 200, order: 7}
-      type: number
 uplink_visible: true

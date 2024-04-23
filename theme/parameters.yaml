@@ -29,6 +29,10 @@ roles:
   components: [TextBox]
 - name: selected
   components: [Link]
+- name: image
+  components: [Image]
+  display_in_toolbox: true
+  title: rounded image
 color_scheme:
   preset_groups:
   - name: Primary Colour

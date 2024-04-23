@@ -797,4 +797,7 @@ textarea.anvil-component[disabled] {
 /* Shadow values taken from 
 https://stackoverflow.com/questions/30533055/calculating-shadow-values-for-all-material-design-elevations
 */
+.image{
+  border-radius:50%
+}
 

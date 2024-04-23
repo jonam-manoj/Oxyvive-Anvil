@@ -1,0 +1,28 @@
+container: {type: ColumnPanel}
+components:
+- name: service_navigation_bar_1
+  properties: {}
+  type: form:servicers.service_navigation_bar
+  layout_properties: {grid_position: 'XCNYUK,JTCYMG'}
+- name: card_1
+  properties: {role: card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'JFHDPB,SUQYEF'}
+  components:
+  - name: xy_panel_1
+    properties: {height: 147.20001220703125}
+    type: XYPanel
+    layout_properties: {grid_position: 'QTJAWW,LCQIGQ'}
+    components:
+    - name: image_1
+      properties: {role: null, vertical_align: center, height: 138.60000610351562,
+        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
+        alt_text: profile, spacing_above: small, source: _/theme/hospital-building.jpg,
+        spacing_below: small, background: '', horizontal_align: center}
+      type: Image
+      layout_properties: {x: 399.0499954223633, y: 6.5625, width: 161.788}
+  - name: label_1
+    properties: {align: center}
+    type: Label
+    layout_properties: {grid_position: 'BKKCQI,YFXVKE'}
+is_package: true

@@ -27,7 +27,7 @@ class servicers_register_add_oxiclinic(servicers_register_add_oxiclinicTemplate)
     capsule = self.oxiclinic_capsules.text
 
     if not hospital_name and not address and not capsule and not district and not establised_year and not pincode and not state:
-      self.hint_text.text='All fields are required'
+      Notification('All fields are required.').show()
     else:
       print(self.item)
       oxiclinc_details =[hospital_name, establised_year, state, district, pincode, address, capsule]

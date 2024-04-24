@@ -114,6 +114,7 @@ components:
       font_size: 13}
     type: Link
     layout_properties: {grid_position: 'BRBJFU,DJYSIT DDFCXI,AMSUDX'}
+    event_bindings: {click: link_2_click}
   - name: xy_panel_2
     properties: {height: 79.79998779296875}
     type: XYPanel

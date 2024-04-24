@@ -39,3 +39,7 @@ class signup(signupTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("login")
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("servicers_registration_form.servicers_registration_form_main")

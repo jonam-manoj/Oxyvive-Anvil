@@ -4,14 +4,15 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from servicers_dashboard import user_id 
+from .. import user_id
+
 
 
 class service_navigation_bar(service_navigation_barTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.user_id = user_id
+    self.id = user_id.user_id
 
     # Any code you write here will run before the form opens.
 
@@ -24,8 +25,10 @@ class service_navigation_bar(service_navigation_barTemplate):
     open_form('servicers.servicers_dashboard.notification')
 
   def link_3_click(self, **event_args):
-    user_data = app_tables.users.get(id=self.user_id)
-    print(user_data)
+    
+    data = app_tables.users.get(id=self.id)
+    data['username']
+   
     """This method is called when the link is clicked"""
     open_form('servicers.servicers_dashboard.profile', user_data = user_data)
 

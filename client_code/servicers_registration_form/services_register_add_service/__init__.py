@@ -4,6 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from ...servicers import user_id
 
 class services_register_add_service(services_register_add_serviceTemplate):
   def __init__(self, id, **properties):
@@ -41,6 +42,8 @@ class services_register_add_service(services_register_add_serviceTemplate):
     oxigym = app_tables.oxigyms.get(id =str( self.user_id))
 
     if oxiclinic or oxiwheel or oxigym:
+
+      user_id.user_id='SP0001'
       
       open_form('servicers.servicers_dashboard',user_id=self.user_id)
     else:

@@ -11,6 +11,7 @@ class profile(profileTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.user_data = user_data
+    print("user_data profile page ",self.user_data)
     
 
   

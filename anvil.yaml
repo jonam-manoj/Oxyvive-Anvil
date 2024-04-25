@@ -210,4 +210,7 @@ db_schema:
     - name: id
       admin_ui: {width: 200, order: 1.5}
       type: string
+    - name: profile
+      admin_ui: {width: 200, order: 7}
+      type: media
 uplink_visible: true

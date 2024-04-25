@@ -46,9 +46,11 @@ components:
       properties: {text: Add services, bold: true, align: center, foreground: 'theme:White'}
       type: Link
       layout_properties: {}
+      event_bindings: {click: link_5_click}
   - name: button_1
     properties: {text: Logout, background: 'theme:Primary 700', foreground: 'theme:White'}
     type: Button
     layout_properties: {x: 833.7499969489872, y: 37.987503815442324, width: 93.5999984741211}
+    event_bindings: {click: button_1_click}
 is_package: true
 custom_component: true

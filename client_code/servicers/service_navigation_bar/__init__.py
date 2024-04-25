@@ -27,11 +27,18 @@ class service_navigation_bar(service_navigation_barTemplate):
   def link_3_click(self, **event_args):
     
     data = app_tables.users.get(id=self.id)
-    data['username']
    
     """This method is called when the link is clicked"""
-    open_form('servicers.servicers_dashboard.profile', user_data = user_data)
+    open_form('servicers.servicers_dashboard.profile', user_data = data)
 
   def link_4_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('servicers.servicers_dashboard.support')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('login')
+
+  def link_5_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('servicers.servicers_dashboard.add_services',id=user_id.user_id)

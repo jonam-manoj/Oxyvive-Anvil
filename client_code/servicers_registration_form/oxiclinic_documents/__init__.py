@@ -22,7 +22,7 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
   def Submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     if not self.first_file_name and not self.second_file_name:
-      self.hint_text.text='Upload Documents '
+      Notification('Upload Documents.' ).show()
     else:
       user_details = app_tables.users.get(id=self.user_id)
       print(user_details)
@@ -42,7 +42,7 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
                                    medical_licence=oxiclinc_details[7],
                                    building_licence=oxiclinc_details[8])
                                   
-      alert("You added oxiclinic successfully")
+      alert("You added oxiclinic successfully.")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
 
   def medical_file_loader_1_change(self, file, **event_args):

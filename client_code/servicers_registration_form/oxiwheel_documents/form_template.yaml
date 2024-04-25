@@ -50,10 +50,10 @@ components:
   properties: {align: center}
   type: Label
   layout_properties: {grid_position: 'LXRTNZ,IRBJGK CFJIWL,PVMPWY'}
-- name: hint_text
-  properties: {align: center}
-  type: Label
-  layout_properties: {grid_position: 'XZWHEV,MNRJWL'}
+- name: spacer_2
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'XYDVBC,JYGTSO'}
 - name: Submit_button
   properties: {text: Submit, role: raised, background: '#fa1900', foreground: 'theme:White',
     spacing_above: large}

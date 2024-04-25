@@ -41,7 +41,8 @@ class services_register_add_service(services_register_add_serviceTemplate):
     oxigym = app_tables.oxigyms.get(id =str( self.user_id))
 
     if oxiclinic or oxiwheel or oxigym:
-      open_form('login')
+      
+      open_form('servicers.servicers_dashboard',user_id=self.user_id)
     else:
       alert('If you want complete registration, please add at least one service')
 

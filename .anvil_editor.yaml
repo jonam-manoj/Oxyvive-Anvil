@@ -31,6 +31,7 @@ unique_ids:
   modules:
     servicers_registration_form: 27G5MWNGDBQRI2CCV274XTJYESSWZYTU
     servicers: '1713784754129909004768059.6565'
+    servicers.user_id: '1714026390527135559135970.55879'
   server_modules:
     ServerModule1: '1705559350608388220597137.436'
   assets:

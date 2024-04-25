@@ -7,8 +7,12 @@ from anvil.tables import app_tables
 
 
 class profile(profileTemplate):
-  def __init__(self, **properties):
+  def __init__(self,user_data, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.user_data = user_data
+    
+
+  
 
     # Any code you write here will run before the form opens.

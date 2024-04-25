@@ -3,11 +3,6 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
-
-startup: {type: form, module: servicers.servicers_dashboard}
-
-startup: {type: form, module: wallet}
-
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive

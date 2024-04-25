@@ -49,7 +49,7 @@ components:
       type: Link
       layout_properties: {}
 - name: xy_panel_2
-  properties: {height: 436.1999816894531}
+  properties: {height: 436.1999816894531, background: ''}
   type: XYPanel
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
@@ -83,7 +83,7 @@ components:
   layout_properties: {grid_position: 'ZXDWXA,ETPUVF'}
 - name: image_4
   properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/medical-team-of-hospital-2681144-2233472.png?f=webp',
-    height: 260.1999816894531}
+    height: 260.1999816894531, display_mode: zoom_to_fill, background: ''}
   type: Image
   layout_properties: {grid_position: 'ALRDNU,YKIZTT GHBULS,NRJJGZ'}
 - name: label_10
@@ -101,7 +101,8 @@ components:
   layout_properties: {grid_position: 'ALRDNU,YKIZTT YHOAZW,IRFULJ'}
 - name: image_4_copy_2
   properties: {source: 'https://img.freepik.com/free-vector/athletes-doing-fitness-exercise-gym-with-panoramic-windows-isolated-flat-vector-illustration-cartoon-people-cardio-training-weight-lifting_74855-8225.jpg',
-    height: 258.3999328613281, vertical_align: bottom}
+    height: 258.3999328613281, vertical_align: bottom, display_mode: zoom_to_fill,
+    background: 'theme:Primary 700'}
   type: Image
   layout_properties: {grid_position: 'ALRDNU,CJGTRH RVABUF,ERUNQD'}
 - name: label_11
@@ -119,7 +120,8 @@ components:
   layout_properties: {grid_position: 'ALRDNU,CJGTRH DUFHZX,UOJNPX'}
 - name: image_4_copy
   properties: {source: 'https://static.vecteezy.com/system/resources/previews/006/916/129/non_2x/ambulance-emergency-illustration-vector.jpg',
-    height: 256.20001220703125}
+    height: 256.20001220703125, display_mode: zoom_to_fill, background: 'theme:Primary
+      700'}
   type: Image
   layout_properties: {grid_position: 'ALRDNU,AZNIDV VLKVBU,KKXTNA'}
 - name: label_12
@@ -127,14 +129,16 @@ components:
   type: Label
   layout_properties: {grid_position: 'ALRDNU,AZNIDV RJFBNY,ZRRSGW'}
 - name: label_14
-  properties: {text: Reveal your inner glow with our anti-aging treatments., italic: true,
-    align: left}
+  properties: {text: 'Reveal your inner glow with our anti-aging treatments.
+
+
+      ', italic: true, align: left}
   type: Label
   layout_properties: {grid_position: 'ALRDNU,AZNIDV GCZVGJ,BQCUDB'}
 - name: link_3
   properties: {text: Learn More >>, underline: true}
   type: Link
-  layout_properties: {grid_position: 'ALRDNU,AZNIDV DLHEQP,TTFJYN'}
+  layout_properties: {grid_position: 'ALRDNU,AZNIDV GBNTZU,TGUEVB'}
 - name: flow_panel_1
   properties: {spacing: huge}
   type: FlowPanel

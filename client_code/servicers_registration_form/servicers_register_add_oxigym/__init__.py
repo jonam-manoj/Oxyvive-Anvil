@@ -27,7 +27,7 @@ class servicers_register_add_oxigym(servicers_register_add_oxigymTemplate):
     capsules = self.capsules.text
 
     if not gym_name and not address and not capsules and not district and not establised_year and not pincode and not state:
-      self.hint_text.text='All fields are required'
+      Notification('All fields are required.').show()
     else:
       print(self.item)
       oxigym_details =[gym_name, establised_year, state, district, pincode, address, capsules]

@@ -12,3 +12,19 @@ class service_navigation_bar(service_navigation_barTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('servicers.servicers_dashboard')
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('servicers.servicers_dashboard.notification')
+
+  def link_3_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('servicers.servicers_dashboard.profile')
+
+  def link_4_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('servicers.servicers_dashboard.support')

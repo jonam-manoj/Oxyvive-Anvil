@@ -65,8 +65,12 @@ class oxiclinic(oxiclinicTemplate):
                                    address_2=address,
                                    capsules=int(capsule),
                                    medical_licence=self.file1,
+
                                    building_licence=self.file2,
                                    oxiclinic_id=self.generate_unique_random_code())
+
+                                   building_licence=self.file2)
+
                                   
       alert("You added oxiclinic successfully.")
 
@@ -86,6 +90,7 @@ class oxiclinic(oxiclinicTemplate):
     self.file2 = file
     self.file_loader_2.text ="Selected"
 
+
   def generate_unique_random_code(self):
     prefix = "OC"
     while True:
@@ -97,3 +102,4 @@ class oxiclinic(oxiclinicTemplate):
         if not existing_rows:
             # If the code does not exist, return it
             return code
+

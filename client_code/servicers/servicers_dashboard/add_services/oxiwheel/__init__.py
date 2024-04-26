@@ -18,14 +18,8 @@ class oxiwheel(oxiwheelTemplate):
     self.file1 = None
     self.file2 = None
 
-    # Any code you write here will run before the form opens
 
-  def back_button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form(
-      "servicers_registration_form.services_register_add_service", id=self.user_id
-    )
-
+ 
   def next_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     vehicle_no  = self.hospital_name.text

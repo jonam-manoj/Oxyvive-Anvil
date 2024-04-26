@@ -6,22 +6,13 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 
-class servicers_register_add_oxiwheel_copy(
-  servicers_register_add_oxiwheel_copyTemplate
-):
+class oxiwheel(oxiwheelTemplate):
   def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.user_id = user_id
 
     # Any code you write here will run before the form opens.
-
-  def back_button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form(
-      "servicers_registration_form.services_register_add_service", id=self.user_id
-    )
-
   def next_button_1_click(self, **event_args):
     vehicle_no = self.vehicle_no.text
     model_year = self.model_year.date

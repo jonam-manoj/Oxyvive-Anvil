@@ -49,7 +49,7 @@ components:
       type: Link
       layout_properties: {}
 - name: xy_panel_2
-  properties: {height: 436.1999816894531, background: ''}
+  properties: {height: 436.1999816894531, background: '', width: 1550}
   type: XYPanel
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
@@ -57,7 +57,7 @@ components:
     properties: {source: _/theme/Medical-research-542935478.jpg, height: 377.5999755859375,
       display_mode: zoom_to_fill, visible: true}
     type: Image
-    layout_properties: {x: 0, y: 4.500004578381777, width: 1462.7869267578126}
+    layout_properties: {x: 0, y: 4.500004578381777, width: 1551.78692675781}
     data_bindings: []
   - name: label_8
     properties: {text: 'At Oxivive, we''re not just slowing down the aging process
@@ -284,6 +284,10 @@ components:
           magnificently with Oxivive.', italic: false, font: '#40486d', font_size: 20}
       type: Label
       layout_properties: {grid_position: 'XCTVAC,PDICWQ CPDZVG,XMIIZW'}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'PXNWNS,CQXBCT'}
 - name: grid_panel_1
   properties: {spacing_above: medium}
   type: GridPanel
@@ -326,10 +330,14 @@ components:
     type: RichText
     layout_properties: {row: FVTONS, width_xs: 6, col_xs: 0}
   - name: image_5
-    properties: {source: _/theme/Do-things-at-your-own-pace-4.png, height: 354.39996337890625,
+    properties: {source: _/theme/Do-things-at-your-own-pace-4.png, height: '327',
       display_mode: zoom_to_fill}
     type: Image
-    layout_properties: {row: FVTONS, width_xs: 5, col_xs: 7}
+    layout_properties: {row: FVTONS, width_xs: 4, col_xs: 7}
+- name: spacer_3
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'YEYQDE,JYHQQD'}
 - name: card_1
   properties: {role: card}
   type: ColumnPanel
@@ -390,6 +398,10 @@ components:
           increase in aerobic probiotics)'}
       type: RichText
       layout_properties: {}
+- name: spacer_5
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'LIEDXD,UXZXZH'}
 - name: card_2
   properties: {role: card, col_spacing: huge}
   type: ColumnPanel
@@ -421,6 +433,10 @@ components:
       height: 594.6000061035156}
     type: Image
     layout_properties: {grid_position: 'AGJXOB,AUZNNW'}
+- name: spacer_20
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'THGBEJ,ADYTLW'}
 - name: card_3
   properties: {role: card, background: 'theme:Gray 200', col_spacing: huge, spacing_above: large,
     col_widths: '{"DPEVLP":30,"MOXCNC":30}'}
@@ -451,8 +467,13 @@ components:
         of HBOT for sports and athletic performance enhancement.'}
     type: RichText
     layout_properties: {grid_position: 'TAFQTH,MOXCNC WWKAZK,FLSRPX'}
+- name: spacer_22
+  properties: {height: 41.600006103515625}
+  type: Spacer
+  layout_properties: {grid_position: 'KNQZZD,FNLOZD'}
 - name: card_6
-  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: huge}
+  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: huge,
+    col_widths: '{"RXFPPX":30,"KQSLHI":30}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'BIGOPR,KDJDRH', full_width_row: true}
   components:
@@ -478,8 +499,12 @@ components:
         Oxygen As An Adjuvant Athlete" (Sports Med. 2005).'}
     type: RichText
     layout_properties: {grid_position: 'DBYFSM,KQSLHI YIJCZI,VXJCCU', full_width_row: true}
+- name: spacer_29
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'EVFMHJ,LCDTOB'}
 - name: column_panel_24
-  properties: {role: card, col_spacing: huge}
+  properties: {role: card, col_spacing: huge, col_widths: '{"ASCNSX":20,"DJUEAH":20,"JMQDKX":20}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'PVDFJF,OQEQSA', full_width_row: true}
   components:
@@ -493,7 +518,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'QUZTJY,SJDJQH'}
   - name: card_7
-    properties: {role: card}
+    properties: {role: card, col_spacing: none}
     type: ColumnPanel
     layout_properties: {grid_position: 'AZDRGP,ASCNSX'}
     components:
@@ -533,7 +558,7 @@ components:
       components:
       - name: image_11
         properties: {source: _/theme/busninessman.png, display_mode: zoom_to_fill,
-          height: 322.3999938964844}
+          height: 316.3999328613281}
         type: Image
         layout_properties: {}
       - name: label_25
@@ -557,7 +582,7 @@ components:
       layout_properties: {grid_position: 'ADQYZN,RXPDKC'}
       components:
       - name: image_12
-        properties: {height: 339.6000061035156, source: _/theme/it%20manager.png,
+        properties: {height: 335.20001220703125, source: _/theme/it%20manager.png,
           display_mode: zoom_to_fill}
         type: Image
         layout_properties: {}
@@ -565,13 +590,18 @@ components:
         properties: {align: center, text: IT Manager}
         type: Label
         layout_properties: {}
+- name: spacer_31
+  properties: {height: 49.79998779296875}
+  type: Spacer
+  layout_properties: {grid_position: 'CCGSWT,EYNIWC'}
 - name: column_panel_25
-  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: huge}
+  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: medium}
   type: ColumnPanel
   layout_properties: {grid_position: 'DOLIGW,IVTAPX', full_width_row: true}
   components:
   - name: headline_17
-    properties: {role: headline, align: center, text: MEET OUR TEAM, bold: true, foreground: '#40486d'}
+    properties: {role: headline, align: center, text: MEET OUR TEAM, bold: true, foreground: '#40486d',
+      font_size: 30}
     type: Label
     layout_properties: {grid_position: 'EVEGMB,EDMWJF'}
   - name: label_27
@@ -581,7 +611,7 @@ components:
   - name: card_10
     properties: {role: card}
     type: ColumnPanel
-    layout_properties: {grid_position: 'UNFDRR,CKHUPU'}
+    layout_properties: {grid_position: 'UNFDRR,CKHUPU', full_width_row: false}
     components:
     - name: image_13
       properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: zoom_to_fill,
@@ -747,7 +777,7 @@ components:
   - name: card_10_copy
     properties: {role: card}
     type: ColumnPanel
-    layout_properties: {grid_position: 'BIXBXP,TGFEEW'}
+    layout_properties: {grid_position: 'BIXBXP,TGFEEW', full_width_row: false}
     components:
     - name: image_17
       properties: {source: _/theme/images/4.jpg, display_mode: zoom_to_fill, height: 340.39996337890625}
@@ -920,6 +950,10 @@ components:
         properties: {text: '', icon: 'fa:linkedin', bold: true}
         type: Button
         layout_properties: {grid_position: 'PXBURO,WKCMNZ'}
+- name: spacer_30
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'CKRKPF,ALQMVV'}
 - name: column_panel_11
   properties: {background: 'theme:Gray 300', role: card}
   type: ColumnPanel
@@ -1160,6 +1194,10 @@ components:
           4 weeks following its completion!'}
       type: RichText
       layout_properties: {grid_position: 'KNCKIB,VBXJCM'}
+- name: spacer_32
+  properties: {height: 40.79998779296875}
+  type: Spacer
+  layout_properties: {grid_position: 'BUOJFD,GOJCPZ'}
 - name: column_panel_6
   properties: {role: card, background: '#8d99ae'}
   type: ColumnPanel
@@ -1167,7 +1205,7 @@ components:
   components:
   - name: headline_1
     properties: {role: headline, align: center, text: Your Thinking & Memory Skills Decline,
-      font_size: 37, bold: true}
+      font_size: 37, bold: true, spacing_above: large}
     type: Label
     layout_properties: {grid_position: 'HRPBRT,VBZARG', full_width_row: true, row_background: 'theme:Gray
         300'}
@@ -1284,6 +1322,10 @@ components:
     properties: {height: 46.20001220703125}
     type: Spacer
     layout_properties: {grid_position: 'IHZEUR,RTWSTC'}
+- name: spacer_33
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'OUXKBX,HDVUBR'}
 - name: column_panel_26
   properties: {background: '#40486d', col_spacing: huge, col_widths: '{"ISRAXW":30,"KDJVHL":30}',
     tooltip: '', spacing_above: large}
@@ -1558,6 +1600,10 @@ components:
     properties: {}
     type: ColumnPanel
     layout_properties: {grid_position: 'HLZSPL,NPDPUA', full_width_row: true}
+- name: spacer_37
+  properties: {height: 73}
+  type: Spacer
+  layout_properties: {grid_position: 'HJMLTF,OGUOYZ'}
 - name: flow_panel_3
   properties: {background: '#40486d'}
   type: FlowPanel

@@ -46,7 +46,7 @@ class s_list(s_listTemplate):
 
       # Assign data to dictionary keys
       user_info["serial_no"] = i  # Assuming you want to include a serial number
-      user_info["clinic_id"] = row["oxiwheel_id"]
+      user_info["clinic_id"] = row["oxywheel_id"]
       user_info["Oxiclinics_Name"] = row["Oxiwheels_Name"]
       user_info["State"] = row["State"]
 
@@ -67,7 +67,7 @@ class s_list(s_listTemplate):
 
       # Assign data to dictionary keys
       user_info["serial_no"] = i  # Assuming you want to include a serial number
-      user_info["clinic_id"] = row["oxygym_id"]
+      user_info["clinic_id"] = row["oxigym_id"]
       user_info["Oxiclinics_Name"] = row["Oxigyms_Name"]
       user_info["State"] = row["State"]
 

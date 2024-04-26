@@ -44,7 +44,9 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
       try: 
         # If not present, proceed to insert the new user
         # rows = app_tables.users.search()
+        print("start")
         id = self.generate_unique_random_code()
+        print(id)
         app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address,usertype='service provider')
         """This method is called when the button is clicked"""
         open_form('servicers_registration_form.services_register_add_service',id=id)
@@ -144,13 +146,17 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
   def generate_unique_random_code(self):
     prefix = "SP"
     while True:
+        print("start genarating")
         random_numbers = ''.join(random.choice(string.digits) for _ in range(5))
         code = prefix + random_numbers
+        print("code ", code)
         
         # Check if the code already exists in the data table
-        existing_rows = app_tables.users.search(id=code)
+        existing_rows = app_tables.users.get(id=code)
+        print(existing_rows)
         if not existing_rows:
             # If the code does not exist, return it
+            print("finalize code ", code)
             return code
 
   

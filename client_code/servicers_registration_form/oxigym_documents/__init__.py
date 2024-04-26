@@ -70,7 +70,7 @@ class oxigym_documents(oxigym_documentsTemplate):
         code = prefix + random_numbers
         
         # Check if the code already exists in the data table
-        existing_rows = app_tables.oxiclinics.search(oxiclinic_id=code)
+        existing_rows = app_tables.oxigyms.get(oxigym_id=code)
         if not existing_rows:
             # If the code does not exist, return it
             return code

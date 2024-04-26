@@ -1,0 +1,7 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {align: center}
+  type: Label
+  layout_properties: {grid_position: 'KNEXPW,YDKXQL'}
+is_package: true

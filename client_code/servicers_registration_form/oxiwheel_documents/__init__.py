@@ -4,6 +4,8 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import random
+import string
 
 class oxiwheel_documents(oxiwheel_documentsTemplate):
   def __init__(self, oxiwheel_details, user_id, **properties):

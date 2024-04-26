@@ -5,6 +5,8 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import re
+import random
+import string
 
 # import bcrypt
 
@@ -41,8 +43,8 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
       # hash_pashword = hash_pashword.decode('utf-8')
       try: 
         # If not present, proceed to insert the new user
-        rows = app_tables.users.search()
-        id = f"SP{len(rows):04d}"
+        # rows = app_tables.users.search()
+        id = self.generate_unique_random_code()
         app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address,usertype='service provider')
         """This method is called when the button is clicked"""
         open_form('servicers_registration_form.services_register_add_service',id=id)
@@ -139,7 +141,17 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     """This method is called when the link is clicked"""
     open_form('login')
 
-  
+  def generate_unique_random_code(self):
+    prefix = "SP"
+    while True:
+        random_numbers = ''.join(random.choice(string.digits) for _ in range(5))
+        code = prefix + random_numbers
+        
+        # Check if the code already exists in the data table
+        existing_rows = app_tables.users.search(id=code)
+        if not existing_rows:
+            # If the code does not exist, return it
+            return code
 
   
       

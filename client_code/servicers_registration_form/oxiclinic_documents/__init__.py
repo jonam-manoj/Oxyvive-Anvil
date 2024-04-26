@@ -4,6 +4,8 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import random
+import string
 
 class oxiclinic_documents(oxiclinic_documentsTemplate):
   def __init__(self, oxiclinc_details, user_id, **properties):
@@ -40,7 +42,9 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
                                    address_2=oxiclinc_details[5],
                                    capsules=int(oxiclinc_details[6]),
                                    medical_licence=oxiclinc_details[7],
-                                   building_licence=oxiclinc_details[8])
+                                   building_licence=oxiclinc_details[8],
+                                   oxiclinic_id=self.generate_unique_random_code())
+                                  
                                   
       alert("You added oxiclinic successfully.")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
@@ -56,3 +60,16 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
     self.second_file_name =file.get_name()
     self.file_name_2.text = self.second_file_name
     self.oxiclinc_details.append(file)
+
+  
+  def generate_unique_random_code(self):
+    prefix = "OC"
+    while True:
+        random_numbers = ''.join(random.choice(string.digits) for _ in range(5))
+        code = prefix + random_numbers
+        
+        # Check if the code already exists in the data table
+        existing_rows = app_tables.oxiclinics.search(oxiclinic_id=code)
+        if not existing_rows:
+            # If the code does not exist, return it
+            return code

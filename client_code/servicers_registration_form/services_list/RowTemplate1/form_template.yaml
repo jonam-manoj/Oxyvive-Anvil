@@ -3,6 +3,7 @@ container:
   type: DataRowPanel
   data_bindings:
   - {property: tag, code: 'self.item[''city'']'}
+  properties: {align: left}
 components:
 - type: Label
   properties: {}

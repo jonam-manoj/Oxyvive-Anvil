@@ -1,0 +1,49 @@
+is_package: true
+container: {type: ColumnPanel}
+components:
+- name: card_1
+  properties: {role: card, col_widths: '{"POLYQO":15,"DKQKJQ":25,"HRXEGM":20}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'MJWOMS,HKBMYH'}
+  components:
+  - name: image_1
+    properties: {role: image, source: _/theme/shot.png}
+    type: Image
+    layout_properties: {grid_position: 'GWWCVI,POLYQO'}
+  - name: label_1
+    properties: {align: center, text: 'Name :', bold: true}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,DKQKJQ KODULL,DISPPK'}
+  - name: label_3
+    properties: {align: center, text: 'Email : ', bold: true}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,DKQKJQ BBTJXZ,KAEHBX'}
+  - name: label_5
+    properties: {align: center, text: 'Slot -Time :', bold: true}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,DKQKJQ NZHJRJ,PIBBUZ'}
+  - name: label_7
+    properties: {align: center, bold: true, text: 'Phone :'}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,DKQKJQ GNKKDK,NQYQAG'}
+  - name: label_2
+    properties: {text: USER NAME}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,HRXEGM IUPOSL,VIZXXH'}
+  - name: label_4
+    properties: {text: USER@GMAIL.COM}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,HRXEGM XQRXZZ,QSAFGB'}
+  - name: label_6
+    properties: {text: '09:00-11:00'}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,HRXEGM RODAGK,YWITKD'}
+  - name: label_8
+    properties: {text: '9343302172'}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,HRXEGM NDTAEW,DFIANA'}
+  - name: button_1
+    properties: {text: view More, background: 'theme:Primary 700', foreground: 'theme:White',
+      role: raised, align: right}
+    type: Button
+    layout_properties: {grid_position: 'RDGJQP,WFPISP'}

@@ -3,6 +3,7 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
+startup: {type: form, module: servicers.servicers_dashboard}
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive
@@ -209,4 +210,7 @@ db_schema:
     - name: id
       admin_ui: {width: 200, order: 1.5}
       type: string
+    - name: profile
+      admin_ui: {width: 200, order: 7}
+      type: media
 uplink_visible: true

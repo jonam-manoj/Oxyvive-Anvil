@@ -1,6 +1,7 @@
 from ._anvil_designer import loginTemplate
 from anvil import alert, open_form
 from anvil.tables import app_tables
+from ..servicers import user_id
 
 class login(loginTemplate):
     def __init__(self, **properties):
@@ -17,7 +18,11 @@ class login(loginTemplate):
             user = users_table.get(email=email, password=password)
             
             if user:
-                open_form('dashboard')
+                if user['usertype'] =='service provider':
+                  user_id.user_id = user['id']
+                  open_form('servicers.servicers_dashboard')
+                else:
+                  open_form('dashboard')
             else:
                 alert("Invalid email or password. Please try again.")
         

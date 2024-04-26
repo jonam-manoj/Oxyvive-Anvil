@@ -43,7 +43,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
         # If not present, proceed to insert the new user
         rows = app_tables.users.search()
         id = f"SP{len(rows):04d}"
-        app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address)
+        app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address,usertype='service provider')
         """This method is called when the button is clicked"""
         open_form('servicers_registration_form.services_register_add_service',id=id)
       except Exception as e:

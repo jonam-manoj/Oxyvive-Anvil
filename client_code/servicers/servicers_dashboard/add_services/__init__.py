@@ -22,21 +22,21 @@ class add_services(add_servicesTemplate):
   def add_oxiclinic_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form(
-      "servicers_registration_form.servicers_register_add_oxiclinic",
+      "servicers.servicers_dashboard.add_services.oxiclinic",
       user_id=self.user_id,
     )
 
   def add_oxiwheel_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form(
-      "servicers_registration_form.servicers_register_add_oxiwheel",
+      "servicers.servicers_dashboard.add_services.oxiwheel",
       user_id=self.user_id,
     )
 
   def add_oxigym_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form(
-      "servicers_registration_form.servicers_register_add_oxigym", user_id=self.user_id
+      "servicers.servicers_dashboard.add_services.oxigym", user_id=self.user_id
     )
 
   def services_list_button_click(self, **event_args):

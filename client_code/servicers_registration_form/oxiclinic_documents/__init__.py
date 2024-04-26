@@ -17,7 +17,7 @@ class oxiclinic_documents(oxiclinic_documentsTemplate):
   second_file_name = None
   def back_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('servicers_registration_form.servicers_register_add_oxiclinic')
+    open_form('servicers_registration_form.servicers_register_add_oxiclinic',user_id=self.user_id)
 
   def Submit_button_click(self, **event_args):
     """This method is called when the button is clicked"""

@@ -4,6 +4,8 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import random
+import string
 
 class oxiwheel_documents(oxiwheel_documentsTemplate):
   def __init__(self, oxiwheel_details, user_id, **properties):
@@ -41,7 +43,8 @@ class oxiwheel_documents(oxiwheel_documentsTemplate):
                                    address_2=oxiwheel_details[5],
                                    capsules=int(oxiwheel_details[6]),
                                    vehicle_rc=oxiwheel_details[7],
-                                   driving_licence=oxiwheel_details[8])
+                                   driving_licence=oxiwheel_details[8],
+                                  oxywheel_id=self.generate_unique_random_code())
                                   
       alert("You added oxiwheel successfully.")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
@@ -57,3 +60,16 @@ class oxiwheel_documents(oxiwheel_documentsTemplate):
     self.second_file_name =file.get_name()
     self.file_name_2.text = self.second_file_name
     self.oxiwheel_details.append(file)
+
+  def generate_unique_random_code(self):
+    prefix = "OW"
+    while True:
+        random_numbers = ''.join(random.choice(string.digits) for _ in range(5))
+        code = prefix + random_numbers
+        
+        # Check if the code already exists in the data table
+        existing_rows = app_tables.oxiwheels.get(oxywheel_id=code)
+        if not existing_rows:
+            # If the code does not exist, return it
+            return code
+

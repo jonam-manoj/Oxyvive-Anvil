@@ -3,7 +3,7 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
-startup: {type: form, module: servicers.servicers_dashboard}
+startup: {type: form, module: home}
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive
@@ -84,6 +84,9 @@ db_schema:
     - name: building_licence
       admin_ui: {width: 200}
       type: media
+    - name: oxiclinic_id
+      admin_ui: {width: 200, order: 15}
+      type: string
   oxigyms:
     title: oxigyms
     client: full
@@ -134,6 +137,9 @@ db_schema:
     - name: building_licence
       admin_ui: {width: 200}
       type: media
+    - name: oxigym_id
+      admin_ui: {width: 200, order: 15}
+      type: string
   oxiwheels:
     title: oxiwheels
     client: full
@@ -184,6 +190,9 @@ db_schema:
     - name: driving_licence
       admin_ui: {width: 200}
       type: media
+    - name: oxywheel_id
+      admin_ui: {width: 200, order: 15}
+      type: string
   users:
     title: users
     client: full
@@ -213,4 +222,7 @@ db_schema:
     - name: profile
       admin_ui: {width: 200, order: 7}
       type: media
+    - name: usertype
+      admin_ui: {width: 200, order: 8}
+      type: string
 uplink_visible: true

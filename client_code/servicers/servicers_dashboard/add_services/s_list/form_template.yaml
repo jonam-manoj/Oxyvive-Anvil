@@ -31,10 +31,10 @@ components:
     role: null
     columns:
     - {id: JKSDUP, title: S No., data_key: column_1, $$hashKey: 'object:22098'}
-    - {id: VJQQOR, title: Clinic_id, data_key: column_2, $$hashKey: 'object:22099'}
+    - {id: VJQQOR, title: Organization Id, data_key: column_2, $$hashKey: 'object:22099'}
     - {id: OJLQEN, title: Organization Name, data_key: column_3, $$hashKey: 'object:22100'}
     - {id: ZYQNVH, title: City, data_key: column_4, $$hashKey: 'object:22144'}
-    - {id: PYNXEH, data_key: column_1, title: Action}
+    - {id: IYVCWW, data_key: column_1, title: Action}
     auto_header: true
     tooltip: ''
     border: ''

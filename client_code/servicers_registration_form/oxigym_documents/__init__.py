@@ -4,6 +4,8 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+import random
+import string
 
 class oxigym_documents(oxigym_documentsTemplate):
   def __init__(self, user_id, oxigym_details, **properties):
@@ -41,7 +43,8 @@ class oxigym_documents(oxigym_documentsTemplate):
                                    address_2=oxigym_details[5],
                                    capsules=int(oxigym_details[6]),
                                    building_licence=oxigym_details[7],
-                                   gym_licence=oxigym_details[8])
+                                   gym_licence=oxigym_details[8],
+                                  oxigym_id=self.generate_unique_random_code())
                                   
       alert("You added oxigym successfully.")
       open_form('servicers_registration_form.services_register_add_service',id=self.user_id)
@@ -59,3 +62,18 @@ class oxigym_documents(oxigym_documentsTemplate):
     self.file_name_2.text = self.second_file_name
     self.oxigym_details.append(file)
     print(self.second_file_name)
+
+  def generate_unique_random_code(self):
+    prefix = "OG"
+    while True:
+        random_numbers = ''.join(random.choice(string.digits) for _ in range(5))
+        code = prefix + random_numbers
+        
+        # Check if the code already exists in the data table
+        existing_rows = app_tables.oxigyms.get(oxigym_id=code)
+        if not existing_rows:
+            # If the code does not exist, return it
+            return code
+
+
+

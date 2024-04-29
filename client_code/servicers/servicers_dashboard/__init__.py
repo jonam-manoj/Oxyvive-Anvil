@@ -5,6 +5,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from .. import user_id
+from datetime import datetime, timedelta
 
 
 class servicers_dashboard(servicers_dashboardTemplate):
@@ -13,6 +14,32 @@ class servicers_dashboard(servicers_dashboardTemplate):
     self.init_components(**properties)
     self.id = user_id.user_id 
     print("sd user id",self.id,user_id.user_id)
+    self.customers()
     
  
     # Any code you write here will run before the form opens.
+  def customers (self):
+    self.date_picker_1.pick_time = True
+    self.date_picker_1.date = datetime.now().date() 
+    date = self.date_picker_1.date
+    print(date)
+    data = app_tables.book_slot.search(book_date=date)
+    if not data:
+        alert("No bookings yet on this date")
+
+    customers_list =[]
+    for row in data:
+      customer_details =app_tables.users.get(id=row['user_id'])
+      customer = {}
+      customer["name"]=customer_details['username']
+      customer["email"]=customer_details['email']
+      customer["phone"]=customer_details['phone']
+      customer["slot_time"]=row['book_time']
+      customer["service"]=row['service_type']
+      customer["image"] = customer_details['profile']
+      customers_list.append(customer)
+    self.repeating_panel_1.items=customers_list
+
+  def date_picker_1_change(self, **event_args):
+    """This method is called when the selected date changes"""
+    self.customers()

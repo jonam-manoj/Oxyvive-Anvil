@@ -32,12 +32,15 @@ components:
     properties: {}
     type: DatePicker
     layout_properties: {grid_position: 'SBUHUI,UEREHV'}
+    event_bindings: {change: date_picker_1_change}
 - name: repeating_panel_1
   properties: {item_template: servicers.servicers_dashboard.ItemTemplate1}
   type: RepeatingPanel
   layout_properties: {grid_position: 'LRPQUJ,ASWANP'}
 - name: card_1
-  properties: {role: card, col_widths: '{"LUZQWO":15,"EJCEEW":17,"BRPPVK":21}'}
+  properties: {role: card, tooltip: '', border: '', foreground: '', visible: false,
+    wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{"LUZQWO":15,"EJCEEW":17,"BRPPVK":21}',
+    spacing_below: small, background: ''}
   type: ColumnPanel
   layout_properties: {grid_position: 'VVOJLJ,APCUHZ'}
   components:

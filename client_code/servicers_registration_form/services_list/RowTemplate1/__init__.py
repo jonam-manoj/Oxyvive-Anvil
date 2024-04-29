@@ -4,6 +4,7 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from .. import services_list
 
 class RowTemplate1(RowTemplate1Template):
   def __init__(self, **properties):
@@ -21,6 +22,7 @@ class RowTemplate1(RowTemplate1Template):
     oxiwheel = app_tables.oxiwheels.get(oxywheel_id=id)
     if oxiclinic:
       oxiclinic.delete()
+      # services_list.button_1_click(self)
     elif oxigym:
       oxigym.delete()
     elif oxiwheel:

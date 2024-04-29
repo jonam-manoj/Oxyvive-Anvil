@@ -3,6 +3,7 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
+startup: {type: form, module: home}
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive
@@ -15,23 +16,23 @@ startup_form: null
 db_schema:
   book_slot:
     title: book_slot
-    client: none
+    client: full
     server: full
     columns:
-    - name: slot_id
-      admin_ui: {width: 200}
-      type: number
-    - name: user_id
-      admin_ui: {width: 200}
-      type: number
-    - name: username
-      admin_ui: {width: 200}
-      type: string
-    - name: book_date
-      admin_ui: {width: 200}
-      type: string
     - name: book_time
       admin_ui: {width: 200}
+      type: string
+    - name: service_type
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: user_id
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: book_date
+      admin_ui: {width: 200, order: 8}
+      type: date
+    - name: serviceProvider_id
+      admin_ui: {width: 200, order: 9}
       type: string
   oxiclinics:
     title: oxiclinics

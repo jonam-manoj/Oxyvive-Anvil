@@ -10,6 +10,8 @@ components:
     properties: {role: image, source: _/theme/shot.png}
     type: Image
     layout_properties: {grid_position: 'GWWCVI,POLYQO'}
+    data_bindings:
+    - {property: source, code: 'self.item[''image'']'}
   - name: label_1
     properties: {align: center, text: 'Name :', bold: true}
     type: Label
@@ -26,24 +28,43 @@ components:
     properties: {align: center, bold: true, text: 'Phone :'}
     type: Label
     layout_properties: {grid_position: 'GWWCVI,DKQKJQ GNKKDK,NQYQAG'}
+  - name: label_9
+    properties: {align: center, text: 'Service - Type : ', bold: true}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,DKQKJQ ENVIAG,TLCKSE'}
   - name: label_2
     properties: {text: USER NAME}
     type: Label
     layout_properties: {grid_position: 'GWWCVI,HRXEGM IUPOSL,VIZXXH'}
+    data_bindings:
+    - {property: text, code: 'self.item[''name'']'}
   - name: label_4
     properties: {text: USER@GMAIL.COM}
     type: Label
     layout_properties: {grid_position: 'GWWCVI,HRXEGM XQRXZZ,QSAFGB'}
+    data_bindings:
+    - {property: text, code: 'self.item[''email'']'}
   - name: label_6
     properties: {text: '09:00-11:00'}
     type: Label
     layout_properties: {grid_position: 'GWWCVI,HRXEGM RODAGK,YWITKD'}
+    data_bindings:
+    - {property: text, code: 'self.item[''slot_time'']'}
   - name: label_8
     properties: {text: '9343302172'}
     type: Label
     layout_properties: {grid_position: 'GWWCVI,HRXEGM NDTAEW,DFIANA'}
+    data_bindings:
+    - {property: text, code: 'self.item[''phone'']'}
+  - name: label_10
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,HRXEGM LGTBLJ,GCINAA'}
+    data_bindings:
+    - {property: text, code: 'self.item[''service'']'}
   - name: button_1
-    properties: {text: view More, background: 'theme:Primary 700', foreground: 'theme:White',
+    properties: {text: Report, background: 'theme:Primary 700', foreground: 'theme:White',
       role: raised, align: right}
     type: Button
     layout_properties: {grid_position: 'RDGJQP,WFPISP'}
+    event_bindings: {click: button_1_click}

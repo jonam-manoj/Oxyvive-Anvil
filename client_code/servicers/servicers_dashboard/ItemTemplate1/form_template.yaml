@@ -63,7 +63,8 @@ components:
     data_bindings:
     - {property: text, code: 'self.item[''service'']'}
   - name: button_1
-    properties: {text: view More, background: 'theme:Primary 700', foreground: 'theme:White',
+    properties: {text: Report, background: 'theme:Primary 700', foreground: 'theme:White',
       role: raised, align: right}
     type: Button
     layout_properties: {grid_position: 'RDGJQP,WFPISP'}
+    event_bindings: {click: button_1_click}

@@ -14,16 +14,16 @@ class servicers_dashboard(servicers_dashboardTemplate):
     self.init_components(**properties)
     self.id = user_id.user_id 
     print("sd user id",self.id,user_id.user_id)
-    self.customers()
+    now =datetime.now()
+    date = now.date() 
+    self.date_picker_1.date=date
+    self.customers(date)
     
  
     # Any code you write here will run before the form opens.
-  def customers (self):
-    self.date_picker_1.pick_time = True
-    self.date_picker_1.date = datetime.now().date() 
-    date = self.date_picker_1.date
-    print(date)
-    data = app_tables.book_slot.search(book_date=date)
+  def customers (self,date):
+    # self.date_picker_1.pick_time = True
+    data = app_tables.book_slot.search(book_date=date,serviceProvider_id =self.id)
     if not data:
         alert("No bookings yet on this date")
 
@@ -42,4 +42,5 @@ class servicers_dashboard(servicers_dashboardTemplate):
 
   def date_picker_1_change(self, **event_args):
     """This method is called when the selected date changes"""
-    self.customers()
+    date = self.date_picker_1.date
+    self.customers(date)

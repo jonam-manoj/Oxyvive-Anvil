@@ -100,3 +100,4 @@ components:
         700', bold: true}
     type: Button
     layout_properties: {grid_position: 'CAHHTO,KXOSUX', full_width_row: true, row_background: ''}
+    event_bindings: {click: primary_color_1_click}

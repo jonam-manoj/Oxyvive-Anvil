@@ -28,9 +28,8 @@ components:
   layout_properties: {column: ZYQNVH}
   data_bindings:
   - {property: text, code: 'self.item[''State'']'}
-- type: Button
-  properties: {text: DElete, background: 'theme:Primary 700', foreground: 'theme:White',
-    role: raised}
-  name: button_1
-  layout_properties: {column: PYNXEH}
+- name: button_1
+  properties: {text: Delete, background: 'theme:Primary 700', foreground: 'theme:White'}
+  type: Button
+  layout_properties: {column: IYVCWW}
   event_bindings: {click: button_1_click}

@@ -4,14 +4,14 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
-from .... import user_id
+
 
 
 class s_list(s_listTemplate):
-  def __init__(self, **properties):
+  def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.user_id = user_id.user_id
+    self.user_id = user_id
 
     # Any code you write here will run before the form opens.
 

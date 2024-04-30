@@ -225,4 +225,12 @@ db_schema:
     - name: usertype
       admin_ui: {width: 200, order: 8}
       type: string
+  wallet:
+    title: wallet
+    client: none
+    server: full
+    columns:
+    - name: wallet_balance
+      admin_ui: {width: 200}
+      type: number
 uplink_visible: true

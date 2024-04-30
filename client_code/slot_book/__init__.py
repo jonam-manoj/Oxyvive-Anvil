@@ -86,3 +86,7 @@ class slot_book(slot_bookTemplate):
             button_name = f'button_{i}'
             button = getattr(self, button_name)
             button.visible = True
+
+    def primary_color_1_click(self, **event_args):
+      """This method is called when the button is clicked"""
+      open_form('wallet')

@@ -7,6 +7,7 @@ class wallet(walletTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    
     # user_id = self.id.text
     # if user_id:
     #     # Query the database directly
@@ -59,5 +60,25 @@ class wallet(walletTemplate):
   def text_box_1_pressed_enter(self, **event_args):
     """This method is called when the user presses Enter in this text box"""
     pass
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    entered_number = self.text_box_2.text
+    try:
+        # Convert to float to handle numbers with decimals
+        entered_number = float(entered_number)
+        
+        # Add a new row to the 'wallet' table with the entered number
+        app_tables.wallet.add_row(wallet_balance=entered_number)
+        
+        # Optionally, clear the text box after storing the value
+        self.text_box_2.text = ""
+        
+        # Provide some user feedback (optional)
+        anvil.alert("The balance has been updated.")
+        
+    except ValueError:
+        # Handle the case where the input is not a valid number
+        anvil.alert("Please enter a valid number.")
   
     

@@ -110,11 +110,11 @@ components:
           type: Spacer
           layout_properties: {grid_position: 'JOQTMC,JKFRUB'}
         - name: button_4
-          properties: {text: Proceed to Topup, background: 'theme:Gray 600', foreground: 'theme:White',
+          properties: {text: Proceed to Topup, background: red, foreground: 'theme:White',
             bold: true, role: raised}
           type: Button
           layout_properties: {grid_position: 'IBAQOT,RBBQFA'}
-          event_bindings: {show: button_4_show}
+          event_bindings: {show: button_4_show, click: button_4_click}
       - name: spacer_2
         properties: {height: 32}
         type: Spacer

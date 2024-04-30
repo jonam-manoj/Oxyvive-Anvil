@@ -37,6 +37,7 @@ class servicers_dashboard(servicers_dashboardTemplate):
       customer["slot_time"]=row['book_time']
       customer["service"]=row['service_type']
       customer["image"] = customer_details['profile']
+      customer["date"] = row['book_date']
       customers_list.append(customer)
     self.repeating_panel_1.items=customers_list
 

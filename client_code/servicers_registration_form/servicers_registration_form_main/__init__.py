@@ -7,6 +7,7 @@ from anvil.tables import app_tables
 import re
 import random
 import string
+from .. import servicer_id
 
 # import bcrypt
 
@@ -49,6 +50,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
         print(id)
         app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address,usertype='service provider')
         """This method is called when the button is clicked"""
+        servicer_id.id=id
         open_form('servicers_registration_form.services_register_add_service',id=id)
       except Exception as e:
         print(e)

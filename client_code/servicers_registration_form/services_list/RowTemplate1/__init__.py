@@ -22,7 +22,7 @@ class RowTemplate1(RowTemplate1Template):
     oxiwheel = app_tables.oxiwheels.get(oxywheel_id=id)
     if oxiclinic:
       oxiclinic.delete()
-      # services_list.button_1_click(self)
+      services_list.button_1_click(self)
     elif oxigym:
       oxigym.delete()
     elif oxiwheel:

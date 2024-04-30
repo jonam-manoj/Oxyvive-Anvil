@@ -41,7 +41,7 @@ class add_services(add_servicesTemplate):
 
   def services_list_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("servicers.servicers_dashboard.add_services.s_list", user_id=self.user_id)
+    open_form("servicers.servicers_dashboard.add_services.s_list")
 
   def servicers_confirm_button_click(self, **event_args):
     """This method is called when the button is clicked"""

@@ -41,16 +41,16 @@ class add_services(add_servicesTemplate):
 
   def services_list_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form("servicers.servicers_dashboard.add_services.s_list")
+    open_form("servicers.servicers_dashboard.add_services.s_list", user_id=self.user_id)
 
   def servicers_confirm_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    oxiclinic =list( app_tables.oxiclinics.search(id=str(self.user_id)))
-    oxiwheel =list( app_tables.oxiwheels.search(id=str(self.user_id)))
-    oxigym = list(app_tables.oxigyms.search(id=str(self.user_id)))
-    print(oxiclinic)
+    oxiclinic = app_tables.oxiclinics.search(id=str(self.user_id))
+    oxiwheel = app_tables.oxiwheels.search(id =str( self.user_id))
+    oxigym = app_tables.oxigyms.search(id =str( self.user_id))
 
-    if not oxiclinic or not oxiwheel or not oxigym:
-      alert("Services are empty, please add at least one service")
-    else:
+    if oxiclinic or oxiwheel or oxigym:
       open_form("servicers.servicers_dashboard")
+    else:
+       alert("Services are empty, please add at least one service")
+      

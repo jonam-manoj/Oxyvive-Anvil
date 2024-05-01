@@ -6,6 +6,29 @@ components:
   type: ColumnPanel
   layout_properties: {grid_position: 'MJWOMS,HKBMYH'}
   components:
+  - name: timer_1
+    properties: {}
+    type: Timer
+    layout_properties: {grid_position: 'UGTANF,EMKVXQ JJEGYZ,TGXMWL'}
+    event_bindings: {tick: timer_1_tick}
+  - name: spacer_2
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'UGTANF,EMKVXQ ZGDYIR,BQNAWF'}
+  - name: card_2
+    properties: {role: card, col_spacing: tiny, spacing_above: none}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UGTANF,GGBOAA', full_width_row: false}
+    components:
+    - name: label_11
+      properties: {align: center, background: '', role: null, text: '', bold: true,
+        foreground: '#08bf2d', font_size: 15}
+      type: Label
+      layout_properties: {grid_position: 'YCFCYL,ZFUKTI'}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'UGTANF,PVAXDE'}
   - name: image_1
     properties: {role: image, source: _/theme/shot.png}
     type: Image
@@ -24,6 +47,10 @@ components:
     properties: {align: center, text: 'Slot -Time :', bold: true}
     type: Label
     layout_properties: {grid_position: 'GWWCVI,DKQKJQ NZHJRJ,PIBBUZ'}
+  - name: label_12
+    properties: {align: center, text: 'Slot - Date :', bold: true}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,DKQKJQ PRTFCR,TRDLEX'}
   - name: label_7
     properties: {align: center, bold: true, text: 'Phone :'}
     type: Label
@@ -50,6 +77,15 @@ components:
     layout_properties: {grid_position: 'GWWCVI,HRXEGM RODAGK,YWITKD'}
     data_bindings:
     - {property: text, code: 'self.item[''slot_time'']'}
+  - name: label_13
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '', font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'GWWCVI,HRXEGM TGKGRR,QGFSOJ'}
+    data_bindings:
+    - {property: text, code: 'self.item[''date'']', writeback: false}
   - name: label_8
     properties: {text: '9343302172'}
     type: Label

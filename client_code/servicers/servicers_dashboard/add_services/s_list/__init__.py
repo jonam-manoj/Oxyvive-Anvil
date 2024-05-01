@@ -6,6 +6,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 
+
 class s_list(s_listTemplate):
   def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.

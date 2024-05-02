@@ -31,5 +31,5 @@ components:
 - name: button_1
   properties: {text: Delete, background: 'theme:Primary 700', foreground: 'theme:White'}
   type: Button
-  layout_properties: {column: IYVCWW}
+  layout_properties: {column: PYNXEH}
   event_bindings: {click: button_1_click}

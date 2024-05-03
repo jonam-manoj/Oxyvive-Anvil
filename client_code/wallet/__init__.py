@@ -1,5 +1,6 @@
 from ._anvil_designer import walletTemplate
 from anvil import *
+from anvil.js import window
 import anvil.server
 from anvil.tables import app_tables
 
@@ -7,7 +8,17 @@ class wallet(walletTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    wallet_row = app_tables.wallet.get()  # Modify this line to suit your table structure
     
+    if wallet_row:
+        # Get the wallet balance
+        balance = wallet_row['wallet_balance']
+        
+        # Display the wallet balance in label_4
+        self.label_4.text = f"{balance} Rs"
+    else:
+        # Handle the case where there is no row in the 'wallet' table
+        self.label_4.text = "Wallet data not found."  
     # user_id = self.id.text
     # if user_id:
     #     # Query the database directly
@@ -62,23 +73,43 @@ class wallet(walletTemplate):
     pass
 
   def button_4_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    entered_number = self.text_box_2.text
-    try:
-        # Convert to float to handle numbers with decimals
-        entered_number = float(entered_number)
-        
-        # Add a new row to the 'wallet' table with the entered number
-        app_tables.wallet.add_row(wallet_balance=entered_number)
-        
-        # Optionally, clear the text box after storing the value
-        self.text_box_2.text = ""
-        
-        # Provide some user feedback (optional)
-        anvil.alert("The balance has been updated.")
-        
-    except ValueError:
-        # Handle the case where the input is not a valid number
-        anvil.alert("Please enter a valid number.")
+      """This method is called when the button is clicked"""
+      entered_number = self.text_box_2.text
+      try:
+          # Convert to float to handle numbers with decimals
+          entered_number = float(entered_number)
+          
+          # Retrieve the current balance from the 'wallet' table
+          # Assuming there is only one row in the table or you have a way to identify the correct row
+          wallet_row = app_tables.wallet.get()  # Modify this line to suit your table structure
+          
+          if wallet_row:
+              # Add the entered number to the current wallet balance
+              new_balance = wallet_row['wallet_balance'] + entered_number
+              
+              # Update the 'wallet' table with the new balance
+              wallet_row['wallet_balance'] = new_balance
+              
+              # Update the label_4 text to reflect the new balance
+              self.label_4.text = f"{new_balance} Rs"
+              
+              # Provide some user feedback
+              anvil.alert(f"The balance has been updated to {new_balance} Rs.")
+              
+          else:
+              # Handle the case where there is no row in the 'wallet' table
+              anvil.alert("No wallet data found. Please create an initial wallet entry.")
+          
+          # Optionally, clear the text box after updating the value
+          self.text_box_2.text = ""
+          
+      except ValueError:
+          # Handle the case where the input is not a valid number
+          anvil.alert("Please enter a valid number.")
   
+          
+      except ValueError:
+          # Handle the case where the input is not a valid number
+          anvil.alert("Please enter a valid number.")
+      window.location.assign("https://rzp.io/l/iJyrLCI")
     

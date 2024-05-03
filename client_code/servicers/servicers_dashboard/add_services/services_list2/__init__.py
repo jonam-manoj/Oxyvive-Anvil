@@ -1,4 +1,4 @@
-from ._anvil_designer import s_listTemplate
+from ._anvil_designer import services_list2Template
 from anvil import *
 import anvil.server
 import anvil.tables as tables
@@ -7,7 +7,7 @@ from anvil.tables import app_tables
 
 
 
-class s_list(s_listTemplate):
+class services_list2(services_list2Template):
   def __init__(self, user_id, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -27,7 +27,7 @@ class s_list(s_listTemplate):
 
       # Assign data to dictionary keys
       user_info["serial_no"] = i  # Assuming you want to include a serial number
-      user_info['clinic_id'] = row["oxiclinic_id"]
+      user_info["clinic_id"] = row["oxiclinic_id"]
       user_info["Oxiclinics_Name"] = row["Oxiclinics_Name"]
       user_info["State"] = row["State"]
 

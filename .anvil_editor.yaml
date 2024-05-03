@@ -9,6 +9,10 @@ unique_ids:
     servicers.servicers_dashboard.support: '1713851237637111777016212.71452'
     servicers.servicers_dashboard.profile: '171384585587791985667966.67307'
 
+    servicers.servicers_dashboard.add_services.services_list2: '1714635525659968325790588.4779'
+    servicers.servicers_dashboard.add_services.oxigym: BCNWPF4HFXBQDIJU5IMS6PDXOCER76ZI
+
+
     servicers.servicers_dashboard.add_services.oxigym: GJGEOY2E65YTQB6SREO4DC57CSJO7HM7
 
     servicers_registration_form.services_list.RowTemplate1: '1713767270559693266616357.648'
@@ -27,7 +31,6 @@ unique_ids:
     servicers.service_navigation_bar: '1713787233243178291530535.1871'
     dashboard.aviailable_Hospital_Address: '1714373584827442762928138.6185'
     servicers.servicers_dashboard.notification: '1713851223903601723563890.3866'
-    servicers.servicers_dashboard.add_services.s_list: '1714110820722900204133110.5897'
     signup: '1713758217782384991869506.14026'
     servicers.servicers_dashboard.add_services.oxiclinic: '1714105073611336997835501.89923'
     dashboard.available_zym_address: '1714373961196905894069470.9718'

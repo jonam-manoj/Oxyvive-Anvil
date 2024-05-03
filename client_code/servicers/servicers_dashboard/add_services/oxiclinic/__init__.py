@@ -65,11 +65,9 @@ class oxiclinic(oxiclinicTemplate):
                                    address_2=address,
                                    capsules=int(capsule),
                                    medical_licence=self.file1,
-
                                    building_licence=self.file2,
                                    oxiclinic_id=self.generate_unique_random_code())
-
-                                   building_licence=self.file2)
+                                   
 
                                   
       alert("You added oxiclinic successfully.")

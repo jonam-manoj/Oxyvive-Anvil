@@ -34,7 +34,7 @@ components:
     - {id: VJQQOR, title: Organization Id, data_key: column_2, $$hashKey: 'object:22099'}
     - {id: OJLQEN, title: Organization Name, data_key: column_3, $$hashKey: 'object:22100'}
     - {id: ZYQNVH, title: City, data_key: column_4, $$hashKey: 'object:22144'}
-    - {id: IYVCWW, data_key: column_1, title: Action}
+    - {id: PYNXEH, data_key: column_1, title: Action}
     auto_header: true
     tooltip: ''
     border: ''

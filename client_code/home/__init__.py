@@ -11,7 +11,7 @@ class home(homeTemplate):
 
   def link_4_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form("Form2")
+    open_form("home")
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -20,3 +20,10 @@ class home(homeTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form("signup")
+
+  def link_5_click(self, **event_args):
+    """This method is called when the link is clicked"""
+   
+    
+
+  

@@ -10,23 +10,23 @@ components:
     properties: {role: null, url: '', align: center, tooltip: home, border: '', foreground: 'theme:White',
       visible: true, text: Home, font_size: 15, wrap_on: mobile, font: '', col_spacing: medium,
       spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-      italic: false, background: '', bold: true, underline: false, icon: 'fa:home'}
+      italic: false, background: '', bold: false, underline: false, icon: 'fa:home'}
     type: Link
     event_bindings: {click: servicers_home_link_click}
     layout_properties: {}
   - name: servicers_contact_link
     properties: {align: center, text: Contact us, foreground: 'theme:White', icon: 'fa:phone',
-      bold: true, font_size: 15}
+      bold: false, font_size: 15}
     type: Link
     layout_properties: {}
   - name: about_us
-    properties: {text: About us, foreground: 'theme:White', icon: 'fa:adn', bold: true,
+    properties: {text: About us, foreground: 'theme:White', icon: 'fa:adn', bold: false,
       align: center, font_size: 15}
     type: Link
     layout_properties: {}
   - name: help_link
     properties: {text: Help, foreground: 'theme:White', icon: 'fa:question-circle',
-      align: center, bold: true, font_size: 14}
+      align: center, bold: false, font_size: 14}
     type: Link
     layout_properties: {}
 is_package: true

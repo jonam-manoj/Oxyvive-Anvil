@@ -57,6 +57,7 @@ components:
     properties: {align: center, text: Bank Accounts, icon: '', bold: true}
     type: Link
     layout_properties: {row: SAYNVW, width_xs: 3, col_xs: 9}
+    event_bindings: {click: link_3_click}
   - name: image_5
     properties: {source: 'https://images.assetsdelivery.com/compings_v2/alexandraklestova/alexandraklestova2011/alexandraklestova201100077.jpg'}
     type: Image

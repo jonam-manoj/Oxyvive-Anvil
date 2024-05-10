@@ -33,30 +33,30 @@ components:
   components:
   - name: image_2
     properties: {source: 'https://img.freepik.com/free-vector/pay-by-smart-phone-wallet-transaction-sending-digital-money-money-transferring-digitally-from-one-mobile-phone-another-vector-flat-illustration_1150-58768.jpg',
-      height: 157.6363525390625}
+      height: 121}
     type: Image
     layout_properties: {row: DWPGKA, width_xs: 3, col_xs: 0}
   - name: image_3
-    properties: {height: 180.81817626953125, source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOL5_E8LESJWBHCuxLOElY34KS_vviSLZy35KFyZDLSQ&s'}
+    properties: {height: 139.72726440429688, source: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOL5_E8LESJWBHCuxLOElY34KS_vviSLZy35KFyZDLSQ&s'}
     type: Image
     layout_properties: {row: DWPGKA, width_xs: 4, col_xs: 4}
   - name: image_4
     properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/banking-management-5904901-4897498.png',
-      height: 178.272705078125}
+      height: 146.63632202148438}
     type: Image
     layout_properties: {row: DWPGKA, width_xs: 3, col_xs: 9}
   - name: link_1
     properties: {text: Transfer Money, align: center, icon: '', bold: true, underline: false}
     type: Link
-    layout_properties: {row: SAYNVW, width_xs: 3, col_xs: 0}
+    layout_properties: {row: PJOTPF, width_xs: 3, col_xs: 0}
   - name: link_2
     properties: {align: center, text: Your Wallet, icon: '', bold: true}
     type: Link
-    layout_properties: {row: SAYNVW, width_xs: 4, col_xs: 4}
+    layout_properties: {row: PJOTPF, width_xs: 4, col_xs: 4}
   - name: link_3
     properties: {align: center, text: Bank Accounts, icon: '', bold: true}
     type: Link
-    layout_properties: {row: SAYNVW, width_xs: 3, col_xs: 9}
+    layout_properties: {row: PJOTPF, width_xs: 3, col_xs: 9}
     event_bindings: {click: link_3_click}
   - name: image_5
     properties: {source: 'https://images.assetsdelivery.com/compings_v2/alexandraklestova/alexandraklestova2011/alexandraklestova201100077.jpg'}
@@ -64,7 +64,7 @@ components:
     layout_properties: {row: ZGDDZI, width_xs: 3, col_xs: 0}
   - name: image_6
     properties: {source: 'https://www.thesun.co.uk/wp-content/uploads/2023/03/GettyImages-1250252215jpg-JS805299169.jpg',
-      height: 193}
+      height: 190}
     type: Image
     layout_properties: {row: ZGDDZI, width_xs: 4, col_xs: 4}
   - name: image_7

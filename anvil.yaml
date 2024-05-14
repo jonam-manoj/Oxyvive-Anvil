@@ -233,4 +233,27 @@ db_schema:
     - name: wallet_balance
       admin_ui: {width: 200}
       type: number
+  bank_accounts:
+    client: full
+    server: full
+    columns:
+    - name: account_holder_name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: bank_name
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: branch_name
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: ifsc_code
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: account_number
+      admin_ui: {order: 1, width: 200}
+      type: number
+    - name: account_type
+      admin_ui: {width: 200, order: 5}
+      type: string
+    title: bank_accounts
 uplink_visible: true

@@ -16,3 +16,7 @@ class wallet_homepage(wallet_homepageTemplate):
   def link_4_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("wallet")
+
+  def link_3_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("wallet_homepage.bank_accounts")

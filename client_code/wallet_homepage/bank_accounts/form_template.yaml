@@ -18,12 +18,50 @@ components:
       bold: true, font_size: 13}
     type: Button
     layout_properties: {x: 1190.0001664608717, y: 22.07954840362072, width: 121.25}
-- name: spacer_1
-  properties: {height: 30.45452880859375}
+- name: xy_panel_2
+  properties: {height: 386.9090881347656}
+  type: XYPanel
+  layout_properties: {grid_position: 'KCGECR,MLBVVS'}
+  components:
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {x: 277.1363969296217, y: 37.77271132171154, width: 459}
+    components:
+    - name: text_box_1
+      properties: {placeholder: Account Holder's Name, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'QZHIBC,NRWPQQ'}
+    - name: text_box_2
+      properties: {placeholder: Account Number, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'SIWSFZ,ZOMWGN'}
+    - name: text_box_3
+      properties: {placeholder: Confirm Account Number, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'CILXRS,MRTQZM'}
+    - name: text_box_4
+      properties: {placeholder: Bank Name, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'JAVTSX,JCIVDV'}
+    - name: text_box_5
+      properties: {placeholder: Branch Name, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'LCBSVR,ADOKWZ'}
+    - name: text_box_6
+      properties: {placeholder: IFSC Code, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'DRDKQG,XHSYKP'}
+    - name: text_box_7
+      properties: {placeholder: Account Type, font_size: 14}
+      type: TextBox
+      layout_properties: {grid_position: 'MCVXIP,CYETFP'}
+- name: spacer_2
+  properties: {height: 26.6363525390625}
   type: Spacer
-  layout_properties: {grid_position: 'HSWGAA,NVVSTF'}
-- name: card_1
-  properties: {role: card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'EKLHWZ,HMAWII'}
+  layout_properties: {grid_position: 'LJLREE,DDJWUM'}
+- name: button_1
+  properties: {text: '   Submit   ', background: red, foreground: white, font_size: 14}
+  type: Button
+  layout_properties: {grid_position: 'TNRPLS,NXASFM'}
 is_package: true

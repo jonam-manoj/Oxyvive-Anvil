@@ -93,6 +93,9 @@ db_schema:
     - name: oxiclinic_id
       admin_ui: {width: 200, order: 15}
       type: string
+    - name: gst
+      admin_ui: {width: 200, order: 16}
+      type: string
   oxigyms:
     title: oxigyms
     client: full

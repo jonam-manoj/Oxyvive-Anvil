@@ -86,7 +86,7 @@ components:
     layout_properties: {grid_position: 'BRBJFU,DJYSIT VVXMIX,CSFUYF'}
     event_bindings: {click: primary_color_1_click}
   - name: link_1
-    properties: {text: 'Forget password ?', underline: true}
+    properties: {text: 'Forgot password ?', underline: true}
     type: Link
     layout_properties: {grid_position: 'BRBJFU,DJYSIT OKZPDC,IONJQJ'}
   - name: link_2

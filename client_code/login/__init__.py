@@ -31,3 +31,7 @@ class login(loginTemplate):
 
     def link_2_click(self, **event_args):
         open_form("signup")
+
+    def text_box_1_focus(self, **event_args):
+      """This method is called when the TextBox gets focus"""
+      pass

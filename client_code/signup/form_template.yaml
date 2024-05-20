@@ -36,66 +36,72 @@ components:
       type: Link
       layout_properties: {}
 - name: card_1
-  properties: {role: card, col_widths: '{"DJYSIT":35,"PFBYKP":30}'}
+  properties: {role: card, col_widths: '{"DJYSIT":25,"PFBYKP":40}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'ZNBZAO,MQKYRN'}
   components:
   - name: image_2
     properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/login-page-4468581-3783954.png?f=webp',
-      height: 410.79998779296875}
+      height: 760.5999755859375}
     type: Image
     layout_properties: {grid_position: 'BRBJFU,PFBYKP'}
   - name: label_4
     properties: {text: Create new account, align: left, font_size: 22, bold: true,
-      foreground: '#40486d'}
+      foreground: '#40486d', underline: true}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT EWSNRQ,APYNJB'}
   - name: spacer_2
-    properties: {height: 3.199981689453125}
+    properties: {height: 32}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT MKEBTO,QRCRRG'}
   - name: label_2
     properties: {text: ' Full Name :', bold: true, align: left, font_size: 15}
     type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT VXMWFA,VABFRP'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT TOUDBU,ZCVPTH'}
   - name: text_box_1
-    properties: {}
+    properties: {border: 1px solid black}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT VXMWFA,XXUHFD'}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter, focus: text_box_1_focus,
+      lost_focus: text_box_1_lost_focus}
   - name: label_3
     properties: {text: 'Email :', bold: true, align: left, font_size: 15}
     type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT PJAROG,DXLPKD'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT JQYKTJ,ZMYXCH'}
   - name: text_box_2
-    properties: {type: email}
+    properties: {type: email, border: 1px solid black}
     type: TextBox
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT PJAROG,ZGHYYN'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT RVQWFX,TYYJYG'}
+    event_bindings: {focus: text_box_2_focus, lost_focus: text_box_2_lost_focus}
   - name: label_5
     properties: {text: 'Password :', bold: true, font_size: 15}
     type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDHJU,KRBUIS'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT KLGVYA,DTRTGT'}
   - name: text_box_3
-    properties: {visible: true, hide_text: true}
+    properties: {visible: true, hide_text: true, border: 1px solid black}
     type: TextBox
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDHJU,VZXMHB'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZBJWTY,VFRKEA'}
+    event_bindings: {focus: text_box_3_focus, lost_focus: text_box_3_lost_focus}
   - name: label_7
     properties: {text: 'Phone no :', font_size: 15, bold: true}
     type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT IKNMML,JPJCFR'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT HKIHLU,BLLRCS'}
   - name: text_box_4
-    properties: {type: number}
+    properties: {type: number, border: 1px solid black}
     type: TextBox
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT IKNMML,SPUMKM'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT GYYPHU,LYNTBG'}
+    event_bindings: {focus: text_box_4_focus, lost_focus: text_box_4_lost_focus}
   - name: label_8
     properties: {text: 'Pincode :', font_size: 15, bold: true}
     type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT NCGGEQ,PYOEWN'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT NHCQOS,ADTKEK'}
   - name: text_box_5
-    properties: {type: number}
+    properties: {type: number, border: 1px solid black}
     type: TextBox
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT NCGGEQ,LEYWLM'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT'}
+    event_bindings: {focus: text_box_5_focus, lost_focus: text_box_5_lost_focus}
   - name: spacer_1
-    properties: {height: 25}
+    properties: {height: 34.199981689453125}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT YOLLPR,XLPCLH'}
   - name: primary_color_1

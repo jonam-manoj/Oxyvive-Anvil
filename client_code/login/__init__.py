@@ -34,4 +34,16 @@ class login(loginTemplate):
 
     def text_box_1_focus(self, **event_args):
       """This method is called when the TextBox gets focus"""
-      pass
+      self.text_box_1.border = "1px solid red"
+
+    def text_box_1_lost_focus(self, **event_args):
+      """This method is called when the TextBox loses focus"""
+      self.text_box_1.border = "1px solid black"
+
+    def text_box_2_focus(self, **event_args):
+      """This method is called when the TextBox gets focus"""
+      self.text_box_2.border = "1px solid red"
+
+    def text_box_2_lost_focus(self, **event_args):
+      """This method is called when the TextBox loses focus"""
+      self.text_box_2.border = "1px solid black"

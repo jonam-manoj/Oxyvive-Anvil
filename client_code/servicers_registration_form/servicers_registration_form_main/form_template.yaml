@@ -31,7 +31,8 @@ components:
     properties: {role: null, placeholder: Full Name, border: 1px solid black}
     type: TextBox
     layout_properties: {x: 0, y: 42.499996948987246, width: 478}
-    event_bindings: {change: servicers_name_text_box_change}
+    event_bindings: {change: servicers_name_text_box_change, focus: servicers_name_text_box_focus,
+      lost_focus: servicers_name_text_box_lost_focus}
   - name: name_hint
     properties: {foreground: 'theme:Primary 700'}
     type: Label
@@ -44,7 +45,8 @@ components:
     properties: {type: email, placeholder: Email, border: 1px solid black}
     type: TextBox
     layout_properties: {x: 0, y: 145.287533570081, width: 478}
-    event_bindings: {change: servicers_email_text_box_change}
+    event_bindings: {change: servicers_email_text_box_change, focus: servicers_email_text_box_focus,
+      lost_focus: servicers_email_text_box_lost_focus}
   - name: email_hint
     properties: {foreground: 'theme:Primary 700'}
     type: Label
@@ -57,7 +59,8 @@ components:
     properties: {font_size: -4, placeholder: Password, hide_text: true, border: 1px solid black}
     type: TextBox
     layout_properties: {x: 0, y: 239.68749694898725, width: 478}
-    event_bindings: {change: servicers_password_text_box_change}
+    event_bindings: {change: servicers_password_text_box_change, focus: servicers_password_text_box_focus,
+      lost_focus: servicers_password_text_box_lost_focus}
   - name: hint_text
     properties: {foreground: 'theme:Primary 700', background: ''}
     type: Label
@@ -70,7 +73,8 @@ components:
     properties: {type: tel, placeholder: Phone no., border: 1px solid black}
     type: TextBox
     layout_properties: {x: 0, y: 342.45000076293945, width: 478}
-    event_bindings: {change: servicers_phone_text_box_change}
+    event_bindings: {change: servicers_phone_text_box_change, focus: servicers_phone_text_box_focus,
+      lost_focus: servicers_phone_text_box_lost_focus}
   - name: phone_hint
     properties: {foreground: 'theme:Primary 700'}
     type: Label
@@ -83,7 +87,8 @@ components:
     properties: {placeholder: Address, border: 1px solid black}
     type: TextBox
     layout_properties: {x: 0, y: 442.30002784729004, width: 478}
-    event_bindings: {change: servicers_address_text_box_change}
+    event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
+      lost_focus: servicers_address_text_box_lost_focus}
   - name: address_hint
     properties: {foreground: 'theme:Primary 700'}
     type: Label

@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"OUNSEE":40,"VZGJAS":20}'}
+  properties: {col_widths: '{"ACFQXT":25,"ZRSVYB":35}'}
 components:
 - name: servicers_navigation_bar_1
   properties: {}
@@ -14,76 +14,90 @@ components:
   properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'OCVXPT,YVLZXQ'}
-- name: servicers_name_label
-  properties: {text: 'Full name :', align: left, bold: true, font_size: 15}
-  type: Label
-  layout_properties: {grid_position: 'FPMTTO,FHEHJI'}
-- name: servicers_name_text_box
-  properties: {role: null, placeholder: Full Name}
-  type: TextBox
-  layout_properties: {grid_position: 'FPMTTO,WKODLX PCXANG,OMQAGE'}
-  event_bindings: {change: servicers_name_text_box_change}
-- name: name_hint
-  properties: {foreground: 'theme:Primary 700'}
-  type: Label
-  layout_properties: {grid_position: 'FPMTTO,WKODLX VLPBEW,NHUFVE'}
-- name: servicers_email_label
-  properties: {align: left, text: 'Email : ', bold: true, font_size: 15}
-  type: Label
-  layout_properties: {grid_position: 'DHSNRC,ZFGYJP'}
-- name: servicers_email_text_box
-  properties: {type: email, placeholder: Email}
-  type: TextBox
-  layout_properties: {grid_position: 'DHSNRC,FHJXBI LPIWBF,NDWKZI'}
-  event_bindings: {change: servicers_email_text_box_change}
-- name: email_hint
-  properties: {foreground: 'theme:Primary 700'}
-  type: Label
-  layout_properties: {grid_position: 'DHSNRC,FHJXBI EBWMBE,MNRBLE'}
-- name: servicers_password_label
-  properties: {align: left, text: 'Password : ', bold: true, font_size: 15}
-  type: Label
-  layout_properties: {grid_position: 'KSPMAS,KPTOLQ'}
-- name: servicers_password_text_box
-  properties: {font_size: -4, placeholder: Password, hide_text: true}
-  type: TextBox
-  layout_properties: {grid_position: 'KSPMAS,NTBYTW'}
-  event_bindings: {change: servicers_password_text_box_change}
-- name: show_password_check_box
-  properties: {text: Show password, align: right, checked: false}
-  type: CheckBox
-  layout_properties: {grid_position: 'YTHKEE,OUNSEE'}
-  event_bindings: {change: show_password_check_box_change}
-- name: hint_text
-  properties: {foreground: 'theme:Primary 700', background: ''}
-  type: Label
-  layout_properties: {grid_position: 'YTHKEE,VZGJAS'}
-- name: servicers_phone_label
-  properties: {align: left, text: 'Phone no : ', bold: true, font_size: 15}
-  type: Label
-  layout_properties: {grid_position: 'BJYCOY,VFSMIM'}
-- name: servicers_phone_text_box
-  properties: {type: tel, placeholder: Phone no.}
-  type: TextBox
-  layout_properties: {grid_position: 'BJYCOY,EIVSAQ ALNQSL,WRTBTL'}
-  event_bindings: {change: servicers_phone_text_box_change}
-- name: phone_hint
-  properties: {foreground: 'theme:Primary 700'}
-  type: Label
-  layout_properties: {grid_position: 'BJYCOY,EIVSAQ EKKGRX,JACGWZ'}
-- name: servicers_address_label
-  properties: {align: left, text: 'Address : ', bold: true}
-  type: Label
-  layout_properties: {grid_position: 'ONBCXG,WXSNPA'}
-- name: servicers_address_text_box
-  properties: {placeholder: Address}
-  type: TextBox
-  layout_properties: {grid_position: 'ONBCXG,OKAHYM LQIHJE,NPXFKP'}
-  event_bindings: {change: servicers_address_text_box_change}
-- name: address_hint
-  properties: {foreground: 'theme:Primary 700'}
-  type: Label
-  layout_properties: {grid_position: 'ONBCXG,OKAHYM PDFGGC,HDXKSZ'}
+- name: xy_panel_2
+  properties: {height: 100}
+  type: XYPanel
+  layout_properties: {grid_position: 'MEVAAX,CMCDFV'}
+- name: xy_panel_1
+  properties: {height: 520.6000061035156}
+  type: XYPanel
+  layout_properties: {grid_position: 'MEVAAX,ZRSVYB'}
+  components:
+  - name: servicers_name_label
+    properties: {text: 'Full name :', align: left, bold: true, font_size: 15}
+    type: Label
+    layout_properties: {x: 0, y: 11.249981690198183, width: 750}
+  - name: servicers_name_text_box
+    properties: {role: null, placeholder: Full Name, border: 1px solid black}
+    type: TextBox
+    layout_properties: {x: 0, y: 42.499996948987246, width: 478}
+    event_bindings: {change: servicers_name_text_box_change, focus: servicers_name_text_box_focus,
+      lost_focus: servicers_name_text_box_lost_focus}
+  - name: name_hint
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+    layout_properties: {x: 0, y: 69.65000610426068, width: 750}
+  - name: servicers_email_label
+    properties: {align: left, text: 'Email : ', bold: true, font_size: 15}
+    type: Label
+    layout_properties: {x: 0, y: 111.0125091560185, width: 750}
+  - name: servicers_email_text_box
+    properties: {type: email, placeholder: Email, border: 1px solid black}
+    type: TextBox
+    layout_properties: {x: 0, y: 145.287533570081, width: 478}
+    event_bindings: {change: servicers_email_text_box_change, focus: servicers_email_text_box_focus,
+      lost_focus: servicers_email_text_box_lost_focus}
+  - name: email_hint
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+    layout_properties: {x: 0, y: 173.6375091560185, width: 750}
+  - name: servicers_password_label
+    properties: {align: left, text: 'Password : ', bold: true, font_size: 15}
+    type: Label
+    layout_properties: {x: 0, y: 210.83752136304975, width: 750}
+  - name: servicers_password_text_box
+    properties: {font_size: -4, placeholder: Password, hide_text: true, border: 1px solid black}
+    type: TextBox
+    layout_properties: {x: 0, y: 239.68749694898725, width: 478}
+    event_bindings: {change: servicers_password_text_box_change, focus: servicers_password_text_box_focus,
+      lost_focus: servicers_password_text_box_lost_focus}
+  - name: hint_text
+    properties: {foreground: 'theme:Primary 700', background: ''}
+    type: Label
+    layout_properties: {x: 0, y: 269.100033570081, width: 750}
+  - name: servicers_phone_label
+    properties: {align: left, text: 'Phone no : ', bold: true, font_size: 15}
+    type: Label
+    layout_properties: {x: 0, y: 308.22500228881836, width: 750}
+  - name: servicers_phone_text_box
+    properties: {type: tel, placeholder: Phone no., border: 1px solid black}
+    type: TextBox
+    layout_properties: {x: 0, y: 342.45000076293945, width: 478}
+    event_bindings: {change: servicers_phone_text_box_change, focus: servicers_phone_text_box_focus,
+      lost_focus: servicers_phone_text_box_lost_focus}
+  - name: phone_hint
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+    layout_properties: {x: 0, y: 375.3000297546387, width: 750}
+  - name: servicers_address_label
+    properties: {align: left, text: 'Address : ', bold: true}
+    type: Label
+    layout_properties: {x: 0, y: 407.8500175476074, width: 750}
+  - name: servicers_address_text_box
+    properties: {placeholder: Address, border: 1px solid black}
+    type: TextBox
+    layout_properties: {x: 0, y: 442.30002784729004, width: 478}
+    event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
+      lost_focus: servicers_address_text_box_lost_focus}
+  - name: address_hint
+    properties: {foreground: 'theme:Primary 700'}
+    type: Label
+    layout_properties: {x: 0, y: 474.2500228881836, width: 750}
+  - name: show_password_check_box
+    properties: {text: Show password, align: right, checked: false, font_size: 12}
+    type: CheckBox
+    layout_properties: {x: 328.8999908454716, y: 240.65002136304975, width: 154.78750610351562}
+    event_bindings: {change: show_password_check_box_change}
 - name: spacer_1
   properties: {height: 55.600006103515625}
   type: Spacer

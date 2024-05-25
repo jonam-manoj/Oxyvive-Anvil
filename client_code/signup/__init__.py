@@ -43,3 +43,45 @@ class signup(signupTemplate):
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form("servicers_registration_form.servicers_registration_form_main")
+
+  def text_box_1_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.text_box_1.border="1px solid red"
+
+  def text_box_1_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.text_box_1.border="1px solid black"
+
+  def text_box_2_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.text_box_2.border="1px solid red"
+
+  def text_box_2_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.text_box_2.border="1px solid black"
+
+  def text_box_3_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.text_box_3.border="1px solid red"
+
+  def text_box_3_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.text_box_3.border="1px solid black"
+
+  def text_box_4_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.text_box_4.border="1px solid red"
+
+  def text_box_4_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.text_box_4.border="1px solid black"
+
+  def text_box_5_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.text_box_5.border="1px solid red"
+
+  def text_box_5_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.text_box_5.border="1px solid black"
+
+

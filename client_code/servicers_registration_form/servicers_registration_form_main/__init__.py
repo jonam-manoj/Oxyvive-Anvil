@@ -161,6 +161,47 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
             print("finalize code ", code)
             return code
 
+  def servicers_name_text_box_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.servicers_name_text_box.border="1px solid red"
+
+  def servicers_name_text_box_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.servicers_name_text_box.border="1px solid black"
+
+  def servicers_email_text_box_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.servicers_email_text_box.border="1px solid red"
+
+  def servicers_email_text_box_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.servicers_email_text_box.border="1px solid black"
+
+  def servicers_password_text_box_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.servicers_password_text_box.border="1px solid red"
+
+  def servicers_password_text_box_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.servicers_password_text_box.border="1px solid black"
+
+  def servicers_phone_text_box_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.servicers_phone_text_box.border="1px solid red"
+
+  def servicers_phone_text_box_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.servicers_phone_text_box.border="1px solid black"
+
+  def servicers_address_text_box_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    self.servicers_address_text_box.border="1px solid red"
+
+  def servicers_address_text_box_lost_focus(self, **event_args):
+    """This method is called when the TextBox loses focus"""
+    self.servicers_address_text_box.border="1px solid black"
+    
+
   
       
   

@@ -3,56 +3,30 @@ container:
   properties: {col_widths: '{"HGGAAJ":30}'}
 components:
 - name: xy_panel_2
-  properties: {height: 436.1999816894531, background: '', width: 1550}
+  properties: {height: 623.1999816894531, background: '', width: 1550}
   type: XYPanel
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
   - name: image_2
-    properties: {source: _/theme/Medical-research-542935478.jpg, height: 430, display_mode: zoom_to_fill,
+    properties: {source: _/theme/Medical-research-542935478.jpg, height: 615, display_mode: zoom_to_fill,
       visible: true}
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1551.78692675781}
     data_bindings: []
   - name: xy_panel_1
-    properties: {height: 76.39999389648438}
+    properties: {height: 102.80000305175781}
     type: XYPanel
     layout_properties: {x: 0, y: 0, width: 1402.4000244140625}
     components:
     - name: image_1
-      properties: {source: _/theme/shot.png, horizontal_align: left, height: 90, display_mode: zoom_to_fill}
+      properties: {source: _/theme/shot.png, horizontal_align: left, height: 110,
+        display_mode: zoom_to_fill}
       type: Image
-      layout_properties: {x: 0, y: 0, width: 77.9124969482422}
-    - name: label_1
-      properties: {text: OXIVIVE, bold: true, font_size: 20, foreground: red, spacing_above: large}
-      type: Label
-      layout_properties: {x: 79.97500305250287, y: 19.61250190809369, width: 96.4000244140625}
-    - name: flow_panel_2
-      properties: {spacing: large}
-      type: FlowPanel
-      layout_properties: {x: 781.2500122077763, y: 13.837496567517519, width: 238.5749969482422}
-      components:
-      - name: link_4
-        properties: {text: Home, foreground: white}
-        type: Link
-        layout_properties: {}
-        event_bindings: {click: link_4_click}
-      - name: link_5
-        properties: {text: About, foreground: white}
-        type: Link
-        layout_properties: {}
-        event_bindings: {click: link_5_click}
-      - name: link_6
-        properties: {text: Features, foreground: white}
-        type: Link
-        layout_properties: {}
-      - name: link_7
-        properties: {text: Team, foreground: white}
-        type: Link
-        layout_properties: {}
+      layout_properties: {x: 0, y: 0, width: 107.0999969482422}
     - name: flow_panel_1
       properties: {}
       type: FlowPanel
-      layout_properties: {x: 1087.68745117262, y: 14.887499619275331, width: 188.1750030517578}
+      layout_properties: {x: 1087.8250244148076, y: 31.037506867200136, width: 188.1750030517578}
       components:
       - name: button_1
         properties: {text: ' Login ', background: red, foreground: white, role: raised,
@@ -65,10 +39,33 @@ components:
           bold: true}
         type: Button
         event_bindings: {click: button_2_click}
+    - name: flow_panel_2
+      properties: {spacing: large, align: justify}
+      type: FlowPanel
+      layout_properties: {x: 155.82503967359662, y: 31.48750763013959, width: 415.5620122070313}
+      components:
+      - name: link_4
+        properties: {text: Home, foreground: white, bold: true}
+        type: Link
+        layout_properties: {}
+        event_bindings: {click: link_4_click}
+      - name: link_5
+        properties: {text: About, foreground: white, bold: true}
+        type: Link
+        layout_properties: {}
+        event_bindings: {click: link_5_click}
+      - name: link_6
+        properties: {text: Features, foreground: white, bold: true}
+        type: Link
+        layout_properties: {}
+      - name: link_7
+        properties: {text: Team, foreground: white, bold: true}
+        type: Link
+        layout_properties: {}
   - name: flow_panel_4
-    properties: {align: center}
+    properties: {align: left}
     type: FlowPanel
-    layout_properties: {x: 310.6500366218388, y: 166.24999694898725, width: 778.375}
+    layout_properties: {x: 63.499989319592714, y: 289.49999694898725, width: 778.375}
     components:
     - name: label_2
       properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 26,
@@ -77,117 +74,122 @@ components:
       data_bindings: []
     - name: label_3
       properties: {text: where science meets technology, foreground: white, bold: true,
-        font_size: 26, font: '', italic: true, background: ''}
+        font_size: 26, font: '', italic: false, background: ''}
       type: Label
     - name: label_8
       properties: {text: 'At Oxivive, we''re not just slowing down the aging process
           - we''re smashing the clock and unlocking your body''s hidden potential
-          with SHOT therapy.', foreground: white, font_size: 16, align: center, italic: true}
+          with SHOT therapy.', foreground: white, font_size: 16, align: left, italic: true}
       type: Label
       layout_properties: {}
 - name: spacer_40
-  properties: {height: 32}
+  properties: {height: 42.79998779296875}
   type: Spacer
-  layout_properties: {grid_position: 'NKWAOE,WNPTDR'}
+  layout_properties: {grid_position: 'BWKOTX,FFYASW'}
+- name: xy_panel_3
+  properties: {height: 81.79998779296875}
+  type: XYPanel
+  layout_properties: {grid_position: 'VZLWWG,RMOYTO', full_width_row: true}
+  components:
+  - name: label_4
+    properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently.,
+      align: center, font_size: 17, italic: true}
+    type: Label
+    layout_properties: {x: 0, y: 41.912498474121094, width: 953.2000122070312}
+  - name: label_9
+    properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
+      font_size: 30, underline: true, background: ''}
+    type: Label
+    layout_properties: {x: 0, y: 0, width: 1433.1999755859374}
+- name: column_panel_1
+  properties: {role: card, background: ''}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'YSKBFZ,QHPLJN'}
+  components:
+  - name: image_4
+    properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/medical-team-of-hospital-2681144-2233472.png?f=webp',
+      height: 260.1999816894531, display_mode: zoom_to_fill, background: 'theme:White'}
+    type: Image
+    layout_properties: {grid_position: 'HSFSRT,REAXEB', full_width_row: true}
+  - name: label_10
+    properties: {align: left, text: OXICLINIC, bold: true, foreground: 'theme:Black',
+      font_size: 20, visible: true, italic: false}
+    type: Label
+    layout_properties: {grid_position: 'FSZDNJ,FGINHV'}
+    data_bindings: []
+  - name: label_13
+    properties: {text: Unleash your mind's full potential with our cutting-edge anti-aging treatments.,
+      align: left, italic: false}
+    type: Label
+    layout_properties: {grid_position: 'TGEXQX,TPGHYK'}
+  - name: link_1
+    properties: {text: Learn More >>, underline: true, background: '', foreground: '',
+      role: null, icon: '', bold: true}
+    type: Link
+    layout_properties: {grid_position: 'NGZVPO,DWBLQS'}
+- name: column_panel_3
+  properties: {role: card, background: ''}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'YSKBFZ,ULMNGM'}
+  components:
+  - name: image_4_copy_2
+    properties: {source: 'https://img.freepik.com/free-vector/athletes-doing-fitness-exercise-gym-with-panoramic-windows-isolated-flat-vector-illustration-cartoon-people-cardio-training-weight-lifting_74855-8225.jpg',
+      height: 258.3999328613281, vertical_align: bottom, display_mode: zoom_to_fill,
+      background: 'theme:Primary 700'}
+    type: Image
+    layout_properties: {grid_position: 'BVKWMX,PSIQYL', full_width_row: true}
+  - name: label_11
+    properties: {text: OXIGYM, align: left, bold: true, foreground: 'theme:Black',
+      font_size: 20}
+    type: Label
+    layout_properties: {grid_position: 'CRTZBM,ECSBWA'}
+  - name: label_15
+    properties: {text: 'Say goodbye to aches, pains, and fatigue. Being physically
+        healthy is a priority.', italic: false, align: left}
+    type: Label
+    layout_properties: {grid_position: 'KSRGGK,LXFRAX'}
+  - name: link_2
+    properties: {text: Learn More >>, underline: true, foreground: '', role: null,
+      icon: '', bold: true}
+    type: Link
+    layout_properties: {grid_position: 'GKKODX,WSXDKV'}
+- name: column_panel_2
+  properties: {background: '', role: card, col_spacing: medium}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'YSKBFZ,BYOZWW'}
+  components:
+  - name: image_4_copy
+    properties: {source: 'https://static.vecteezy.com/system/resources/previews/006/916/129/non_2x/ambulance-emergency-illustration-vector.jpg',
+      height: 250.19998168945312, display_mode: zoom_to_fill, background: 'theme:Primary
+        700', horizontal_align: right, vertical_align: bottom}
+    type: Image
+    layout_properties: {grid_position: 'QJDZHY,NSPCLR'}
+  - name: label_12
+    properties: {text: OXIWHEELS, align: left, bold: true, foreground: 'theme:Black',
+      font_size: 20}
+    type: Label
+    layout_properties: {grid_position: 'IAKRWJ,NAMDVK'}
+  - name: label_14
+    properties: {text: 'Reveal your inner glow with our anti-aging treatments.
+
+        ', italic: false, align: left}
+    type: Label
+    layout_properties: {grid_position: 'FCQKTK,NLWXBJ'}
+  - name: link_3
+    properties: {text: Learn More >>, underline: true, foreground: '', role: null,
+      icon: '', bold: true}
+    type: Link
+    layout_properties: {grid_position: 'RJLFIL,TUDLUI'}
 - name: column_panel_5
-  properties: {col_spacing: huge}
+  properties: {col_spacing: huge, background: ''}
   type: ColumnPanel
   layout_properties: {grid_position: 'CBXDPN,KYZXMI', full_width_row: true}
   components:
-  - name: label_9
-    properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
-      font_size: 30, underline: true, background: 'theme:Gray 200'}
-    type: Label
-    layout_properties: {grid_position: 'WZXRMS,EHMPSW', full_width_row: true}
   - name: spacer_26
     properties: {height: -0.800018310546875}
     type: Spacer
     layout_properties: {grid_position: 'UGUYZZ,NZKCGP', full_width_row: true, row_background: 'theme:Primary
         700'}
-  - name: label_4
-    properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently.,
-      align: center, font_size: 17}
-    type: Label
-    layout_properties: {grid_position: 'KXZTDU,AMHITY'}
-  - name: column_panel_1
-    properties: {role: card, background: 'theme:Primary 700'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LMHYEG,FLXSBB', full_width_row: false}
-    components:
-    - name: image_4
-      properties: {source: 'https://cdni.iconscout.com/illustration/premium/thumb/medical-team-of-hospital-2681144-2233472.png?f=webp',
-        height: 260.1999816894531, display_mode: zoom_to_fill, background: 'theme:White'}
-      type: Image
-      layout_properties: {grid_position: 'HSFSRT,REAXEB', full_width_row: true}
-    - name: label_10
-      properties: {align: left, text: OXICLINIC, bold: true, foreground: 'theme:Black',
-        font_size: 20, visible: true}
-      type: Label
-      layout_properties: {grid_position: 'FSZDNJ,FGINHV'}
-      data_bindings: []
-    - name: label_13
-      properties: {text: Unleash your mind's full potential with our cutting-edge anti-aging treatments.,
-        align: left, italic: true}
-      type: Label
-      layout_properties: {grid_position: 'TGEXQX,TPGHYK'}
-    - name: link_1
-      properties: {text: Learn More >>, underline: true, background: '', foreground: 'theme:Black',
-        role: selected, icon: 'fa:medkit'}
-      type: Link
-      layout_properties: {grid_position: 'NGZVPO,DWBLQS'}
-  - name: column_panel_3
-    properties: {role: card, background: 'theme:Primary 700'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LMHYEG,VSMTVA', full_width_row: true}
-    components:
-    - name: image_4_copy_2
-      properties: {source: 'https://img.freepik.com/free-vector/athletes-doing-fitness-exercise-gym-with-panoramic-windows-isolated-flat-vector-illustration-cartoon-people-cardio-training-weight-lifting_74855-8225.jpg',
-        height: 258.3999328613281, vertical_align: bottom, display_mode: zoom_to_fill,
-        background: 'theme:Primary 700'}
-      type: Image
-      layout_properties: {grid_position: 'BVKWMX,PSIQYL', full_width_row: true}
-    - name: label_11
-      properties: {text: OXIGYM, align: left, bold: true, foreground: 'theme:Black',
-        font_size: 20}
-      type: Label
-      layout_properties: {grid_position: 'CRTZBM,ECSBWA'}
-    - name: label_15
-      properties: {text: 'Say goodbye to aches, pains, and fatigue. Being physically
-          healthy is a priority.', italic: true, align: left}
-      type: Label
-      layout_properties: {grid_position: 'KSRGGK,LXFRAX'}
-    - name: link_2
-      properties: {text: Learn More >>, underline: true, foreground: 'theme:Black',
-        role: selected, icon: 'fa:chain'}
-      type: Link
-      layout_properties: {grid_position: 'GKKODX,WSXDKV'}
-  - name: column_panel_2
-    properties: {background: 'theme:Primary 700', role: card, col_spacing: medium}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'LMHYEG,PHQJKY', full_width_row: true}
-    components:
-    - name: image_4_copy
-      properties: {source: 'https://static.vecteezy.com/system/resources/previews/006/916/129/non_2x/ambulance-emergency-illustration-vector.jpg',
-        height: 257.79998779296875, display_mode: zoom_to_fill, background: 'theme:Primary
-          700', horizontal_align: right, vertical_align: bottom}
-      type: Image
-      layout_properties: {grid_position: 'EANXBX,ZCOBHM', full_width_row: true}
-    - name: label_12
-      properties: {text: OXIWHEELS, align: left, bold: true, foreground: 'theme:Black',
-        font_size: 20}
-      type: Label
-      layout_properties: {grid_position: 'IAKRWJ,NAMDVK'}
-    - name: label_14
-      properties: {text: 'Reveal your inner glow with our anti-aging treatments.
-
-          ', italic: true, align: left}
-      type: Label
-      layout_properties: {grid_position: 'FCQKTK,NLWXBJ'}
-    - name: link_3
-      properties: {text: Learn More >>, underline: true, foreground: 'theme:Black',
-        role: selected, icon: 'fa:ambulance', bold: false}
-      type: Link
-      layout_properties: {grid_position: 'RJLFIL,TUDLUI'}
 - name: column_panel_4
   properties: {background: '#8d99ae', col_widths: '{"SOZFUK":10,"DIYSRV":20,"LVVRKI":15,"RVVPLE":15}',
     role: card}

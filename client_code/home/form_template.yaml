@@ -87,7 +87,7 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'BWKOTX,FFYASW'}
 - name: xy_panel_3
-  properties: {height: 81.79998779296875}
+  properties: {height: 75}
   type: XYPanel
   layout_properties: {grid_position: 'VZLWWG,RMOYTO', full_width_row: true}
   components:
@@ -95,12 +95,16 @@ components:
     properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently.,
       align: center, font_size: 17, italic: true}
     type: Label
-    layout_properties: {x: 0, y: 41.912498474121094, width: 953.2000122070312}
+    layout_properties: {x: 0, y: 41.912498474121094, width: 1452.18}
   - name: label_9
     properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
       font_size: 30, underline: true, background: ''}
     type: Label
-    layout_properties: {x: 0, y: 0, width: 1433.1999755859374}
+    layout_properties: {x: 0, y: 0, width: 1452.1870244140625}
+- name: spacer_41
+  properties: {height: 24.79998779296875}
+  type: Spacer
+  layout_properties: {grid_position: 'BTJLVT,NMMBMD'}
 - name: column_panel_1
   properties: {role: card, background: ''}
   type: ColumnPanel

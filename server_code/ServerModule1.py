@@ -6,7 +6,7 @@ import anvil.media
 import base64
 
 @anvil.server.callable
-def user(id,username,email,password,phone,pincode,wallet_balance):
+def user(oxi_id,oxusername,email,password,phone,pincode,wallet_balance):
   app_tables.users.add_row(id=id, username=username, email=email, password=password,phone=phone,pincode=pincode,wallet_balance=wallet_balance)
   
 @anvil.server.callable

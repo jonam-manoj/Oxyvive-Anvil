@@ -23,22 +23,6 @@ components:
         display_mode: zoom_to_fill}
       type: Image
       layout_properties: {x: 0, y: 0, width: 107.0999969482422}
-    - name: flow_panel_1
-      properties: {}
-      type: FlowPanel
-      layout_properties: {x: 1087.8250244148076, y: 31.037506867200136, width: 188.1750030517578}
-      components:
-      - name: button_1
-        properties: {text: ' Login ', background: red, foreground: white, role: raised,
-          bold: true}
-        type: Button
-        layout_properties: {}
-        event_bindings: {click: button_1_click}
-      - name: button_2
-        properties: {text: SIGNUP, background: red, foreground: white, role: raised,
-          bold: true}
-        type: Button
-        event_bindings: {click: button_2_click}
     - name: flow_panel_2
       properties: {spacing: large, align: justify}
       type: FlowPanel
@@ -62,6 +46,22 @@ components:
         properties: {text: Team, foreground: white, bold: true}
         type: Link
         layout_properties: {}
+    - name: flow_panel_1
+      properties: {align: right}
+      type: FlowPanel
+      layout_properties: {x: 1159.0375213623047, y: 27.087502289563417, width: 243.3625030517578}
+      components:
+      - name: button_1
+        properties: {text: ' Login ', background: red, foreground: white, role: raised,
+          bold: true}
+        type: Button
+        layout_properties: {}
+        event_bindings: {click: button_1_click}
+      - name: button_2
+        properties: {text: SIGNUP, background: red, foreground: white, role: raised,
+          bold: true}
+        type: Button
+        event_bindings: {click: button_2_click}
   - name: flow_panel_4
     properties: {align: left}
     type: FlowPanel
@@ -413,7 +413,7 @@ components:
   layout_properties: {grid_position: 'CCGSWT,EYNIWC'}
 - name: column_panel_25
   properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: medium,
-    col_widths: '{}'}
+    col_widths: '{"PIXMEW":25,"UCSEGE":20}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'DOLIGW,IVTAPX', full_width_row: true}
   components:
@@ -427,25 +427,24 @@ components:
       italic: true}
     type: Label
     layout_properties: {grid_position: 'HHWIZQ,TCNPIJ'}
-  - name: flow_panel_5
+  - name: linear_panel_1
     properties: {}
-    type: FlowPanel
-    layout_properties: {grid_position: 'FYDDMZ,GEWEPS', full_width_row: true}
+    type: LinearPanel
+    layout_properties: {grid_position: 'YNQSJY,YOPONJ'}
     components:
     - name: card_10
-      properties: {role: card, col_widths: '{"EKTNSB":15,"AMYDGL":45}'}
+      properties: {role: card, col_widths: '{}'}
       type: ColumnPanel
-      layout_properties: {}
       components:
       - name: image_13
         properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit,
           height: 319.6000061035156}
         type: Image
-        layout_properties: {grid_position: 'TUWQDL,EKTNSB OYSJUV,ZLJYYY', full_width_row: true}
+        layout_properties: {grid_position: 'VYYHTI,AEOQZC OYSJUV,ZLJYYY', full_width_row: true}
       - name: headline_18
         properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20}
         type: Label
-        layout_properties: {grid_position: 'TUWQDL,EKTNSB KXOVRY,BRACJK'}
+        layout_properties: {grid_position: 'VYYHTI,AEOQZC KXOVRY,BRACJK'}
       - name: rich_text_26
         properties: {align: center, content: 'Guru M, an innovative engineer sculpted
             in the crucible of technical excellence and refined through two decades
@@ -458,7 +457,7 @@ components:
             it breathes vitality into the future of health, rejuvenating the essence
             of well-being one breath at a time.'}
         type: RichText
-        layout_properties: {grid_position: 'TUWQDL,EKTNSB CZKESR,PWNNLU'}
+        layout_properties: {grid_position: 'VYYHTI,AEOQZC ,undefined'}
         components:
         - name: spacer_8
           properties: {height: 60}
@@ -467,28 +466,27 @@ components:
       - name: button_5
         properties: {text: '', icon: 'fa:facebook', bold: true, foreground: ''}
         type: Button
-        layout_properties: {grid_position: 'TUWQDL,EKTNSB FZLTOD,AXKJJL', row_background: 'theme:Primary
+        layout_properties: {grid_position: 'VYYHTI,AEOQZC FZLTOD,AXKJJL', row_background: 'theme:Primary
             700'}
       - name: button_6
         properties: {text: '', icon: 'fa:linkedin', bold: true}
         type: Button
-        layout_properties: {grid_position: 'TUWQDL,EKTNSB FZLTOD,EBEYBC'}
+        layout_properties: {grid_position: 'VYYHTI,AEOQZC FZLTOD,EBEYBC'}
       - name: card_12
-        properties: {role: card, col_widths: '{"ZVWVCE":30,"UZJTRX":30,"JSGHIX":40,"ZPLSJT":20,"JWBMPA":20,"BSHHXJ":20,"VDPXDJ":20}'}
+        properties: {role: card, col_widths: '{"JSGHIX":40,"JWBMPA":20,"BSHHXJ":20,"VDPXDJ":20}'}
         type: ColumnPanel
-        layout_properties: {grid_position: 'TUWQDL,AMYDGL'}
+        layout_properties: {grid_position: 'VYYHTI,SOJMUB'}
         components:
         - name: image_14
           properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit,
             height: 320.1999816894531}
           type: Image
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE PRSDSZ,QLTACW',
-            full_width_row: true}
+          layout_properties: {grid_position: 'PRSDSZ,QLTACW', full_width_row: true}
         - name: headline_19
           properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true,
             font_size: 20}
           type: Label
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE WFKKIX,OGDUTB'}
+          layout_properties: {grid_position: 'WFKKIX,OGDUTB'}
         - name: rich_text_27
           properties: {align: center, content: 'Dr. Chinmayi, a seasoned gynecologist
               with a modern-doctor''s heart, is redefining Anti-aging treatment at
@@ -504,124 +502,124 @@ components:
 
               '}
           type: RichText
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE PJMKRU,UFIHQK'}
+          layout_properties: {grid_position: 'PJMKRU,UFIHQK'}
         - name: spacer_20
           properties: {height: 49.199981689453125}
           type: Spacer
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE UAZUZB,POCPVD'}
+          layout_properties: {grid_position: 'UAZUZB,POCPVD'}
         - name: button_5_copy
           properties: {text: '', icon: 'fa:facebook', bold: true}
           type: Button
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE ,JWBMPA',
-            row_background: 'theme:Primary 700'}
+          layout_properties: {grid_position: ',JWBMPA', row_background: 'theme:Primary
+              700'}
           event_bindings: {click: button_5_copy_click}
         - name: button_6_copy
           properties: {text: '', icon: 'fa:linkedin', bold: true}
           type: Button
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE ,BSHHXJ'}
-        - name: card_13
-          properties: {role: card, background: white}
-          type: ColumnPanel
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,UZJTRX'}
-          components:
-          - name: image_15
-            properties: {source: _/theme/images/2.jpg, display_mode: shrink_to_fit,
-              height: 320.79998779296875}
-            type: Image
-            layout_properties: {grid_position: 'IHGHPB,COWBBI', full_width_row: true}
-          - name: headline_20
-            properties: {role: text, align: center, text: Dr Yashas COO, bold: true,
-              font_size: 20}
-            type: Label
-            layout_properties: {grid_position: 'SIGANM,PEQQPT'}
-          - name: rich_text_28
-            properties: {align: center, content: 'Dr. Yashas, the millennial maverick
-                taking Oxivive by storm as its Chief Operating Officer. This visionary
-                doctor isn''t just treating illness, he''s hacking aging itself. With
-                Oxivive''s groundbreaking anti-aging tech, Dr. Yashas is rewriting
-                the script on health - and he''s inviting you to join the revolution.
-                Forget popping pills and fearing wrinkles; Dr. Yashas is harnessing
-                the power of science to unlock a future where aging is optional, not
-                inevitable. Buckle up, because under Dr. Yashas''s leadership, Oxivive
-                is about to redefine what it means to live young, live healthy, and
-                live longer.
-
-
-                With a background in Medicine , Yashas plays a critical role in developing
-                and implementing cutting-edge anti-aging technology.'}
-            type: RichText
-            layout_properties: {grid_position: 'XNQRKA,WIMEVP'}
-          - name: button_5_copy_2
-            properties: {text: '', icon: 'fa:facebook', bold: true, background: white}
-            type: Button
-            layout_properties: {grid_position: 'ZDPBTT,PMJHLL', row_background: 'theme:Primary
-                700'}
-          - name: button_6_copy_2
-            properties: {text: '', icon: 'fa:linkedin', bold: true}
-            type: Button
-            layout_properties: {grid_position: 'ZDPBTT,NJSIVC'}
-          - name: button_7_copy_2
-            properties: {text: '', icon: 'fa:twitter', icon_align: left, bold: true}
-            type: Button
-            layout_properties: {grid_position: 'ZDPBTT,QOMMTF'}
-        - name: card_11
-          properties: {role: card}
-          type: ColumnPanel
-          layout_properties: {grid_position: 'HBMQQB,ZPLSJT'}
-          components:
-          - name: image_16
-            properties: {source: _/theme/images/3.jpg, display_mode: shrink_to_fit,
-              height: 324.3999328613281}
-            type: Image
-            layout_properties: {grid_position: 'GKBYLQ,FCTOVE', full_width_row: true}
-          - name: headline_21
-            properties: {role: text, align: center, text: Devaraj Gowdanar - CTO,
-              bold: true, font_size: 20}
-            type: Label
-            layout_properties: {grid_position: 'FAUQYI,KLIPJV'}
-          - name: rich_text_29
-            properties: {align: center, content: 'Devaraj Gowdanar - This visionary
-                entrepreneur and tech genius has taken the helm as Oxivive''s Chief
-                Technology Officer, armed with his Midas touch for innovation. Gowdanar,
-                an accomplished architect of disruptive solutions, is crafting the
-                very platform that will power Oxivive''s revolutionary anti-aging
-                tech. He''s not just tinkering with gadgets; he''s weaving the threads
-                of science, data, and human potential into a tapestry that redefines
-                the limits of health and lifespan. Under Gowdanar''s meticulous design,
-                Oxivive isn''t just promising to fight aging, it''s building a future
-                where aging itself becomes obsolete. Buckle up, because this tech
-                titan is leading the charge.
-
-
-                '}
-            type: RichText
-            layout_properties: {grid_position: 'IMZPKX,HTRDNX'}
-            components:
-            - name: spacer_24
-              properties: {height: 21}
-              type: Spacer
-              layout_properties: {}
-          - name: button_5_copy_3
-            properties: {text: '', icon: 'fa:facebook', bold: true}
-            type: Button
-            layout_properties: {grid_position: ',LQZNKO', row_background: 'theme:Primary
-                700'}
-          - name: button_6_copy_3
-            properties: {text: '', icon: 'fa:linkedin', bold: true}
-            type: Button
-            layout_properties: {grid_position: ''}
-          - name: button_7_copy_3
-            properties: {text: '', icon: 'fa:twitter', icon_align: left, bold: true}
-            type: Button
-            layout_properties: {grid_position: ',GFINUO'}
+          layout_properties: {grid_position: ',BSHHXJ'}
         - name: button_7_copy
           properties: {text: '', icon: 'fa:twitter', icon_align: left, bold: true}
           type: Button
-          layout_properties: {grid_position: 'HBMQQB,JSGHIX OPTLQV,ZVWVCE ,VDPXDJ'}
+          layout_properties: {grid_position: ',VDPXDJ'}
       - name: button_7
         properties: {text: '', icon: 'fa:twitter', icon_align: left, bold: true}
         type: Button
-        layout_properties: {grid_position: 'TUWQDL,EKTNSB FZLTOD,WRPADV'}
+        layout_properties: {grid_position: 'VYYHTI,AEOQZC FZLTOD,WRPADV'}
+  - name: card_13
+    properties: {role: card, background: white}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DROVWT,PIXMEW'}
+    components:
+    - name: image_15
+      properties: {source: _/theme/images/2.jpg, display_mode: shrink_to_fit, height: 320.79998779296875}
+      type: Image
+      layout_properties: {grid_position: 'IHGHPB,COWBBI', full_width_row: true}
+    - name: headline_20
+      properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20}
+      type: Label
+      layout_properties: {grid_position: 'SIGANM,PEQQPT'}
+    - name: rich_text_28
+      properties: {align: center, content: 'Dr. Yashas, the millennial maverick taking
+          Oxivive by storm as its Chief Operating Officer. This visionary doctor isn''t
+          just treating illness, he''s hacking aging itself. With Oxivive''s groundbreaking
+          anti-aging tech, Dr. Yashas is rewriting the script on health - and he''s
+          inviting you to join the revolution. Forget popping pills and fearing wrinkles;
+          Dr. Yashas is harnessing the power of science to unlock a future where aging
+          is optional, not inevitable. Buckle up, because under Dr. Yashas''s leadership,
+          Oxivive is about to redefine what it means to live young, live healthy,
+          and live longer.
+
+
+          With a background in Medicine , Yashas plays a critical role in developing
+          and implementing cutting-edge anti-aging technology.'}
+      type: RichText
+      layout_properties: {grid_position: 'XNQRKA,WIMEVP'}
+    - name: button_5_copy_2
+      properties: {text: '', icon: 'fa:facebook', bold: true, background: white}
+      type: Button
+      layout_properties: {grid_position: 'ZDPBTT,PMJHLL', row_background: 'theme:Primary
+          700'}
+    - name: button_6_copy_2
+      properties: {text: '', icon: 'fa:linkedin', bold: true}
+      type: Button
+      layout_properties: {grid_position: 'ZDPBTT,NJSIVC'}
+    - name: button_7_copy_2
+      properties: {text: '', icon: 'fa:twitter', icon_align: left, bold: true}
+      type: Button
+      layout_properties: {grid_position: 'ZDPBTT,QOMMTF'}
+  - name: card_11
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DROVWT,UCSEGE'}
+    components:
+    - name: image_16
+      properties: {source: _/theme/images/3.jpg, display_mode: shrink_to_fit, height: 324.3999328613281}
+      type: Image
+      layout_properties: {grid_position: 'GKBYLQ,FCTOVE', full_width_row: true}
+    - name: headline_21
+      properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true,
+        font_size: 20}
+      type: Label
+      layout_properties: {grid_position: 'FAUQYI,KLIPJV'}
+    - name: rich_text_29
+      properties: {align: center, content: 'Devaraj Gowdanar - This visionary entrepreneur
+          and tech genius has taken the helm as Oxivive''s Chief Technology Officer,
+          armed with his Midas touch for innovation. Gowdanar, an accomplished architect
+          of disruptive solutions, is crafting the very platform that will power Oxivive''s
+          revolutionary anti-aging tech. He''s not just tinkering with gadgets; he''s
+          weaving the threads of science, data, and human potential into a tapestry
+          that redefines the limits of health and lifespan. Under Gowdanar''s meticulous
+          design, Oxivive isn''t just promising to fight aging, it''s building a future
+          where aging itself becomes obsolete. Buckle up, because this tech titan
+          is leading the charge.
+
+
+          '}
+      type: RichText
+      layout_properties: {grid_position: 'IMZPKX,HTRDNX'}
+      components:
+      - name: spacer_24
+        properties: {height: 21}
+        type: Spacer
+        layout_properties: {}
+    - name: button_5_copy_3
+      properties: {text: '', icon: 'fa:facebook', bold: true}
+      type: Button
+      layout_properties: {grid_position: ',LQZNKO', row_background: 'theme:Primary
+          700'}
+    - name: button_6_copy_3
+      properties: {text: '', icon: 'fa:linkedin', bold: true}
+      type: Button
+      layout_properties: {grid_position: ''}
+    - name: button_7_copy_3
+      properties: {text: '', icon: 'fa:twitter', icon_align: left, bold: true}
+      type: Button
+      layout_properties: {grid_position: ',GFINUO'}
+  - name: flow_panel_5
+    properties: {}
+    type: FlowPanel
+    layout_properties: {grid_position: 'FYDDMZ,GEWEPS', full_width_row: true}
+    components: []
   - name: card_10_copy
     properties: {role: card}
     type: ColumnPanel

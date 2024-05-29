@@ -98,9 +98,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: oxigym_id
-      admin_ui: {width: 200, order: 15}
-      type: string
     - name: oxi_id
       admin_ui: {width: 200, order: -1}
       type: string
@@ -154,9 +151,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: capsules
-      admin_ui: {width: 200}
-      type: number
     - name: vehicle_rc
       admin_ui: {width: 200}
       type: media
@@ -208,37 +202,6 @@ db_schema:
     - name: oxiwheels_id
       admin_ui: {width: 200, order: 14.5}
       type: string
-  wallet:
-    title: wallet
-    client: full
-    server: full
-    columns:
-    - name: wallet_balance
-      admin_ui: {width: 200}
-      type: number
-  bank_accounts:
-    client: full
-    server: full
-    columns:
-    - name: account_holder_name
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: bank_name
-      admin_ui: {width: 200, order: 2}
-      type: string
-    - name: branch_name
-      admin_ui: {width: 200, order: 3}
-      type: string
-    - name: ifsc_code
-      admin_ui: {width: 200, order: 4}
-      type: number
-    - name: account_number
-      admin_ui: {order: 1, width: 200}
-      type: number
-    - name: account_type
-      admin_ui: {width: 200, order: 5}
-      type: string
-    title: bank_accounts
   oxi_users:
     title: oxi_users
     client: full
@@ -271,4 +234,35 @@ db_schema:
     - name: oxi_address
       admin_ui: {width: 200, order: 5.5}
       type: string
+  oxi_wallet:
+    title: oxi_wallet
+    client: full
+    server: full
+    columns:
+    - name: wallet_balance
+      admin_ui: {width: 200}
+      type: number
+  oxi_bank_accounts:
+    client: full
+    server: full
+    columns:
+    - name: account_holder_name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: bank_name
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: branch_name
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: ifsc_code
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: account_number
+      admin_ui: {order: 1, width: 200}
+      type: number
+    - name: account_type
+      admin_ui: {width: 200, order: 5}
+      type: string
+    title: oxi_bank_accounts
 uplink_visible: true

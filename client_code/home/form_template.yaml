@@ -427,6 +427,10 @@ components:
       italic: true}
     type: Label
     layout_properties: {grid_position: 'HHWIZQ,TCNPIJ'}
+  - name: grid_panel_1
+    properties: {}
+    type: GridPanel
+    layout_properties: {grid_position: 'RZMIRI,MGLXFS'}
   - name: linear_panel_2
     properties: {}
     type: LinearPanel

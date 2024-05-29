@@ -1,6 +1,6 @@
 container:
   type: ColumnPanel
-  properties: {col_widths: '{"HGGAAJ":30}'}
+  properties: {col_widths: '{"HGGAAJ":30,"QHPLJN":20,"ULMNGM":20,"BYOZWW":20}', background: ''}
 components:
 - name: xy_panel_2
   properties: {height: 623.1999816894531, background: '', width: 1550}
@@ -83,26 +83,38 @@ components:
       type: Label
       layout_properties: {}
 - name: spacer_40
-  properties: {height: 42.79998779296875}
+  properties: {height: 36.600006103515625}
   type: Spacer
   layout_properties: {grid_position: 'BWKOTX,FFYASW'}
-- name: xy_panel_3
-  properties: {height: 75}
-  type: XYPanel
-  layout_properties: {grid_position: 'VZLWWG,RMOYTO', full_width_row: true}
-  components:
-  - name: label_4
-    properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently.,
-      align: center, font_size: 17, italic: true}
-    type: Label
-    layout_properties: {x: 0, y: 41.912498474121094, width: 1452.18}
-  - name: label_9
-    properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
-      font_size: 30, underline: true, background: ''}
-    type: Label
-    layout_properties: {x: 0, y: 0, width: 1452.1870244140625}
+- name: headline_22
+  properties: {role: headline, icon: 'fa:info', align: center}
+  type: Label
+  layout_properties: {grid_position: 'BXDBVX,KMPPHB'}
+- name: label_1
+  properties: {text: 'Apart from using our treatment for anti-aging, one can benefit
+      from our treatment for pain and wound healing, rehabilitation, low back pain,
+      arthritis, osteoarthritis, fibromyalgia, migraines, intestinal infection, diabetic
+      foot, tinnitus, stroke and autism, Alzheimer''s, cerebral palsy, facial paralysis,
+      Parkinson''s, fractured bone healing, neuropathic pain, necrotizing infections,
+      and slowing cancer growth. ', align: center, italic: true, bold: true, font_size: 16}
+  type: Label
+  layout_properties: {grid_position: 'VLQMXW,OBKCOG', full_width_row: true}
+- name: spacer_2
+  properties: {height: 27.600006103515625}
+  type: Spacer
+  layout_properties: {grid_position: 'QRIIGB,YGIQMG'}
+- name: label_9
+  properties: {align: center, bold: true, foreground: '#40486d', text: Discover Oxivive's range of services,
+    font_size: 30, underline: true, background: ''}
+  type: Label
+  layout_properties: {grid_position: 'OCQJQN,ZQSPTX'}
+- name: label_4
+  properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently.,
+    align: center, font_size: 16, italic: false}
+  type: Label
+  layout_properties: {grid_position: 'PCBLFC,UCRPVA'}
 - name: spacer_41
-  properties: {height: 42.79998779296875}
+  properties: {height: 21.79998779296875}
   type: Spacer
   layout_properties: {grid_position: 'BTJLVT,NMMBMD'}
 - name: column_panel_1
@@ -117,13 +129,13 @@ components:
     layout_properties: {grid_position: 'HSFSRT,REAXEB', full_width_row: true}
   - name: label_10
     properties: {align: left, text: OXICLINIC, bold: true, foreground: 'theme:Black',
-      font_size: 20, visible: true, italic: false}
+      font_size: 20, visible: true, italic: false, underline: false}
     type: Label
     layout_properties: {grid_position: 'FSZDNJ,FGINHV'}
     data_bindings: []
   - name: label_13
     properties: {text: Unleash your mind's full potential with our cutting-edge anti-aging treatments.,
-      align: left, italic: false}
+      align: left, italic: false, font_size: 16}
     type: Label
     layout_properties: {grid_position: 'TGEXQX,TPGHYK'}
   - name: link_1
@@ -137,19 +149,18 @@ components:
   layout_properties: {grid_position: 'YSKBFZ,ULMNGM'}
   components:
   - name: image_4_copy_2
-    properties: {source: 'https://img.freepik.com/free-vector/athletes-doing-fitness-exercise-gym-with-panoramic-windows-isolated-flat-vector-illustration-cartoon-people-cardio-training-weight-lifting_74855-8225.jpg',
-      height: 258.3999328613281, vertical_align: bottom, display_mode: zoom_to_fill,
-      background: 'theme:Primary 700'}
+    properties: {source: _/theme/Untitled design (2).png, height: 316, vertical_align: bottom,
+      display_mode: zoom_to_fill, background: ''}
     type: Image
     layout_properties: {grid_position: 'BVKWMX,PSIQYL', full_width_row: true}
   - name: label_11
     properties: {text: OXIGYM, align: left, bold: true, foreground: 'theme:Black',
-      font_size: 20}
+      font_size: 20, underline: false}
     type: Label
     layout_properties: {grid_position: 'CRTZBM,ECSBWA'}
   - name: label_15
     properties: {text: 'Say goodbye to aches, pains, and fatigue. Being physically
-        healthy is a priority.', italic: false, align: left}
+        healthy is a priority.', italic: false, align: left, font_size: 15.5}
     type: Label
     layout_properties: {grid_position: 'KSRGGK,LXFRAX'}
   - name: link_2
@@ -163,9 +174,8 @@ components:
   layout_properties: {grid_position: 'YSKBFZ,BYOZWW'}
   components:
   - name: image_4_copy
-    properties: {source: 'https://static.vecteezy.com/system/resources/previews/006/916/129/non_2x/ambulance-emergency-illustration-vector.jpg',
-      height: 250.19998168945312, display_mode: zoom_to_fill, background: 'theme:Primary
-        700', horizontal_align: right, vertical_align: bottom}
+    properties: {source: _/theme/ed and (1).png, height: 308, display_mode: zoom_to_fill,
+      background: 'theme:Primary 700', horizontal_align: right, vertical_align: bottom}
     type: Image
     layout_properties: {grid_position: 'QJDZHY,NSPCLR'}
   - name: label_12
@@ -176,7 +186,7 @@ components:
   - name: label_14
     properties: {text: 'Reveal your inner glow with our anti-aging treatments.
 
-        ', italic: false, align: left}
+        ', italic: false, align: left, font_size: 16}
     type: Label
     layout_properties: {grid_position: 'FCQKTK,NLWXBJ'}
   - name: link_3
@@ -184,344 +194,123 @@ components:
       icon: '', bold: true}
     type: Link
     layout_properties: {grid_position: 'RJLFIL,TUDLUI'}
-- name: column_panel_5
-  properties: {col_spacing: huge, background: ''}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'CBXDPN,KYZXMI', full_width_row: true}
-  components:
-  - name: spacer_26
-    properties: {height: -0.800018310546875}
-    type: Spacer
-    layout_properties: {grid_position: 'UGUYZZ,NZKCGP', full_width_row: true, row_background: 'theme:Primary
-        700'}
-- name: column_panel_4
-  properties: {background: '#8d99ae', col_widths: '{"SOZFUK":10,"DIYSRV":20,"LVVRKI":15,"RVVPLE":15}',
-    role: card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'RKLARS,QJXISI', full_width_row: true}
-  components:
-  - name: spacer_6
-    properties: {height: 93.79998779296875}
-    type: Spacer
-    layout_properties: {grid_position: 'TXNWHF,UXVKWD'}
-  - name: label_5
-    properties: {text: 'Ready to take control of your aging process?', align: center,
-      font_size: 44, bold: true, foreground: 'theme:White'}
-    type: Label
-    layout_properties: {grid_position: 'ZUQHDN,MUIOKS'}
-  - name: spacer_8
-    properties: {height: 23.399993896484375}
-    type: Spacer
-    layout_properties: {grid_position: 'FNBOEV,FOTMVT'}
-  - name: spacer_4
-    properties: {height: 32}
-    type: Spacer
-    layout_properties: {grid_position: 'JIOZGS,SOZFUK'}
-  - name: button_3
-    properties: {text: JOIN THE OXIVIVE REVOLUTION, background: 'theme:White', foreground: 'theme:Black',
-      bold: true, role: raised}
-    type: Button
-    layout_properties: {grid_position: 'JIOZGS,DIYSRV', full_width_row: false}
-  - name: button_4
-    properties: {text: 'CONTACT US TODAY             ', foreground: 'theme:White',
-      background: 'theme:Primary 700', bold: true, role: raised}
-    type: Button
-    layout_properties: {grid_position: 'JIOZGS,LVVRKI', full_width_row: false}
-  - name: spacer_2
-    properties: {height: 32}
-    type: Spacer
-    layout_properties: {grid_position: 'JIOZGS,RVVPLE'}
-  - name: spacer_7
-    properties: {height: 95}
-    type: Spacer
-    layout_properties: {grid_position: 'YRDIWI,IUXMDY'}
 - name: column_panel_22
   properties: {}
   type: ColumnPanel
   layout_properties: {grid_position: 'FUAVYS,UGOADY', full_width_row: true}
   components:
-  - name: spacer_25
-    properties: {height: 12.79998779296875}
-    type: Spacer
-    layout_properties: {grid_position: 'VTHDSK,ZQDUCG'}
-  - name: headline_12
-    properties: {role: headline, align: center, text: '', bold: true, font_size: 39,
-      icon: 'fa:anchor', icon_align: right, font: Sans-Serif}
-    type: Label
-    layout_properties: {grid_position: 'YMZBRQ,NCCPYZ'}
-  - name: spacer_24
-    properties: {height: 16.199981689453125}
-    type: Spacer
-    layout_properties: {grid_position: 'NNMKHA,SJMDNS'}
-  - name: rich_text_17
-    properties: {align: center, content: 'Apart from using our treatment for anti-aging,
-        one can benefit from our treatment for pain and wound healing, rehabilitation,
-        low back pain, arthritis, osteoarthritis, fibromyalgia, migraines, intestinal
-        infection, diabetic foot, tinnitus, stroke and autism, Alzheimer''s, cerebral
-        palsy, facial paralysis, Parkinson''s, fractured bone healing, neuropathic
-        pain, necrotizing infections, and slowing cancer growth.', font: Sans-Serif,
-      font_size: 25}
-    type: RichText
-    layout_properties: {grid_position: 'IAVJOR,TFHSKH'}
   - name: spacer_23
-    properties: {height: 82.79998779296875}
+    properties: {height: 44.79998779296875}
     type: Spacer
     layout_properties: {grid_position: 'AXDRXU,UTWWAF'}
   - name: spacer_21
     properties: {height: -5.600006103515625}
     type: Spacer
     layout_properties: {grid_position: 'DSYVIG,YYXIXV'}
-  - name: card_5
-    properties: {role: null, col_widths: '{"PDICWQ":35,"XHTEYW":25}', col_spacing: huge,
-      spacing_above: large, spacing_below: large}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'QBRWII,GLSDHV', full_width_row: true}
-    components:
-    - name: label_6
-      properties: {align: center, text: Unlock Your Body's Hidden Potential, bold: true,
-        foreground: '#40486d', italic: true, font_size: 27}
-      type: Label
-      layout_properties: {grid_position: 'XCTVAC,PDICWQ NSSRBU,EHVLXI'}
-    - name: image_3
-      properties: {height: 327, source: _/theme/body_poti.jpg, display_mode: zoom_to_fill,
-        horizontal_align: center, vertical_align: bottom}
-      type: Image
-      layout_properties: {grid_position: 'XCTVAC,XHTEYW', full_width_row: true}
-    - name: column_panel_23
-      properties: {}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'XCTVAC,PDICWQ MWGWJH,IHHSEF'}
-      components:
-      - name: spacer_27
-        properties: {height: -4.600006103515625}
-        type: Spacer
-        layout_properties: {grid_position: 'BUESMF,EZOAUC', row_background: 'theme:Primary
-            700'}
-    - name: label_7
-      properties: {align: right, text: 'Discover the cutting-edge science and technology
-          behind Oxivive''s revolutionary anti-aging solution. Don''t just age, age
-          magnificently with Oxivive.', italic: false, font: '#40486d', font_size: 20}
-      type: Label
-      layout_properties: {grid_position: 'XCTVAC,PDICWQ CPDZVG,XMIIZW'}
   - name: spacer_1
-    properties: {height: 32}
+    properties: {height: 7.399932861328125}
     type: Spacer
     layout_properties: {grid_position: 'PXNWNS,CQXBCT'}
-- name: grid_panel_1
-  properties: {spacing_above: medium}
-  type: GridPanel
-  layout_properties: {grid_position: 'FJNFSS,BBCLXW', full_width_row: true}
-  components:
-  - name: headline_13
-    properties: {role: headline, align: center, text: 'HOW DOES IT WORK?', bold: true,
-      foreground: '#40486d'}
-    type: Label
-    layout_properties: {row: PVMYQW, width_xs: 12, col_xs: 0}
-  - name: spacer_28
-    properties: {height: 14.199981689453125}
-    type: Spacer
-    layout_properties: {row: HPBTFJ, width_xs: 3, col_xs: 3}
-  - name: rich_text_16
-    properties: {align: left, content: '
+- name: headline_13
+  properties: {role: headline, align: center, text: 'HOW DOES IT WORK?', bold: true,
+    foreground: '#40486d', underline: true}
+  type: Label
+  layout_properties: {grid_position: 'OMUDFZ,AGLXUO'}
+- name: spacer_4
+  properties: {height: 13.600006103515625}
+  type: Spacer
+  layout_properties: {grid_position: 'XMYCKC,XGQYUN TMQTZL,OSPWLM'}
+- name: label_5
+  properties: {text: 'Under normal circumstances, oxygen is absorbed into circulation
+      when we breathe and transported throughout the body only by red blood cells.  Under
+      pressure, oxygen can be dissolved into all of the body’s fluids, the plasma,
+      the lymphatic system, the central nervous system fluids, and the bone. This
+      allows us to dissolve, transport and deliver many more times the normal oxygen
+      to our tissues and cells.
 
 
+      Hyperbaric oxygen therapy improves the quality of life of the patient in many
+      areas. Many conditions such as PTSD and stroke have responded favorably to hyperbaric
+      treatment.Hyperbaric oxygen therapy improves the  quality of life of the patient
+      in many areas. Many conditions such as PTSD and stroke have responded favorably
+      to hyperbaric treatment.
 
-
-
-
-
-
-
-
-        Under normal circumstances, oxygen is absorbed into circulation when we breathe
-        and transported throughout the body only by red blood cells.  Under pressure,
-        oxygen can be dissolved into all of the body’s fluids, the plasma, the lymphatic
-        system, the central nervous system fluids, and the bone. This allows us to
-        dissolve, transport and deliver many more times the normal oxygen to our tissues
-        and cells.
-
-
-        Hyperbaric oxygen therapy improves the quality of life of the patient in many
-        areas. Many conditions such as PTSD and stroke have responded favorably to
-        hyperbaric treatment.Hyperbaric oxygen therapy improves the quality of life
-        of the patient in many areas. Many conditions such as PTSD and stroke have
-        responded favorably to hyperbaric treatment.'}
-    type: RichText
-    layout_properties: {row: FVTONS, width_xs: 6, col_xs: 0}
-  - name: image_5
-    properties: {source: _/theme/Do-things-at-your-own-pace-4.png, height: '327',
-      display_mode: zoom_to_fill}
-    type: Image
-    layout_properties: {row: FVTONS, width_xs: 4, col_xs: 7}
+      ', font_size: 16, italic: true}
+  type: Label
+  layout_properties: {grid_position: 'XMYCKC,XGQYUN LZFYXJ,PNMPFS'}
+- name: image_5
+  properties: {source: _/theme/ed and (3).png, height: 378.1999816894531, display_mode: zoom_to_fill}
+  type: Image
+  layout_properties: {grid_position: 'XMYCKC,RTTVAO'}
 - name: spacer_3
   properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'YEYQDE,JYHQQD'}
-- name: card_1
-  properties: {role: card}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'KTXAFH,WQKUIK', full_width_row: true}
-  components:
-  - name: headline_14
-    properties: {role: headline, align: center, text: 'WHY DOES IT WORK?', bold: true}
-    type: Label
-    layout_properties: {grid_position: 'DJLGEZ,FASAMF'}
-  - name: rich_text_18
-    properties: {align: center, content: 'It has long been known that healing many
-        areas of the body cannot take place without appropriate oxygen levels in the
-        tissue. In many cases, such as circulatory problems and non-healing wounds,
-        adequate oxygen cannot easily reach the damaged area.
-
-
-        Oxygen can be carried to areas where circulation is diminished or blocked.
-        In this way, extra oxygen can reach the damaged tissues helping the body to
-        support its own healing process. The increased oxygen enhances the ability
-        of white blood cells to kill bacteria, reduces swelling and allows new blood
-        vessels to grow more rapidly into the affected areas.
-
-
-        Hyperbaric Oxygen Therapy is safe and effective and provides this extra oxygen
-        absorption with minimal side effects.'}
-    type: RichText
-    layout_properties: {grid_position: 'NLQDJC,TDLDGP'}
-    components:
-    - name: headline_15
-      properties: {role: headline, align: center, text: 10 PRIMARY BENEFITS OF HBOT,
-        bold: true}
-      type: Label
-      layout_properties: {}
-    - name: rich_text_19
-      properties: {align: center, content: 'Increased oxygen perfusion- (Immediate
-          increase in free floating oxygen available for tissue use)
-
-          Neovascularization- Angiogenesis (new blood vessel growth)
-
-          Increased white blood cell function (improved neutrophil and macrophage
-          activity)
-
-          Nerve healing factors (increases in VegF, BDNF, HIF1)
-
-          Wound healing Increased capacity for healing (PDGF, VegF, collagen production
-          circulatory healing)
-
-          Stem cell release (up to 8-fold increase in mesenchymal and CNS stem cells)
-
-          Vasoconstriction (decrease edema and swelling from damaged tissues)
-
-          Mitochondrial healing (increase in size, shape and number of mitochondria)
-
-          Anti-inflammatory (reduction of inflammatory cytokines, increase in anti-inflammatory
-          cytokines)
-
-          Anti-microbial/microbiome balancing (reduction in anaerobic pathogens and
-          increase in aerobic probiotics)'}
-      type: RichText
-      layout_properties: {}
 - name: spacer_5
   properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'LIEDXD,UXZXZH'}
-- name: card_2
-  properties: {role: card, col_spacing: huge}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'KNTQKL,WHIWOS', full_width_row: true}
-  components:
-  - name: spacer_35
-    properties: {height: 142}
-    type: Spacer
-    layout_properties: {grid_position: 'AGJXOB,TLOATH ORIQVS,XSENJK'}
-  - name: rich_text_20
-    properties: {content: 'There are many types of chambers out there for treatment.
-        Some allow only one person at a time (monoplace chambers) while others allow
-        more than 1 person, even as many as 10 or more (multiplace chambers). Chambers
-        may be made out of a hard material like steel or acrylic while other chambers
-        may be made from a soft material.  While all chambers pressurize, and all
-        chambers use a combination of pressure and oxygen to create the many benefits
-        and effects we see, soft chambers are considered mild hyperbaric and hard
-        chambers are capable of higher pressure and higher oxygen levels.
-
-
-        That said, more is not necessarily better, in fact getting too much pressure
-        or too much oxygen can also have a negative effect. It is not a question of
-        getting as much pressure and as much oxygen as possible, it is really important
-        to match the proper equipment based on your needs and goals.', align: center}
-    type: RichText
-    layout_properties: {grid_position: 'AGJXOB,TLOATH XNWAXD,HIJUYO'}
-  - name: image_6
-    properties: {source: _/theme/b054fc00-4a67-4081-bd82-7ffd501cd31f.jpg, display_mode: zoom_to_fill,
-      height: 594.6000061035156}
-    type: Image
-    layout_properties: {grid_position: 'AGJXOB,AUZNNW'}
-- name: spacer_20
-  properties: {height: 32}
-  type: Spacer
-  layout_properties: {grid_position: 'THGBEJ,ADYTLW'}
 - name: card_3
-  properties: {role: card, background: 'theme:Gray 200', col_spacing: huge, spacing_above: large,
+  properties: {role: card, background: '', col_spacing: huge, spacing_above: large,
     col_widths: '{"DPEVLP":30,"MOXCNC":30}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'OYPTHY,BNQWST', full_width_row: true}
   components:
   - name: image_7
     properties: {source: _/theme/Screenshot%20(142).png, display_mode: zoom_to_fill,
-      height: 573.3999633789062}
+      height: 424.20001220703125}
     type: Image
     layout_properties: {grid_position: 'TAFQTH,DPEVLP'}
   - name: spacer_34
-    properties: {height: 112.80000305175781}
+    properties: {height: 9.399993896484375}
     type: Spacer
     layout_properties: {grid_position: 'TAFQTH,MOXCNC AFCGMY,GPVHQB'}
   - name: label_17
-    properties: {align: right, text: Hyperbaric Oxygen Therapy (HBOT) enhances sports and athletic performance.,
-      bold: true, font_size: 33, foreground: '#40486d'}
+    properties: {align: left, text: Hyperbaric Oxygen Therapy (HBOT) enhances sports and athletic performance.,
+      bold: true, font_size: 28, foreground: '#40486d'}
     type: Label
     layout_properties: {grid_position: 'TAFQTH,MOXCNC NYAQBI,TVGMHW'}
-  - name: rich_text_21
-    properties: {align: center, content: 'Many patients experience benefits after
-        just a few sessions of HBOT therapy. The demand for a natural approach to
-        maximize performance enhancement is growing, with athletes and individuals
-        from various backgrounds exploring the benefits of HBOT. Whether you seek
-        treatment for a specific condition or aim to enhance performance, HBOT may
-        be the solution you''ve been seeking. Call to learn more about the advantages
-        of HBOT for sports and athletic performance enhancement.'}
-    type: RichText
-    layout_properties: {grid_position: 'TAFQTH,MOXCNC WWKAZK,FLSRPX'}
-- name: spacer_22
-  properties: {height: 41.600006103515625}
-  type: Spacer
-  layout_properties: {grid_position: 'KNQZZD,FNLOZD'}
-- name: card_6
-  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: huge,
-    col_widths: '{"RXFPPX":30,"KQSLHI":30}'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'BIGOPR,KDJDRH', full_width_row: true}
-  components:
-  - name: image_9
-    properties: {source: _/theme/jblog_08_02-5.webp, display_mode: zoom_to_fill, height: 490}
-    type: Image
-    layout_properties: {grid_position: 'DBYFSM,RXFPPX'}
-  - name: spacer_36
-    properties: {height: 174.19998168945312}
-    type: Spacer
-    layout_properties: {grid_position: 'DBYFSM,KQSLHI WDRQRP,VIDGSA'}
-  - name: label_19
-    properties: {align: center, text: 'HOW HBOT HELPS FATIGUE:', bold: true, foreground: '#40486d',
-      font_size: 25}
+  - name: label_6
+    properties: {text: 'Many patients experience benefits after just a few sessions
+        of HBOT therapy. The demand for a natural approach to maximize performance
+        enhancement is growing, with athletes and individuals from various backgrounds
+        exploring the benefits of HBOT. Whether you seek treatment for a specific
+        condition or aim to enhance performance, HBOT may be the solution you''ve
+        been seeking. Call to learn more about the advantages of HBOT for sports and
+        athletic performance enhancement.', italic: true, font_size: 16}
     type: Label
-    layout_properties: {grid_position: 'DBYFSM,KQSLHI XSHHQB,ZLUZDB', full_width_row: true}
-  - name: rich_text_15
-    properties: {content: 'Enhancing the supply of oxygen to a fatigued musculoskeletal
+    layout_properties: {grid_position: 'TAFQTH,MOXCNC FIDYGI,TLAHQM'}
+  - name: spacer_6
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'ASTEIR,UIEMHN'}
+  - name: spacer_7
+    properties: {height: 35.399993896484375}
+    type: Spacer
+    layout_properties: {grid_position: 'MSNQNL,IWZFGB YRPKVG,DWLLKD'}
+  - name: label_19
+    properties: {align: right, text: How HBOT helps fatigue, bold: true, foreground: '#40486d',
+      font_size: 28}
+    type: Label
+    layout_properties: {grid_position: 'MSNQNL,IWZFGB NUSYSA,CEMBTN'}
+  - name: label_7
+    properties: {text: 'Enhancing the supply of oxygen to a fatigued musculoskeletal
         system in the Indian context activates cellular activity, boosts adenosine
         triphosphate (ATP) synthesis, and facilitates the metabolism of fatigue substances.
         In this context, Hyperbaric Oxygen Therapy (HBOT) is viewed as a method to
         promote recovery from fatigue, as discussed in Ishii et al''s study, "Hyperbaric
-        Oxygen As An Adjuvant Athlete" (Sports Med. 2005).'}
-    type: RichText
-    layout_properties: {grid_position: 'DBYFSM,KQSLHI YIJCZI,VXJCCU', full_width_row: true}
-- name: spacer_29
-  properties: {height: 32}
+        Oxygen As An Adjuvant Athlete" (Sports Med. 2005).', italic: true, font_size: 16,
+      align: right}
+    type: Label
+    layout_properties: {grid_position: 'MSNQNL,IWZFGB ANFMDH,ZBTDUQ'}
+  - name: image_9
+    properties: {source: _/theme/ed and (4).png, display_mode: zoom_to_fill, height: 338}
+    type: Image
+    layout_properties: {grid_position: 'MSNQNL,GTPPKL'}
+- name: spacer_22
+  properties: {height: 41.600006103515625}
   type: Spacer
-  layout_properties: {grid_position: 'EVFMHJ,LCDTOB'}
+  layout_properties: {grid_position: 'KNQZZD,FNLOZD'}
 - name: column_panel_24
   properties: {role: card, col_spacing: huge, col_widths: '{"ASCNSX":20,"DJUEAH":20,"JMQDKX":20}'}
   type: ColumnPanel
@@ -529,11 +318,12 @@ components:
   components:
   - name: headline_16
     properties: {role: headline, align: center, text: Our pilot customers, bold: true,
-      foreground: '#40486d', font_size: 31}
+      foreground: '#40486d', font_size: 28, underline: true}
     type: Label
     layout_properties: {grid_position: 'EPBKCC,OCTRNN'}
   - name: label_20
-    properties: {align: center, text: Unlock your potential with Oxivive's revolutionary anti-aging solutions.}
+    properties: {align: center, text: Unlock your potential with Oxivive's revolutionary anti-aging solutions.,
+      font_size: 16}
     type: Label
     layout_properties: {grid_position: 'QUZTJY,SJDJQH'}
   - name: card_7
@@ -546,20 +336,20 @@ components:
         foreground: 'theme:Primary 700'}
       type: Label
       layout_properties: {grid_position: 'VPAUNO,CXOQPH'}
-    - name: rich_text_23
-      properties: {align: center, content: I never realized aging could be such a positive experience until I discovered Oxivive. Their SHOT therapy has given me boundless energy and a sharper mind.}
-      type: RichText
-      layout_properties: {grid_position: 'FUYWVC,MQYMYL'}
-      components:
-      - name: image_10
-        properties: {source: _/theme/Ret-govt%20Official.png, display_mode: zoom_to_fill,
-          height: 321.6000061035156}
-        type: Image
-        layout_properties: {}
-      - name: label_24
-        properties: {align: center, text: Ret Govt Official}
-        type: Label
-        layout_properties: {}
+    - name: label_18
+      properties: {text: I never realized aging could be such a positive experience until I discovered Oxivive. Their SHOT therapy has given me boundless energy and a sharper mind.,
+        italic: true, font_size: 16}
+      type: Label
+      layout_properties: {grid_position: 'PFGMSK,SGFHZT'}
+    - name: image_10
+      properties: {source: _/theme/Ret-govt%20Official.png, display_mode: zoom_to_fill,
+        height: 322}
+      type: Image
+      layout_properties: {grid_position: 'FKGMZT,WUYIGM'}
+    - name: label_24
+      properties: {text: Ret Government Official, align: center, bold: true, foreground: red}
+      type: Label
+      layout_properties: {grid_position: 'TJUCRV,LEAJLD'}
   - name: card_8
     properties: {role: card}
     type: ColumnPanel
@@ -570,18 +360,23 @@ components:
           700'}
       type: Label
       layout_properties: {grid_position: 'BCWAPA,NOXIYV'}
+    - name: label_48
+      properties: {text: Oxivive's anti-aging solutions truly defy the effects of time. I can't believe how much younger and more vibrant I feel after just a few sessions.,
+        italic: true, font_size: 16}
+      type: Label
+      layout_properties: {grid_position: 'IGZTDE,BLELSN'}
+    - name: image_11
+      properties: {source: _/theme/busninessman.png, display_mode: zoom_to_fill, height: 323}
+      type: Image
+      layout_properties: {grid_position: 'PTLKAA,QYYHGD'}
     - name: rich_text_24
-      properties: {align: center, content: Oxivive's anti-aging solutions truly defy the effects of time. I can't believe how much younger and more vibrant I feel after just a few sessions.}
+      properties: {align: center, content: ''}
       type: RichText
       layout_properties: {grid_position: 'YDAONG,RRHKRI'}
       components:
-      - name: image_11
-        properties: {source: _/theme/busninessman.png, display_mode: zoom_to_fill,
-          height: 316.3999328613281}
-        type: Image
-        layout_properties: {}
       - name: label_25
-        properties: {align: center, text: Businessmen}
+        properties: {align: center, text: Businessmen, bold: true, font_size: 14,
+          background: '', foreground: red}
         type: Label
         layout_properties: {}
   - name: card_9
@@ -594,19 +389,22 @@ components:
           700'}
       type: Label
       layout_properties: {grid_position: 'TZUCUU,RVQMCO'}
+    - name: label_49
+      properties: {text: 'As a busy professional, I was struggling to keep up with
+          my hectic schedule and aging body.', italic: true, font_size: 16}
+      type: Label
+      layout_properties: {grid_position: 'ROQJFB,YTKXUD'}
+    - name: image_12
+      properties: {height: 346.5999755859375, source: _/theme/it%20manager.png, display_mode: zoom_to_fill}
+      type: Image
+      layout_properties: {grid_position: 'WJTELH,NIYPHU'}
     - name: rich_text_25
-      properties: {align: center, content: 'As a busy professional, I was struggling
-          to keep up with my hectic schedule and aging body.'}
+      properties: {align: center, content: ''}
       type: RichText
       layout_properties: {grid_position: 'ADQYZN,RXPDKC'}
       components:
-      - name: image_12
-        properties: {height: 335.20001220703125, source: _/theme/it%20manager.png,
-          display_mode: zoom_to_fill}
-        type: Image
-        layout_properties: {}
       - name: label_26
-        properties: {align: center, text: IT Manager}
+        properties: {align: center, text: IT Manager, bold: true, foreground: red}
         type: Label
         layout_properties: {}
 - name: spacer_31
@@ -1003,6 +801,43 @@ components:
           be effective and beneficial.', align: center}
       type: RichText
       layout_properties: {grid_position: 'SKPUJO,MVWJEE'}
+      components:
+      - name: xy_panel_3
+        properties: {height: 100}
+        type: XYPanel
+        components:
+        - name: headline_15
+          properties: {role: headline, align: center, text: 10 PRIMARY BENEFITS OF HBOT,
+            bold: true, foreground: '#40486d'}
+          type: Label
+          layout_properties: {x: 0, y: 52, width: 970}
+    - name: rich_text_19
+      properties: {align: center, content: 'Increased oxygen perfusion- (Immediate
+          increase in free floating oxygen available for tissue use)
+
+          Neovascularization- Angiogenesis (new blood vessel growth)
+
+          Increased white blood cell function (improved neutrophil and macrophage
+          activity)
+
+          Nerve healing factors (increases in VegF, BDNF, HIF1)
+
+          Wound healing Increased capacity for healing (PDGF, VegF, collagen production
+          circulatory healing)
+
+          Stem cell release (up to 8-fold increase in mesenchymal and CNS stem cells)
+
+          Vasoconstriction (decrease edema and swelling from damaged tissues)
+
+          Mitochondrial healing (increase in size, shape and number of mitochondria)
+
+          Anti-inflammatory (reduction of inflammatory cytokines, increase in anti-inflammatory
+          cytokines)
+
+          Anti-microbial/microbiome balancing (reduction in anaerobic pathogens and
+          increase in aerobic probiotics)'}
+      type: RichText
+      layout_properties: {grid_position: 'VXMHCT,PSBIZY'}
   - name: column_panel_13
     properties: {role: card}
     type: ColumnPanel

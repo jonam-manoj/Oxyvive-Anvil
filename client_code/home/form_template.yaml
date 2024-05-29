@@ -427,6 +427,26 @@ components:
       italic: true}
     type: Label
     layout_properties: {grid_position: 'HHWIZQ,TCNPIJ'}
+  - name: linear_panel_2
+    properties: {}
+    type: LinearPanel
+    layout_properties: {grid_position: 'YYMSYO,QMFWGG'}
+    components:
+    - name: image_13
+      properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit,
+        height: 319.6000061035156}
+      type: Image
+    - name: headline_18
+      properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20}
+      type: Label
+  - name: image_14
+    properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit, height: 320.1999816894531}
+    type: Image
+    layout_properties: {grid_position: 'YYMSYO,MQADWC IBSZRB,VWVOSW'}
+  - name: headline_19
+    properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true, font_size: 20}
+    type: Label
+    layout_properties: {grid_position: 'YYMSYO,MQADWC WAUOIE,QNAQFG'}
   - name: linear_panel_1
     properties: {}
     type: LinearPanel
@@ -436,15 +456,6 @@ components:
       properties: {role: card, col_widths: '{}'}
       type: ColumnPanel
       components:
-      - name: image_13
-        properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit,
-          height: 319.6000061035156}
-        type: Image
-        layout_properties: {grid_position: 'VYYHTI,AEOQZC OYSJUV,ZLJYYY', full_width_row: true}
-      - name: headline_18
-        properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20}
-        type: Label
-        layout_properties: {grid_position: 'VYYHTI,AEOQZC KXOVRY,BRACJK'}
       - name: rich_text_26
         properties: {align: center, content: 'Guru M, an innovative engineer sculpted
             in the crucible of technical excellence and refined through two decades
@@ -473,20 +484,10 @@ components:
         type: Button
         layout_properties: {grid_position: 'VYYHTI,AEOQZC FZLTOD,EBEYBC'}
       - name: card_12
-        properties: {role: card, col_widths: '{"JSGHIX":40,"JWBMPA":20,"BSHHXJ":20,"VDPXDJ":20}'}
+        properties: {role: card, col_widths: '{"JWBMPA":20,"BSHHXJ":20,"VDPXDJ":20}'}
         type: ColumnPanel
         layout_properties: {grid_position: 'VYYHTI,SOJMUB'}
         components:
-        - name: image_14
-          properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit,
-            height: 320.1999816894531}
-          type: Image
-          layout_properties: {grid_position: 'PRSDSZ,QLTACW', full_width_row: true}
-        - name: headline_19
-          properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true,
-            font_size: 20}
-          type: Label
-          layout_properties: {grid_position: 'WFKKIX,OGDUTB'}
         - name: rich_text_27
           properties: {align: center, content: 'Dr. Chinmayi, a seasoned gynecologist
               with a modern-doctor''s heart, is redefining Anti-aging treatment at

@@ -98,30 +98,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: address
-      admin_ui: {width: 200}
-      type: string
-    - name: Oxigyms_Name
-      admin_ui: {width: 200}
-      type: string
-    - name: established_year
-      admin_ui: {width: 200}
-      type: string
-    - name: State
-      admin_ui: {width: 200}
-      type: string
-    - name: District
-      admin_ui: {width: 200}
-      type: string
-    - name: pincode
-      admin_ui: {width: 200}
-      type: number
-    - name: address_2
-      admin_ui: {width: 200}
-      type: string
-    - name: capsules
-      admin_ui: {width: 200}
-      type: number
     - name: gym_licence
       admin_ui: {width: 200}
       type: media

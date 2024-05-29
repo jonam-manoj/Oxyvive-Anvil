@@ -45,45 +45,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-    - name: phone
-      admin_ui: {width: 200}
-      type: number
-    - name: password
-      admin_ui: {width: 200}
-      type: string
-    - name: established_year
-      admin_ui: {width: 200}
-      type: string
-    - name: District
-      admin_ui: {width: 200}
-      type: string
-    - name: State
-      admin_ui: {width: 200}
-      type: string
-    - name: pincode
-      admin_ui: {width: 200}
-      type: number
-    - name: address_2
-      admin_ui: {width: 200}
-      type: string
-    - name: capsules
-      admin_ui: {width: 200}
-      type: number
-    - name: medical_licence
-      admin_ui: {width: 200}
-      type: media
-    - name: building_licence
-      admin_ui: {width: 200}
-      type: media
-    - name: oxiclinic_id
-      admin_ui: {width: 200, order: 15}
-      type: string
-    - name: gst
-      admin_ui: {width: 200, order: 16}
-      type: string
     - name: oxi_id
       admin_ui: {width: 200, order: -1}
       type: string
@@ -230,59 +191,20 @@ db_schema:
     - name: oxigyms_id
       admin_ui: {width: 200, order: 14.5}
       type: string
+    - name: oxi_name
+      admin_ui: {width: 200, order: 0.5}
+      type: number
   oxiwheels:
     title: oxiwheels
     client: full
     server: full
     columns:
-    - name: id
-      admin_ui: {width: 200}
-      type: string
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-    - name: email
-      admin_ui: {width: 200}
-      type: string
-    - name: password
-      admin_ui: {width: 200}
-      type: string
-    - name: phone
-      admin_ui: {width: 200}
-      type: number
-    - name: address
-      admin_ui: {width: 200}
-      type: string
-    - name: Oxiwheels_Name
-      admin_ui: {width: 200}
-      type: string
-    - name: model_year
-      admin_ui: {width: 200}
-      type: string
-    - name: State
-      admin_ui: {width: 200}
-      type: string
-    - name: District
-      admin_ui: {width: 200}
-      type: string
-    - name: pincode
-      admin_ui: {width: 200}
-      type: number
-    - name: address_2
-      admin_ui: {width: 200}
-      type: string
     - name: capsules
       admin_ui: {width: 200}
       type: number
     - name: vehicle_rc
       admin_ui: {width: 200}
       type: media
-    - name: driving_licence
-      admin_ui: {width: 200}
-      type: media
-    - name: oxywheel_id
-      admin_ui: {width: 200, order: 15}
-      type: string
     - name: oxi_id
       admin_ui: {width: 200, order: -1}
       type: string

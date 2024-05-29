@@ -458,6 +458,23 @@ components:
         font_size: 20}
       type: Label
       layout_properties: {row: YWCEVV, width_xs: 3, col_xs: 3}
+    - name: headline_21
+      properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true,
+        font_size: 20}
+      type: Label
+      layout_properties: {row: YWCEVV, width_xs: 3, col_xs: 6}
+    - name: headline_20
+      properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20}
+      type: Label
+      layout_properties: {row: YWCEVV, width_xs: 3, col_xs: 9}
+    - name: label_51
+      properties: {}
+      type: Label
+      layout_properties: {row: AENBST, width_xs: 2, col_xs: 3}
+    - name: label_50
+      properties: {}
+      type: Label
+      layout_properties: {row: SSWGIJ, width_xs: 3, col_xs: 0}
     - name: card_2
       properties: {role: card}
       type: ColumnPanel
@@ -563,10 +580,6 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'DROVWT,PIXMEW'}
     components:
-    - name: headline_20
-      properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20}
-      type: Label
-      layout_properties: {grid_position: 'SIGANM,PEQQPT'}
     - name: rich_text_28
       properties: {align: center, content: 'Dr. Yashas, the millennial maverick taking
           Oxivive by storm as its Chief Operating Officer. This visionary doctor isn''t
@@ -601,11 +614,6 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'DROVWT,UCSEGE'}
     components:
-    - name: headline_21
-      properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true,
-        font_size: 20}
-      type: Label
-      layout_properties: {grid_position: 'FAUQYI,KLIPJV'}
     - name: rich_text_29
       properties: {align: center, content: 'Devaraj Gowdanar - This visionary entrepreneur
           and tech genius has taken the helm as Oxivive''s Chief Technology Officer,

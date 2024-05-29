@@ -96,6 +96,54 @@ db_schema:
     - name: gst
       admin_ui: {width: 200, order: 16}
       type: string
+    - name: oxi_id
+      admin_ui: {width: 200, order: -1}
+      type: string
+    - name: oxi_name
+      admin_ui: {width: 200, order: 0.5}
+      type: string
+    - name: oxi_email
+      admin_ui: {width: 200, order: 1.5}
+      type: string
+    - name: oxi_password
+      admin_ui: {width: 200, order: 4.5}
+      type: string
+    - name: oxi_phone
+      admin_ui: {width: 200, order: 2.5}
+      type: number
+    - name: oxi_address
+      admin_ui: {width: 200, order: 3.5}
+      type: string
+    - name: oxiclinics_Name
+      admin_ui: {width: 200, order: 5.5}
+      type: string
+    - name: oxiclinics_established_year
+      admin_ui: {width: 200, order: 6.5}
+      type: string
+    - name: oxiclinics_District
+      admin_ui: {width: 200, order: 7.5}
+      type: string
+    - name: oxiclinics_State
+      admin_ui: {width: 200, order: 8.5}
+      type: string
+    - name: oxiclinics_pincode
+      admin_ui: {width: 200, order: 9.5}
+      type: number
+    - name: oxiclinics_address
+      admin_ui: {width: 200, order: 10.5}
+      type: string
+    - name: oxiclinics_capsules
+      admin_ui: {width: 200, order: 11.5}
+      type: number
+    - name: oxiclinics_medical_licence
+      admin_ui: {width: 200, order: 12.5}
+      type: media
+    - name: oxiclinics_building_licence
+      admin_ui: {width: 200, order: 13.5}
+      type: media
+    - name: oxiclinics_id
+      admin_ui: {width: 200, order: 14.5}
+      type: string
   oxigyms:
     title: oxigyms
     client: full
@@ -148,6 +196,51 @@ db_schema:
       type: media
     - name: oxigym_id
       admin_ui: {width: 200, order: 15}
+      type: string
+    - name: oxi_id
+      admin_ui: {width: 200, order: -1}
+      type: string
+    - name: oxi_email
+      admin_ui: {width: 200, order: 1.5}
+      type: string
+    - name: oxi_password
+      admin_ui: {width: 200, order: 2.5}
+      type: string
+    - name: oxi_phone
+      admin_ui: {width: 200, order: 3.5}
+      type: number
+    - name: oxi_address
+      admin_ui: {width: 200, order: 4.5}
+      type: string
+    - name: oxigyms_Name
+      admin_ui: {width: 200, order: 5.5}
+      type: string
+    - name: oxigyms_established_year
+      admin_ui: {width: 200, order: 6.5}
+      type: string
+    - name: oxigyms_District
+      admin_ui: {width: 200, order: 8.5}
+      type: string
+    - name: oxigyms_State
+      admin_ui: {width: 200, order: 7.5}
+      type: string
+    - name: oxigyms_pincode
+      admin_ui: {width: 200, order: 9.5}
+      type: number
+    - name: oxigyms_address
+      admin_ui: {width: 200, order: 10.5}
+      type: string
+    - name: oxigyms_capsules
+      admin_ui: {width: 200, order: 11.5}
+      type: number
+    - name: oxigyms_licence
+      admin_ui: {width: 200, order: 12.5}
+      type: media
+    - name: oxigyms_building_licence
+      admin_ui: {width: 200, order: 13.5}
+      type: media
+    - name: oxigyms_id
+      admin_ui: {width: 200, order: 14.5}
       type: string
   oxiwheels:
     title: oxiwheels
@@ -202,37 +295,53 @@ db_schema:
     - name: oxywheel_id
       admin_ui: {width: 200, order: 15}
       type: string
-  users:
-    title: users
-    client: full
-    server: full
-    columns:
-    - name: username
-      admin_ui: {width: 200}
+    - name: oxi_id
+      admin_ui: {width: 200, order: -1}
       type: string
-    - name: email
-      admin_ui: {width: 200}
+    - name: oxi_name
+      admin_ui: {width: 200, order: 0.5}
       type: string
-    - name: password
-      admin_ui: {width: 200}
-      type: string
-    - name: phone
-      admin_ui: {width: 200}
-      type: number
-    - name: pincode
-      admin_ui: {width: 200}
-      type: number
-    - name: address
-      admin_ui: {width: 200, order: 6}
-      type: string
-    - name: id
+    - name: oxi_email
       admin_ui: {width: 200, order: 1.5}
       type: string
-    - name: profile
-      admin_ui: {width: 200, order: 7}
+    - name: oxi_password
+      admin_ui: {width: 200, order: 2.5}
+      type: string
+    - name: oxi_phone
+      admin_ui: {width: 200, order: 3.5}
+      type: number
+    - name: oxi_address
+      admin_ui: {width: 200, order: 4.5}
+      type: string
+    - name: oxiwheels_Name
+      admin_ui: {width: 200, order: 5.5}
+      type: string
+    - name: oxiwheels_model_year
+      admin_ui: {width: 200, order: 6.5}
+      type: string
+    - name: oxiwheels_District
+      admin_ui: {width: 200, order: 8.5}
+      type: string
+    - name: oxiwheels_State
+      admin_ui: {width: 200, order: 7.5}
+      type: string
+    - name: oxiwheels_pincode
+      admin_ui: {width: 200, order: 9.5}
+      type: number
+    - name: oxiwheels_address
+      admin_ui: {width: 200, order: 10.5}
+      type: string
+    - name: oxiwheels_capsules
+      admin_ui: {width: 200, order: 11.5}
+      type: number
+    - name: oxiwheels_vehicle_rc
+      admin_ui: {width: 200, order: 12.5}
       type: media
-    - name: usertype
-      admin_ui: {width: 200, order: 8}
+    - name: oxiwheels_driving_licence
+      admin_ui: {width: 200, order: 13.5}
+      type: media
+    - name: oxiwheels_id
+      admin_ui: {width: 200, order: 14.5}
       type: string
   wallet:
     title: wallet
@@ -265,4 +374,36 @@ db_schema:
       admin_ui: {width: 200, order: 5}
       type: string
     title: bank_accounts
+  oxi_users:
+    title: oxi_users
+    client: full
+    server: full
+    columns:
+    - name: oxi_username
+      admin_ui: {width: 200, order: -1}
+      type: string
+    - name: oxi_email
+      admin_ui: {width: 200, order: 0.5}
+      type: string
+    - name: oxi_password
+      admin_ui: {width: 200, order: 1.5}
+      type: string
+    - name: oxi_phone
+      admin_ui: {width: 200, order: 2.5}
+      type: number
+    - name: oxi_pincode
+      admin_ui: {width: 200, order: 3.5}
+      type: number
+    - name: oxi_id
+      admin_ui: {width: 200, order: 4.5}
+      type: string
+    - name: oxi_usertype
+      admin_ui: {width: 200, order: 7.5}
+      type: string
+    - name: oxi_profile
+      admin_ui: {width: 200, order: 6.5}
+      type: media
+    - name: oxi_address
+      admin_ui: {width: 200, order: 5.5}
+      type: string
 uplink_visible: true

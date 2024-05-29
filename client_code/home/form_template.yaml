@@ -412,17 +412,19 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'CCGSWT,EYNIWC'}
 - name: column_panel_25
-  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: medium}
+  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: medium,
+    col_widths: '{"CKHUPU":15,"JAPZVK":15,"FUGCIE":15,"DFIKSU":15}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'DOLIGW,IVTAPX', full_width_row: true}
   components:
   - name: headline_17
-    properties: {role: headline, align: center, text: MEET OUR TEAM, bold: true, foreground: '#40486d',
-      font_size: 30}
+    properties: {role: headline, align: center, text: Meet Our Team, bold: true, foreground: '#40486d',
+      font_size: 30, underline: true}
     type: Label
     layout_properties: {grid_position: 'EVEGMB,EDMWJF'}
   - name: label_27
-    properties: {align: center, text: Our team of battle-tested doctors and visionary engineers are the driving force behind Oxivive's groundbreaking anti-aging solutions.}
+    properties: {align: center, text: Our team of battle-tested doctors and visionary engineers are the driving force behind Oxivive's groundbreaking anti-aging solutions.,
+      italic: true}
     type: Label
     layout_properties: {grid_position: 'HHWIZQ,TCNPIJ'}
   - name: card_10
@@ -436,7 +438,8 @@ components:
       type: Image
       layout_properties: {grid_position: 'OYSJUV,ZLJYYY', full_width_row: true}
     - name: headline_18
-      properties: {role: headline, align: center, text: Guru M - CEO, bold: true}
+      properties: {role: headline, align: center, text: Guru M - CEO, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26
@@ -453,7 +456,7 @@ components:
       type: RichText
       layout_properties: {grid_position: 'CZKESR,PWNNLU'}
     - name: button_5
-      properties: {text: '', icon: 'fa:facebook', bold: true}
+      properties: {text: '', icon: 'fa:facebook', bold: true, foreground: ''}
       type: Button
       layout_properties: {grid_position: 'FZLTOD,AXKJJL', row_background: 'theme:Primary
           700'}
@@ -471,11 +474,12 @@ components:
     layout_properties: {grid_position: 'UNFDRR,JAPZVK'}
     components:
     - name: image_14
-      properties: {source: _/theme/images/1.jpg, display_mode: zoom_to_fill, height: 320.3999328613281}
+      properties: {source: _/theme/images/1.jpg, display_mode: zoom_to_fill, height: 320.1999816894531}
       type: Image
       layout_properties: {grid_position: 'PRSDSZ,QLTACW', full_width_row: true}
     - name: headline_19
-      properties: {role: headline, align: center, text: Dr Chinmayi - CHO, bold: true}
+      properties: {role: headline, align: center, text: Dr Chinmayi - CHO, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXEFSQ,OJGWRR'}
     - name: rich_text_27
@@ -517,7 +521,8 @@ components:
       type: Image
       layout_properties: {grid_position: 'IHGHPB,COWBBI', full_width_row: true}
     - name: headline_20
-      properties: {role: headline, align: center, text: Dr Yashas COO, bold: true}
+      properties: {role: headline, align: center, text: Dr Yashas COO, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'SIGANM,PEQQPT'}
     - name: rich_text_28
@@ -559,7 +564,8 @@ components:
       type: Image
       layout_properties: {grid_position: 'GKBYLQ,FCTOVE', full_width_row: true}
     - name: headline_21
-      properties: {role: headline, align: center, text: Devaraj Gowdanar - CTO, bold: true}
+      properties: {role: headline, align: center, text: Devaraj Gowdanar - CTO, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'FAUQYI,KLIPJV'}
     - name: rich_text_29
@@ -602,7 +608,7 @@ components:
       layout_properties: {grid_position: 'SUFLXH,LTOSLG', full_width_row: true}
     - name: headline_18_copy
       properties: {role: headline, align: center, text: Roshni Gowdanar - Director,
-        bold: true}
+        bold: true, font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26_copy

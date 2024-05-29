@@ -98,21 +98,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: id
-      admin_ui: {width: 200}
-      type: string
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-    - name: email
-      admin_ui: {width: 200}
-      type: string
-    - name: password
-      admin_ui: {width: 200}
-      type: string
-    - name: phone
-      admin_ui: {width: 200}
-      type: number
     - name: address
       admin_ui: {width: 200}
       type: string
@@ -193,7 +178,7 @@ db_schema:
       type: string
     - name: oxi_name
       admin_ui: {width: 200, order: 0.5}
-      type: number
+      type: string
   oxiwheels:
     title: oxiwheels
     client: full

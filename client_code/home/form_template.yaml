@@ -432,30 +432,51 @@ components:
     type: GridPanel
     layout_properties: {grid_position: 'RZMIRI,MGLXFS'}
     components:
+    - name: image_13
+      properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit,
+        height: 234}
+      type: Image
+      layout_properties: {row: QFPWEB, width_xs: 3, col_xs: 0}
+    - name: image_14
+      properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit, height: 233}
+      type: Image
+      layout_properties: {row: QFPWEB, width_xs: 3, col_xs: 3}
+    - name: image_16
+      properties: {source: _/theme/images/3.jpg, display_mode: shrink_to_fit, height: 324.3999328613281}
+      type: Image
+      layout_properties: {row: QFPWEB, width_xs: 3, col_xs: 6}
+    - name: image_15
+      properties: {source: _/theme/images/2.jpg, display_mode: shrink_to_fit, height: 232.19998168945312}
+      type: Image
+      layout_properties: {row: QFPWEB, width_xs: 3, col_xs: 5}
+    - name: card_2
+      properties: {role: card}
+      type: ColumnPanel
+      layout_properties: {row: YCPIPA, width_xs: 3, col_xs: 0}
     - name: card_1
       properties: {role: card}
       type: ColumnPanel
-      layout_properties: {row: IOUNFW, width_xs: 3, col_xs: 1}
+      layout_properties: {row: YCPIPA, width_xs: 3, col_xs: 3}
+    - name: card_4
+      properties: {role: card}
+      type: ColumnPanel
+      layout_properties: {row: YCPIPA, width_xs: 3, col_xs: 6}
+    - name: card_5
+      properties: {role: card}
+      type: ColumnPanel
+      layout_properties: {row: YCPIPA, width_xs: 3, col_xs: 9}
   - name: linear_panel_2
     properties: {}
     type: LinearPanel
     layout_properties: {grid_position: 'YYMSYO,QMFWGG'}
     components:
-    - name: image_13
-      properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit,
-        height: 319.6000061035156}
-      type: Image
     - name: headline_18
       properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20}
       type: Label
-  - name: image_14
-    properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit, height: 320.1999816894531}
-    type: Image
-    layout_properties: {grid_position: 'YYMSYO,MQADWC IBSZRB,VWVOSW'}
   - name: headline_19
     properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true, font_size: 20}
     type: Label
-    layout_properties: {grid_position: 'YYMSYO,MQADWC WAUOIE,QNAQFG'}
+    layout_properties: {grid_position: 'YYMSYO,MQADWC'}
   - name: linear_panel_1
     properties: {}
     type: LinearPanel
@@ -540,10 +561,6 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'DROVWT,PIXMEW'}
     components:
-    - name: image_15
-      properties: {source: _/theme/images/2.jpg, display_mode: shrink_to_fit, height: 320.79998779296875}
-      type: Image
-      layout_properties: {grid_position: 'IHGHPB,COWBBI', full_width_row: true}
     - name: headline_20
       properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20}
       type: Label
@@ -582,10 +599,6 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'DROVWT,UCSEGE'}
     components:
-    - name: image_16
-      properties: {source: _/theme/images/3.jpg, display_mode: shrink_to_fit, height: 324.3999328613281}
-      type: Image
-      layout_properties: {grid_position: 'GKBYLQ,FCTOVE', full_width_row: true}
     - name: headline_21
       properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true,
         font_size: 20}

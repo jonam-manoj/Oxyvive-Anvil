@@ -470,11 +470,19 @@ components:
     - name: label_51
       properties: {}
       type: Label
-      layout_properties: {row: AENBST, width_xs: 2, col_xs: 3}
+      layout_properties: {row: PNERSC, width_xs: 2, col_xs: 3}
+    - name: label_53
+      properties: {}
+      type: Label
+      layout_properties: {row: DTTMNG, width_xs: 3, col_xs: 9}
     - name: label_50
       properties: {}
       type: Label
-      layout_properties: {row: SSWGIJ, width_xs: 3, col_xs: 0}
+      layout_properties: {row: BDNJUK, width_xs: 2, col_xs: 0}
+    - name: label_52
+      properties: {}
+      type: Label
+      layout_properties: {row: BDNJUK, width_xs: 2, col_xs: 7}
     - name: card_2
       properties: {role: card}
       type: ColumnPanel

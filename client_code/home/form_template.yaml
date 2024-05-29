@@ -438,8 +438,7 @@ components:
       type: Image
       layout_properties: {grid_position: 'OYSJUV,ZLJYYY', full_width_row: true}
     - name: headline_18
-      properties: {role: headline, align: center, text: Guru M - CEO, bold: true,
-        font_size: 20}
+      properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26
@@ -478,10 +477,10 @@ components:
       type: Image
       layout_properties: {grid_position: 'PRSDSZ,QLTACW', full_width_row: true}
     - name: headline_19
-      properties: {role: headline, align: center, text: Dr Chinmayi - CHO, bold: true,
+      properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true,
         font_size: 20}
       type: Label
-      layout_properties: {grid_position: 'KXEFSQ,OJGWRR'}
+      layout_properties: {grid_position: 'WFKKIX,OGDUTB'}
     - name: rich_text_27
       properties: {align: center, content: 'Dr. Chinmayi, a seasoned gynecologist
           with a modern-doctor''s heart, is redefining Anti-aging treatment at Oxivive.
@@ -517,12 +516,11 @@ components:
     layout_properties: {grid_position: 'UNFDRR,FUGCIE'}
     components:
     - name: image_15
-      properties: {source: _/theme/images/2.jpg, display_mode: zoom_to_fill, height: 323.3999328613281}
+      properties: {source: _/theme/images/2.jpg, display_mode: zoom_to_fill, height: 321.1999816894531}
       type: Image
       layout_properties: {grid_position: 'IHGHPB,COWBBI', full_width_row: true}
     - name: headline_20
-      properties: {role: headline, align: center, text: Dr Yashas COO, bold: true,
-        font_size: 20}
+      properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20}
       type: Label
       layout_properties: {grid_position: 'SIGANM,PEQQPT'}
     - name: rich_text_28
@@ -564,7 +562,7 @@ components:
       type: Image
       layout_properties: {grid_position: 'GKBYLQ,FCTOVE', full_width_row: true}
     - name: headline_21
-      properties: {role: headline, align: center, text: Devaraj Gowdanar - CTO, bold: true,
+      properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true,
         font_size: 20}
       type: Label
       layout_properties: {grid_position: 'FAUQYI,KLIPJV'}
@@ -607,8 +605,8 @@ components:
       type: Image
       layout_properties: {grid_position: 'SUFLXH,LTOSLG', full_width_row: true}
     - name: headline_18_copy
-      properties: {role: headline, align: center, text: Roshni Gowdanar - Director,
-        bold: true, font_size: 20}
+      properties: {role: text, align: center, text: Roshni Gowdanar - Director, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26_copy
@@ -650,7 +648,8 @@ components:
       type: Image
       layout_properties: {grid_position: 'ZCZPUD,XYYGXD', full_width_row: true}
     - name: headline_18_copy_4
-      properties: {role: headline, align: center, text: Dr Prateek - Consultant, bold: true}
+      properties: {role: text, align: center, text: Dr Prateek - Consultant, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26_copy_4
@@ -697,7 +696,7 @@ components:
       type: Image
       layout_properties: {grid_position: 'RVWVIB,PZAXZP', full_width_row: true}
     - name: headline_18_copy_3
-      properties: {role: headline, align: center, text: Suma G - CFO, bold: true}
+      properties: {role: text, align: center, text: Suma G - CFO, bold: true, font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26_copy_3
@@ -740,8 +739,8 @@ components:
       type: Image
       layout_properties: {grid_position: 'HFXUZN,CFNQKZ', full_width_row: true}
     - name: headline_18_copy_2
-      properties: {role: headline, align: center, text: Dr Prasad G - Consultant,
-        bold: true}
+      properties: {role: text, align: center, text: Dr Prasad G - Consultant, bold: true,
+        font_size: 20}
       type: Label
       layout_properties: {grid_position: 'KXOVRY,BRACJK'}
     - name: rich_text_26_copy_2
@@ -778,7 +777,7 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'CKRKPF,ALQMVV'}
 - name: column_panel_11
-  properties: {background: 'theme:Gray 300', role: card}
+  properties: {background: '', role: card}
   type: ColumnPanel
   layout_properties: {grid_position: 'XQOKKW,IPIPVV', full_width_row: true}
   components:

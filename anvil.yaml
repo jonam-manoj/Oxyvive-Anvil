@@ -98,12 +98,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: gym_licence
-      admin_ui: {width: 200}
-      type: media
-    - name: building_licence
-      admin_ui: {width: 200}
-      type: media
     - name: oxigym_id
       admin_ui: {width: 200, order: 15}
       type: string

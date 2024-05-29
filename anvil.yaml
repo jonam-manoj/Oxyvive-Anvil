@@ -54,13 +54,7 @@ db_schema:
     - name: phone
       admin_ui: {width: 200}
       type: number
-    - name: address
-      admin_ui: {width: 200}
-      type: string
     - name: password
-      admin_ui: {width: 200}
-      type: string
-    - name: Oxiclinics_Name
       admin_ui: {width: 200}
       type: string
     - name: established_year

@@ -14,32 +14,6 @@ runtime_options:
   server_spec: {base: python310-standard}
 startup_form: null
 db_schema:
-  book_slot:
-    title: book_slot
-    client: full
-    server: full
-    columns:
-    - name: book_time
-      admin_ui: {width: 200}
-      type: string
-    - name: service_type
-      admin_ui: {width: 200, order: 5}
-      type: string
-    - name: user_id
-      admin_ui: {width: 200, order: 7}
-      type: string
-    - name: book_date
-      admin_ui: {width: 200, order: 8}
-      type: date
-    - name: serviceProvider_id
-      admin_ui: {width: 200, order: 9}
-      type: string
-    - name: slot_id
-      admin_ui: {width: 200}
-      type: number
-    - name: username
-      admin_ui: {width: 200}
-      type: string
   oxiclinics:
     title: oxiclinics
     client: full
@@ -92,6 +66,12 @@ db_schema:
       type: media
     - name: oxiclinics_id
       admin_ui: {width: 200, order: 14.5}
+      type: string
+    - name: oxiclinics_image
+      admin_ui: {width: 200, order: 15.5}
+      type: media
+    - name: oxiclinics_discription
+      admin_ui: {width: 200, order: 16.5}
       type: string
   oxigyms:
     title: oxigyms
@@ -146,6 +126,12 @@ db_schema:
     - name: oxi_name
       admin_ui: {width: 200, order: 0.5}
       type: string
+    - name: oxigyms_discrption
+      admin_ui: {width: 200, order: 15.5}
+      type: string
+    - name: oxigyms_image
+      admin_ui: {width: 200, order: 16.5}
+      type: media
   oxiwheels:
     title: oxiwheels
     client: full
@@ -201,6 +187,12 @@ db_schema:
       type: media
     - name: oxiwheels_id
       admin_ui: {width: 200, order: 14.5}
+      type: string
+    - name: oxiwheels_image
+      admin_ui: {width: 200, order: 15.5}
+      type: media
+    - name: oxiwheels_discrption
+      admin_ui: {width: 200, order: 16.5}
       type: string
   oxi_users:
     title: oxi_users
@@ -265,4 +257,33 @@ db_schema:
       admin_ui: {width: 200, order: 5}
       type: string
     title: oxi_bank_accounts
+  oxi_book_slot:
+    title: oxi_book_slot
+    client: full
+    server: full
+    columns:
+    - name: book_time
+      admin_ui: {width: 200}
+      type: string
+    - name: service_type
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: user_id
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: book_date
+      admin_ui: {width: 200, order: 8}
+      type: date
+    - name: serviceProvider_id
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: slot_id
+      admin_ui: {width: 200}
+      type: number
+    - name: username
+      admin_ui: {width: 200}
+      type: string
+    - name: oxi_book_date
+      admin_ui: {width: 200, order: 4.5}
+      type: date
 uplink_visible: true

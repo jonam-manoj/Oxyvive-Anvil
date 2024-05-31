@@ -20,3 +20,4 @@ class dashboard(dashboardTemplate):
   def primary_color_1_copy_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('dashboard.available_zym_address')
+

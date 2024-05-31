@@ -65,20 +65,15 @@ components:
       name: button_1
       layout_properties: {x: 1267.800000000745, y: 48.12500076368451, width: 91.125}
   - name: image_5
-    properties: {source: _/theme/Untitled design.jpg, display_mode: zoom_to_fill,
-      height: 509.5999755859375}
+    properties: {source: _/theme/trate an image.jpg, display_mode: zoom_to_fill, height: 492.79998779296875}
     type: Image
-    layout_properties: {grid_position: 'UPWBDU,GEDICS', full_width_row: true}
+    layout_properties: {grid_position: 'NXLIWG,HWIXCX', full_width_row: true}
   - name: card_2
     properties: {role: card, visible: true, background: white, foreground: 'theme:Primary
         500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
     type: ColumnPanel
     layout_properties: {grid_position: 'DCLPUP,CNLRPI', full_width_row: false}
     components:
-    - name: spacer_4
-      properties: {height: 119.19998168945312}
-      type: Spacer
-      layout_properties: {grid_position: 'TBNBHU,WATBVS'}
     - name: label_1
       properties: {}
       type: Label

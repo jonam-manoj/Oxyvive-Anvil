@@ -1,7 +1,7 @@
 from ._anvil_designer import dashboardTemplate
 from anvil import *
 import anvil.server
-from ..Form1 import Form1
+from ..Form2 import Form2
 
 class dashboard(dashboardTemplate):
   def __init__(self, **properties):
@@ -20,8 +20,7 @@ class dashboard(dashboardTemplate):
 
   def primary_color_1_copy_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    # open_form('dashboard.available_zym_address')
-    self.content_panel.clear()
-    self.content_panel.add_component(Form1())
+    # open_form('dashboard.available_zym_address')   
+    self.content_panel.add_component(Form2())
     
 

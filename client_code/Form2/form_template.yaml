@@ -3,7 +3,7 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: XYPanel
-  properties: {height: 464.5999755859375}
+  properties: {height: 464.5999755859375, background: 'theme:Secondary 700'}
   name: xy_panel_1
   layout_properties: {grid_position: 'KUAVEF,LVFDZO'}
   components:
@@ -16,28 +16,28 @@ components:
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: 'theme:Secondary 500', visible: true, text: '01:00 PM', font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#0080FF', bold: true, underline: false, icon: ''}
+        background: 'theme:Primary 700', bold: true, underline: false, icon: ''}
       name: button_4
       layout_properties: {grid_position: 'WZEYVU,STJDCS'}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: 'theme:Secondary 500', visible: true, text: '01:20 pm', font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#0080FF', bold: true, underline: false, icon: ''}
+        background: red, bold: true, underline: false, icon: ''}
       name: button_5
       layout_properties: {grid_position: 'WZEYVU,EUHKLL'}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: 'theme:Secondary 500', visible: true, text: '02:10 PM', font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#0080FF', bold: true, underline: false, icon: ''}
+        background: red, bold: true, underline: false, icon: ''}
       name: button_6
       layout_properties: {grid_position: 'WZEYVU,RIMRSZ'}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: 'theme:Secondary 500', visible: true, text: '03:00 PM', font_size: null,
         font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#0080FF', bold: true, underline: false, icon: ''}
+        background: red, bold: true, underline: false, icon: ''}
       name: button_7
       layout_properties: {grid_position: 'WZEYVU,TMXZIU'}
   - type: Label
@@ -61,7 +61,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '11:00 AM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_8
         layout_properties: {}
       - type: Spacer
@@ -72,7 +72,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '12:00 AM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_9
         layout_properties: {}
       - type: Spacer
@@ -83,7 +83,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '01:00 PM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_10
         layout_properties: {}
       - type: Spacer
@@ -94,7 +94,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '02:30 PM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_11
         layout_properties: {}
   - type: Label
@@ -118,7 +118,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '06:00 PM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_12
         layout_properties: {}
       - type: Spacer
@@ -129,7 +129,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '06:30 PM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_13
         layout_properties: {}
       - type: Spacer
@@ -140,7 +140,7 @@ components:
         properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
           foreground: 'theme:Secondary 500', visible: true, text: '07:00 PM', font_size: null,
           font: '', spacing_above: small, icon_align: left, spacing_below: small,
-          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+          italic: false, background: red, bold: true, underline: false, icon: ''}
         name: button_14
         layout_properties: {}
   - type: Label

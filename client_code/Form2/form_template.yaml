@@ -6,4 +6,169 @@ components:
   properties: {height: 400}
   name: xy_panel_1
   layout_properties: {grid_position: 'PIUJQR,PXVGCF'}
+  components:
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_1
+    layout_properties: {x: 196, y: 71, width: 645}
+    components:
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:Secondary 500', visible: true, text: '01:00 PM', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#0080FF', bold: true, underline: false, icon: ''}
+      name: button_4
+      layout_properties: {grid_position: 'WZEYVU,STJDCS'}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:Secondary 500', visible: true, text: '01:20 pm', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#0080FF', bold: true, underline: false, icon: ''}
+      name: button_5
+      layout_properties: {grid_position: 'WZEYVU,EUHKLL'}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:Secondary 500', visible: true, text: '02:10 PM', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#0080FF', bold: true, underline: false, icon: ''}
+      name: button_6
+      layout_properties: {grid_position: 'WZEYVU,RIMRSZ'}
+    - type: Button
+      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+        foreground: 'theme:Secondary 500', visible: true, text: '03:00 PM', font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#0080FF', bold: true, underline: false, icon: ''}
+      name: button_7
+      layout_properties: {grid_position: 'WZEYVU,TMXZIU'}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Morning, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: 'fa:cloud'}
+    name: label_1
+    layout_properties: {x: 10, y: 71, width: 160}
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_2
+    layout_properties: {x: 196, y: 188, width: 645}
+    components:
+    - type: FlowPanel
+      properties: {}
+      name: flow_panel_1
+      layout_properties: {grid_position: 'QDCWGO,ROCNMU'}
+      components:
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '11:00 AM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_8
+        layout_properties: {}
+      - type: Spacer
+        properties: {height: 32}
+        name: spacer_1
+        layout_properties: {width: 24}
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '12:00 AM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_9
+        layout_properties: {}
+      - type: Spacer
+        properties: {height: 32}
+        name: spacer_2
+        layout_properties: {width: 22}
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '01:00 PM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_10
+        layout_properties: {}
+      - type: Spacer
+        properties: {height: 32}
+        name: spacer_3
+        layout_properties: {width: 20}
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '02:30 PM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_11
+        layout_properties: {}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Afternoon, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: 'fa:sun-o'}
+    name: label_2
+    layout_properties: {x: 10, y: 188, width: 160}
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_3
+    layout_properties: {x: 196, y: 281, width: 645}
+    components:
+    - type: FlowPanel
+      properties: {}
+      name: flow_panel_2
+      layout_properties: {grid_position: 'XMRORH,WFYPBY'}
+      components:
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '06:00 PM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_12
+        layout_properties: {}
+      - type: Spacer
+        properties: {height: 32}
+        name: spacer_4
+        layout_properties: {width: 22}
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '06:30 PM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_13
+        layout_properties: {}
+      - type: Spacer
+        properties: {height: 32}
+        name: spacer_5
+        layout_properties: {width: 24}
+      - type: Button
+        properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+          foreground: 'theme:Secondary 500', visible: true, text: '07:00 PM', font_size: null,
+          font: '', spacing_above: small, icon_align: left, spacing_below: small,
+          italic: false, background: '#0080FF', bold: true, underline: false, icon: ''}
+        name: button_14
+        layout_properties: {}
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Evening, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: 'fa:moon-o'}
+    name: label_3
+    layout_properties: {x: 10, y: 291, width: 160}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Today, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#90EE90',
+      bold: true, underline: false, icon: ''}
+    name: button_1
+    layout_properties: {x: 284.8000183105469, y: 10, width: 100}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: 'Wed, 5 jun', font_size: null, font: '',
+      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+      background: '#90EE90', bold: true, underline: false, icon: ''}
+    name: button_3
+    layout_properties: {x: 747.7999954223633, y: 10, width: 135}
+  - type: Button
+    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Tomorrow, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#90EE90',
+      bold: true, underline: false, icon: ''}
+    name: button_2
+    layout_properties: {x: 501.7999954223633, y: 10, width: 120}
 is_package: true

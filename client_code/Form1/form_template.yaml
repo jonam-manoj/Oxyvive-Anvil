@@ -49,6 +49,7 @@ components:
         icon: ''}
       name: button_1
       layout_properties: {grid_position: 'GEYEYW,FAXLLI JIDWPT,QJLXVV'}
+      event_bindings: {click: button_1_click}
   - type: ColumnPanel
     properties: {col_widths: '{}'}
     name: column_panel_2

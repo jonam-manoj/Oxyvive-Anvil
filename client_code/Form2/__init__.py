@@ -12,6 +12,8 @@ class Form2(Form2Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+  
+
   def button_4_click(self, **event_args):
       self.primary_color_1.visible=True
       current_time = datetime.now().time()

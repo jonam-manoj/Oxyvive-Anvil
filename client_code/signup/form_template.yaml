@@ -86,6 +86,12 @@ components:
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ WVHJPX,JXMHTH'}
     event_bindings: {focus: text_box_5_focus, lost_focus: text_box_5_lost_focus}
+  - name: pan_text_box
+    properties: {placeholder: '  PAN number', border: 1px solid black, italic: true}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ VHCIIU,GOUYZT'}
+    event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
+      lost_focus: servicers_address_text_box_lost_focus}
   - name: spacer_3
     properties: {height: 32}
     type: Spacer

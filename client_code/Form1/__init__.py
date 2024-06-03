@@ -18,3 +18,8 @@ class Form1(Form1Template):
     """This method is called when the button is clicked"""
     self.content_panel.clear()
     self.content_panel.add_component(Form2())
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.content_panel.clear()
+    self.content_panel.add_component(Form2())

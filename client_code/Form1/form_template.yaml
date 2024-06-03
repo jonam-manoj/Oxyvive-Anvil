@@ -92,4 +92,5 @@ components:
         icon: ''}
       name: button_2
       layout_properties: {grid_position: 'VUADKX,IDDIZB WXKQCE,CCSLPC'}
+      event_bindings: {click: button_2_click}
 is_package: true

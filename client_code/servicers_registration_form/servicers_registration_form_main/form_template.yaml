@@ -43,7 +43,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'NVTDJY,PNFHQI CQMVEV,MCOCRN'}
   - name: xy_panel_2
-    properties: {height: 382.6000061035156}
+    properties: {height: 517}
     type: XYPanel
     layout_properties: {grid_position: 'NVTDJY,PNFHQI RFXVXQ,NFBZQL'}
     components:
@@ -51,7 +51,7 @@ components:
       properties: {role: null, placeholder: '  Full name', border: 1px solid black,
         italic: true, text: ''}
       type: TextBox
-      layout_properties: {x: 12.949963379651308, y: 23.39999771118164, width: 380}
+      layout_properties: {x: 12, y: 23.39999771118164, width: 380}
       event_bindings: {change: servicers_name_text_box_change, focus: servicers_name_text_box_focus,
         lost_focus: servicers_name_text_box_lost_focus}
     - name: name_hint
@@ -98,24 +98,36 @@ components:
     - name: servicers_address_text_box
       properties: {placeholder: '  Address', border: 1px solid black, italic: true}
       type: TextBox
-      layout_properties: {x: 15.287426758557558, y: 275.58749771118164, width: 380}
+      layout_properties: {x: 12, y: 275.58749771118164, width: 380}
       event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
         lost_focus: servicers_address_text_box_lost_focus}
     - name: address_hint
       properties: {foreground: 'theme:Primary 700'}
       type: Label
       layout_properties: {x: 17.700024414807558, y: 306.5874938964844, width: 380}
+    - name: servicers_gst_text_box_copy
+      properties: {placeholder: '  GST number', border: 1px solid black, italic: true}
+      type: TextBox
+      layout_properties: {x: 14.500012207776308, y: 340.987491607666, width: 380}
+      event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
+        lost_focus: servicers_address_text_box_lost_focus}
+    - name: servicers_pan_text_box_copy
+      properties: {placeholder: '  PAN number', border: 1px solid black, italic: true}
+      type: TextBox
+      layout_properties: {x: 12, y: 402.6000099182129, width: 380}
+      event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
+        lost_focus: servicers_address_text_box_lost_focus}
     - name: servicers_next_button_1
       properties: {role: raised, align: full, foreground: 'theme:White', text: Next,
         font_size: 15, icon_align: right, background: '#fa1900', bold: true, icon: 'fa:angle-double-right'}
       type: Button
-      layout_properties: {x: 212.60000610351562, y: 345.1750068664551, width: 280.70001220703125}
+      layout_properties: {x: 207.2249877937138, y: 479.57500076293945, width: 185.08750915527344}
       event_bindings: {click: servicers_next_button_1_click}
     - name: servicers_prev_button_1
       properties: {role: raised, align: full, border: '', foreground: 'theme:White',
         text: Preview, font_size: 15, background: '#fa1900', bold: true, icon: 'fa:angle-double-left'}
       type: Button
-      layout_properties: {x: 16.925000000745058, y: 345.1750068664551, width: 180}
+      layout_properties: {x: 11.250012207776308, y: 479.57500076293945, width: 180}
       data_bindings: []
   - name: spacer_3
     properties: {height: 32}

@@ -7,78 +7,101 @@ components:
     display_mode: shrink_to_fit, background: red}
   type: Image
   layout_properties: {grid_position: 'GTLCQK,UQBPRI', full_width_row: true}
+- name: spacer_5
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'EWJDVS,IFCREC'}
 - name: card_1
-  properties: {role: card, col_widths: '{"KFKQUT":25,"PNFHQI":45,"UHLNPU":25,"THCFFA":35,"QXVGVF":10,"TGUIZY":50,"MYAUNY":10}'}
+  properties: {role: card, col_widths: '{"KFKQUT":35,"PNFHQI":45,"UHLNPU":20,"MULIPM":5}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'JDWWNF,NTLRDE'}
   components:
+  - name: spacer_8
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'XLLKYA,QKEJFQ'}
   - name: spacer_2
     properties: {height: -10}
     type: Spacer
     layout_properties: {grid_position: 'DNESTC,UHLNPU'}
-  - name: label_1
-    properties: {text: Create new account, font_size: 25, bold: true, align: left,
-      foreground: '#40486d', underline: false}
-    type: Label
-    layout_properties: {grid_position: 'DNESTC,THCFFA'}
   - name: image_1
-    properties: {height: 523.1999816894531, source: _/theme/Untitled design (4).jpg,
+    properties: {height: 716.7999877929688, source: _/theme/Untitled design (4).jpg,
       display_mode: zoom_to_fill}
     type: Image
     layout_properties: {grid_position: 'NVTDJY,KFKQUT'}
   - name: spacer_4
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI QBSAXR,QXVGVF'}
-  - name: xy_panel_1
-    properties: {height: 520.6000061035156}
+    layout_properties: {grid_position: 'NVTDJY,MULIPM'}
+  - name: label_1
+    properties: {text: Create new account, font_size: 25, bold: true, align: left,
+      foreground: '#40486d', underline: false}
+    type: Label
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI BTYSMZ,PBEIPN'}
+  - name: spacer_6
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI CQMVEV,MCOCRN'}
+  - name: xy_panel_2
+    properties: {height: 250.79998779296875}
     type: XYPanel
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI QBSAXR,TGUIZY'}
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI RFXVXQ,NFBZQL'}
     components:
     - name: servicers_name_text_box
-      properties: {role: null, placeholder: '  Full Name', border: 1px solid black,
-        italic: true, text: ' '}
+      properties: {role: null, placeholder: '  Full name', border: 1px solid black,
+        italic: true, text: ''}
       type: TextBox
-      layout_properties: {x: 0, y: 42.499996948987246, width: 380}
+      layout_properties: {x: 12.949963379651308, y: 23.39999771118164, width: 380}
       event_bindings: {change: servicers_name_text_box_change, focus: servicers_name_text_box_focus,
         lost_focus: servicers_name_text_box_lost_focus}
     - name: name_hint
       properties: {foreground: 'theme:Primary 700'}
       type: Label
-      layout_properties: {x: 0, y: 69.65000610426068, width: 350.4}
+      layout_properties: {x: 15.324963379651308, y: 55.787498474121094, width: 377.32501220703125}
     - name: servicers_email_text_box
       properties: {type: email, placeholder: '  Email', border: 1px solid black, italic: true}
       type: TextBox
-      layout_properties: {x: 0, y: 145.287533570081, width: 380}
+      layout_properties: {x: 15.300000000745058, y: 85.39999771118164, width: 380}
       event_bindings: {change: servicers_email_text_box_change, focus: servicers_email_text_box_focus,
         lost_focus: servicers_email_text_box_lost_focus}
     - name: email_hint
       properties: {foreground: 'theme:Primary 700'}
       type: Label
-      layout_properties: {x: 0, y: 173.6375091560185, width: 750}
+      layout_properties: {x: 17.700024414807558, y: 115.60000610351562, width: 380}
     - name: servicers_password_text_box
-      properties: {font_size: -4, placeholder: Password, hide_text: true, border: 1px solid black,
+      properties: {font_size: -4, placeholder: '  Password', hide_text: true, border: 1px solid black,
         italic: true}
       type: TextBox
-      layout_properties: {x: 0, y: 239.68749694898725, width: 380}
+      layout_properties: {x: 13.212475586682558, y: 149.18750381469727, width: 380}
       event_bindings: {change: servicers_password_text_box_change, focus: servicers_password_text_box_focus,
         lost_focus: servicers_password_text_box_lost_focus}
+    - name: show_password_check_box
+      properties: {text: Show password, align: right, checked: false, font_size: 12}
+      type: CheckBox
+      layout_properties: {x: 239.58747558668256, y: 157.86249923706055, width: 154}
+      event_bindings: {change: show_password_check_box_change}
     - name: hint_text
       properties: {foreground: 'theme:Primary 700', background: ''}
       type: Label
-      layout_properties: {x: 0, y: 269.100033570081, width: 750}
-    - name: servicers_phone_text_box
-      properties: {type: tel, placeholder: Phone no., border: 1px solid black, italic: true}
-      type: TextBox
-      layout_properties: {x: 0, y: 342.45000076293945, width: 380}
-      event_bindings: {change: servicers_phone_text_box_change, focus: servicers_phone_text_box_focus,
-        lost_focus: servicers_phone_text_box_lost_focus}
+      layout_properties: {x: 15.337475586682558, y: 184.40000915527344, width: 380}
     - name: phone_hint
       properties: {foreground: 'theme:Primary 700'}
       type: Label
-      layout_properties: {x: 0, y: 375.3000297546387, width: 750}
+      layout_properties: {x: 17.737438965588808, y: 247, width: 377.32501220703125}
+    - name: servicers_phone_text_box
+      properties: {type: tel, placeholder: '  Mobile number', border: 1px solid black,
+        italic: true}
+      type: TextBox
+      layout_properties: {x: 13.124951172620058, y: 214.18750381469727, width: 380}
+      event_bindings: {change: servicers_phone_text_box_change, focus: servicers_phone_text_box_focus,
+        lost_focus: servicers_phone_text_box_lost_focus}
+  - name: xy_panel_1
+    properties: {height: 520.1999816894531}
+    type: XYPanel
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI CGPFXF,TSHGPX'}
+    components:
     - name: servicers_address_text_box
-      properties: {placeholder: Address, border: 1px solid black, italic: true}
+      properties: {placeholder: '  Address', border: 1px solid black, italic: true}
       type: TextBox
       layout_properties: {x: 0, y: 442.30002784729004, width: 380}
       event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
@@ -86,32 +109,27 @@ components:
     - name: address_hint
       properties: {foreground: 'theme:Primary 700'}
       type: Label
-      layout_properties: {x: 0, y: 474.2500228881836, width: 750}
-    - name: spacer_3
-      properties: {height: 32}
-      type: Spacer
-      layout_properties: {x: 345.16253662109375, y: 500.60003662109375, width: 200}
-    - name: show_password_check_box
-      properties: {text: Show password, align: right, checked: false, font_size: 12}
-      type: CheckBox
-      layout_properties: {x: 223.3499877937138, y: 241.5, width: 154}
-      event_bindings: {change: show_password_check_box_change}
+      layout_properties: {x: 0, y: 474.2500228881836, width: 380}
+  - name: spacer_3
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI GQYPRT,MOPKOR'}
   - name: servicers_prev_button_1
     properties: {role: raised, align: full, border: '', foreground: 'theme:White',
       text: Preview, font_size: 15, background: '#fa1900', bold: true, icon: 'fa:angle-double-left'}
     type: Button
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI UACKAI,PMJROZ'}
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI GIDTVL,XSUOBE'}
     data_bindings: []
   - name: servicers_next_button_1
     properties: {role: raised, align: full, foreground: 'theme:White', text: Next,
       font_size: 15, icon_align: right, background: '#fa1900', bold: true, icon: 'fa:angle-double-right'}
     type: Button
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI UACKAI,FITBST'}
+    layout_properties: {grid_position: 'NVTDJY,PNFHQI GIDTVL,XGIQMA'}
     event_bindings: {click: servicers_next_button_1_click}
-  - name: spacer_5
+  - name: spacer_7
     properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'NVTDJY,MYAUNY'}
+    layout_properties: {grid_position: 'FJVRUM,WXQKFB'}
 - name: spacer_1
   properties: {height: 55.600006103515625}
   type: Spacer

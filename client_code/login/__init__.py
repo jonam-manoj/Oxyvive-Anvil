@@ -14,11 +14,11 @@ class login(loginTemplate):
         
         try:
             # Search for the user in the Data Table
-            users_table = app_tables.users
-            user = users_table.get(email=email, password=password)
+            users_table = app_tables.oxi_users
+            user = users_table.get(oxi_email=email, oxi_password=password)
             
             if user:
-                if user['usertype'] =='service provider':
+                if user['oxi_usertype'] =='service provider':
                   user_id.user_id = user['id']
                   open_form('servicers.servicers_dashboard')
                 else:

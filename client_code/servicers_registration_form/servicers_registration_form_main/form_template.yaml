@@ -25,7 +25,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'DNESTC,UHLNPU'}
   - name: image_1
-    properties: {height: 716.7999877929688, source: _/theme/Untitled design (4).jpg,
+    properties: {height: 538.1999816894531, source: _/theme/Untitled design (4).jpg,
       display_mode: zoom_to_fill}
     type: Image
     layout_properties: {grid_position: 'NVTDJY,KFKQUT'}
@@ -34,7 +34,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'NVTDJY,MULIPM'}
   - name: label_1
-    properties: {text: Create new account, font_size: 25, bold: true, align: left,
+    properties: {text: '  CREATE NEW ACCOUNT ', font_size: 22, bold: true, align: left,
       foreground: '#40486d', underline: false}
     type: Label
     layout_properties: {grid_position: 'NVTDJY,PNFHQI BTYSMZ,PBEIPN'}
@@ -43,7 +43,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'NVTDJY,PNFHQI CQMVEV,MCOCRN'}
   - name: xy_panel_2
-    properties: {height: 250.79998779296875}
+    properties: {height: 382.6000061035156}
     type: XYPanel
     layout_properties: {grid_position: 'NVTDJY,PNFHQI RFXVXQ,NFBZQL'}
     components:
@@ -95,37 +95,32 @@ components:
       layout_properties: {x: 13.124951172620058, y: 214.18750381469727, width: 380}
       event_bindings: {change: servicers_phone_text_box_change, focus: servicers_phone_text_box_focus,
         lost_focus: servicers_phone_text_box_lost_focus}
-  - name: xy_panel_1
-    properties: {height: 520.1999816894531}
-    type: XYPanel
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI CGPFXF,TSHGPX'}
-    components:
     - name: servicers_address_text_box
       properties: {placeholder: '  Address', border: 1px solid black, italic: true}
       type: TextBox
-      layout_properties: {x: 0, y: 442.30002784729004, width: 380}
+      layout_properties: {x: 15.287426758557558, y: 275.58749771118164, width: 380}
       event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
         lost_focus: servicers_address_text_box_lost_focus}
     - name: address_hint
       properties: {foreground: 'theme:Primary 700'}
       type: Label
-      layout_properties: {x: 0, y: 474.2500228881836, width: 380}
+      layout_properties: {x: 17.700024414807558, y: 306.5874938964844, width: 380}
+    - name: servicers_next_button_1
+      properties: {role: raised, align: full, foreground: 'theme:White', text: Next,
+        font_size: 15, icon_align: right, background: '#fa1900', bold: true, icon: 'fa:angle-double-right'}
+      type: Button
+      layout_properties: {x: 212.60000610351562, y: 345.1750068664551, width: 280.70001220703125}
+      event_bindings: {click: servicers_next_button_1_click}
+    - name: servicers_prev_button_1
+      properties: {role: raised, align: full, border: '', foreground: 'theme:White',
+        text: Preview, font_size: 15, background: '#fa1900', bold: true, icon: 'fa:angle-double-left'}
+      type: Button
+      layout_properties: {x: 16.925000000745058, y: 345.1750068664551, width: 180}
+      data_bindings: []
   - name: spacer_3
     properties: {height: 32}
     type: Spacer
     layout_properties: {grid_position: 'NVTDJY,PNFHQI GQYPRT,MOPKOR'}
-  - name: servicers_prev_button_1
-    properties: {role: raised, align: full, border: '', foreground: 'theme:White',
-      text: Preview, font_size: 15, background: '#fa1900', bold: true, icon: 'fa:angle-double-left'}
-    type: Button
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI GIDTVL,XSUOBE'}
-    data_bindings: []
-  - name: servicers_next_button_1
-    properties: {role: raised, align: full, foreground: 'theme:White', text: Next,
-      font_size: 15, icon_align: right, background: '#fa1900', bold: true, icon: 'fa:angle-double-right'}
-    type: Button
-    layout_properties: {grid_position: 'NVTDJY,PNFHQI GIDTVL,XGIQMA'}
-    event_bindings: {click: servicers_next_button_1_click}
   - name: spacer_7
     properties: {height: 32}
     type: Spacer

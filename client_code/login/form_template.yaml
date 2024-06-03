@@ -1,91 +1,126 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {background: red, col_widths: '{}'}
 components:
 - name: image_1
-  properties: {source: _/theme/shot.png, horizontal_align: center, height: 111.79998779296875,
-    display_mode: shrink_to_fit}
+  properties: {source: _/theme/shot.png, horizontal_align: center, height: 117.60000610351562,
+    display_mode: shrink_to_fit, background: red}
   type: Image
   layout_properties: {grid_position: 'IIROBS,TDFHMX'}
-- name: card_1
-  properties: {role: card, col_widths: '{"DJYSIT":30,"PFBYKP":35}'}
-  type: ColumnPanel
-  layout_properties: {grid_position: 'ZNBZAO,MQKYRN'}
+- name: flow_panel_1
+  properties: {align: center}
+  type: FlowPanel
+  layout_properties: {grid_position: 'BOULQO,NDILRL'}
   components:
+  - name: link_4
+    properties: {align: right, text: Login, background: '', foreground: white, bold: true,
+      underline: true}
+    type: Link
+    event_bindings: {click: link_4_click}
+  - name: spacer_10
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {width: 42.39996337890625}
+  - name: link_5
+    properties: {text: Register, foreground: white, bold: true, underline: true}
+    type: Link
+    event_bindings: {click: link_5_click}
+- name: card_1
+  properties: {role: card, col_widths: '{"DJYSIT":40,"PFBYKP":25,"CAHRLE":50,"WXFSXB":15,"QKDRAQ":50,"LFKMBP":15,"YLSULS":15,"PMYITI":15,"APYNJB":55}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'HFSYEF,ICAXML'}
+  components:
+  - name: spacer_9
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'VVEHNF,UGTTMO'}
   - name: image_2
-    properties: {source: 'https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg',
-      height: 379.1999816894531}
+    properties: {source: _/theme/Untitled design (2).jpg, height: 453.3999328613281}
     type: Image
     layout_properties: {grid_position: 'BRBJFU,PFBYKP'}
   - name: label_4
-    properties: {text: 'WELCOME BACK :)', align: left, font_size: 22, bold: true,
+    properties: {text: 'WELCOME BACK :)    ', align: center, font_size: 22, bold: true,
       foreground: '#40486d'}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT EWSNRQ,APYNJB'}
   - name: label_5
     properties: {text: To keep connected with us  please login with your personal info....,
-      italic: true, font_size: 17, align: left}
+      italic: true, font_size: 17, align: center}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT NVBBIZ,JMHVMF'}
   - name: spacer_2
-    properties: {height: 28.399993896484375}
+    properties: {height: 49.600006103515625}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT MKEBTO,QRCRRG'}
-  - name: label_2
-    properties: {text: 'Email :', bold: true, align: left, font_size: 15}
-    type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT DOSECG,QCNRFY'}
+  - name: spacer_5
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT MTSHDF,YLSULS'}
   - name: text_box_1
-    properties: {border: 1px solid black}
+    properties: {border: 1px solid black, placeholder: '  Email / Phone number', italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT MTSHDF,CAHRLE'}
     event_bindings: {focus: text_box_1_focus, lost_focus: text_box_1_lost_focus}
-  - name: label_3
-    properties: {text: Password, bold: true, align: left, font_size: 15}
-    type: Label
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT RDVHGJ,ICDMRX'}
-  - name: text_box_2
-    properties: {hide_text: true, border: 1px solid black}
-    type: TextBox
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ'}
-    event_bindings: {focus: text_box_2_focus, lost_focus: text_box_2_lost_focus}
-  - name: spacer_1
-    properties: {height: 25}
+  - name: spacer_3
+    properties: {height: 32}
     type: Spacer
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT YOLLPR,XLPCLH'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT MTSHDF,WXFSXB'}
+  - name: spacer_6
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,PMYITI'}
+  - name: text_box_2
+    properties: {hide_text: true, border: 1px solid black, placeholder: '  Password',
+      italic: true}
+    type: TextBox
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ KXJADS,MUSFGJ'}
+    event_bindings: {focus: text_box_2_focus, lost_focus: text_box_2_lost_focus}
   - name: primary_color_1
     properties: {text: '  Login   ', role: primary-color, background: red, foreground: white,
-      bold: true, border: ''}
+      bold: true, border: '', align: full}
     type: Button
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT VVXMIX,CSFUYF'}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ AUSKEM,PMESRD'}
     event_bindings: {click: primary_color_1_click}
+  - name: spacer_4
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,LFKMBP'}
   - name: link_1
-    properties: {text: 'Forgot password ?', underline: true}
+    properties: {text: 'Forgot password ?', underline: true, align: center}
     type: Link
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT OKZPDC,IONJQJ'}
-  - name: link_2
-    properties: {align: right, text: 'New user ? Click here to Signup', underline: true}
-    type: Link
-    layout_properties: {grid_position: 'BRBJFU,DJYSIT OKZPDC,LOJOOO'}
-    event_bindings: {click: link_2_click}
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT ZJGOTR,BBVVAJ'}
+  - name: spacer_1
+    properties: {height: 0.79998779296875}
+    type: Spacer
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT YOLLPR,XLPCLH'}
   - name: xy_panel_2
-    properties: {height: 80.5999755859375}
+    properties: {height: 78.20001220703125}
     type: XYPanel
     layout_properties: {grid_position: 'BRBJFU,DJYSIT BQPRDV,BOLXRO'}
     components:
     - name: label_6
-      properties: {text: 'or login using :', align: left, bold: true, foreground: '#40486d'}
+      properties: {text: 'or login using :', align: center, bold: true, foreground: '#40486d'}
       type: Label
-      layout_properties: {x: 56.55000000074506, y: 44.587501525878906, width: 116.1875}
-    - name: link_9
-      properties: {icon: 'fa:google-plus', foreground: '#ea4848', font_size: 30}
-      type: Link
-      layout_properties: {x: 169.78754882887006, y: 35.587501525878906, width: 39.66250228881836}
-      event_bindings: {click: link_9_click}
+      layout_properties: {x: 239.3750122077763, y: 3, width: 101.4000015258789}
     - name: link_8
       properties: {icon: 'fa:facebook', foreground: '#5870d0', font_size: 30}
       type: Link
-      layout_properties: {x: 219.3250854499638, y: 35.587501525878906, width: 37.400001525878906}
+      layout_properties: {x: 279.5499389655888, y: 33.20000457763672, width: 37.400001525878906}
+    - name: link_9
+      properties: {icon: 'fa:google-plus', foreground: '#ea4848', font_size: 30}
+      type: Link
+      layout_properties: {x: 217.21247558668256, y: 33.20000457763672, width: 39.66250228881836}
+      event_bindings: {click: link_9_click}
     - name: link_3
       properties: {icon: 'fa:linkedin-square', foreground: '#3589c3', font_size: 30}
       type: Link
-      layout_properties: {x: 268.9751098640263, y: 35.587501525878906, width: 40}
+      layout_properties: {x: 337.26252441480756, y: 33.20000457763672, width: 40}
+  - name: spacer_8
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'GUBTTH,UIEPLR'}
+- name: spacer_11
+  properties: {height: 66}
+  type: Spacer
+  layout_properties: {grid_position: 'XPMJNH,ZQVAHD'}
 is_package: true

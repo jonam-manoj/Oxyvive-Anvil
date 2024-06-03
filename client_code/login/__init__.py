@@ -47,3 +47,11 @@ class login(loginTemplate):
     def text_box_2_lost_focus(self, **event_args):
       """This method is called when the TextBox loses focus"""
       self.text_box_2.border = "1px solid black"
+
+    def link_5_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("signup")
+
+    def link_4_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("login")

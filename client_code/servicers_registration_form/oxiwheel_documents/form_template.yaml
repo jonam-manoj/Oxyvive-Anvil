@@ -1,63 +1,85 @@
 container: {type: ColumnPanel}
 components:
-- name: back_button_1
-  properties: {text: Back, align: left, bold: true, icon: 'fa:backward', foreground: 'theme:Primary
-      700'}
-  type: Button
-  layout_properties: {grid_position: 'LPXPJR,JIIXTO', full_width_row: true}
-  event_bindings: {click: back_button_1_click}
-- name: servicers_navigation_bar_1
-  properties: {}
-  type: form:servicers_registration_form.servicers_navigation_bar
-  layout_properties: {grid_position: 'XKLDNM,YQVCQQ', full_width_row: true}
-- name: label_1
-  properties: {align: center, text: Upload required documents, bold: true, font_size: 20,
-    underline: true}
-  type: Label
-  layout_properties: {grid_position: 'XWKYRV,IAYCTS'}
-- name: label_2
-  properties: {text: Documents should be in pdf / image format and less then 2MB.,
-    align: center, foreground: 'theme:Primary 700'}
-  type: Label
-  layout_properties: {grid_position: 'FDSCHH,OYJYWP'}
-- name: spacer_1
-  properties: {height: 32}
+- name: image_1_copy
+  properties: {source: _/theme/shot.png, horizontal_align: center, height: 117.60000610351562,
+    display_mode: shrink_to_fit, background: red}
+  type: Image
+  layout_properties: {grid_position: 'YRGGCL,DVNEUI', full_width_row: true}
+- name: spacer_3
+  properties: {height: 43}
   type: Spacer
-  layout_properties: {grid_position: 'NDUYBA,GEBAGV'}
-- name: label_3
-  properties: {align: left, text: Upload Vehicle RC, bold: true}
-  type: Label
-  layout_properties: {grid_position: 'DFDNWW,SNQDBO'}
-- name: medical_file_loader_1
-  properties: {background: '', foreground: 'theme:Primary 700'}
-  type: FileLoader
-  layout_properties: {grid_position: 'DFDNWW,TCWTMY CDDJIV,HTOFXG'}
-  event_bindings: {change: medical_file_loader_1_change}
-- name: file_name_1
-  properties: {align: center}
-  type: Label
-  layout_properties: {grid_position: 'DFDNWW,TCWTMY UDPEKL,FPBCDR'}
-- name: label_5
-  properties: {align: left, text: Upload Driving License, bold: true}
-  type: Label
-  layout_properties: {grid_position: 'LXRTNZ,UPUFQQ'}
-- name: building_file_loader_2
-  properties: {}
-  type: FileLoader
-  layout_properties: {grid_position: 'LXRTNZ,IRBJGK FTLPGX,LVQCRG'}
-  event_bindings: {change: building_file_loader_2_change}
-- name: file_name_2
-  properties: {align: center}
-  type: Label
-  layout_properties: {grid_position: 'LXRTNZ,IRBJGK CFJIWL,PVMPWY'}
+  layout_properties: {grid_position: 'XTGVEN,KNMUVC'}
+- name: card_1
+  properties: {role: card, col_widths: '{"YXZXUM":15,"EGEKEY":30,"JXWMQW":15}'}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'SKASYI,HIIYZO'}
+  components:
+  - name: spacer_4
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'LANYUO,YXZXUM'}
+  - name: label_1
+    properties: {align: center, text: Upload required documents, bold: true, font_size: 20,
+      underline: true}
+    type: Label
+    layout_properties: {grid_position: 'LANYUO,EGEKEY KSNXYU,KMYVNF'}
+  - name: label_2
+    properties: {text: Documents should be in pdf / image format and less then 2MB.,
+      align: center, foreground: 'theme:Primary 700', italic: true}
+    type: Label
+    layout_properties: {grid_position: 'LANYUO,EGEKEY TUXHPP,OQTJVA'}
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'LANYUO,EGEKEY WQEVRE,SBCFLA'}
+  - name: label_3
+    properties: {align: left, text: Upload Vehicle RC, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'LANYUO,EGEKEY QZTYBU,NKZFZK'}
+  - name: medical_file_loader_1
+    properties: {background: '', foreground: 'theme:Primary 700', font_size: 12}
+    type: FileLoader
+    layout_properties: {grid_position: 'LANYUO,EGEKEY QZTYBU,YZHZCR GUUPWF,GITWPP'}
+    event_bindings: {change: medical_file_loader_1_change}
+  - name: file_name_1
+    properties: {align: center}
+    type: Label
+    layout_properties: {grid_position: 'LANYUO,EGEKEY QZTYBU,YZHZCR XWGBQA,NXGUXR'}
+  - name: label_5
+    properties: {align: left, text: Upload Driving License, bold: true}
+    type: Label
+    layout_properties: {grid_position: 'LANYUO,EGEKEY OLCXHS,AMKJJJ'}
+  - name: building_file_loader_2
+    properties: {font_size: 12}
+    type: FileLoader
+    layout_properties: {grid_position: 'LANYUO,EGEKEY OLCXHS,TPGXFO EZWMPR,NMIIWR'}
+    event_bindings: {change: building_file_loader_2_change}
+  - name: file_name_2
+    properties: {align: center}
+    type: Label
+    layout_properties: {grid_position: 'LANYUO,EGEKEY OLCXHS,TPGXFO NMOIHJ,QDUDTL'}
+  - name: spacer_7
+    properties: {height: 73.39999389648438}
+    type: Spacer
+    layout_properties: {grid_position: 'LANYUO,EGEKEY MMQZOM,BYUTTS'}
+  - name: back_button_1
+    properties: {text: Back, align: full, bold: true, icon: 'fa:backward', foreground: white,
+      background: red}
+    type: Button
+    layout_properties: {grid_position: 'LANYUO,EGEKEY UYYIAX,SPTRRQ'}
+    event_bindings: {click: back_button_1_click}
+  - name: Submit_button
+    properties: {text: Submit, role: raised, background: '#fa1900', foreground: 'theme:White',
+      spacing_above: small, align: full, bold: true}
+    type: Button
+    layout_properties: {grid_position: 'LANYUO,EGEKEY UYYIAX,BQHYQW'}
+    event_bindings: {click: Submit_button_click}
+  - name: spacer_5
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'LANYUO,JXWMQW'}
 - name: spacer_2
   properties: {height: 32}
   type: Spacer
   layout_properties: {grid_position: 'XYDVBC,JYGTSO'}
-- name: Submit_button
-  properties: {text: Submit, role: raised, background: '#fa1900', foreground: 'theme:White',
-    spacing_above: large}
-  type: Button
-  layout_properties: {grid_position: 'SIFDCX,ESDMOF'}
-  event_bindings: {click: Submit_button_click}
 is_package: true

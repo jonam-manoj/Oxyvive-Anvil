@@ -37,7 +37,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'LANYUO,EGEKEY QZTYBU,NKZFZK'}
   - name: medical_file_loader_1
-    properties: {background: '', foreground: 'theme:Primary 700', font_size: 12}
+    properties: {background: '', foreground: '#2d3249', font_size: 12}
     type: FileLoader
     layout_properties: {grid_position: 'LANYUO,EGEKEY QZTYBU,YZHZCR GUUPWF,GITWPP'}
     event_bindings: {change: medical_file_loader_1_change}
@@ -50,7 +50,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'LANYUO,EGEKEY OLCXHS,AMKJJJ'}
   - name: building_file_loader_2
-    properties: {font_size: 12}
+    properties: {font_size: 12, foreground: '#2d3249'}
     type: FileLoader
     layout_properties: {grid_position: 'LANYUO,EGEKEY OLCXHS,TPGXFO EZWMPR,NMIIWR'}
     event_bindings: {change: building_file_loader_2_change}

@@ -9,7 +9,7 @@ components:
   type: Image
   layout_properties: {grid_position: 'ZSRDTZ,CYCNPQ', full_width_row: true}
 - name: spacer_2
-  properties: {height: 64.79998779296875}
+  properties: {height: 79.39999389648438}
   type: Spacer
   layout_properties: {grid_position: 'XVYDGE,OGJNWP'}
 - name: card_1

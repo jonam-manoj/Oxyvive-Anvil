@@ -13,20 +13,23 @@ components:
   layout_properties: {grid_position: 'AKSOQU,LTVDEO'}
   components:
   - name: link_4
-    properties: {align: right, text: Login, background: '', foreground: white, bold: true,
-      underline: true}
+    properties: {align: right, text: '  Login  ', background: '', foreground: white,
+      bold: true, underline: false}
     type: Link
     event_bindings: {click: link_4_click}
+    layout_properties: {}
   - name: spacer_10
     properties: {height: 32}
     type: Spacer
     layout_properties: {width: 42.39996337890625}
   - name: link_5
-    properties: {text: Register, foreground: white, bold: true, underline: true}
+    properties: {text: '  Register  ', foreground: white, bold: true, underline: false,
+      background: '#b11616'}
     type: Link
     event_bindings: {click: link_5_click}
+    layout_properties: {}
 - name: card_1_copy
-  properties: {role: card, col_widths: '{"DJYSIT":40,"PFBYKP":25,"QKDRAQ":50,"LFKMBP":15,"PMYITI":15,"APYNJB":55}'}
+  properties: {role: card, col_widths: '{"DJYSIT":35,"PFBYKP":30,"QKDRAQ":50,"LFKMBP":15,"PMYITI":15,"APYNJB":55}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'NVVDWU,LQGUAE'}
   components:
@@ -34,11 +37,17 @@ components:
     properties: {height: 32}
     type: Spacer
     layout_properties: {grid_position: 'VVEHNF,UGTTMO'}
+  - name: link_2_copy
+    properties: {icon: 'fa:arrow-left', role: text, bold: false, spacing_above: small,
+      font_size: 15, text: Back}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,PFBYKP MQIRHC,FXCVBE'}
+    event_bindings: {click: link_2_copy_click}
   - name: image_2_copy
     properties: {source: _/theme/Untitled design (3).jpg, height: 651.7999877929688,
       display_mode: zoom_to_fill}
     type: Image
-    layout_properties: {grid_position: 'BRBJFU,PFBYKP'}
+    layout_properties: {grid_position: 'BRBJFU,PFBYKP OUFHER,VEEZIV'}
   - name: label_4_copy
     properties: {text: 'REGISTER HERE :)', align: center, font_size: 22, bold: true,
       foreground: '#40486d'}

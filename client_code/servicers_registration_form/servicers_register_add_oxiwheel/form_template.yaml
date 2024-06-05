@@ -11,6 +11,10 @@ components:
   properties: {height: 77.60000610351562}
   type: Spacer
   layout_properties: {grid_position: 'PNZXGS,YVVZET'}
+- name: link_1
+  properties: {text: Back, icon: 'fa:arrow-left', bold: false, font_size: 15}
+  type: Link
+  layout_properties: {grid_position: 'HJTPQB,CCCORE'}
 - name: card_1
   properties: {role: card, col_widths: '{"LQIKUD":15,"TJADQF":30,"IISNOJ":15}', visible: true}
   type: ColumnPanel

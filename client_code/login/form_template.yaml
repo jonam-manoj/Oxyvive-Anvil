@@ -13,10 +13,11 @@ components:
   layout_properties: {grid_position: 'BOULQO,NDILRL'}
   components:
   - name: link_4
-    properties: {align: right, text: Login, background: '', foreground: white, bold: true,
-      underline: true}
+    properties: {align: right, text: '  Login  ', background: '#b11616', foreground: white,
+      bold: true, underline: false}
     type: Link
     event_bindings: {click: link_4_click}
+    layout_properties: {}
   - name: spacer_10
     properties: {height: 32}
     type: Spacer
@@ -26,7 +27,7 @@ components:
     type: Link
     event_bindings: {click: link_5_click}
 - name: card_1
-  properties: {role: card, col_widths: '{"DJYSIT":40,"PFBYKP":25,"CAHRLE":50,"WXFSXB":15,"QKDRAQ":50,"LFKMBP":15,"YLSULS":15,"PMYITI":15,"APYNJB":55}'}
+  properties: {role: card, col_widths: '{"DJYSIT":45,"PFBYKP":35,"CAHRLE":50,"WXFSXB":15,"QKDRAQ":50,"LFKMBP":15,"YLSULS":15,"PMYITI":15,"APYNJB":75}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'HFSYEF,ICAXML'}
   components:
@@ -34,10 +35,17 @@ components:
     properties: {height: 32}
     type: Spacer
     layout_properties: {grid_position: 'VVEHNF,UGTTMO'}
+  - name: back
+    properties: {icon: 'fa:arrow-left', role: text, bold: false, spacing_above: small,
+      font_size: 15, icon_align: left, align: left, text: Back}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,PFBYKP IKNBPT,VOHBXA'}
+    event_bindings: {click: back_click}
   - name: image_2
-    properties: {source: _/theme/Untitled design (2).jpg, height: 453.3999328613281}
+    properties: {source: _/theme/Untitled design (2).jpg, height: 453.3999328613281,
+      display_mode: zoom_to_fill}
     type: Image
-    layout_properties: {grid_position: 'BRBJFU,PFBYKP'}
+    layout_properties: {grid_position: 'BRBJFU,PFBYKP EYFGLO,ZEUYMZ'}
   - name: label_4
     properties: {text: 'WELCOME BACK :)    ', align: center, font_size: 22, bold: true,
       foreground: '#40486d'}

@@ -29,8 +29,8 @@ class login(loginTemplate):
         except Exception as e:
             alert(f"Error: {e}")
 
-    def link_2_click(self, **event_args):
-        open_form("signup")
+    def back_click(self, **event_args):
+        open_form("home")
 
     def text_box_1_focus(self, **event_args):
       """This method is called when the TextBox gets focus"""

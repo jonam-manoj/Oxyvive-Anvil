@@ -49,7 +49,7 @@ components:
     - name: flow_panel_1
       properties: {align: right}
       type: FlowPanel
-      layout_properties: {x: 703.2625244148076, y: 31.3249977119267, width: 191.16250610351562}
+      layout_properties: {x: 915.5000122077763, y: 38.7624977119267, width: 191.16250610351562}
       components:
       - name: button_1
         properties: {text: ' Login ', background: red, foreground: white, role: raised,

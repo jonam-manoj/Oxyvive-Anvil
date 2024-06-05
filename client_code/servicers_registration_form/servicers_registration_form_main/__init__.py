@@ -24,6 +24,8 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     phone =self.servicers_phone_text_box.text
     password = self.servicers_password_text_box.text
     address = self.servicers_address_text_box.text
+    gst=self.servicers_gst_text_box_copy.text
+    pan=self.servicers_pan_text_box_copy.text
   
     email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
     is_valid_password, password_error_message = self.validate_password(password)
@@ -48,7 +50,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
         print("start")
         id = self.generate_unique_random_code()
         print(id)
-        app_tables.users.add_row(id = id, username = name, email = email, password = password, phone = int(phone),address=address,usertype='service provider')
+        app_tables.oxi_users.add_row(oxi_id = id, oxi_username = name, oxi_email = email, oxi_password = password, oxi_phone = int(phone),oxi_address=address,oxi_usertype='service provider',oxi_gst=gst,oxi_pan=pan)
         """This method is called when the button is clicked"""
         servicer_id.id=id
         open_form('servicers_registration_form.services_register_add_service',id=id)
@@ -104,7 +106,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
     """This method is called when the text in this text box is edited"""
     email = self.servicers_email_text_box.text
     email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-    existing_email = app_tables.users.get(email=email)
+    existing_email = app_tables.oxi_users.get(email=email)
     if not email or not re.match(email_regex, email):
       self.email_hint.text = 'Invalid email format. '
     else:
@@ -125,7 +127,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
   def servicers_phone_text_box_change(self, **event_args):
     """This method is called when the text in this text box is edited"""
     phone = self.servicers_phone_text_box.text
-    existing_phone = app_tables.users.get(phone=float(phone))
+    existing_phone = app_tables.oxi_users.get(phone=float(phone))
     if not phone or len(phone) != 10:
       self.phone_hint.text = 'Invalid Phone number.'
     else:
@@ -154,7 +156,7 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
         print("code ", code)
         
         # Check if the code already exists in the data table
-        existing_rows = app_tables.users.get(id=code)
+        existing_rows = app_tables.oxi_users.get(id=code)
         print(existing_rows)
         if not existing_rows:
             # If the code does not exist, return it

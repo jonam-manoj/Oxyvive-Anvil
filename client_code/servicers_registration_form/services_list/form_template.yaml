@@ -1,29 +1,36 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"NCALJW":40,"YWXBTU":20,"XZUMVM":30,"DMGZDA":30}'}
 components:
+- name: image_1_copy
+  properties: {source: _/theme/shot.png, horizontal_align: center, height: 117.60000610351562,
+    display_mode: shrink_to_fit, background: red}
+  type: Image
+  layout_properties: {grid_position: 'LNWERC,KKHOHC', full_width_row: true}
 - name: spacer_1
-  properties: {height: 32}
+  properties: {height: 101.79998779296875}
   type: Spacer
   layout_properties: {grid_position: 'KSCFFT,LYOVPE'}
 - name: button_1
-  properties: {text: Oxiclinics, role: raised, background: '#3251ec', foreground: 'theme:White',
-    bold: true}
+  properties: {text: Oxiclinics, role: raised, background: '#2d3249', foreground: white,
+    bold: true, align: full}
   type: Button
   layout_properties: {grid_position: 'AXXEYA,PDBRXU', full_width_row: false}
   event_bindings: {click: button_1_click}
 - name: button_2
-  properties: {text: Oxiwheel, background: '#3251ec', foreground: 'theme:White', role: raised,
-    bold: true}
+  properties: {text: Oxiwheel, background: '#2d3249', foreground: 'theme:White', role: raised,
+    bold: true, align: full}
   type: Button
   layout_properties: {grid_position: 'AXXEYA,XWJOFQ'}
   event_bindings: {click: button_2_click}
 - name: button_3
-  properties: {text: Oxigym, background: '#3251ec', foreground: 'theme:White', role: raised,
-    bold: true}
+  properties: {text: Oxigym, background: '#2d3249', foreground: 'theme:White', role: raised,
+    bold: true, align: full}
   type: Button
   layout_properties: {grid_position: 'AXXEYA,LCDZZM'}
   event_bindings: {click: button_3_click}
 - name: spacer_2
-  properties: {height: 32}
+  properties: {height: 53.79998779296875}
   type: Spacer
   layout_properties: {grid_position: 'BBHZPI,DOVUZF'}
 - name: data_grid_1
@@ -37,7 +44,7 @@ components:
     - {id: PYNXEH, data_key: column_1, title: Action}
     auto_header: true
     tooltip: ''
-    border: ''
+    border: 2px solid black
     foreground: ''
     rows_per_page: 20
     visible: true
@@ -67,13 +74,21 @@ components:
       event_bindings: {lost_focus: text_box_1_lost_focus}
   layout_properties: {grid_position: 'PPFOXF,SGDEZP'}
 - name: spacer_3
-  properties: {height: 32}
+  properties: {height: 47.79998779296875}
   type: Spacer
   layout_properties: {grid_position: 'ECKVVZ,CNHJMN'}
+- name: spacer_5
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'FGYBHQ,NCALJW TSOYDI,XZUMVM'}
 - name: button_4
   properties: {text: Confirm, background: 'theme:Primary 700', foreground: 'theme:White',
-    role: raised, bold: true}
+    role: raised, bold: true, align: full}
   type: Button
-  layout_properties: {grid_position: 'FGYBHQ,NCALJW'}
+  layout_properties: {grid_position: 'FGYBHQ,NCALJW TSOYDI,DMGZDA'}
   event_bindings: {click: button_4_click}
+- name: spacer_4
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'FGYBHQ,YWXBTU'}
 is_package: true

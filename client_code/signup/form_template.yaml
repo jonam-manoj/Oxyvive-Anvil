@@ -29,7 +29,7 @@ components:
     event_bindings: {click: link_5_click}
     layout_properties: {}
 - name: card_1_copy
-  properties: {role: card, col_widths: '{"DJYSIT":35,"PFBYKP":30,"QKDRAQ":50,"LFKMBP":15,"PMYITI":15,"APYNJB":55}'}
+  properties: {role: card, col_widths: '{"DJYSIT":35,"PFBYKP":30,"QKDRAQ":50,"LFKMBP":15,"PMYITI":15,"APYNJB":55,"BNVOBL":25,"JAZTMD":10,"TPHGMB":25}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'NVVDWU,LQGUAE'}
   components:
@@ -119,39 +119,39 @@ components:
     properties: {text: 'Forgot password ?', underline: true, align: center}
     type: Link
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZJGOTR,BBVVAJ'}
-    components:
-    - name: link_2
-      properties: {align: center, text: 'Service provider? Register Here', underline: true,
-        font_size: 13}
-      type: Link
-      layout_properties: {grid_position: 'JPUUEC,MMJUEH'}
-      event_bindings: {click: link_2_click}
+    components: []
+  - name: link_2
+    properties: {align: center, text: 'Service provider? Register Here', underline: true,
+      font_size: 13}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDUHK,KJZFQG'}
+    event_bindings: {click: link_2_click}
+  - name: label_6_copy
+    properties: {text: 'or login using :', align: center, bold: true, foreground: '#40486d'}
+    type: Label
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT LKRVDG,BLGHAU'}
   - name: spacer_1_copy
     properties: {height: 0.79998779296875}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT YOLLPR,XLPCLH'}
+  - name: link_9_copy
+    properties: {icon: 'fa:google-plus', foreground: '#ea4848', font_size: 30, align: right}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT UPDDEX,BNVOBL'}
+    event_bindings: {click: link_9_click}
+  - name: link_8_copy
+    properties: {icon: 'fa:facebook', foreground: '#5870d0', font_size: 30, align: center}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT UPDDEX,JAZTMD'}
+  - name: link_3_copy
+    properties: {icon: 'fa:linkedin-square', foreground: '#3589c3', font_size: 30}
+    type: Link
+    layout_properties: {grid_position: 'BRBJFU,DJYSIT UPDDEX,TPHGMB'}
   - name: xy_panel_2_copy
     properties: {height: 78.20001220703125}
     type: XYPanel
     layout_properties: {grid_position: 'BRBJFU,DJYSIT BQPRDV,BOLXRO'}
-    components:
-    - name: label_6_copy
-      properties: {text: 'or login using :', align: center, bold: true, foreground: '#40486d'}
-      type: Label
-      layout_properties: {x: 239.3750122077763, y: 3, width: 101.4000015258789}
-    - name: link_8_copy
-      properties: {icon: 'fa:facebook', foreground: '#5870d0', font_size: 30}
-      type: Link
-      layout_properties: {x: 279.5499389655888, y: 33.20000457763672, width: 37.400001525878906}
-    - name: link_9_copy
-      properties: {icon: 'fa:google-plus', foreground: '#ea4848', font_size: 30}
-      type: Link
-      layout_properties: {x: 217.21247558668256, y: 33.20000457763672, width: 39.66250228881836}
-      event_bindings: {click: link_9_click}
-    - name: link_3_copy
-      properties: {icon: 'fa:linkedin-square', foreground: '#3589c3', font_size: 30}
-      type: Link
-      layout_properties: {x: 337.26252441480756, y: 33.20000457763672, width: 40}
+    components: []
   - name: spacer_8
     properties: {height: 32}
     type: Spacer

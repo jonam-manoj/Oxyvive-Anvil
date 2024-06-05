@@ -1,5 +1,6 @@
 from ._anvil_designer import walletTemplate
 from anvil import *
+import anvil.users
 from anvil.js import window
 import anvil.server
 from anvil.tables import app_tables

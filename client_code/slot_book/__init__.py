@@ -1,5 +1,6 @@
 from ._anvil_designer import slot_bookTemplate
 from anvil import *
+import anvil.users
 import anvil.server
 from datetime import datetime, timedelta
 

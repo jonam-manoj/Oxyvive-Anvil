@@ -1,5 +1,6 @@
 from ._anvil_designer import oxigym_documentsTemplate
 from anvil import *
+import anvil.users
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q

@@ -200,6 +200,10 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
   def servicers_address_text_box_lost_focus(self, **event_args):
     """This method is called when the TextBox loses focus"""
     self.servicers_address_text_box.border="1px solid black"
+
+  def servicers_prev_button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("signup")
     
 
   

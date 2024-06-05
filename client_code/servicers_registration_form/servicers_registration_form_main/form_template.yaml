@@ -129,6 +129,7 @@ components:
       type: Button
       layout_properties: {x: 11.250012207776308, y: 479.57500076293945, width: 180}
       data_bindings: []
+      event_bindings: {click: servicers_prev_button_1_click}
   - name: spacer_3
     properties: {height: 32}
     type: Spacer

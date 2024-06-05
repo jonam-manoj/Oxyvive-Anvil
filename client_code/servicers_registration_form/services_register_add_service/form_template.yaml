@@ -1,7 +1,7 @@
 container:
   type: ColumnPanel
   properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
-    wrap_on: mobile, col_spacing: medium, spacing_above: medium, col_widths: '{}',
+    wrap_on: mobile, col_spacing: medium, spacing_above: medium, col_widths: '{"QIGBJP":35}',
     spacing_below: small, background: ''}
 components:
 - name: image_1_copy

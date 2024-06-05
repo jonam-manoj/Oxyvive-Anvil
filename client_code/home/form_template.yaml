@@ -47,9 +47,9 @@ components:
         type: Link
         layout_properties: {}
     - name: flow_panel_1
-      properties: {align: left}
+      properties: {align: right}
       type: FlowPanel
-      layout_properties: {x: 1114.28754882887, y: 29.53750305250287, width: 243.3625030517578}
+      layout_properties: {x: 703.2625244148076, y: 31.3249977119267, width: 191.16250610351562}
       components:
       - name: button_1
         properties: {text: ' Login ', background: red, foreground: white, role: raised,

@@ -91,6 +91,7 @@ components:
       properties: {text: button_10, visible: false}
       type: Button
       layout_properties: {grid_position: 'EPMDZF,WOLLQR LQLSFS,ABSTLO'}
+    data_bindings: []
   - name: spacer_1
     properties: {height: 32}
     type: Spacer

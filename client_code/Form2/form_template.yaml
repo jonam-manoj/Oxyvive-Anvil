@@ -36,6 +36,7 @@ components:
         background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
       name: button_2
       layout_properties: {grid_position: 'ETMNNW,BYHAPA'}
+      event_bindings: {click: button_2_click}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: 'theme:Secondary 500', visible: true, text: button_3, font_size: null,
@@ -43,6 +44,7 @@ components:
         background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
       name: button_3
       layout_properties: {grid_position: 'ETMNNW,ELESXV'}
+      event_bindings: {click: button_3_click}
     - type: Button
       properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
         foreground: 'theme:Secondary 500', visible: true, text: button_4, font_size: null,
@@ -50,6 +52,7 @@ components:
         background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
       name: button_4
       layout_properties: {grid_position: 'ETMNNW,IFMJPB'}
+      event_bindings: {click: button_4_click}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_2
@@ -59,26 +62,32 @@ components:
       properties: {text: button_5}
       name: button_5
       layout_properties: {grid_position: 'RUWSFM,FOYMAA'}
+      event_bindings: {click: button_5_click}
     - type: Button
       properties: {text: button_6}
       name: button_6
       layout_properties: {grid_position: 'RUWSFM,CQSRYH'}
+      event_bindings: {click: button_6_click}
     - type: Button
       properties: {text: button_7}
       name: button_7
       layout_properties: {grid_position: 'RUWSFM,MXJOOD'}
+      event_bindings: {click: button_7_click}
     - type: Button
       properties: {text: button_8}
       name: button_8
       layout_properties: {grid_position: 'CWAGKY,HNFCPN'}
+      event_bindings: {click: button_8_click}
     - type: Button
       properties: {text: button_9}
       name: button_9
       layout_properties: {grid_position: 'CWAGKY,VQGNUU'}
+      event_bindings: {click: button_9_click}
     - type: Button
       properties: {text: button_10}
       name: button_10
       layout_properties: {grid_position: 'CWAGKY,LCVCYC'}
+      event_bindings: {click: button_10_click}
   - type: Label
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
       visible: true, text: Morning, font_size: null, font: '', spacing_above: small,

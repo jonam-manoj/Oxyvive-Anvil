@@ -104,10 +104,10 @@ class servicers_registration_form_main(servicers_registration_form_mainTemplate)
 
   def servicers_email_text_box_change(self, **event_args):
     """This method is called when the text in this text box is edited"""
-    email = self.servicers_email_text_box.text
+    oxi_email = self.servicers_email_text_box.text
     email_regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-    existing_email = app_tables.oxi_users.get(email=email)
-    if not email or not re.match(email_regex, email):
+    existing_email = app_tables.oxi_users.get(email=oxi_email)
+    if not oxi_email or not re.match(email_regex, oxi_email):
       self.email_hint.text = 'Invalid email format. '
     else:
       self.email_hint.text = ''

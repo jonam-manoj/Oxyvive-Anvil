@@ -21,3 +21,7 @@ class dashboard(dashboardTemplate):
     """This method is called when the button is clicked"""
     open_form('dashboard.available_zym_address')
 
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+

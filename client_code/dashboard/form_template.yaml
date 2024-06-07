@@ -17,16 +17,16 @@ components:
     layout_properties: {grid_position: 'XTGROV,MORZEI', full_width_row: true}
     components:
     - name: image_1
-      properties: {role: null, vertical_align: center, height: 103.79998779296875,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        alt_text: '', spacing_above: small, source: _/theme/shot.png, spacing_below: small,
-        background: '', horizontal_align: right}
+      properties: {role: null, vertical_align: center, height: 112, tooltip: '', border: '',
+        foreground: '', visible: true, display_mode: shrink_to_fit, alt_text: '',
+        spacing_above: small, source: _/theme/shot.png, spacing_below: small, background: '',
+        horizontal_align: right}
       type: Image
-      layout_properties: {x: 12.050000000745058, y: 14.449993897229433, width: 109.57499389648437}
+      layout_properties: {x: 11.299997139722109, y: 0, width: 118.3375015258789}
     - name: flow_panel_2
       properties: {align: justify}
       type: FlowPanel
-      layout_properties: {x: 784.4500244148076, y: 38.62500076368451, width: 462.7749938964844}
+      layout_properties: {x: 152.53750305250287, y: 29.912499237805605, width: 797.9750122070312}
       components:
       - name: link_1
         properties: {text: Home, bold: true}
@@ -53,32 +53,17 @@ components:
         type: Link
         layout_properties: {}
     - type: Button
-      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+      properties: {role: null, align: full, tooltip: '', border: '', enabled: true,
         foreground: white, visible: true, text: Logout, font_size: 12, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
           700', bold: true, underline: false, icon: ''}
       name: button_1
-      layout_properties: {x: 1267.800000000745, y: 48.12500076368451, width: 91.125}
+      layout_properties: {x: 1146.2500732429326, y: 37.77500610426068, width: 99.9124984741211}
   - name: xy_panel_2
-    properties: {height: 411}
+    properties: {height: 531.1999816894531}
     type: XYPanel
     layout_properties: {grid_position: 'BMFUKD,OLTAOK', full_width_row: true}
-    components:
-    - name: image_5
-      properties: {source: _/theme/trate an image (2).jpg, display_mode: zoom_to_fill,
-        height: 407}
-      type: Image
-      layout_properties: {x: 0, y: 18.037525940686464, width: 1448.800048828125}
-    - name: label_2
-      properties: {text: Where Science Meets Technology, role: subheading, bold: true,
-        font_size: 30, italic: true, foreground: black}
-      type: Label
-      layout_properties: {x: 91.63750152662396, y: 293.8499946594238, width: 718}
-    - name: label_1
-      properties: {text: OXIVIVE, foreground: red, bold: true, role: headline, font: a,
-        font_size: 35}
-      type: Label
-      layout_properties: {x: 91.92500000074506, y: 259.2500057220459, width: 123.7874984741211}
+    components: []
   - name: spacer_4
     properties: {height: 85.19996643066406}
     type: Spacer

@@ -5,84 +5,78 @@ container:
     role: null, html: ''}
 components:
 - type: ColumnPanel
-  properties: {role: card, tooltip: '', border: '', foreground: 'theme:Primary 500',
-    visible: true, wrap_on: mobile, col_spacing: none, spacing_above: none, col_widths: '{}',
+  properties: {role: card, tooltip: '', border: '', foreground: white, visible: true,
+    wrap_on: mobile, col_spacing: none, spacing_above: none, col_widths: '{"EEVLDX":5,"SVVVZD":10,"WQRPDZ":50,"AIUCGK":45,"XXODGA":15}',
     spacing_below: large, background: ''}
   name: card_1
   layout_properties: {slot: default}
   components:
+  - name: image_1
+    properties: {role: null, vertical_align: center, height: 115, tooltip: '', border: '',
+      foreground: '', visible: true, display_mode: shrink_to_fit, alt_text: '', spacing_above: small,
+      source: _/theme/shot.png, spacing_below: small, background: '', horizontal_align: center}
+    type: Image
+    layout_properties: {grid_position: 'LZOKYE,BHDEGR', full_width_row: true}
+  - name: flow_panel_2
+    properties: {align: center, background: red, spacing: huge}
+    type: FlowPanel
+    layout_properties: {grid_position: 'XMBAFG,WQRPDZ', full_width_row: true}
+    components:
+    - name: link_1
+      properties: {text: Home, bold: false, foreground: white}
+      type: Link
+      layout_properties: {}
+    - name: link_2
+      properties: {text: Bookings, bold: false, foreground: white}
+      type: Link
+      layout_properties: {}
+    - name: link_3
+      properties: {text: Profile, bold: false, foreground: white}
+      type: Link
+      layout_properties: {}
+    - name: link_4
+      properties: {text: Reports, bold: false, foreground: white}
+      type: Link
+      layout_properties: {}
+    - name: link_5
+      properties: {text: Support, bold: false, foreground: white}
+      type: Link
+      layout_properties: {}
+    - name: link_6
+      properties: {icon: '', spacing_above: small, text: Notifications, bold: false,
+        foreground: white}
+      type: Link
+      layout_properties: {}
+    - name: link_7
+      properties: {text: Logout, foreground: white, bold: true}
+      type: Link
+      layout_properties: {}
   - name: xy_panel_1
     properties: {height: 100}
     type: XYPanel
-    layout_properties: {grid_position: 'XTGROV,MORZEI', full_width_row: true}
-    components:
-    - name: image_1
-      properties: {role: null, vertical_align: center, height: 103.79998779296875,
-        tooltip: '', border: '', foreground: '', visible: true, display_mode: shrink_to_fit,
-        alt_text: '', spacing_above: small, source: _/theme/shot.png, spacing_below: small,
-        background: '', horizontal_align: right}
-      type: Image
-      layout_properties: {x: 12.050000000745058, y: 14.449993897229433, width: 109.57499389648437}
-    - name: flow_panel_2
-      properties: {align: justify}
-      type: FlowPanel
-      layout_properties: {x: 784.4500244148076, y: 38.62500076368451, width: 462.7749938964844}
-      components:
-      - name: link_1
-        properties: {text: Home, bold: true}
-        type: Link
-        layout_properties: {}
-      - name: link_2
-        properties: {text: Bookings, bold: true}
-        type: Link
-        layout_properties: {}
-      - name: link_3
-        properties: {text: Profile, bold: true}
-        type: Link
-        layout_properties: {}
-      - name: link_4
-        properties: {text: Reports, bold: true}
-        type: Link
-        layout_properties: {}
-      - name: link_5
-        properties: {text: Support, bold: true}
-        type: Link
-        layout_properties: {}
-      - name: link_6
-        properties: {icon: '', spacing_above: small, text: Notifications, bold: true}
-        type: Link
-        layout_properties: {}
-    - type: Button
-      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-        foreground: white, visible: true, text: Logout, font_size: 12, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: 'theme:Primary
-          700', bold: true, underline: false, icon: ''}
-      name: button_1
-      layout_properties: {x: 1267.800000000745, y: 48.12500076368451, width: 91.125}
-  - name: xy_panel_2
-    properties: {height: 411}
-    type: XYPanel
-    layout_properties: {grid_position: 'BMFUKD,OLTAOK', full_width_row: true}
-    components:
-    - name: image_5
-      properties: {source: _/theme/trate an image (2).jpg, display_mode: zoom_to_fill,
-        height: 407}
-      type: Image
-      layout_properties: {x: 0, y: 18.037525940686464, width: 1448.800048828125}
-    - name: label_2
-      properties: {text: Where Science Meets Technology, role: subheading, bold: true,
-        font_size: 30, italic: true, foreground: black}
-      type: Label
-      layout_properties: {x: 91.63750152662396, y: 293.8499946594238, width: 718}
-    - name: label_1
-      properties: {text: OXIVIVE, foreground: red, bold: true, role: headline, font: a,
-        font_size: 35}
-      type: Label
-      layout_properties: {x: 91.92500000074506, y: 259.2500057220459, width: 123.7874984741211}
+    layout_properties: {grid_position: 'NWKQOS,YIOROR'}
+  - name: text_box_1
+    properties: {placeholder: '  Enter pincode', italic: true, bold: false, border: 2px solid,
+      background: white}
+    type: TextBox
+    layout_properties: {grid_position: 'GAXQVC,AIUCGK'}
+  - name: button_2
+    properties: {text: " \ud83d\udd0e Search", background: '#2d3249', foreground: white,
+      align: full, role: raised, border: ''}
+    type: Button
+    layout_properties: {grid_position: 'GAXQVC,XXODGA'}
   - name: spacer_4
-    properties: {height: 34.199981689453125}
+    properties: {height: 85.19996643066406}
     type: Spacer
     layout_properties: {grid_position: 'LOQSDS,YWOIYV'}
+  - name: spacer_8
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'BHWWNR,SVVVZD'}
+  - name: spacer_7
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {grid_position: 'BHWWNR,EEVLDX'}
   - name: card_2
     properties: {role: card, visible: true, background: white, foreground: 'theme:Primary
         500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
@@ -104,7 +98,8 @@ components:
       type: Image
       layout_properties: {grid_position: ',undefined QXODZM,SZFWTB', full_width_row: false}
     - name: headline_1
-      properties: {role: text, text: OXICLINIC, align: center, bold: true, font_size: 20}
+      properties: {role: text, text: OXICLINIC, align: center, bold: true, font_size: 20,
+        foreground: black}
       type: Label
       layout_properties: {grid_position: ',undefined UPXSAG,VZXNRX'}
     - name: spacer_1
@@ -122,7 +117,8 @@ components:
       type: Image
       layout_properties: {grid_position: ',KGMNTZ BUCSYA,UYIEJC', full_width_row: true}
     - name: headline_2
-      properties: {role: text, text: OXIWHEELS, align: center, bold: true, font_size: 20}
+      properties: {role: text, text: OXIWHEELS, align: center, bold: true, font_size: 20,
+        foreground: black}
       type: Label
       layout_properties: {grid_position: ',KGMNTZ PZIGVL,KCMPVG'}
     - name: spacer_3
@@ -141,7 +137,8 @@ components:
       type: Image
       layout_properties: {grid_position: ',ARJDZA HJLZYU,GCNRZA', full_width_row: false}
     - name: headline_3
-      properties: {role: text, align: center, text: OXIGYM, bold: true, font_size: 20}
+      properties: {role: text, align: center, text: OXIGYM, bold: true, font_size: 20,
+        foreground: black}
       type: Label
       layout_properties: {grid_position: ',ARJDZA UQTHBD,WLVGIE'}
     - name: spacer_2

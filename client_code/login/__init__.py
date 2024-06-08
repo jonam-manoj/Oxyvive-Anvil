@@ -14,11 +14,11 @@ class login(loginTemplate):
         
         try:
             # Search for the user in the Data Table
-            users_table = app_tables.users
-            user = users_table.get(email=email, password=password)
+            users_table = app_tables.oxi_users
+            user = users_table.get(oxi_email=email, oxi_password=password)
             
             if user:
-                if user['usertype'] =='service provider':
+                if user['oxi_usertype'] =='service provider':
                   user_id.user_id = user['id']
                   open_form('servicers.servicers_dashboard')
                 else:
@@ -29,8 +29,8 @@ class login(loginTemplate):
         except Exception as e:
             alert(f"Error: {e}")
 
-    def link_2_click(self, **event_args):
-        open_form("signup")
+    def back_click(self, **event_args):
+        open_form("home")
 
     def text_box_1_focus(self, **event_args):
       """This method is called when the TextBox gets focus"""
@@ -47,3 +47,11 @@ class login(loginTemplate):
     def text_box_2_lost_focus(self, **event_args):
       """This method is called when the TextBox loses focus"""
       self.text_box_2.border = "1px solid black"
+
+    def link_5_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("signup")
+
+    def link_4_click(self, **event_args):
+      """This method is called when the link is clicked"""
+      open_form("login")

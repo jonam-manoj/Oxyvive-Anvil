@@ -19,13 +19,14 @@ class signup(signupTemplate):
     password=self.text_box_3.text
     phone=self.text_box_4.text
     pincode=self.text_box_5.text
+    pan=self.pan_text_box.text
     # app_tables.users.add_row(username, email, password, phone, pincode)
     # anvil.server.call('add_info',username, email, password, phone, pincode)
     try: 
       # If not present, proceed to insert the new user
-      rows = app_tables.users.search()
+      rows = app_tables.oxi_users.search()
       id = f"C{len(rows):04d}"
-      app_tables.users.add_row(id = id, username =username, email = email, password = password, phone = int(phone),pincode=pincode)
+      app_tables.oxi_users.add_row(oxi_id = id, oxi_username =username, oxi_email = email, oxi_password = password, oxi_phone = int(phone),oxi_pincode=pincode,oxi_pan=pan)
       """This method is called when the button is clicked"""
       alert (self.text_box_2.text + ' added')
       open_form('login')
@@ -83,5 +84,17 @@ class signup(signupTemplate):
   def text_box_5_lost_focus(self, **event_args):
     """This method is called when the TextBox loses focus"""
     self.text_box_5.border="1px solid black"
+
+  def link_4_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("login")
+
+  def link_5_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("signup")
+
+  def link_2_copy_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form("home")
 
 

@@ -3,7 +3,7 @@ dependencies: []
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
-startup: {type: form, module: dashboard}
+startup: {type: form, module: home}
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive
@@ -225,6 +225,12 @@ db_schema:
       type: media
     - name: oxi_address
       admin_ui: {width: 200, order: 5.5}
+      type: string
+    - name: oxi_gst
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: oxi_pan
+      admin_ui: {width: 200, order: 10}
       type: string
   oxi_wallet:
     title: oxi_wallet

@@ -20,7 +20,7 @@ class Form2(Form2Template):
             # Format the date as "Day" (e.g., "Tue") and day number (e.g., "17")
             formatted_date = date_for_button.strftime("%a %d")
             button.text = formatted_date
-            button.tag = {'days_offset': i - 1}  # Store the days_offset in the tag
+            button.tag.days_offset = i - 1  # Store the days_offset in the tag
 
     def button_1_click(self, **event_args):
         self.update_time_buttons(days_offset=0)
@@ -49,6 +49,7 @@ class Form2(Form2Template):
             if i - 5 < len(times):
                 # Set the text to the appropriate time
                 button.text = times[i - 5]
+                button.tag.days_offset = days_offset  # Store the current days_offset
                 
                 # Convert the button text time to a datetime object for comparison
                 button_time_str = button.text
@@ -67,29 +68,10 @@ class Form2(Form2Template):
             # Make the button visible
             button.visible = True
 
-    # def book_slot(self, button):
-    #     # Get the days_offset from the button's tag
-    #     days_offset = button.tag.get('days_offset', 0)
-
-    #     # Get the current date and time
-    #     current_datetime = datetime.now()
-    #     target_datetime = current_datetime + timedelta(days=days_offset)
-        
-    #     button_time_str = button.text
-    #     button_time = datetime.strptime(button_time_str, "%I:%M %p").time()
-    #     button_datetime = datetime.combine(target_datetime.date(), button_time)
-
-    #     # Add the booked slot to the booked slots list
-    #     self.booked_slots.append(button_datetime)
-        
-    #     # Update buttons to reflect the booked slot
-    #     self.update_time_buttons(days_offset)
-
-  
     def book_slot(self, button):
         # Get the days_offset from the button's tag
         days_offset = button.tag.days_offset if hasattr(button.tag, 'days_offset') else 0
-    
+
         # Get the current date and time
         current_datetime = datetime.now()
         target_datetime = current_datetime + timedelta(days=days_offset)
@@ -97,13 +79,12 @@ class Form2(Form2Template):
         button_time_str = button.text
         button_time = datetime.strptime(button_time_str, "%I:%M %p").time()
         button_datetime = datetime.combine(target_datetime.date(), button_time)
-    
+
         # Add the booked slot to the booked slots list
         self.booked_slots.append(button_datetime)
         
         # Update buttons to reflect the booked slot
         self.update_time_buttons(days_offset)
-
 
     def button_5_click(self, **event_args):
         self.book_slot(self.button_5)

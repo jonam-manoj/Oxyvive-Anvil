@@ -84,6 +84,8 @@ class Form2(Form2Template):
         
     #     # Update buttons to reflect the booked slot
     #     self.update_time_buttons(days_offset)
+
+  
     def book_slot(self, button):
         # Get the days_offset from the button's tag
         days_offset = button.tag.days_offset if hasattr(button.tag, 'days_offset') else 0

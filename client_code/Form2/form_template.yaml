@@ -33,15 +33,15 @@ components:
       layout_properties: {grid_position: 'ETMNNW,IFMJPB'}
       event_bindings: {click: button_4_click}
   - type: Label
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#ADD8E6', icon: 'fa:sun-o', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Afternoon}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: 'theme:Primary 700', icon: 'fa:sun-o', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Afternoon}
     name: label_2
     layout_properties: {x: -9, y: 246, width: 160}
   - type: Label
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#ADD8E6', icon: 'fa:cloud', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Morning}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: 'theme:Primary 700', icon: 'fa:cloud', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Morning}
     name: label_1
     layout_properties: {x: -9, y: 164, width: 160}
   - type: Label
-    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#ADD8E6', icon: 'fa:moon-o', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Evening}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: 'theme:Primary 700', icon: 'fa:moon-o', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Evening}
     name: label_3
     layout_properties: {x: -9, y: 330, width: 160}
   - type: ColumnPanel

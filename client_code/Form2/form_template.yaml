@@ -3,9 +3,7 @@ container:
   properties: {col_widths: '{}'}
 components:
 - type: XYPanel
-  properties: {role: card, width: null, align: center, height: 464.5999755859375,
-    tooltip: '', border: '', foreground: '', visible: true, spacing_above: small,
-    spacing_below: small, background: FF5733}
+  properties: {role: card, align: center, spacing_above: small, width: 946, background: FF5733, foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', height: 464.5999755859375}
   name: xy_panel_1
   layout_properties: {grid_position: 'KUAVEF,LVFDZO'}
   components:
@@ -15,56 +13,35 @@ components:
     layout_properties: {x: 154, y: 62, width: 784}
     components:
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_1, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_1}
       name: button_1
       layout_properties: {grid_position: 'ETMNNW,FTSYOY'}
       event_bindings: {click: button_1_click}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_2, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_2}
       name: button_2
       layout_properties: {grid_position: 'ETMNNW,BYHAPA'}
       event_bindings: {click: button_2_click}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_3, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_3}
       name: button_3
       layout_properties: {grid_position: 'ETMNNW,ELESXV'}
       event_bindings: {click: button_3_click}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_4, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: 'theme:Primary 700', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_4}
       name: button_4
       layout_properties: {grid_position: 'ETMNNW,IFMJPB'}
       event_bindings: {click: button_4_click}
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Afternoon, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '#ADD8E6',
-      bold: true, underline: false, icon: 'fa:sun-o'}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#ADD8E6', icon: 'fa:sun-o', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Afternoon}
     name: label_2
     layout_properties: {x: -9, y: 246, width: 160}
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Morning, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '#ADD8E6',
-      bold: true, underline: false, icon: 'fa:cloud'}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#ADD8E6', icon: 'fa:cloud', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Morning}
     name: label_1
     layout_properties: {x: -9, y: 164, width: 160}
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: Evening, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '#ADD8E6',
-      bold: true, underline: false, icon: 'fa:moon-o'}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '#ADD8E6', icon: 'fa:moon-o', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Evening}
     name: label_3
     layout_properties: {x: -9, y: 330, width: 160}
   - type: ColumnPanel
@@ -73,18 +50,12 @@ components:
     layout_properties: {x: 170, y: 153, width: 731}
     components:
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_5, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#04AA6D', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_5}
       name: button_5
       layout_properties: {grid_position: 'RUWSFM,FOYMAA'}
       event_bindings: {click: button_5_click}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_6, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#04AA6D', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_6}
       name: button_6
       layout_properties: {grid_position: 'RUWSFM,CQSRYH'}
       event_bindings: {click: button_6_click}
@@ -93,18 +64,12 @@ components:
       name: spacer_1
       layout_properties: {grid_position: 'SSVQMM,SHCABY'}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_7, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#04AA6D', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_7}
       name: button_7
       layout_properties: {grid_position: 'CKUOFA,YJUNPR'}
       event_bindings: {click: button_7_click}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_8, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#04AA6D', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_8}
       name: button_8
       layout_properties: {grid_position: 'CKUOFA,SNEBTK'}
       event_bindings: {click: button_8_click}
@@ -113,26 +78,21 @@ components:
       name: spacer_2
       layout_properties: {grid_position: 'PYEMZG,TDAVWT'}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_9, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#04AA6D', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_9}
       name: button_9
       layout_properties: {grid_position: 'OUECNK,ZKGOAD'}
       event_bindings: {click: button_9_click}
     - type: Button
-      properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-        foreground: 'theme:Secondary 500', visible: true, text: button_10, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#04AA6D', bold: false, underline: false, icon: ''}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_10}
       name: button_10
       layout_properties: {grid_position: 'OUECNK,EKGZRP'}
       event_bindings: {click: button_10_click}
   - type: Label
-    properties: {role: null, align: center, tooltip: '', border: '', foreground: 'theme:Primary
-        700', visible: true, text: BOOK A SLOT, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: ''}
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: BOOK A SLOT}
     name: label_4
     layout_properties: {grid_position: 'CAXUYH,TTEDXF', x: 130, y: 10, width: 746}
+  - type: Image
+    properties: {role: null, vertical_align: center, alt_text: '', spacing_above: small, background: '', horizontal_align: center, source: _/theme/shot.png, foreground: '', display_mode: zoom_to_fill, spacing_below: small, visible: true, border: '', tooltip: '', height: 83}
+    name: image_1
+    layout_properties: {x: 0, y: 2, width: 110}
 is_package: true

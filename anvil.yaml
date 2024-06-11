@@ -6,7 +6,7 @@ services:
 - source: /runtime/services/anvil/users.yml
   client_config: {allow_signup: false, enable_automatically: true, use_email: true, confirm_email: true}
   server_config: {user_table: users}
-startup: {type: form, module: Form3}
+startup: {type: form, module: Form2}
 package_name: Oxyvive
 allow_embedding: false
 name: Oxyvive

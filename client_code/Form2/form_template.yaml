@@ -8,27 +8,27 @@ components:
   layout_properties: {grid_position: 'KUAVEF,LVFDZO'}
   components:
   - type: ColumnPanel
-    properties: {role: card, col_widths: '{}'}
+    properties: {role: card, col_widths: '{}', spacing_above: small, background: 'theme:Primary 700', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
     name: card_1
-    layout_properties: {x: 154, y: 62, width: 784}
+    layout_properties: {x: 154, y: 62, width: 736}
     components:
     - type: Button
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_1}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Secondary 500', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_1}
       name: button_1
       layout_properties: {grid_position: 'ETMNNW,FTSYOY'}
       event_bindings: {click: button_1_click}
     - type: Button
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_2}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Secondary 500', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_2}
       name: button_2
       layout_properties: {grid_position: 'ETMNNW,BYHAPA'}
       event_bindings: {click: button_2_click}
     - type: Button
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_3}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Secondary 500', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_3}
       name: button_3
       layout_properties: {grid_position: 'ETMNNW,ELESXV'}
       event_bindings: {click: button_3_click}
     - type: Button
-      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_4}
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: 'theme:Secondary 500', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_4}
       name: button_4
       layout_properties: {grid_position: 'ETMNNW,IFMJPB'}
       event_bindings: {click: button_4_click}
@@ -45,9 +45,9 @@ components:
     name: label_3
     layout_properties: {x: -9, y: 330, width: 160}
   - type: ColumnPanel
-    properties: {role: card, col_widths: '{}'}
+    properties: {role: card, col_widths: '{}', spacing_above: small, background: 'theme:Secondary 700', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
     name: card_2
-    layout_properties: {x: 170, y: 153, width: 731}
+    layout_properties: {x: 170.00001525878906, y: 153, width: 659}
     components:
     - type: Button
       properties: {role: null, bold: false, align: center, spacing_above: small, background: '#04AA6D', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: button_5}

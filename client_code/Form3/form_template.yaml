@@ -1,0 +1,38 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 25, tooltip: '', text: Oxyvive Wallet}
+  name: label_1
+  layout_properties: {grid_position: 'ZNCSFW,ZOLRTK'}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'VJYPJA,TFPVYS'}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+    name: card_1
+    layout_properties: {width: null, expand: false, grid_position: 'DYRORB,IVCBMN'}
+- type: Spacer
+  properties: {height: 123}
+  name: spacer_1
+  layout_properties: {grid_position: 'LRHXAA,RRWCEF'}
+- type: Label
+  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ' Payment methods'}
+  name: label_2
+  layout_properties: {grid_position: 'EGGNBE,HLDHPV'}
+- type: Link
+  properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:plus', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: '  Add payment method'}
+  name: link_1
+  layout_properties: {grid_position: 'AHTOSJ,WTVLFQ'}
+- type: Label
+  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Vouchers}
+  name: label_3
+  layout_properties: {grid_position: 'IDBVUH,VFWZSV'}
+- type: Link
+  properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:plus', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: '', url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: '  Add voucher'}
+  name: link_2
+  layout_properties: {grid_position: 'JXIAPY,UGSUKG'}
+is_package: true

@@ -63,9 +63,26 @@ components:
       name: button_1
       layout_properties: {grid_position: 'XRROAK,FDEXAD'}
   - type: ColumnPanel
-    properties: {}
+    properties: {col_widths: '{}'}
     name: column_panel_3
     layout_properties: {x: 348.1999969482422, y: 16, width: 200}
+    components:
+    - type: Label
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Oxyvive Cash}
+      name: label_7
+      layout_properties: {grid_position: 'RULXWY,JTJKEU'}
+    - type: Label
+      properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: 'fa:money', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: '0.00'}
+      name: label_8
+      layout_properties: {grid_position: 'XSLGAY,HMTKTT'}
+    - type: Label
+      properties: {}
+      name: label_9
+      layout_properties: {grid_position: 'ZOCLQZ,TNRZHU'}
+    - type: Button
+      properties: {text: button_2}
+      name: button_2
+      layout_properties: {grid_position: 'DTZOLZ,OCAPIR'}
 - type: Label
   properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: ' Payment methods'}
   name: label_2

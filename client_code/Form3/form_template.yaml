@@ -57,6 +57,7 @@ components:
       properties: {role: raised, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: 'fa:plus', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: round, italic: false, enabled: true, font_size: null, tooltip: '', text: Add bank account}
       name: button_1
       layout_properties: {grid_position: 'XRROAK,FDEXAD'}
+      event_bindings: {click: button_1_click}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}', spacing_above: small, background: '#c5c5c5', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
     name: column_panel_3

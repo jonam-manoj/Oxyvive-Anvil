@@ -26,4 +26,8 @@ class Form3(Form3Template):
               self.label_5.text = str(balance)
           else:
               self.label_5.text = "No balance found"
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('wallet_homepage.bank_accounts')
             

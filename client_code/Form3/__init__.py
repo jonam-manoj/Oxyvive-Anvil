@@ -30,4 +30,8 @@ class Form3(Form3Template):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('wallet_homepage.bank_accounts')
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    pass
             

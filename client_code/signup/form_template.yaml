@@ -3,8 +3,7 @@ container:
   properties: {background: red}
 components:
 - name: image_1
-  properties: {source: _/theme/shot.png, horizontal_align: center, height: 118.19998168945312,
-    display_mode: shrink_to_fit}
+  properties: {source: _/theme/shot.png, horizontal_align: center, height: 118.19998168945312, display_mode: shrink_to_fit}
   type: Image
   layout_properties: {grid_position: 'WVDCSV,WVELDN'}
 - name: flow_panel_1
@@ -13,8 +12,7 @@ components:
   layout_properties: {grid_position: 'AKSOQU,LTVDEO'}
   components:
   - name: link_4
-    properties: {align: right, text: '  Login  ', background: '', foreground: white,
-      bold: true, underline: false}
+    properties: {align: right, text: '  Login  ', background: '', foreground: white, bold: true, underline: false}
     type: Link
     event_bindings: {click: link_4_click}
     layout_properties: {}
@@ -23,8 +21,7 @@ components:
     type: Spacer
     layout_properties: {width: 42.39996337890625}
   - name: link_5
-    properties: {text: '  Register  ', foreground: white, bold: true, underline: false,
-      background: '#b11616'}
+    properties: {text: '  Register  ', foreground: white, bold: true, underline: false, background: '#b11616'}
     type: Link
     event_bindings: {click: link_5_click}
     layout_properties: {}
@@ -38,24 +35,20 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'VVEHNF,UGTTMO'}
   - name: link_2_copy
-    properties: {icon: 'fa:arrow-left', role: text, bold: false, spacing_above: small,
-      font_size: 15, text: Back}
+    properties: {icon: 'fa:arrow-left', role: text, bold: false, spacing_above: small, font_size: 15, text: Back}
     type: Link
     layout_properties: {grid_position: 'BRBJFU,PFBYKP MQIRHC,FXCVBE'}
     event_bindings: {click: link_2_copy_click}
   - name: image_2_copy
-    properties: {source: _/theme/Untitled design (3).jpg, height: 651.7999877929688,
-      display_mode: zoom_to_fill}
+    properties: {source: _/theme/Untitled design (3).jpg, height: 651.7999877929688, display_mode: zoom_to_fill}
     type: Image
     layout_properties: {grid_position: 'BRBJFU,PFBYKP OUFHER,VEEZIV'}
   - name: label_4_copy
-    properties: {text: 'REGISTER HERE :)', align: center, font_size: 22, bold: true,
-      foreground: '#40486d'}
+    properties: {text: 'REGISTER HERE :)', align: center, font_size: 22, bold: true, foreground: '#40486d'}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT EWSNRQ,APYNJB'}
   - name: label_5_copy
-    properties: {text: To keep connected with us  please register here with your personal info...,
-      italic: true, font_size: 17, align: center}
+    properties: {text: To keep connected with us  please register here with your personal info..., italic: true, font_size: 17, align: center}
     type: Label
     layout_properties: {grid_position: 'BRBJFU,DJYSIT NVBBIZ,JMHVMF'}
   - name: spacer_2_copy
@@ -70,28 +63,24 @@ components:
     properties: {border: 1px solid black, placeholder: '  Full name', italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ JUEZXZ,PZKOWK'}
-    event_bindings: {pressed_enter: text_box_1_pressed_enter, focus: text_box_1_focus,
-      lost_focus: text_box_1_lost_focus}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter, focus: text_box_1_focus, lost_focus: text_box_1_lost_focus}
   - name: text_box_2
     properties: {type: email, border: 1px solid black, placeholder: '  Email', italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ YEMZJJ,IMUJXC'}
     event_bindings: {focus: text_box_2_focus, lost_focus: text_box_2_lost_focus}
   - name: text_box_3
-    properties: {visible: true, hide_text: true, border: 1px solid black, placeholder: '  Password',
-      italic: true}
+    properties: {visible: true, hide_text: true, border: 1px solid black, placeholder: '  Password', italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ YTPVTV,CXONKD'}
     event_bindings: {focus: text_box_3_focus, lost_focus: text_box_3_lost_focus}
   - name: text_box_4
-    properties: {type: number, border: 1px solid black, placeholder: '  Mobile number',
-      italic: true}
+    properties: {type: number, border: 1px solid black, placeholder: '  Mobile number', italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ SAWKVY,UFAFNS'}
     event_bindings: {focus: text_box_4_focus, lost_focus: text_box_4_lost_focus}
   - name: text_box_5
-    properties: {type: number, border: 1px solid black, placeholder: '  Pincode',
-      italic: true}
+    properties: {type: number, border: 1px solid black, placeholder: '  Pincode', italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ WVHJPX,JXMHTH'}
     event_bindings: {focus: text_box_5_focus, lost_focus: text_box_5_lost_focus}
@@ -99,15 +88,13 @@ components:
     properties: {placeholder: '  PAN number', border: 1px solid black, italic: true}
     type: TextBox
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ VHCIIU,GOUYZT'}
-    event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus,
-      lost_focus: servicers_address_text_box_lost_focus}
+    event_bindings: {change: servicers_address_text_box_change, focus: servicers_address_text_box_focus, lost_focus: servicers_address_text_box_lost_focus}
   - name: spacer_3
     properties: {height: 32}
     type: Spacer
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ GILJIK,XVRIGX'}
   - name: primary_color_1
-    properties: {text: Signup, role: primary-color, background: red, foreground: white,
-      bold: true, align: full}
+    properties: {text: Signup, role: primary-color, background: red, foreground: white, bold: true, align: full}
     type: Button
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZOTWNQ,QKDRAQ EGUCTA,IZPPNH'}
     event_bindings: {click: primary_color_1_click}
@@ -121,8 +108,7 @@ components:
     layout_properties: {grid_position: 'BRBJFU,DJYSIT ZJGOTR,BBVVAJ'}
     components: []
   - name: link_2
-    properties: {align: center, text: 'Service provider? Register Here', underline: true,
-      font_size: 13}
+    properties: {align: center, text: 'Service provider? Register Here', underline: true, font_size: 13}
     type: Link
     layout_properties: {grid_position: 'BRBJFU,DJYSIT EYDUHK,KJZFQG'}
     event_bindings: {click: link_2_click}

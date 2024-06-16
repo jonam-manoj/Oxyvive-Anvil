@@ -8,8 +8,7 @@ components:
   layout_properties: {grid_position: 'JHHPFL,CVEGCZ', full_width_row: true}
   components:
   - name: image_2
-    properties: {source: _/theme/Medical-research-542935478.jpg, height: 615, display_mode: zoom_to_fill,
-      visible: true}
+    properties: {source: _/theme/Medical-research-542935478.jpg, height: 615, display_mode: zoom_to_fill, visible: true}
     type: Image
     layout_properties: {x: 0, y: 4.500004578381777, width: 1551.78692675781}
     data_bindings: []
@@ -19,8 +18,7 @@ components:
     layout_properties: {x: 0, y: 0, width: 1402.4000244140625}
     components:
     - name: image_1
-      properties: {source: _/theme/shot.png, horizontal_align: left, height: 110,
-        display_mode: zoom_to_fill}
+      properties: {source: _/theme/shot.png, horizontal_align: left, height: 110, display_mode: zoom_to_fill}
       type: Image
       layout_properties: {x: 0, y: 0, width: 107.0999969482422}
     - name: flow_panel_2
@@ -52,14 +50,12 @@ components:
       layout_properties: {x: 915.5000122077763, y: 38.7624977119267, width: 191.16250610351562}
       components:
       - name: button_1
-        properties: {text: ' Login ', background: red, foreground: white, role: raised,
-          bold: true}
+        properties: {text: ' Login ', background: red, foreground: white, role: raised, bold: true}
         type: Button
         layout_properties: {}
         event_bindings: {click: button_1_click}
       - name: button_2
-        properties: {text: SIGNUP, background: red, foreground: white, role: raised,
-          bold: true}
+        properties: {text: SIGNUP, background: red, foreground: white, role: raised, bold: true}
         type: Button
         event_bindings: {click: button_2_click}
   - name: flow_panel_4
@@ -68,18 +64,14 @@ components:
     layout_properties: {x: 160.33748703077435, y: 288.7500122077763, width: 778.375}
     components:
     - name: label_2
-      properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 26,
-        italic: false, font: '', underline: false}
+      properties: {text: OXIVIVE, background: '', foreground: red, bold: true, font_size: 26, italic: false, font: '', underline: false}
       type: Label
       data_bindings: []
     - name: label_3
-      properties: {text: where science meets technology, foreground: white, bold: true,
-        font_size: 26, font: '', italic: false, background: ''}
+      properties: {text: where science meets technology, foreground: white, bold: true, font_size: 26, font: '', italic: false, background: ''}
       type: Label
     - name: label_8
-      properties: {text: 'At Oxivive, we''re not just slowing down the aging process
-          - we''re smashing the clock and unlocking your body''s hidden potential
-          with SHOT therapy.', foreground: white, font_size: 16, align: left, italic: true}
+      properties: {text: 'At Oxivive, we''re not just slowing down the aging process - we''re smashing the clock and unlocking your body''s hidden potential with SHOT therapy.', foreground: white, font_size: 16, align: left, italic: true}
       type: Label
       layout_properties: {}
 - name: spacer_40
@@ -91,13 +83,7 @@ components:
   type: Label
   layout_properties: {grid_position: 'BXDBVX,KMPPHB'}
 - name: label_1
-  properties: {text: 'Apart from using our treatment for anti-aging, one can benefit
-      from our treatment for pain and wound healing, rehabilitation, low back pain,
-      arthritis, osteoarthritis, fibromyalgia, migraines, intestinal infection, diabetic
-      foot, tinnitus, stroke and autism, Alzheimer''s, cerebral palsy, facial paralysis,
-      Parkinson''s, fractured bone healing, neuropathic pain, necrotizing infections,
-      and slowing cancer growth. ', align: center, italic: true, bold: true, font_size: 16,
-    foreground: black}
+  properties: {text: 'Apart from using our treatment for anti-aging, one can benefit from our treatment for pain and wound healing, rehabilitation, low back pain, arthritis, osteoarthritis, fibromyalgia, migraines, intestinal infection, diabetic foot, tinnitus, stroke and autism, Alzheimer''s, cerebral palsy, facial paralysis, Parkinson''s, fractured bone healing, neuropathic pain, necrotizing infections, and slowing cancer growth. ', align: center, italic: true, bold: true, font_size: 16, foreground: black}
   type: Label
   layout_properties: {grid_position: 'VLQMXW,OBKCOG', full_width_row: true}
 - name: spacer_2
@@ -105,13 +91,11 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'QRIIGB,YGIQMG'}
 - name: label_9
-  properties: {align: center, bold: true, foreground: '#2d3249', text: Discover Oxivive's range of services,
-    font_size: 25, underline: false, background: ''}
+  properties: {align: center, bold: true, foreground: '#2d3249', text: Discover Oxivive's range of services, font_size: 25, underline: false, background: ''}
   type: Label
   layout_properties: {grid_position: 'OCQJQN,ZQSPTX'}
 - name: label_4
-  properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently.,
-    align: center, font_size: 16, italic: false}
+  properties: {text: Experience the revolutionary power of SHOT therapy to unlock your body's hidden potential and age magnificently., align: center, font_size: 16, italic: false}
   type: Label
   layout_properties: {grid_position: 'PCBLFC,UCRPVA'}
 - name: spacer_41
@@ -124,24 +108,20 @@ components:
   layout_properties: {grid_position: 'YSKBFZ,QHPLJN'}
   components:
   - name: image_4
-    properties: {source: _/theme/Untitled design (1).png, height: 315, display_mode: shrink_to_fit,
-      background: 'theme:White'}
+    properties: {source: _/theme/Untitled design (1).png, height: 315, display_mode: shrink_to_fit, background: 'theme:White'}
     type: Image
     layout_properties: {grid_position: 'HSFSRT,REAXEB', full_width_row: true}
   - name: label_10
-    properties: {align: left, text: OXICLINIC, bold: true, foreground: 'theme:Black',
-      font_size: 20, visible: true, italic: false, underline: false}
+    properties: {align: left, text: OXICLINIC, bold: true, foreground: 'theme:Black', font_size: 20, visible: true, italic: false, underline: false}
     type: Label
     layout_properties: {grid_position: 'FSZDNJ,FGINHV'}
     data_bindings: []
   - name: label_13
-    properties: {text: Unleash your mind's full potential with our cutting-edge anti-aging treatments.,
-      align: left, italic: false, font_size: 16}
+    properties: {text: Unleash your mind's full potential with our cutting-edge anti-aging treatments., align: left, italic: false, font_size: 16}
     type: Label
     layout_properties: {grid_position: 'TGEXQX,TPGHYK'}
   - name: link_1
-    properties: {text: Learn More >>, underline: true, background: '', foreground: '',
-      role: null, icon: '', bold: true}
+    properties: {text: Learn More >>, underline: true, background: '', foreground: '', role: null, icon: '', bold: true}
     type: Link
     layout_properties: {grid_position: 'NGZVPO,DWBLQS'}
 - name: column_panel_3
@@ -150,23 +130,19 @@ components:
   layout_properties: {grid_position: 'YSKBFZ,ULMNGM'}
   components:
   - name: image_4_copy_2
-    properties: {source: _/theme/Untitled design (2).png, height: 316, vertical_align: bottom,
-      display_mode: zoom_to_fill, background: ''}
+    properties: {source: _/theme/Untitled design (2).png, height: 316, vertical_align: bottom, display_mode: zoom_to_fill, background: ''}
     type: Image
     layout_properties: {grid_position: 'BVKWMX,PSIQYL', full_width_row: true}
   - name: label_11
-    properties: {text: OXIGYM, align: left, bold: true, foreground: 'theme:Black',
-      font_size: 20, underline: false}
+    properties: {text: OXIGYM, align: left, bold: true, foreground: 'theme:Black', font_size: 20, underline: false}
     type: Label
     layout_properties: {grid_position: 'CRTZBM,ECSBWA'}
   - name: label_15
-    properties: {text: 'Say goodbye to aches, pains, and fatigue. Being physically
-        healthy is a priority.', italic: false, align: left, font_size: 15.5}
+    properties: {text: 'Say goodbye to aches, pains, and fatigue. Being physically healthy is a priority.', italic: false, align: left, font_size: 15.5}
     type: Label
     layout_properties: {grid_position: 'KSRGGK,LXFRAX'}
   - name: link_2
-    properties: {text: Learn More >>, underline: true, foreground: '', role: null,
-      icon: '', bold: true}
+    properties: {text: Learn More >>, underline: true, foreground: '', role: null, icon: '', bold: true}
     type: Link
     layout_properties: {grid_position: 'GKKODX,WSXDKV'}
 - name: column_panel_2
@@ -175,25 +151,24 @@ components:
   layout_properties: {grid_position: 'YSKBFZ,BYOZWW'}
   components:
   - name: image_4_copy
-    properties: {source: _/theme/ed and (1).png, height: 308, display_mode: zoom_to_fill,
-      background: 'theme:Primary 700', horizontal_align: right, vertical_align: bottom}
+    properties: {source: _/theme/ed and (1).png, height: 308, display_mode: zoom_to_fill, background: 'theme:Primary 700', horizontal_align: right, vertical_align: bottom}
     type: Image
     layout_properties: {grid_position: 'QJDZHY,NSPCLR'}
   - name: label_12
-    properties: {text: OXIWHEELS, align: left, bold: true, foreground: 'theme:Black',
-      font_size: 20}
+    properties: {text: OXIWHEELS, align: left, bold: true, foreground: 'theme:Black', font_size: 20}
     type: Label
     layout_properties: {grid_position: 'IAKRWJ,NAMDVK'}
   - name: label_14
-    properties: {text: 'Reveal your inner glow with our anti-aging treatments through
-        Oxiwheels.
-
-        ', italic: false, align: left, font_size: 16}
+    properties:
+      text: |
+        Reveal your inner glow with our anti-aging treatments through Oxiwheels.
+      italic: false
+      align: left
+      font_size: 16
     type: Label
     layout_properties: {grid_position: 'FCQKTK,NLWXBJ'}
   - name: link_3
-    properties: {text: Learn More >>, underline: true, foreground: '', role: null,
-      icon: '', bold: true}
+    properties: {text: Learn More >>, underline: true, foreground: '', role: null, icon: '', bold: true}
     type: Link
     layout_properties: {grid_position: 'RJLFIL,TUDLUI'}
 - name: column_panel_22
@@ -210,8 +185,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'DSYVIG,YYXIXV'}
 - name: headline_13
-  properties: {role: text, align: center, text: 'How does it work ?', bold: true,
-    foreground: '#2d3249', underline: false, font_size: 28}
+  properties: {role: text, align: center, text: 'How does it work ?', bold: true, foreground: '#2d3249', underline: false, font_size: 28}
   type: Label
   layout_properties: {grid_position: 'OMUDFZ,AGLXUO'}
 - name: spacer_4
@@ -219,21 +193,13 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'XMYCKC,XGQYUN TMQTZL,OSPWLM'}
 - name: label_5
-  properties: {text: 'Under normal circumstances, oxygen is absorbed into circulation
-      when we breathe and transported throughout the body only by red blood cells.  Under
-      pressure, oxygen can be dissolved into all of the body’s fluids, the plasma,
-      the lymphatic system, the central nervous system fluids, and the bone. This
-      allows us to dissolve, transport and deliver many more times the normal oxygen
-      to our tissues and cells.
+  properties:
+    text: |
+      Under normal circumstances, oxygen is absorbed into circulation when we breathe and transported throughout the body only by red blood cells.  Under pressure, oxygen can be dissolved into all of the body’s fluids, the plasma, the lymphatic system, the central nervous system fluids, and the bone. This allows us to dissolve, transport and deliver many more times the normal oxygen to our tissues and cells.
 
-
-      Hyperbaric oxygen therapy improves the quality of life of the patient in many
-      areas. Many conditions such as PTSD and stroke have responded favorably to hyperbaric
-      treatment.Hyperbaric oxygen therapy improves the  quality of life of the patient
-      in many areas. Many conditions such as PTSD and stroke have responded favorably
-      to hyperbaric treatment.
-
-      ', font_size: 16, italic: true}
+      Hyperbaric oxygen therapy improves the quality of life of the patient in many areas. Many conditions such as PTSD and stroke have responded favorably to hyperbaric treatment.Hyperbaric oxygen therapy improves the  quality of life of the patient in many areas. Many conditions such as PTSD and stroke have responded favorably to hyperbaric treatment.
+    font_size: 16
+    italic: true
   type: Label
   layout_properties: {grid_position: 'XMYCKC,XGQYUN LZFYXJ,PNMPFS'}
 - name: image_5
@@ -249,14 +215,12 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'LIEDXD,UXZXZH'}
 - name: card_3
-  properties: {role: card, background: '', col_spacing: huge, spacing_above: large,
-    col_widths: '{"DPEVLP":30,"MOXCNC":30}'}
+  properties: {role: card, background: '', col_spacing: huge, spacing_above: large, col_widths: '{"DPEVLP":30,"MOXCNC":30}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'OYPTHY,BNQWST', full_width_row: true}
   components:
   - name: image_7
-    properties: {source: _/theme/Screenshot%20(142).png, display_mode: zoom_to_fill,
-      height: 424.20001220703125}
+    properties: {source: _/theme/Screenshot%20(142).png, display_mode: zoom_to_fill, height: 424.20001220703125}
     type: Image
     layout_properties: {grid_position: 'TAFQTH,DPEVLP'}
   - name: spacer_34
@@ -264,18 +228,11 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'TAFQTH,MOXCNC AFCGMY,GPVHQB'}
   - name: label_17
-    properties: {align: left, text: Hyperbaric Oxygen Therapy (HBOT) enhances sports and athletic performance.,
-      bold: true, font_size: 28, foreground: '#2d3249'}
+    properties: {align: left, text: Hyperbaric Oxygen Therapy (HBOT) enhances sports and athletic performance., bold: true, font_size: 28, foreground: '#2d3249'}
     type: Label
     layout_properties: {grid_position: 'TAFQTH,MOXCNC NYAQBI,TVGMHW'}
   - name: label_6
-    properties: {text: 'Many patients experience benefits after just a few sessions
-        of HBOT therapy. The demand for a natural approach to maximize performance
-        enhancement is growing, with athletes and individuals from various backgrounds
-        exploring the benefits of HBOT. Whether you seek treatment for a specific
-        condition or aim to enhance performance, HBOT may be the solution you''ve
-        been seeking. Call to learn more about the advantages of HBOT for sports and
-        athletic performance enhancement.', italic: true, font_size: 16}
+    properties: {text: 'Many patients experience benefits after just a few sessions of HBOT therapy. The demand for a natural approach to maximize performance enhancement is growing, with athletes and individuals from various backgrounds exploring the benefits of HBOT. Whether you seek treatment for a specific condition or aim to enhance performance, HBOT may be the solution you''ve been seeking. Call to learn more about the advantages of HBOT for sports and athletic performance enhancement.', italic: true, font_size: 16}
     type: Label
     layout_properties: {grid_position: 'TAFQTH,MOXCNC FIDYGI,TLAHQM'}
   - name: spacer_6
@@ -287,18 +244,11 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'MSNQNL,IWZFGB YRPKVG,DWLLKD'}
   - name: label_19
-    properties: {align: right, text: How HBOT helps fatigue, bold: true, foreground: '#2d3249',
-      font_size: 28}
+    properties: {align: right, text: How HBOT helps fatigue, bold: true, foreground: '#2d3249', font_size: 28}
     type: Label
     layout_properties: {grid_position: 'MSNQNL,IWZFGB NUSYSA,CEMBTN'}
   - name: label_7
-    properties: {text: 'Enhancing the supply of oxygen to a fatigued musculoskeletal
-        system in the Indian context activates cellular activity, boosts adenosine
-        triphosphate (ATP) synthesis, and facilitates the metabolism of fatigue substances.
-        In this context, Hyperbaric Oxygen Therapy (HBOT) is viewed as a method to
-        promote recovery from fatigue, as discussed in Ishii et al''s study, "Hyperbaric
-        Oxygen As An Adjuvant Athlete" (Sports Med. 2005).', italic: true, font_size: 16,
-      align: right}
+    properties: {text: 'Enhancing the supply of oxygen to a fatigued musculoskeletal system in the Indian context activates cellular activity, boosts adenosine triphosphate (ATP) synthesis, and facilitates the metabolism of fatigue substances. In this context, Hyperbaric Oxygen Therapy (HBOT) is viewed as a method to promote recovery from fatigue, as discussed in Ishii et al''s study, "Hyperbaric Oxygen As An Adjuvant Athlete" (Sports Med. 2005).', italic: true, font_size: 16, align: right}
     type: Label
     layout_properties: {grid_position: 'MSNQNL,IWZFGB ANFMDH,ZBTDUQ'}
   - name: image_9
@@ -315,13 +265,11 @@ components:
   layout_properties: {grid_position: 'PVDFJF,OQEQSA', full_width_row: true}
   components:
   - name: headline_16
-    properties: {role: headline, align: center, text: Our pilot customers, bold: true,
-      foreground: '#2d3249', font_size: 28, underline: true}
+    properties: {role: headline, align: center, text: Our pilot customers, bold: true, foreground: '#2d3249', font_size: 28, underline: true}
     type: Label
     layout_properties: {grid_position: 'EPBKCC,OCTRNN'}
   - name: label_20
-    properties: {align: center, text: Unlock your potential with Oxivive's revolutionary anti-aging solutions.,
-      font_size: 16}
+    properties: {align: center, text: Unlock your potential with Oxivive's revolutionary anti-aging solutions., font_size: 16}
     type: Label
     layout_properties: {grid_position: 'QUZTJY,SJDJQH'}
   - name: card_7
@@ -330,18 +278,15 @@ components:
     layout_properties: {grid_position: 'AZDRGP,ASCNSX'}
     components:
     - name: label_21
-      properties: {align: center, text: ',,', bold: true, font_size: 45, icon: '',
-        foreground: 'theme:Primary 700'}
+      properties: {align: center, text: ',,', bold: true, font_size: 45, icon: '', foreground: 'theme:Primary 700'}
       type: Label
       layout_properties: {grid_position: 'VPAUNO,CXOQPH'}
     - name: label_18
-      properties: {text: I never realized aging could be such a positive experience until I discovered Oxivive. Their SHOT therapy has given me boundless energy and a sharper mind.,
-        italic: true, font_size: 16}
+      properties: {text: I never realized aging could be such a positive experience until I discovered Oxivive. Their SHOT therapy has given me boundless energy and a sharper mind., italic: true, font_size: 16}
       type: Label
       layout_properties: {grid_position: 'PFGMSK,SGFHZT'}
     - name: image_10
-      properties: {source: _/theme/Ret-govt%20Official.png, display_mode: zoom_to_fill,
-        height: 322}
+      properties: {source: _/theme/Ret-govt%20Official.png, display_mode: zoom_to_fill, height: 322}
       type: Image
       layout_properties: {grid_position: 'FKGMZT,WUYIGM'}
     - name: label_24
@@ -354,13 +299,11 @@ components:
     layout_properties: {grid_position: 'AZDRGP,DJUEAH'}
     components:
     - name: label_22
-      properties: {align: center, font_size: 45, bold: true, text: ',,', foreground: 'theme:Primary
-          700'}
+      properties: {align: center, font_size: 45, bold: true, text: ',,', foreground: 'theme:Primary 700'}
       type: Label
       layout_properties: {grid_position: 'BCWAPA,NOXIYV'}
     - name: label_48
-      properties: {text: Oxivive's anti-aging solutions truly defy the effects of time. I can't believe how much younger and more vibrant I feel after just a few sessions.,
-        italic: true, font_size: 16}
+      properties: {text: Oxivive's anti-aging solutions truly defy the effects of time. I can't believe how much younger and more vibrant I feel after just a few sessions., italic: true, font_size: 16}
       type: Label
       layout_properties: {grid_position: 'IGZTDE,BLELSN'}
     - name: image_11
@@ -373,8 +316,7 @@ components:
       layout_properties: {grid_position: 'YDAONG,RRHKRI'}
       components:
       - name: label_25
-        properties: {align: center, text: Businessmen, bold: true, font_size: 14,
-          background: '', foreground: red}
+        properties: {align: center, text: Businessmen, bold: true, font_size: 14, background: '', foreground: red}
         type: Label
         layout_properties: {}
   - name: card_9
@@ -383,13 +325,11 @@ components:
     layout_properties: {grid_position: 'AZDRGP,JMQDKX'}
     components:
     - name: label_23
-      properties: {align: center, font_size: 45, bold: true, text: ',,', foreground: 'theme:Primary
-          700'}
+      properties: {align: center, font_size: 45, bold: true, text: ',,', foreground: 'theme:Primary 700'}
       type: Label
       layout_properties: {grid_position: 'TZUCUU,RVQMCO'}
     - name: label_49
-      properties: {text: 'As a busy professional, I was struggling to keep up with
-          my hectic schedule and aging body.', italic: true, font_size: 16}
+      properties: {text: 'As a busy professional, I was struggling to keep up with my hectic schedule and aging body.', italic: true, font_size: 16}
       type: Label
       layout_properties: {grid_position: 'ROQJFB,YTKXUD'}
     - name: image_12
@@ -410,19 +350,16 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'CCGSWT,EYNIWC'}
 - name: column_panel_25
-  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: medium,
-    col_widths: '{}'}
+  properties: {role: card, spacing_above: large, spacing_below: large, col_spacing: medium, col_widths: '{}'}
   type: ColumnPanel
   layout_properties: {grid_position: 'GRWNZF,RWMARM', full_width_row: true}
   components:
   - name: headline_17
-    properties: {role: headline, align: center, text: Meet Our Team, bold: true, foreground: '#2d3249',
-      font_size: 30, underline: false}
+    properties: {role: headline, align: center, text: Meet Our Team, bold: true, foreground: '#2d3249', font_size: 30, underline: false}
     type: Label
     layout_properties: {grid_position: 'EVEGMB,EDMWJF'}
   - name: label_27
-    properties: {align: center, text: Our team of battle-tested doctors and visionary engineers are the driving force behind Oxivive's groundbreaking anti-aging solutions.,
-      italic: false, font_size: 16, bold: false}
+    properties: {align: center, text: Our team of battle-tested doctors and visionary engineers are the driving force behind Oxivive's groundbreaking anti-aging solutions., italic: false, font_size: 16, bold: false}
     type: Label
     layout_properties: {grid_position: 'HHWIZQ,TCNPIJ', full_width_row: true}
   - name: grid_panel_1
@@ -436,29 +373,23 @@ components:
       layout_properties: {row: WRUVFE, width_xs: 3, col_xs: 0}
       components:
       - name: image_13
-        properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit,
-          height: 251.08001708984375, border: ''}
+        properties: {source: _/theme/Gru%20m%20seo.jpg, display_mode: shrink_to_fit, height: 251.08001708984375, border: ''}
         type: Image
         layout_properties: {grid_position: 'NVRBAH,NZORRT'}
       - name: headline_18
-        properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20,
-          underline: true}
+        properties: {role: text, align: center, text: Guru M - CEO, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'SWPTUZ,ZWJWIQ'}
       - name: label_50
-        properties: {text: 'Guru M, an innovative engineer with two decades of managerial
-            expertise, leads Oxivive. His leadership reshapes antiaging treatment
-            with each strategic decision. Beyond the lab, his direction advances science,
-            empowers individuals, and fosters well-being. Under Guru M, Oxivive breathes
-            vitality into the future of health, rejuvenating well-being one breath
-            at a time.
-
-            ', align: center, italic: true}
+        properties:
+          text: |
+            Guru M, an innovative engineer with two decades of managerial expertise, leads Oxivive. His leadership reshapes antiaging treatment with each strategic decision. Beyond the lab, his direction advances science, empowers individuals, and fosters well-being. Under Guru M, Oxivive breathes vitality into the future of health, rejuvenating well-being one breath at a time.
+          align: center
+          italic: true
         type: Label
         layout_properties: {grid_position: 'SAOZAP,PIOKDO'}
       - name: button_3
-        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8',
-          align: right}
+        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8', align: right}
         type: Button
         layout_properties: {grid_position: 'CHTMKV,JXUJUV'}
       - name: button_4
@@ -475,24 +406,19 @@ components:
       layout_properties: {row: WRUVFE, width_xs: 3, col_xs: 3}
       components:
       - name: image_14
-        properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit, height: 250.19998168945312,
-          border: ''}
+        properties: {source: _/theme/images/1.jpg, display_mode: shrink_to_fit, height: 250.19998168945312, border: ''}
         type: Image
         layout_properties: {grid_position: 'HMOLRY,MNYCUO'}
       - name: headline_19
-        properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true,
-          font_size: 20, underline: true}
+        properties: {role: text, align: center, text: Dr Chinmayi - CHO, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'CSPPOX,NVXMLS'}
       - name: label_51
-        properties: {text: 'Dr. Chinmayi, a seasoned gynecologist and Chief Health
-            Officer at Oxivive, is redefining anti-aging treatment. With experience
-            and vision, she leads the team in understanding women''s health, blending
-            science, empathy, and innovation. Under her leadership, Oxivive aims to
-            empower women to live vibrant, healthy lives, defying aging and embracing
-            each stage.
-
-            ', align: center, italic: true}
+        properties:
+          text: |
+            Dr. Chinmayi, a seasoned gynecologist and Chief Health Officer at Oxivive, is redefining anti-aging treatment. With experience and vision, she leads the team in understanding women's health, blending science, empathy, and innovation. Under her leadership, Oxivive aims to empower women to live vibrant, healthy lives, defying aging and embracing each stage.
+          align: center
+          italic: true
         type: Label
         layout_properties: {grid_position: 'HOLNFD,RRKSNO'}
       - name: button_9
@@ -513,24 +439,19 @@ components:
       layout_properties: {row: WRUVFE, width_xs: 3, col_xs: 6}
       components:
       - name: image_15
-        properties: {source: _/theme/images/2.jpg, display_mode: shrink_to_fit, height: 248.60000610351562,
-          border: ''}
+        properties: {source: _/theme/images/2.jpg, display_mode: shrink_to_fit, height: 248.60000610351562, border: ''}
         type: Image
         layout_properties: {grid_position: 'EPTAEY,TDCORV'}
       - name: headline_20
-        properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20,
-          underline: true}
+        properties: {role: text, align: center, text: Dr Yashas COO, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'RJCXOF,AOJDDK'}
       - name: label_53
-        properties: {text: 'Dr. Yashas, Chief Operating Officer at Oxivive, is a visionary
-            doctor hacking aging itself with groundbreaking technology. He invites
-            you to join the revolution, where aging is optional. Under his leadership,
-            Oxivive is redefining living young, healthy, and longer. With a medical
-            background, Yashas plays a critical role in developing ,implementing cutting-edge
-            anti-aging tech.
-
-            ', align: center, italic: true}
+        properties:
+          text: |
+            Dr. Yashas, Chief Operating Officer at Oxivive, is a visionary doctor hacking aging itself with groundbreaking technology. He invites you to join the revolution, where aging is optional. Under his leadership, Oxivive is redefining living young, healthy, and longer. With a medical background, Yashas plays a critical role in developing ,implementing cutting-edge anti-aging tech.
+          align: center
+          italic: true
         type: Label
         layout_properties: {grid_position: 'VPQIFA,APYDRJ'}
       - name: button_6
@@ -551,23 +472,19 @@ components:
       layout_properties: {row: WRUVFE, width_xs: 3, col_xs: 9}
       components:
       - name: image_16
-        properties: {source: _/theme/images/3.jpg, display_mode: shrink_to_fit, height: 246.59999084472656,
-          border: ''}
+        properties: {source: _/theme/images/3.jpg, display_mode: shrink_to_fit, height: 246.59999084472656, border: ''}
         type: Image
         layout_properties: {grid_position: 'BLYKVG,TJXTTD'}
       - name: headline_21
-        properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true,
-          font_size: 20, underline: true}
+        properties: {role: text, align: center, text: Devaraj Gowdanar - CTO, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'KELCJH,XYGHEJ'}
       - name: label_52
-        properties: {text: 'Devaraj Gowdanar, Oxivive''s Chief Technology Officer,
-            is a visionary entrepreneur and tech genius. He is developing the platform
-            for Oxivive''s revolutionary anti-aging technology. Gowdanar combines
-            science, data, and human potential to redefine health and lifespan limits.
-            Under his leadership, creating a future where fighting aging is a reality.
-
-            ', align: center, italic: true}
+        properties:
+          text: |
+            Devaraj Gowdanar, Oxivive's Chief Technology Officer, is a visionary entrepreneur and tech genius. He is developing the platform for Oxivive's revolutionary anti-aging technology. Gowdanar combines science, data, and human potential to redefine health and lifespan limits. Under his leadership, creating a future where fighting aging is a reality.
+          align: center
+          italic: true
         type: Label
         layout_properties: {grid_position: 'IVOCGU,RIFVEV'}
       - name: button_12
@@ -592,18 +509,11 @@ components:
         type: Image
         layout_properties: {grid_position: 'GFFJCQ,YLFVYZ'}
       - name: headline_18_copy
-        properties: {role: text, align: center, text: Roshni Gowdanar - Director,
-          bold: true, font_size: 20, underline: true}
+        properties: {role: text, align: center, text: Roshni Gowdanar - Director, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'ZRHGVD,UMNFQC'}
       - name: label_54
-        properties: {text: 'Roshni Gowdanar, an electric engineer at Oxivive, fuels
-            the anti-aging revolution with innovation. Her youthful vigor as Director
-            inspires boundless creativity, igniting the team''s drive. In the audacious
-            quest to conquer time, she pioneers technology fusion, blending hardware
-            and software seamlessly. Roshni''s vision transcends gadgetry, orchestrating
-            a symphony of innovation that challenges the limits of human aging.',
-          align: center}
+        properties: {text: 'Roshni Gowdanar, an electric engineer at Oxivive, fuels the anti-aging revolution with innovation. Her youthful vigor as Director inspires boundless creativity, igniting the team''s drive. In the audacious quest to conquer time, she pioneers technology fusion, blending hardware and software seamlessly. Roshni''s vision transcends gadgetry, orchestrating a symphony of innovation that challenges the limits of human aging.', align: center}
         type: Label
         layout_properties: {grid_position: 'GXISQX,YZJLGX'}
       - name: button_9_copy
@@ -628,23 +538,15 @@ components:
         type: Image
         layout_properties: {grid_position: 'RVWVIB,PZAXZP', full_width_row: true}
       - name: headline_18_copy_3
-        properties: {role: text, align: center, text: Suma G - CFO, bold: true, font_size: 20,
-          underline: true}
+        properties: {role: text, align: center, text: Suma G - CFO, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'KXOVRY,BRACJK'}
       - name: label_56
-        properties: {text: 'Suma, a seasoned engineer and CFO at Oxivive, leverages
-            over a decade of expertise to drive growth and optimize resources. In
-            the quest to decode anti-aging, she orchestrates financial magic, ensuring
-            every rupee propels their mission. Suma envisions a future where Oxivive
-            pioneers aging eradication. Under her guidance, Oxivive''s financial robustness
-            matches its groundbreaking science, heralding a new era.', align: center,
-          visible: true}
+        properties: {text: 'Suma, a seasoned engineer and CFO at Oxivive, leverages over a decade of expertise to drive growth and optimize resources. In the quest to decode anti-aging, she orchestrates financial magic, ensuring every rupee propels their mission. Suma envisions a future where Oxivive pioneers aging eradication. Under her guidance, Oxivive''s financial robustness matches its groundbreaking science, heralding a new era.', align: center, visible: true}
         type: Label
         layout_properties: {grid_position: 'GWMHTD,BSBYYK'}
       - name: button_3_copy_2
-        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8',
-          align: right}
+        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8', align: right}
         type: Button
         layout_properties: {grid_position: 'ZBQKEJ,DCTNNJ'}
       - name: button_4_copy_2_copy
@@ -665,24 +567,18 @@ components:
         type: Image
         layout_properties: {grid_position: 'ZCZPUD,XYYGXD', full_width_row: true}
       - name: headline_18_copy_4
-        properties: {role: text, align: center, text: Dr Prateek - Consultant, bold: true,
-          font_size: 20, underline: true}
+        properties: {role: text, align: center, text: Dr Prateek - Consultant, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'KXOVRY,BRACJK'}
       - name: label_55
-        properties: {text: 'Dr. Prateek, a visionary orthopedic surgeon at Oxivive,
-            redefines mobility. As Consultant Advisor, his precision and futuristic
-            insight drive the team. Beyond bone repair, he expands human movement
-            possibilities, blending science and body wisdom. Dr. Prateek''s solutions
-            defy age limits, ensuring longevity and vitality. Under his leadership,
-            Oxivive commits to vibrant and active years ahead.
-
-            ', align: center}
+        properties:
+          text: |
+            Dr. Prateek, a visionary orthopedic surgeon at Oxivive, redefines mobility. As Consultant Advisor, his precision and futuristic insight drive the team. Beyond bone repair, he expands human movement possibilities, blending science and body wisdom. Dr. Prateek's solutions defy age limits, ensuring longevity and vitality. Under his leadership, Oxivive commits to vibrant and active years ahead.
+          align: center
         type: Label
         layout_properties: {grid_position: 'SYLWNF,ZWEVWJ'}
       - name: button_3_copy
-        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8',
-          align: right}
+        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8', align: right}
         type: Button
         layout_properties: {grid_position: 'PQIZWJ,MVAFLO'}
       - name: button_4_copy_2
@@ -703,23 +599,15 @@ components:
         type: Image
         layout_properties: {grid_position: 'HFXUZN,CFNQKZ', full_width_row: true}
       - name: headline_18_copy_2
-        properties: {role: text, align: center, text: Dr Prasad G - Consultant, bold: true,
-          font_size: 20, underline: true}
+        properties: {role: text, align: center, text: Dr Prasad G - Consultant, bold: true, font_size: 20, underline: true}
         type: Label
         layout_properties: {grid_position: 'KXOVRY,BRACJK'}
       - name: label_57
-        properties: {text: 'Dr. Prasad G, a renowned diabetologist at Oxivive, he
-            blends expertise and innovation into the anti-aging endeavor. As a trusted
-            advisor, his wisdom ,vision and hardwork will  steer the team. Beyond
-            symptom treatment, Dr. Prasad explores the metabolic-aging nexus, paving
-            the way for timeless solutions. His insights shape Oxivive''s future and
-            transcending temporal boundaries in the pursuit of longevity and well
-            being .', align: center}
+        properties: {text: 'Dr. Prasad G, a renowned diabetologist at Oxivive, he blends expertise and innovation into the anti-aging endeavor. As a trusted advisor, his wisdom ,vision and hardwork will  steer the team. Beyond symptom treatment, Dr. Prasad explores the metabolic-aging nexus, paving the way for timeless solutions. His insights shape Oxivive''s future and transcending temporal boundaries in the pursuit of longevity and well being .', align: center}
         type: Label
         layout_properties: {grid_position: 'OFIOXS,XLPYEG'}
       - name: button_3_copy_copy
-        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8',
-          align: right}
+        properties: {text: '', italic: false, icon: 'fa:facebook', foreground: '#524fd8', align: right}
         type: Button
         layout_properties: {grid_position: 'NPPKDZ,YRAPMS'}
       - name: button_4_copy_2_copy_copy
@@ -735,8 +623,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'UMMRPP,LNVUOV'}
 - name: label_62
-  properties: {align: left, text: FAQ's, bold: true, visible: true, underline: true,
-    foreground: '#2d3249', font_size: 25}
+  properties: {align: left, text: FAQ's, bold: true, visible: true, underline: true, foreground: '#2d3249', font_size: 25}
   type: Label
   layout_properties: {grid_position: 'HJMLTF,VDYLCD'}
 - name: spacer_9
@@ -744,34 +631,22 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'RAJUYL,OSKPDQ'}
 - name: link_10
-  properties: {text: 'Is HBOT safe ?', bold: true, icon: 'fa:plus', icon_align: left_edge,
-    italic: false}
+  properties: {text: 'Is HBOT safe ?', bold: true, icon: 'fa:plus', icon_align: left_edge, italic: false}
   type: Link
   layout_properties: {grid_position: 'OCEOJD,VWYDTR'}
   event_bindings: {click: link_10_click}
   components: []
 - name: label_65
-  properties: {text: 'Hyperbarics is a safe alternative to many medical treatment
-      options offered to patients today. Some hyperbaric patients may report some
-      mild ear pressure discomfort. This discomfort is similar to the pressure felt
-      when ascending or descending in an airplane. Discuss these concerns with your
-      physician and hyperbaric therapy professional.
+  properties:
+    text: |-
+      Hyperbarics is a safe alternative to many medical treatment options offered to patients today. Some hyperbaric patients may report some mild ear pressure discomfort. This discomfort is similar to the pressure felt when ascending or descending in an airplane. Discuss these concerns with your physician and hyperbaric therapy professional.
 
+      Our clinics provide a safe, comfortable and welcoming environment for your hyperbaric therapy needs. We have hard and soft sided chambers in our offices and offer mild to high pressure depending on the needs of our patients.
 
-      Our clinics provide a safe, comfortable and welcoming environment for your hyperbaric
-      therapy needs. We have hard and soft sided chambers in our offices and offer
-      mild to high pressure depending on the needs of our patients.
-
-
-      Our in-home HBOT therapy chambers offer you the benefits of oxygen therapy right
-      in your home. Our chambers offer you all the benefits of HBOT therapy without
-      the hassle and emotional
-
-      Most definitely. Hyperbarics is great for those in their later years. Hyperbarics
-      provides an immeasurable boost which counteracts the signs of aging. In fact,
-      new research indictes that hyperbaric oxygenation slows Apoptosis (cell death),
-      and helps with diabetic neuropathy, dementia, Alzheimer’s and overall energy
-      and healing.', italic: true, visible: false}
+      Our in-home HBOT therapy chambers offer you the benefits of oxygen therapy right in your home. Our chambers offer you all the benefits of HBOT therapy without the hassle and emotional
+      Most definitely. Hyperbarics is great for those in their later years. Hyperbarics provides an immeasurable boost which counteracts the signs of aging. In fact, new research indictes that hyperbaric oxygenation slows Apoptosis (cell death), and helps with diabetic neuropathy, dementia, Alzheimer’s and overall energy and healing.
+    italic: true
+    visible: false
   type: Label
   layout_properties: {grid_position: 'AWGNKH,HHVJVT'}
 - name: link_8
@@ -781,30 +656,17 @@ components:
   event_bindings: {click: link_8_click}
   components: []
 - name: label_64
-  properties: {text: 'Hyperbaric Oxygen Therapy (HBOT) is a treatment in which a patient
-      breathes air or varying amounts of oxygen while inside a pressurized chamber,
-      the pressure being anything above 1 atmosphere.
+  properties:
+    text: |-
+      Hyperbaric Oxygen Therapy (HBOT) is a treatment in which a patient breathes air or varying amounts of oxygen while inside a pressurized chamber, the pressure being anything above 1 atmosphere.
 
+      The healing power of oxygen is not something new. The use of hyperbaric therapy dates back nearly 350 years. The very first hyperbaric chamber was created in 1662 with the clinical use of hyperbaric oxygen therapy starting in the mid 1800s. During the 1960s, studies began to show a wide variety of beneficial uses for HBOT therapy. Today, there are over 150 internationally approved conditions for which hyperbaric oxygen therapy has been shown to be effective and beneficial.Traditionally HBOT has been used for diabetic foot wounds, air and gas embolism, carbon monoxide poisoning and smoke inhalation, gas gangrene, thermal burns, decompression sickness and acute mountain sickness.
 
-      The healing power of oxygen is not something new. The use of hyperbaric therapy
-      dates back nearly 350 years. The very first hyperbaric chamber was created in
-      1662 with the clinical use of hyperbaric oxygen therapy starting in the mid
-      1800s. During the 1960s, studies began to show a wide variety of beneficial
-      uses for HBOT therapy. Today, there are over 150 internationally approved conditions
-      for which hyperbaric oxygen therapy has been shown to be effective and beneficial.Traditionally
-      HBOT has been used for diabetic foot wounds, air and gas embolism, carbon monoxide
-      poisoning and smoke inhalation, gas gangrene, thermal burns, decompression sickness
-      and acute mountain sickness.
+      Today, we help treat everything from diabetes, low energy, Lyme disease, cerebral palsy, head injuries, chronic fatigue, brain injuries, multiple sclerosis, ALS, anemia, wound and scar healing, post stroke care, post surgical care and healing, improved performance, autism, dementia and bells palsy just to name a few.
 
-
-      Today, we help treat everything from diabetes, low energy, Lyme disease, cerebral
-      palsy, head injuries, chronic fatigue, brain injuries, multiple sclerosis, ALS,
-      anemia, wound and scar healing, post stroke care, post surgical care and healing,
-      improved performance, autism, dementia and bells palsy just to name a few.
-
-
-      At OXIVIVE we offer treatments in our clinics as well as in-home HBOT chambers.
-      Call to learn more about the benefits of HBOT therapy.', italic: true, visible: false}
+      At OXIVIVE we offer treatments in our clinics as well as in-home HBOT chambers. Call to learn more about the benefits of HBOT therapy.
+    italic: true
+    visible: false
   type: Label
   layout_properties: {grid_position: 'ZHGSOT,VOMQWW'}
 - name: link_9
@@ -813,113 +675,68 @@ components:
   layout_properties: {grid_position: 'GLFBOQ,UAVJIY'}
   event_bindings: {click: link_9_click}
 - name: label_63
-  properties: {text: '* Increased oxygen perfusion- (Immediate increase in free floating
-      oxygen available for tissue use)
-
+  properties:
+    text: |-
+      * Increased oxygen perfusion- (Immediate increase in free floating oxygen available for tissue use)
       * Neovascularization- Angiogenesis (new blood vessel growth)
-
       * Increased white blood cell function (improved neutrophil and macrophage activity)
-
       * Nerve healing factors (increases in VegF, BDNF, HIF1)
-
-      * Wound healing Increased capacity for healing (PDGF, VegF, collagen production
-      circulatory healing)
-
+      * Wound healing Increased capacity for healing (PDGF, VegF, collagen production circulatory healing)
       * Stem cell release (up to 8-fold increase in mesenchymal and CNS stem cells)
-
       * Vasoconstriction (decrease edema and swelling from damaged tissues)
-
       * Mitochondrial healing (increase in size, shape and number of mitochondria)
-
-      * Anti-inflammatory (reduction of inflammatory cytokines, increase in anti-inflammatory
-      cytokines)
-
-      * Anti-microbial/microbiome balancing (reduction in anaerobic pathogens and
-      increase in aerobic probiotics)', italic: true, visible: false}
+      * Anti-inflammatory (reduction of inflammatory cytokines, increase in anti-inflammatory cytokines)
+      * Anti-microbial/microbiome balancing (reduction in anaerobic pathogens and increase in aerobic probiotics)
+    italic: true
+    visible: false
   type: Label
   layout_properties: {grid_position: 'XYLIHJ,ZOHIKU'}
 - name: link_11
-  properties: {text: 'Do i need to do 40 sessions ?', icon: 'fa:plus', icon_align: left_edge,
-    bold: true}
+  properties: {text: 'Do i need to do 40 sessions ?', icon: 'fa:plus', icon_align: left_edge, bold: true}
   type: Link
   layout_properties: {grid_position: 'XEDNWH,PJKWET'}
   event_bindings: {click: link_11_click}
 - name: label_66
-  properties: {text: 'No. Keep in mind that the ’40 hour protocol’ is the gold standard
-      for many of the physiological benefits that have been observed with HBOT. However,
-      the actual physiological benefits (for HBOT) can be seen in just a few sessions!
-
-      Most physiological benefits will begin within the first few sessions of HBOT.
-      It has been well documented that the anti-oxidant and protective role of HBOT
-      is immediate and demonstrated within 24 hours of just one hyperbaric session.
-      Further to this, the anti-inflammatory response is quite also very quick and
-      a strong physiological response has been shown within 4 days of hyperbaric therapy.
-      Many studies have reported HBOT to produce a strong pain relieving effect after
-      just 5 to 10 sessions. HBOT’s effects on promoting new blood vessel formation
-      (angiogenesis) can take place in just 10 to 20
-
+  properties:
+    text: |-
+      No. Keep in mind that the ’40 hour protocol’ is the gold standard for many of the physiological benefits that have been observed with HBOT. However, the actual physiological benefits (for HBOT) can be seen in just a few sessions!
+      Most physiological benefits will begin within the first few sessions of HBOT. It has been well documented that the anti-oxidant and protective role of HBOT is immediate and demonstrated within 24 hours of just one hyperbaric session. Further to this, the anti-inflammatory response is quite also very quick and a strong physiological response has been shown within 4 days of hyperbaric therapy. Many studies have reported HBOT to produce a strong pain relieving effect after just 5 to 10 sessions. HBOT’s effects on promoting new blood vessel formation (angiogenesis) can take place in just 10 to 20
       sessions. From our data, here is a general summary:
-
-      1-5 sessions: Improve cellular energy and during this time tissue functioning
-      may be optimized. Those with residual carbon monoxide (ie smokers) or with mild
-      anemia can show immediate benefits with cellular energy. Inflammatory markers
-      can go down considerably and mark the beginning of a natural repair process.
-
-      5-10 sessions: Typically used for acute injuries with soft tissue damage, particularly
-      if there is pain involved.
-
+      1-5 sessions: Improve cellular energy and during this time tissue functioning may be optimized. Those with residual carbon monoxide (ie smokers) or with mild anemia can show immediate benefits with cellular energy. Inflammatory markers can go down considerably and mark the beginning of a natural repair process.
+      5-10 sessions: Typically used for acute injuries with soft tissue damage, particularly if there is pain involved.
       10-20 sessions: More serious acute injuries or chronic injuries
-
-      20-40 sessions: Commonly used for major tissue damages and when new tissue is
-      required (through HBOT’s regenerative stem cell properties)', italic: true,
-    visible: false}
+      20-40 sessions: Commonly used for major tissue damages and when new tissue is required (through HBOT’s regenerative stem cell properties)
+    italic: true
+    visible: false
   type: Label
   layout_properties: {grid_position: 'XNMUBM,GRIPTO'}
 - name: link_12
-  properties: {text: 'Do i need 60 minutes per session ?', bold: true, icon: 'fa:plus',
-    icon_align: left_edge}
+  properties: {text: 'Do i need 60 minutes per session ?', bold: true, icon: 'fa:plus', icon_align: left_edge}
   type: Link
   layout_properties: {grid_position: 'BYTMBN,WSGXGZ'}
   event_bindings: {click: link_12_click}
   components: []
 - name: label_67
-  properties: {text: 'No. Most research studies typically use 60 – 90 minute sessions
-      and the majority have reported positive benefits. However, shorter duration
-      sessions (i.e. 20 to 30 min) are getting great feedback from clients undergoing
-      HBOT. Moreover, the lower pressures seem to fare better with this shorter duration
-      protocol. Ultimately it depends on the age of the patient and severity of the
-      condition.', italic: true, visible: false}
+  properties: {text: 'No. Most research studies typically use 60 – 90 minute sessions and the majority have reported positive benefits. However, shorter duration sessions (i.e. 20 to 30 min) are getting great feedback from clients undergoing HBOT. Moreover, the lower pressures seem to fare better with this shorter duration protocol. Ultimately it depends on the age of the patient and severity of the condition.', italic: true, visible: false}
   type: Label
   layout_properties: {grid_position: 'JAQBNO,GGQADW'}
 - name: link_13
-  properties: {text: 'Can i use Hyperbaric chamber if i''m pregnant ?', icon: 'fa:plus',
-    icon_align: left_edge, bold: true}
+  properties: {text: 'Can i use Hyperbaric chamber if i''m pregnant ?', icon: 'fa:plus', icon_align: left_edge, bold: true}
   type: Link
   layout_properties: {grid_position: ''}
   event_bindings: {click: link_13_click}
 - name: label_68
-  properties: {text: 'It is not generally advised to undergo hyperbaric therapy if
-      you are pregnant. Some people feel that there is benefit, quoting research done
-      in Russia. However, until further safety studies are performed, it is not advisable
-      to be inside a hyperbaric chamber during pregnancy.', italic: true, visible: false}
+  properties: {text: 'It is not generally advised to undergo hyperbaric therapy if you are pregnant. Some people feel that there is benefit, quoting research done in Russia. However, until further safety studies are performed, it is not advisable to be inside a hyperbaric chamber during pregnancy.', italic: true, visible: false}
   type: Label
   layout_properties: {grid_position: ''}
 - name: link_14
-  properties: {text: 'Can we get the same effects by going to Oxygen bar ?', bold: true,
-    icon: 'fa:plus', icon_align: left_edge}
+  properties: {text: 'Can we get the same effects by going to Oxygen bar ?', bold: true, icon: 'fa:plus', icon_align: left_edge}
   type: Link
   layout_properties: {grid_position: ''}
   event_bindings: {click: link_14_click}
   components: []
 - name: label_69
-  properties: {text: 'No. actually it is the pressure that plays the most critical
-      role in the effective dosage of HBOT. This is because the extra oxygen is dissolved
-      in the blood plasma, which, alongside the added pressure, can travel to deeper
-      areas in the body where blood flow and oxygen levels have been limited. An oxygen
-      bar only delivers higher oxygen concentrations and does not pressurize the oxygen.
-      Therefore, it cannot deliver the same effects as you can experience through
-      hyperbaric oxygen therapy — only HBOT will be able to force significantly more
-      oxygen into the blood plasma!', italic: true, visible: false}
+  properties: {text: 'No. actually it is the pressure that plays the most critical role in the effective dosage of HBOT. This is because the extra oxygen is dissolved in the blood plasma, which, alongside the added pressure, can travel to deeper areas in the body where blood flow and oxygen levels have been limited. An oxygen bar only delivers higher oxygen concentrations and does not pressurize the oxygen. Therefore, it cannot deliver the same effects as you can experience through hyperbaric oxygen therapy — only HBOT will be able to force significantly more oxygen into the blood plasma!', italic: true, visible: false}
   type: Label
   layout_properties: {grid_position: ''}
 - name: spacer_1
@@ -927,27 +744,21 @@ components:
   type: Spacer
   layout_properties: {grid_position: 'LZNBGH,AAYNHT'}
 - name: column_panel_26
-  properties: {background: '#272b3f', col_spacing: huge, col_widths: '{"ISRAXW":30,"KDJVHL":30}',
-    tooltip: '', spacing_above: large}
+  properties: {background: '#272b3f', col_spacing: huge, col_widths: '{"ISRAXW":30,"KDJVHL":30}', tooltip: '', spacing_above: large}
   type: ColumnPanel
   layout_properties: {grid_position: 'THLLHQ,WMGSWJ', full_width_row: true}
   data_bindings: []
   components:
   - name: label_28
-    properties: {text: OXI-COIN, background: '', foreground: white, bold: true, font_size: 30,
-      underline: true, font: ''}
+    properties: {text: OXI-COIN, background: '', foreground: white, bold: true, font_size: 30, underline: true, font: ''}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW RCCYLO,EYUAQR'}
   - name: label_29
-    properties: {bold: true, text: Token Supply and Metrics, foreground: 'theme:White',
-      font_size: 25}
+    properties: {bold: true, text: Token Supply and Metrics, foreground: 'theme:White', font_size: 25}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW QMOUNA,NFKBIF'}
   - name: label_58
-    properties: {text: 'Anti-aging is about to get revolutionized, and the OXI token
-        is your key. This article dives into the OXIVIVE ecosystem, where the OXI
-        token fuels everything from cutting-edge treatments to a complete transformation
-        of India''s anti-aging landscape.', italic: true, bold: false, foreground: white}
+    properties: {text: 'Anti-aging is about to get revolutionized, and the OXI token is your key. This article dives into the OXIVIVE ecosystem, where the OXI token fuels everything from cutting-edge treatments to a complete transformation of India''s anti-aging landscape.', italic: true, bold: false, foreground: white}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW AYRDBM,YKUDAC'}
   - name: label_30
@@ -955,33 +766,27 @@ components:
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW LXFOYY,JBVRLK'}
   - name: label_59
-    properties: {text: Discover how the OXI token unlocks a one-stop-shop experience for anti-aging treatments within OXIVIVE.,
-      italic: true, foreground: white}
+    properties: {text: Discover how the OXI token unlocks a one-stop-shop experience for anti-aging treatments within OXIVIVE., italic: true, foreground: white}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW HFCLKX,SBVPGD'}
   - name: label_31
-    properties: {text: one-stop-shop for anti-aging service, bold: true, foreground: 'theme:White',
-      font_size: 25}
+    properties: {text: one-stop-shop for anti-aging service, bold: true, foreground: 'theme:White', font_size: 25}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW WKMDDL,VPPYSB'}
   - name: label_60
-    properties: {text: 'Witness the dawn of a new era in healthcare technology, built
-        on the secure and transparent foundations of Web3.', italic: true, foreground: white}
+    properties: {text: 'Witness the dawn of a new era in healthcare technology, built on the secure and transparent foundations of Web3.', italic: true, foreground: white}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW MVEJTT,CGDUVM'}
   - name: label_32
-    properties: {text: Be Part of the Movement, bold: true, foreground: 'theme:White',
-      font_size: 25}
+    properties: {text: Be Part of the Movement, bold: true, foreground: 'theme:White', font_size: 25}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW SYPZGN,GEZDTW'}
   - name: label_61
-    properties: {text: Join the next-generation revolution in health-tech and secure your place in the future of anti-aging.,
-      italic: true, foreground: white}
+    properties: {text: Join the next-generation revolution in health-tech and secure your place in the future of anti-aging., italic: true, foreground: white}
     type: Label
     layout_properties: {grid_position: 'AGRIVA,ISRAXW PACQRY,AFEUMM'}
   - name: image_21
-    properties: {height: 613.1999816894531, source: _/theme/Screenshot%20(143).png,
-      display_mode: zoom_to_fill}
+    properties: {height: 613.1999816894531, source: _/theme/Screenshot%20(143).png, display_mode: zoom_to_fill}
     type: Image
     layout_properties: {grid_position: 'AGRIVA,KDJVHL', full_width_row: true}
   - name: spacer_38
@@ -989,10 +794,7 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'JVGDST,GJBRBE'}
   - name: label_33
-    properties: {align: center, text: 'Lorem ipsum dolor sit amet, at mei dolore tritani
-        repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum
-        consetetur. Viderer feugiat at pro, mea aperiam', foreground: 'theme:White',
-      bold: true, italic: true}
+    properties: {align: center, text: 'Lorem ipsum dolor sit amet, at mei dolore tritani repudiandae. In his nemore temporibus consequuntur, vim ad prima vivendum consetetur. Viderer feugiat at pro, mea aperiam', foreground: 'theme:White', bold: true, italic: true}
     type: Label
     layout_properties: {grid_position: 'VJPTMV,NQPFPS'}
   - name: spacer_39
@@ -1000,56 +802,31 @@ components:
     type: Spacer
     layout_properties: {grid_position: 'SKSYNR,CBVDLS'}
   - name: label_34
-    properties: {align: center, text: 'Anti-aging is about to get revolutionized,
-        and the OXI token is your key. This article dives into the OXIVIVE ecosystem,
-        where the OXI token fuels everything from cutting-edge treatments to a complete
-        transformation of India''s anti-aging landscape.', foreground: 'theme:White',
-      role: subheading, bold: false}
+    properties: {align: center, text: 'Anti-aging is about to get revolutionized, and the OXI token is your key. This article dives into the OXIVIVE ecosystem, where the OXI token fuels everything from cutting-edge treatments to a complete transformation of India''s anti-aging landscape.', foreground: 'theme:White', role: subheading, bold: false}
     type: Label
     layout_properties: {grid_position: 'GKMSGJ,ITXNTY'}
   - name: label_35
-    properties: {text: Problem, foreground: 'theme:White', bold: true, font_size: 15,
-      underline: true}
+    properties: {text: Problem, foreground: 'theme:White', bold: true, font_size: 15, underline: true}
     type: Label
     layout_properties: {grid_position: 'PZSSRK,QRWEOC'}
   - name: label_37
-    properties: {text: Discover how the OXI token unlocks a one-stop-shop experience for anti-aging treatments within OXIVIVE.,
-      foreground: 'theme:White', italic: true}
+    properties: {text: Discover how the OXI token unlocks a one-stop-shop experience for anti-aging treatments within OXIVIVE., foreground: 'theme:White', italic: true}
     type: Label
     layout_properties: {grid_position: 'JGYVQA,WQBGBC'}
   - name: label_36
-    properties: {text: Treatment Done Right, bold: true, foreground: 'theme:Gray 50',
-      font_size: 15, underline: true}
+    properties: {text: Treatment Done Right, bold: true, foreground: 'theme:Gray 50', font_size: 15, underline: true}
     type: Label
     layout_properties: {grid_position: 'AKYSEP,XREMNF'}
   - name: label_38
-    properties: {text: 'In the realm of advancing medical technology, innovative solutions
-        are continually solving complex challenges. From preventive medicine and robotics
-        to artificial intelligence and chronic illness management, groundbreaking
-        advancements are reshaping healthcare. Yet, the age-old issue of cellular-level
-        aging remains uncharted territory. Join us as we pioneer a new frontier in
-        cellular rejuvenation, bridging the gap in medical innovation and unlocking
-        the secrets of aging at its core.
+    properties:
+      text: |-
+        In the realm of advancing medical technology, innovative solutions are continually solving complex challenges. From preventive medicine and robotics to artificial intelligence and chronic illness management, groundbreaking advancements are reshaping healthcare. Yet, the age-old issue of cellular-level aging remains uncharted territory. Join us as we pioneer a new frontier in cellular rejuvenation, bridging the gap in medical innovation and unlocking the secrets of aging at its core.
 
+        Unlocking widespread adoption and trust in anti-aging treatments outside traditional healthcare settings has long been a formidable challenge. In this groundbreaking paper, we unveil our innovative strategy to incentivize early participants and clinics, enhancing the popularity and reliability of OXIVIVE within our network. Our approach ensures no compromises on treatment quality or return on investment, setting a new standard for accessible and effective anti-aging solutions in the medical landscape. Join us on the journey to redefine healthcare delivery and investment opportunities in the age of longevity.
 
-        Unlocking widespread adoption and trust in anti-aging treatments outside traditional
-        healthcare settings has long been a formidable challenge. In this groundbreaking
-        paper, we unveil our innovative strategy to incentivize early participants
-        and clinics, enhancing the popularity and reliability of OXIVIVE within our
-        network. Our approach ensures no compromises on treatment quality or return
-        on investment, setting a new standard for accessible and effective anti-aging
-        solutions in the medical landscape. Join us on the journey to redefine healthcare
-        delivery and investment opportunities in the age of longevity.
-
-
-        Before delving into OXIVIVE''s revolutionary anti-aging solution, it''s crucial
-        to highlight the game-changing benefits of our approach to costing and convenience.
-        Our innovative service model empowers customers with unparalleled comfort
-        and flexibility, bringing anti-aging treatments directly to their doorstep
-        at their preferred times. Experience the future of convenience and accessibility
-        with OXIVIVE, where quality care meets effortless convenience right at your
-        fingertips. Unlock a new era of anti-aging solutions tailored to your lifestyle.',
-      foreground: 'theme:White', italic: true}
+        Before delving into OXIVIVE's revolutionary anti-aging solution, it's crucial to highlight the game-changing benefits of our approach to costing and convenience. Our innovative service model empowers customers with unparalleled comfort and flexibility, bringing anti-aging treatments directly to their doorstep at their preferred times. Experience the future of convenience and accessibility with OXIVIVE, where quality care meets effortless convenience right at your fingertips. Unlock a new era of anti-aging solutions tailored to your lifestyle.
+      foreground: theme:White
+      italic: true
     type: Label
     layout_properties: {grid_position: 'SRKQCS,JZVXMX'}
   - name: label_39
@@ -1057,147 +834,83 @@ components:
     type: Label
     layout_properties: {grid_position: 'KBGZWA,SFWDCD'}
   - name: label_40
-    properties: {text: 'Introducing the OXI token—an ERC-20 utility token minted on
-        the SUI Blockchain, poised to revolutionize transactions within OXIVIVE. Think
-        of the OXI Token as the dynamic fuel powering our ecosystem, incentivizing
-        top-tier service providers and empowering supporters committed to mass adoption,
-        decentralization, and cutting-edge health tech innovation. Join us as we pioneer
-        a new era of transformative healthcare technology, where participation fuels
-        progress and unlocks the future of anti-aging excellence.', foreground: 'theme:White',
-      italic: true}
+    properties: {text: 'Introducing the OXI token—an ERC-20 utility token minted on the SUI Blockchain, poised to revolutionize transactions within OXIVIVE. Think of the OXI Token as the dynamic fuel powering our ecosystem, incentivizing top-tier service providers and empowering supporters committed to mass adoption, decentralization, and cutting-edge health tech innovation. Join us as we pioneer a new era of transformative healthcare technology, where participation fuels progress and unlocks the future of anti-aging excellence.', foreground: 'theme:White', italic: true}
     type: Label
     layout_properties: {grid_position: 'DVUMGE,NULQEW'}
   - name: label_42
-    properties: {text: Token utility, foreground: 'theme:White', bold: true, font_size: 15,
-      underline: true}
+    properties: {text: Token utility, foreground: 'theme:White', bold: true, font_size: 15, underline: true}
     type: Label
     layout_properties: {grid_position: 'FBVLRV,WNPPZP'}
   - name: label_41
-    properties: {text: 'Introducing the OXI token—an ERC-20 utility token minted on
-        the SUI Blockchain, poised to revolutionize transactions within OXIVIVE. Think
-        of the OXI Token as the dynamic fuel powering our ecosystem, incentivizing
-        top-tier service providers and empowering supporters committed to mass adoption,
-        decentralization, and cutting-edge health tech innovation. Join us as we pioneer
-        a new era of transformative healthcare technology, where participation fuels
-        progress and unlocks the future of anti-aging excellence. Join the future
-        of healthcare with OXIVIVE and become a vital participant in our innovative
-        incentivization system powered by the OXI token. By supporting us with your
-        expertise and investment, you''ll have a stake in a fair and robust mechanism
-        designed to reward contributions and ensure top-tier service quality. Partners
-        committed to excellence will be required to invest, maintaining high standards
-        and enabling self-regulation within our platform. Through our Blast staking
-        mechanism, INFRA token holders can delegate their tokens and earn competitive
-        APYs while advancing the entire Blast ecosystem. Embrace the future of healthcare
-        technology with OXIVIVE and be part of a transformative journey towards superior
-        health solutions.', foreground: 'theme:White', italic: true}
+    properties: {text: 'Introducing the OXI token—an ERC-20 utility token minted on the SUI Blockchain, poised to revolutionize transactions within OXIVIVE. Think of the OXI Token as the dynamic fuel powering our ecosystem, incentivizing top-tier service providers and empowering supporters committed to mass adoption, decentralization, and cutting-edge health tech innovation. Join us as we pioneer a new era of transformative healthcare technology, where participation fuels progress and unlocks the future of anti-aging excellence. Join the future of healthcare with OXIVIVE and become a vital participant in our innovative incentivization system powered by the OXI token. By supporting us with your expertise and investment, you''ll have a stake in a fair and robust mechanism designed to reward contributions and ensure top-tier service quality. Partners committed to excellence will be required to invest, maintaining high standards and enabling self-regulation within our platform. Through our Blast staking mechanism, INFRA token holders can delegate their tokens and earn competitive APYs while advancing the entire Blast ecosystem. Embrace the future of healthcare technology with OXIVIVE and be part of a transformative journey towards superior health solutions.', foreground: 'theme:White', italic: true}
     type: Label
     layout_properties: {grid_position: 'CTRXBX,JZQPQN'}
   - name: label_43
-    properties: {text: 'Token distribution
+    properties:
+      text: |+
+        Token distribution
 
-
-        ', bold: true, foreground: 'theme:White', font_size: 15, underline: true}
+      bold: true
+      foreground: theme:White
+      font_size: 15
+      underline: true
     type: Label
     layout_properties: {grid_position: 'BOGDKN,AMKMXU'}
   - name: label_44
-    properties: {text: 'Discover the strategic token distribution and vesting schedule
-        of OXIVIVE''s OXI token—a cornerstone designed to ensure our success and uphold
-        unwavering professionalism and trustworthiness. With a fixed supply of 10
-        billion (1000 Crore) tokens over a 5-year period, our tokenomics prioritize
-        fair incentivization for all participants while projecting stability and integrity
-        to our customers, partners, and collaborators. Experience the future of tokenized
-        healthcare with OXIVIVE, where transparency and reliability redefine industry
-        standards. Unlock the potential of OXI tokens across diverse utility pools,
-        paving the way for a new era in health tech innovation.', foreground: 'theme:White',
-      italic: true}
+    properties: {text: 'Discover the strategic token distribution and vesting schedule of OXIVIVE''s OXI token—a cornerstone designed to ensure our success and uphold unwavering professionalism and trustworthiness. With a fixed supply of 10 billion (1000 Crore) tokens over a 5-year period, our tokenomics prioritize fair incentivization for all participants while projecting stability and integrity to our customers, partners, and collaborators. Experience the future of tokenized healthcare with OXIVIVE, where transparency and reliability redefine industry standards. Unlock the potential of OXI tokens across diverse utility pools, paving the way for a new era in health tech innovation.', foreground: 'theme:White', italic: true}
     type: Label
     layout_properties: {grid_position: 'OJIABD,BBIQSW'}
   - name: label_45
-    properties: {text: 'Seed round investors: 20 % or 200 Crore OXIVIVE tokens
-
+    properties:
+      text: |-
+        Seed round investors: 20 % or 200 Crore OXIVIVE tokens
 
         Vesting schedule: 1 year cliff + 1.5 years linear vesting (Monthly unlocks)
-
 
         Treasury: 10% or 100 Crore OXIVIVE tokens
 
-
-        Vesting schedule: 1-year cliff + 3 years linear vesting (Monthly unlocks —
-        the Monthly vested amount is calculated by dividing the number of tokens to
-        the number of days in the vesting schedule)
-
-        Usage: The treasury tokens will be employed to further enhance the service,
-        R&D, Stem-Cell treatment adoption, incentivize the building of useful tools
-        by third-party organizations, team growth.
-
+        Vesting schedule: 1-year cliff + 3 years linear vesting (Monthly unlocks — the Monthly vested amount is calculated by dividing the number of tokens to the number of days in the vesting schedule)
+        Usage: The treasury tokens will be employed to further enhance the service, R&D, Stem-Cell treatment adoption, incentivize the building of useful tools by third-party organizations, team growth.
 
         Core contributions: 5% or 50 Crore Crore OXIVIVE tokens
 
-
         Vesting schedule: 1 year cliff + 3 years linear vesting (Monthly unlocks)
-
-        Usage: The core contribution tokens are aimed to further grow and incentivize
-        the amazing team behind OXIVIVE. It will be used to provide token options
-        to new and existing employees and make sure we attract the most competent
-        Professionals. Part of the tokens will also be used to reward external contributors
-        at the discretion of OXIVIVE.
-
+        Usage: The core contribution tokens are aimed to further grow and incentivize the amazing team behind OXIVIVE. It will be used to provide token options to new and existing employees and make sure we attract the most competent Professionals. Part of the tokens will also be used to reward external contributors at the discretion of OXIVIVE.
 
         Community airdrop : 0.5% or 5 Crore OXIVIVE tokens
 
-
         Vesting schedule: Unlocked at TGE
-
-        Usage: Community members that hold one of the Selected NFTs as well as the
-        participants of the Community activity, will be airdropped the corresponding
-        amounts of OXIVIVE tokens at listing as a reward for their participation and
-        support.
-
+        Usage: Community members that hold one of the Selected NFTs as well as the participants of the Community activity, will be airdropped the corresponding amounts of OXIVIVE tokens at listing as a reward for their participation and support.
 
         Community airdrop : 0.5% or 5 Crore OXIVIVE tokens
 
-
         Vesting schedule: Unlocked at TGE
-
-        Usage: Community members that hold one of the Selected NFTs as well as the
-        participants of the Community activity, will be airdropped the corresponding
-        amounts of OXIVIVE tokens at listing as a reward for their participation and
-        support.
-
+        Usage: Community members that hold one of the Selected NFTs as well as the participants of the Community activity, will be airdropped the corresponding amounts of OXIVIVE tokens at listing as a reward for their participation and support.
 
         Future round investors: 15% or 150 Crore OXIVIVE tokens
 
-
         Vesting schedule: 1 year cliff + 1.5 years linear vesting (Monthly unlocks)
-
 
         CEX Liquidity: 1% or 10 Crore OXIVIVE tokens
 
-
         Vesting schedule: 100% Unlocked
-
         Usage: Provide liquidity for listing on the selected exchanges.
-
 
         In App Transaction: 48.5% or 485 Crore OXIVIVE tokens
 
-
-        reserved for the functioning of the OXIVIVE transaction and used to pay the
-        services using tokens.', foreground: 'theme:White', role: input-prompt, italic: true,
-      font_size: 14}
+        reserved for the functioning of the OXIVIVE transaction and used to pay the services using tokens.
+      foreground: theme:White
+      role: input-prompt
+      italic: true
+      font_size: 14
     type: Label
     layout_properties: {grid_position: 'UYRUTH,ULFQIA'}
   - name: label_46
-    properties: {text: Conclusion, bold: true, foreground: 'theme:White', font_size: 15,
-      underline: true}
+    properties: {text: Conclusion, bold: true, foreground: 'theme:White', font_size: 15, underline: true}
     type: Label
     layout_properties: {grid_position: 'EYAAVX,TZQKVD'}
   - name: label_47
-    properties: {text: 'OXIVIVE''s mission is clear: to redefine the anti-aging market
-        in India with the ultimate one-stop-shop for high-performance services. Our
-        treatment protocol is meticulously designed to deliver optimal results, fostering
-        a business model built on fairness, transparency, and mutual benefit for all
-        stakeholders.', foreground: 'theme:White', italic: true}
+    properties: {text: 'OXIVIVE''s mission is clear: to redefine the anti-aging market in India with the ultimate one-stop-shop for high-performance services. Our treatment protocol is meticulously designed to deliver optimal results, fostering a business model built on fairness, transparency, and mutual benefit for all stakeholders.', foreground: 'theme:White', italic: true}
     type: Label
     layout_properties: {grid_position: 'AORBXT,BTAPCS'}
     data_bindings: []

@@ -25,3 +25,16 @@ class dashboard(dashboardTemplate):
     """This method is called when the button is clicked"""
     pass
 
+  def text_box_1_change(self, **event_args):
+      # Get the query from the text box
+      query = self.text_box_1.text
+      if len(query) > 3:
+          # Call the server function to get location data
+          result = anvil.server.call('get_location', query)
+          self.repeating_panel_1.visible=True
+          if 'error' in result:
+              alert(result['error'])
+          else:
+              # Update the repeating panel with location suggestions
+              self.repeating_panel_1.items = result['results']
+

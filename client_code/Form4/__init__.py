@@ -13,3 +13,22 @@ class Form4(Form4Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+        # Get the value from the text box
+        new_balance = self.text_box_1.text
+        
+        # Convert the value to a number
+        try:
+            new_balance = float(new_balance)
+        except ValueError:
+            alert("Please enter a valid number.")
+            return
+        
+        # Update the wallet_balance in the oxi_wallet table
+        wallet_record = app_tables.oxi_wallet.get()  # Adjust this if you need to filter specific records
+        if wallet_record:
+            wallet_record['wallet_balance'] = new_balance
+            Notification("Wallet balance updated successfully!", timeout=3).show()
+        else:
+            alert("No wallet record found to update.")

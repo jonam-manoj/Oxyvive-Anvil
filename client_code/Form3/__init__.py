@@ -47,4 +47,8 @@ class Form3(Form3Template):
       self.payment_options_panel.visible = False
       # Show the selected payment method in a notification (or handle it as needed)    
       Notification(f"Selected Payment Method: {selected_payment_method}", timeout=3).show()
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form(F)
          

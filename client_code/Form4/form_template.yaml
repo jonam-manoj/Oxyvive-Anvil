@@ -1,0 +1,30 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 25, tooltip: '', text: Oxyvive Wallet}
+  name: label_1
+  layout_properties: {grid_position: 'AOYXTT,APJHRC'}
+- type: Spacer
+  properties: {height: 97}
+  name: spacer_1
+  layout_properties: {grid_position: 'WHOJDY,IRFPTH'}
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: column_panel_1
+  layout_properties: {grid_position: 'LVKXRH,FIEJEW'}
+  components:
+  - type: Label
+    properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Enter your amount to add wallet}
+    name: label_2
+    layout_properties: {grid_position: 'AUEULS,ZWQRIE'}
+  - type: TextBox
+    properties: {role: null, bold: true, align: center, placeholder: '', spacing_above: small, background: '', type: number, underline: false, font: '', hide_text: false, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 20, tooltip: '', text: Enter the amount}
+    name: text_box_1
+    layout_properties: {grid_position: 'RWWTVC,CSATFW'}
+  - type: Button
+    properties: {role: raised, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: add amount}
+    name: button_1
+    layout_properties: {grid_position: 'PDTLXM,IYKVQH'}
+is_package: true

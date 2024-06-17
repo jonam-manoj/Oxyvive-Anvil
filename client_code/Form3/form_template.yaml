@@ -49,8 +49,13 @@ components:
         text: "Add the bank account where\nyou want to receive payouts "
       name: label_6
       layout_properties: {grid_position: 'BZYNMZ,ZPJHZQ'}
+    - type: Button
+      properties: {role: raised, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: add money}
+      name: button_4
+      layout_properties: {grid_position: 'NDOVDD,YPLCNW'}
+      event_bindings: {click: button_4_click}
     - type: Spacer
-      properties: {visible: true, spacing_above: small, spacing_below: small, height: '19', tooltip: ''}
+      properties: {visible: true, spacing_above: small, spacing_below: small, height: 12, tooltip: ''}
       name: spacer_2
       layout_properties: {grid_position: 'LEXBFG,ODQBXG'}
     - type: Button

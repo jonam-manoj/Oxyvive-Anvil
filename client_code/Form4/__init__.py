@@ -28,7 +28,14 @@ class Form4(Form4Template):
         # Update the wallet_balance in the oxi_wallet table
         wallet_record = app_tables.oxi_wallet.get()  # Adjust this if you need to filter specific records
         if wallet_record:
-            wallet_record['wallet_balance'] = new_balance
+            # Retrieve the current balance and add the new value
+            current_balance = wallet_record['wallet_balance']
+            updated_balance = current_balance + new_balance
+            
+            # Update the wallet_balance in the database
+            wallet_record['wallet_balance'] = updated_balance
             Notification("Wallet balance updated successfully!", timeout=3).show()
+            open_form('Form3')
         else:
             alert("No wallet record found to update.")
+            

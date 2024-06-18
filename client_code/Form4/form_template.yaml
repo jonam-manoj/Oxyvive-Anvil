@@ -6,26 +6,35 @@ components:
   properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 25, tooltip: '', text: Oxyvive Wallet}
   name: label_1
   layout_properties: {grid_position: 'AOYXTT,APJHRC'}
-- type: Spacer
-  properties: {height: 97}
-  name: spacer_1
-  layout_properties: {grid_position: 'WHOJDY,IRFPTH'}
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: column_panel_1
-  layout_properties: {grid_position: 'LVKXRH,FIEJEW'}
+- type: XYPanel
+  properties: {role: null, align: center, spacing_above: small, width: null, background: 'theme:Secondary 500', foreground: '', spacing_below: small, visible: true, border: '', tooltip: '', height: 320}
+  name: xy_panel_1
+  layout_properties: {grid_position: 'EPRKCY,IMHNUY'}
   components:
-  - type: Label
-    properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Enter your amount to add wallet}
-    name: label_2
-    layout_properties: {grid_position: 'AUEULS,ZWQRIE'}
-  - type: TextBox
-    properties: {role: null, bold: true, align: center, placeholder: '', spacing_above: small, background: '', type: number, underline: false, font: '', hide_text: false, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 20, tooltip: '', text: Enter the amount}
-    name: text_box_1
-    layout_properties: {grid_position: 'RWWTVC,CSATFW'}
-  - type: Button
-    properties: {role: raised, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: add amount}
-    name: button_1
-    layout_properties: {grid_position: 'PDTLXM,IYKVQH'}
-    event_bindings: {click: button_1_click}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}', spacing_above: medium, background: 'theme:Secondary 500', wrap_on: mobile, col_spacing: medium, foreground: '', spacing_below: small, visible: true, border: '', tooltip: ''}
+    name: card_1
+    layout_properties: {grid_position: 'SULBLW,YCGTLR', full_width_row: true, row_background: 'theme:Primary 700', x: -55.000003814697266, y: 40, width: 1114.3999999999999}
+    components:
+    - type: Label
+      properties: {role: null, bold: false, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, font_size: 20, tooltip: '', text: Enter your amount to add wallet}
+      name: label_2
+      layout_properties: {grid_position: 'ONXBLL,JYVVQG', x: 0, y: 0, width: 970}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_2
+      layout_properties: {grid_position: 'NWGWVE,FNQPQW'}
+    - type: TextBox
+      properties: {role: null, bold: true, align: center, placeholder: '', spacing_above: small, background: '', type: number, underline: false, font: '', hide_text: false, foreground: 'theme:Primary 700', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 20, tooltip: '', text: Enter the amount}
+      name: text_box_1
+      layout_properties: {grid_position: 'AYEOAQ,YCFEHO', x: 0, y: 54.5625, width: 970}
+    - type: Spacer
+      properties: {height: 32}
+      name: spacer_3
+      layout_properties: {grid_position: 'MAMGDP,QYRJKM'}
+    - type: Button
+      properties: {role: raised, bold: false, align: center, spacing_above: small, background: 'theme:Primary 700', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: add amount}
+      name: button_1
+      layout_properties: {grid_position: 'DITXPA,YDSNJS', x: 0, y: 124, width: 970}
+      event_bindings: {click: button_1_click}
 is_package: true

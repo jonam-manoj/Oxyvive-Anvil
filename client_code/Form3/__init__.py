@@ -65,13 +65,13 @@ class Form3(Form3Template):
   def button_3_click(self, **event_args):
         # Get the selected payment method from the RadioButtons
         selected_payment_method = None
-        
-        if self.radio_button_2.selected:
+        if self.radio_button_1.selected:
+            selected_payment_method = self.radio_button_1.text
+        elif self.radio_button_2.selected:
             selected_payment_method = self.radio_button_2.text
         elif self.radio_button_3.selected:
             selected_payment_method = self.radio_button_3.text
-        elif self.radio_button_3.selected:
-            selected_payment_method = self.radio_button_4.text
+        
 
         if selected_payment_method:
             # Hide the payment options panel

@@ -49,9 +49,23 @@ class Form3(Form3Template):
   #     Notification(f"Selected Payment Method: {selected_payment_method}", timeout=3).show()
 
       
+  # def button_3_click(self, **event_args):
+  #       # Get the selected payment method from the RadioButtonGroup
+  #       selected_payment_method = self.radio_button_group_1.selected_value
+
+  #       if selected_payment_method:
+  #           # Hide the payment options panel
+  #           self.payment_options_panel.visible = False
+
+  #           # Show the selected payment method in a notification (or handle it as needed)
+  #           Notification(f"Selected Payment Method: {selected_payment_method}", timeout=3).show()
+  #       else:
+  #           alert("Please select a payment method.")
+
   def button_3_click(self, **event_args):
         # Get the selected payment method from the RadioButtonGroup
         selected_payment_method = self.radio_button_group_1.selected_value
+        
 
         if selected_payment_method:
             # Hide the payment options panel
@@ -61,7 +75,6 @@ class Form3(Form3Template):
             Notification(f"Selected Payment Method: {selected_payment_method}", timeout=3).show()
         else:
             alert("Please select a payment method.")
-  
 
   
   def button_4_click(self, **event_args):

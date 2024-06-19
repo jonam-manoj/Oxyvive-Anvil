@@ -87,6 +87,4 @@ class Form3(Form3Template):
     """This method is called when the button is clicked"""
     open_form('Form4')     
 
-  def radio_button_group_1_clicked(self, **event_args):
-    """This method is called when this radio button is selected"""
-    pass
+

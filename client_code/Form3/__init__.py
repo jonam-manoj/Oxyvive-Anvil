@@ -63,9 +63,15 @@ class Form3(Form3Template):
   #           alert("Please select a payment method.")
 
   def button_3_click(self, **event_args):
-        # Get the selected payment method from the RadioButtonGroup
-        selected_payment_method = self.radio_button_group_1.selected_value
+        # Get the selected payment method from the RadioButtons
+        selected_payment_method = None
         
+        if self.radio_button_2.selected:
+            selected_payment_method = self.radio_button_2.text
+        elif self.radio_button_3.selected:
+            selected_payment_method = self.radio_button_3.text
+        elif self.radio_button_3.selected:
+            selected_payment_method = self.radio_button_4.text
 
         if selected_payment_method:
             # Hide the payment options panel
@@ -80,3 +86,7 @@ class Form3(Form3Template):
   def button_4_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('Form4')     
+
+  def radio_button_group_1_clicked(self, **event_args):
+    """This method is called when this radio button is selected"""
+    pass

@@ -87,4 +87,34 @@ class Form3(Form3Template):
     """This method is called when the button is clicked"""
     open_form('Form4')     
 
+  def add_record_with_unique_account_id(self, account_id, other_data):
+        # Check if the account_id already exists in the table
+        existing_record = app_tables.oxi_wallet_history.get(account_id=account_id)
+        
+        if existing_record:
+            alert(f"Account ID {account_id} already exists. Please use a unique Account ID.")
+            return
+        
+        # Add new record with unique account_id
+        app_tables.oxi_wallet_history.add_row(account_id=account_id, other_column=other_data)
+        Notification(f"Record with Account ID {account_id} added successfully!", timeout=3).show()
+
+  def update_record_with_unique_account_id(record_id, new_account_id, other_data):
+    # Retrieve the record by its primary key (id)
+    record_to_update = app_tables.oxi_wallet_history.get_by_id(record_id)
+    if record_to_update:
+        # Check if the new account_id already exists in other records
+        existing_record = app_tables.oxi_wallet_history.get(account_id=new_account_id)
+        
+        if existing_record and existing_record.get_id() != record_id:
+            alert(f"Account ID {new_account_id} already exists. Please use a unique Account ID.")
+            return
+        
+        # Update the record
+        record_to_update['account_id'] = new_account_id
+        record_to_update['other_column'] = other_data
+        Notification(f"Record with ID {record_id} updated successfully!", timeout=3).show()
+    else:
+        alert(f"No record found with ID {record_id}")
+
 

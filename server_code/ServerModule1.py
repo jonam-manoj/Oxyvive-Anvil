@@ -58,3 +58,30 @@ def check_login_credentials(email, password):
         return True
     else:
         return False
+
+
+@anvil.server.callable
+def add_record_with_unique_account_id(account_id, other_data):
+    existing_record = app_tables.oxi_wallet_history.get(account_id=account_id)
+    
+    if existing_record:
+        return {"success": False, "message": f"Account ID {account_id} already exists."}
+    
+    app_tables.oxi_wallet_history.add_row(account_id=account_id, other_column=other_data)
+    return {"success": True, "message": f"Record with Account ID {account_id} added successfully!"}
+
+@anvil.server.callable
+def update_record_with_unique_account_id(record_id, new_account_id, other_data):
+    record_to_update = app_tables.oxi_wallet_history.get_by_id(record_id)
+    
+    if record_to_update:
+        existing_record = app_tables.oxi_wallet_history.get(account_id=new_account_id)
+        
+        if existing_record and existing_record.get_id() != record_id:
+            return {"success": False, "message": f"Account ID {new_account_id} already exists."}
+        
+        record_to_update['account_id'] = new_account_id
+        record_to_update['other_column'] = other_data
+        return {"success": True, "message": f"Record with ID {record_id} updated successfully!"}
+    else:
+        return {"success": False, "message": f"No record found with ID {record_id}"}

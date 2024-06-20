@@ -76,6 +76,11 @@ components:
       properties: {item_template: dashboard.LocationItemTemplate, background: white, visible: false}
       type: RepeatingPanel
       layout_properties: {x: 184.5125091560185, y: 246.76251678541303, width: 580.7250366210938}
+    - name: text_box_2
+      properties: {placeholder: ' Enter your location', italic: true, bold: false, border: 2px solid, background: white, visible: true}
+      type: TextBox
+      layout_properties: {x: 183.43749694898725, y: 200.2000093460083, width: 581.1500244140625}
+      event_bindings: {focus: text_box_2_focus}
   - name: card_2
     properties: {role: card, visible: true, background: white, foreground: 'theme:Primary 500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
     type: ColumnPanel

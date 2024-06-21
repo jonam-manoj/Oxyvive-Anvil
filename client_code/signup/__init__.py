@@ -97,4 +97,8 @@ class signup(signupTemplate):
     """This method is called when the link is clicked"""
     open_form("home")
 
+  def servicers_address_text_box_change(self, **event_args):
+    """This method is called when the text in this text box is edited"""
+    pass
+
 

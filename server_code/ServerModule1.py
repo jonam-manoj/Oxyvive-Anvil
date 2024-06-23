@@ -1,10 +1,11 @@
+import anvil.email
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 import anvil.media
 import base64
-
+import requests
 @anvil.server.callable
 def user(oxi_id,oxusername,email,password,phone,pincode,wallet_balance):
   app_tables.users.add_row(id=id, username=username, email=email, password=password,phone=phone,pincode=pincode,wallet_balance=wallet_balance)
@@ -57,3 +58,13 @@ def check_login_credentials(email, password):
         return True
     else:
         return False
+
+@anvil.server.callable
+def get_location(query):
+    api_key = "0605205dcb3f4fca85e392adda307d26"  # Replace with your OpenCage API key
+    url = f"https://api.opencagedata.com/geocode/v1/json?q={query}&key={api_key}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return {"error": "Unable to fetch data"}

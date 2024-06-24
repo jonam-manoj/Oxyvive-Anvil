@@ -58,3 +58,7 @@ class dashboard(dashboardTemplate):
       # Store the selected address in the variable
       self.selected_address = address
       print(self.selected_address)
+
+  def primary_color_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form("h")

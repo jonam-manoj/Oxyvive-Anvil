@@ -46,13 +46,15 @@ class dashboard(dashboardTemplate):
               self.repeating_panel_1.items = result['results']
 
   def text_box_2_focus(self, **event_args):
-      # Alert message when text_box_2 is clicked
-  
       # Make text_box_2 invisible and text_box_1 visible
       self.text_box_2.visible = False
       self.text_box_1.visible = True
 
   def update_text_boxes(self, address):
+      # Update text_box_2 with the selected address
       self.text_box_2.text = address
       self.text_box_2.visible = True
       self.text_box_1.visible = False
+      # Store the selected address in the variable
+      self.selected_address = address
+      print(self.selected_address)

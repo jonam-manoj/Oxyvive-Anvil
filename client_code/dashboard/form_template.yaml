@@ -82,7 +82,7 @@ components:
       layout_properties: {x: 183.43749694898725, y: 200.2000093460083, width: 581.1500244140625}
       event_bindings: {focus: text_box_2_focus}
   - name: card_2
-    properties: {role: card, visible: true, background: white, foreground: 'theme:Primary 500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
+    properties: {role: card, visible: false, background: white, foreground: 'theme:Primary 500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
     type: ColumnPanel
     layout_properties: {grid_position: 'JODADN,GNRRVP'}
     components:

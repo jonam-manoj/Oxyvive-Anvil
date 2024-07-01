@@ -60,10 +60,6 @@ components:
     type: XYPanel
     layout_properties: {grid_position: 'DDDLVL,DIZMIY', full_width_row: true}
     components:
-    - name: image_5
-      properties: {source: _/theme/ed image of.jpg, display_mode: zoom_to_fill, height: 500.3999938964844}
-      type: Image
-      layout_properties: {x: 0, y: 5.950001526623964, width: 1765.39}
     - name: text_box_1
       properties: {placeholder: ' Enter your location', italic: true, bold: false, border: 2px solid, background: white}
       type: TextBox
@@ -82,6 +78,10 @@ components:
       type: TextBox
       layout_properties: {x: 183.43749694898725, y: 200.2000093460083, width: 581.1500244140625}
       event_bindings: {focus: text_box_2_focus}
+    - name: image_5
+      properties: {source: _/theme/ed image of.jpg, display_mode: zoom_to_fill, height: 500.3999938964844}
+      type: Image
+      layout_properties: {x: 0, y: 5.9499969482421875, width: 1765.39}
   - name: card_2
     properties: {role: card, visible: false, background: white, foreground: 'theme:Primary 500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
     type: ColumnPanel

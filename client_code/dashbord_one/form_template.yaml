@@ -20,7 +20,7 @@ components:
     properties: {role: null, bold: false, align: left, placeholder: ' Enter your location', spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: 2px solid, italic: true, enabled: true, font_size: null, tooltip: '', text: ''}
     name: text_box_1
     layout_properties: {grid_position: 'XATHHC,RORGQJ LRRVOL,GYFPPK'}
-    event_bindings: {focus: text_box_2_focus}
+    event_bindings: {focus: text_box_1_focus}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: red, spacing_below: small, visible: true, border: '', tooltip: ''}
     name: card_1

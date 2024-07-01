@@ -69,10 +69,6 @@ components:
       properties: {text: Search for services in your location, foreground: white, bold: true, font: a, font_size: 30, italic: false, underline: false}
       type: Label
       layout_properties: {x: 187.45002441480756, y: 140.66251373291016, width: 517.3875122070312}
-    - name: repeating_panel_1
-      properties: {item_template: dashboard.LocationItemTemplate, background: white, visible: false}
-      type: RepeatingPanel
-      layout_properties: {x: 150.5124969482422, y: 347.7625045776367, width: 580.725}
     - name: image_5
       properties: {source: _/theme/ed image of.jpg, display_mode: zoom_to_fill, height: 361.3999938964844}
       type: Image
@@ -82,6 +78,10 @@ components:
       type: TextBox
       layout_properties: {x: 183.4375, y: 218.20000457763672, width: 581.15}
       event_bindings: {focus: text_box_2_focus}
+    - name: repeating_panel_1
+      properties: {item_template: dashboard.LocationItemTemplate, background: white, visible: false}
+      type: RepeatingPanel
+      layout_properties: {x: 162.5124969482422, y: 267.4000045776367, width: 580.725}
   - name: card_2
     properties: {role: card, visible: false, background: white, foreground: 'theme:Primary 500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
     type: ColumnPanel

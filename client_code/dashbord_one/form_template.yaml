@@ -17,10 +17,14 @@ components:
     name: label_3
     layout_properties: {grid_position: 'XATHHC,RORGQJ NKVIEZ,DWBHYB'}
   - type: TextBox
-    properties: {role: null, bold: false, align: left, placeholder: ' Enter your location', spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: 2px solid, italic: true, enabled: true, font_size: null, tooltip: '', text: ''}
+    properties: {role: dense, bold: true, align: left, placeholder: ' Enter your location', spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: red, spacing_below: small, visible: true, border: 2px solid, italic: true, enabled: true, font_size: null, tooltip: '', text: ''}
     name: text_box_1
     layout_properties: {grid_position: 'XATHHC,RORGQJ LRRVOL,GYFPPK'}
-    event_bindings: {focus: text_box_1_focus}
+    event_bindings: {focus: text_box_1_focus, lost_focus: text_box_1_lost_focus}
+  - name: repeating_panel_1
+    properties: {item_template: dashbord_one.ItemTemplate2}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'XATHHC,RORGQJ WYGKWD,GMRCNP'}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: red, spacing_below: small, visible: true, border: '', tooltip: ''}
     name: card_1
@@ -65,7 +69,7 @@ components:
     layout_properties: {grid_position: 'XATHHC,UMZXQR DGNGRK,TCDAVN'}
     components:
     - type: Spacer
-      properties: {height: 60}
+      properties: {height: 84}
       name: spacer_2
       layout_properties: {grid_position: 'EYAZBI,EMDXYE'}
   - type: ColumnPanel
@@ -107,6 +111,10 @@ components:
       properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: green, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: $ 40.00}
       name: label_7
       layout_properties: {grid_position: 'QRBUDI,RWRNEG'}
+  - type: Spacer
+    properties: {height: 74}
+    name: spacer_3
+    layout_properties: {grid_position: 'XATHHC,UMZXQR RHYTUQ,WUJJFH'}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_4

@@ -93,7 +93,9 @@ a>.anvil-component-icon.right_edge-icon,
   margin-right: 20px;
 }
 
-
+.focus-border-red {
+    border: 1px solid red !important;
+}
 /* Typography */
 body {
   font-family: Roboto, Noto, Arial, sans-serif;

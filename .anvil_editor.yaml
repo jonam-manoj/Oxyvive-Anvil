@@ -27,7 +27,6 @@ unique_ids:
     servicers_registration_form.services_register_add_service: '1713246998774954332897107.2911'
     servicers.service_navigation_bar: '1713787233243178291530535.1871'
     dashboard.aviailable_Hospital_Address: '1714373584827442762928138.6185'
-    dashboard_copy: '1719814263693789477806168.982'
     servicers.servicers_dashboard.notification: '1713851223903601723563890.3866'
     signup: '1713758217782384991869506.14026'
     servicers.servicers_dashboard.add_services.oxiclinic: '1714105073611336997835501.89923'
@@ -40,6 +39,7 @@ unique_ids:
     wallet_homepage.bank_accounts: '1715256997943118911092748.3703'
     servicers.servicers_dashboard.add_services.oxiwheel: '171411004881934901825681.78946'
     servicers_registration_form.oxigym_documents: 6ZCAVH3GOG6STWLKQGPJK5OJTHTLKRIK
+    dashbord_one: '1719820400837693707539468.9187'
     servicers_registration_form.servicers_registration_form_main: '1713240235053300522602261.4747'
   modules:
     servicers_registration_form: 27G5MWNGDBQRI2CCV274XTJYESSWZYTU

@@ -51,10 +51,27 @@ components:
       properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: 19, tooltip: '', text: Comment & Message}
       name: label_4
       layout_properties: {grid_position: 'CCNUNF,NVIQNK'}
+    - name: label_9
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: See All}
+      type: Label
+      layout_properties: {grid_position: 'CCNUNF,JFUXOO'}
+    - type: Button
+      properties: {role: raised, bold: false, align: center, spacing_above: small, background: '#f87c7c', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Reply}
+      name: button_4
+      layout_properties: {grid_position: 'SWTKLC,ZGWNAJ'}
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: column_panel_2
+    layout_properties: {grid_position: 'XATHHC,UMZXQR DGNGRK,TCDAVN'}
+    components:
+    - type: Spacer
+      properties: {height: 60}
+      name: spacer_2
+      layout_properties: {grid_position: 'EYAZBI,EMDXYE'}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_3
-    layout_properties: {grid_position: 'XATHHC,UMZXQR AVUVJJ,IRCSNQ'}
+    layout_properties: {grid_position: 'XATHHC,UMZXQR MEXYDW,VSEINJ'}
     components:
     - type: Label
       properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: 19, tooltip: '', text: Transact}
@@ -90,10 +107,6 @@ components:
       properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: green, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: $ 40.00}
       name: label_7
       layout_properties: {grid_position: 'QRBUDI,RWRNEG'}
-  - type: Spacer
-    properties: {height: 32}
-    name: spacer_2
-    layout_properties: {grid_position: 'XATHHC,UMZXQR YNTMAL,JOXQYR'}
   - type: ColumnPanel
     properties: {role: card, col_widths: '{}'}
     name: card_4

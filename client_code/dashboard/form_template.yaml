@@ -72,16 +72,16 @@ components:
     - name: repeating_panel_1
       properties: {item_template: dashboard.LocationItemTemplate, background: white, visible: false}
       type: RepeatingPanel
-      layout_properties: {x: 184.5125091560185, y: 246.76251678541303, width: 580.7250366210938}
+      layout_properties: {x: 150.5124969482422, y: 347.7625045776367, width: 580.725}
+    - name: image_5
+      properties: {source: _/theme/ed image of.jpg, display_mode: zoom_to_fill, height: 361.3999938964844}
+      type: Image
+      layout_properties: {x: 288, y: -196.0625, width: 1765.39}
     - name: text_box_2
       properties: {placeholder: ' Enter your location', italic: true, bold: false, border: 2px solid, background: white, visible: true}
       type: TextBox
-      layout_properties: {x: 183.43749694898725, y: 200.2000093460083, width: 581.1500244140625}
+      layout_properties: {x: 183.4375, y: 218.20000457763672, width: 581.15}
       event_bindings: {focus: text_box_2_focus}
-    - name: image_5
-      properties: {source: _/theme/ed image of.jpg, display_mode: zoom_to_fill, height: 500.3999938964844}
-      type: Image
-      layout_properties: {x: 0, y: 5.9499969482421875, width: 1765.39}
   - name: card_2
     properties: {role: card, visible: false, background: white, foreground: 'theme:Primary 500', col_widths: '{}', spacing_above: small, spacing_below: small, col_spacing: huge}
     type: ColumnPanel

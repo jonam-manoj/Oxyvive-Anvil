@@ -12,3 +12,9 @@ class dashbord_one(dashbord_oneTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def text_box_2_focus(self, **event_args):
+    """This method is called when the TextBox gets focus"""
+    # Make text_box_2 invisible and text_box_1 visible
+    self.text_box_2.visible = False
+    self.text_box_1.visible = True

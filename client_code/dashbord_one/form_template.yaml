@@ -4,23 +4,112 @@ container:
   properties: {html: '@theme:standard-page.html'}
 components:
 - type: ColumnPanel
-  properties: {}
+  properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - type: Label
+    properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: 29, tooltip: '', text: Oxyvive}
+    name: label_2
+    layout_properties: {grid_position: 'XATHHC,RORGQJ VXSGKR,ZMUPFB'}
+  - type: Label
+    properties: {role: null, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: a, icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: 19, tooltip: '', text: Search for services in your location}
+    name: label_3
+    layout_properties: {grid_position: 'XATHHC,RORGQJ NKVIEZ,DWBHYB'}
+  - type: TextBox
+    properties: {role: null, bold: false, align: left, placeholder: ' Enter your location', spacing_above: small, background: white, type: text, underline: false, font: '', hide_text: false, foreground: '', spacing_below: small, visible: true, border: 2px solid, italic: true, enabled: true, font_size: null, tooltip: '', text: ''}
+    name: text_box_1
+    layout_properties: {grid_position: 'XATHHC,RORGQJ LRRVOL,GYFPPK'}
+    event_bindings: {focus: text_box_2_focus}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}', spacing_above: small, background: '', wrap_on: mobile, col_spacing: medium, foreground: red, spacing_below: small, visible: true, border: '', tooltip: ''}
+    name: card_1
+    layout_properties: {grid_position: 'XATHHC,RORGQJ LCCFWZ,RWZPSJ'}
+    components:
+    - type: Link
+      properties: {role: null, bold: true, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:money', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: 30, tooltip: '', text: '  0.00'}
+      name: link_12
+      layout_properties: {grid_position: 'JQFEYO,NXUXLS'}
+    - type: Button
+      properties: {role: raised, bold: true, align: center, spacing_above: small, background: '#f87c7c', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Balance}
+      name: button_2
+      layout_properties: {grid_position: 'MKHRNS,ZGFCYY'}
+    - type: Button
+      properties: {role: raised, bold: true, align: center, spacing_above: small, background: '#f87c7c', icon: '', underline: false, font: '', icon_align: left, foreground: 'theme:Secondary 500', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: Add money}
+      name: button_3
+      layout_properties: {grid_position: 'NNBOYV,VDOJNY'}
+    - type: Label
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Top Clint}
+      name: label_1
+      layout_properties: {grid_position: 'KPQJXK,LMGZSN'}
+  - type: ColumnPanel
+    properties: {role: card}
+    name: card_2
+    layout_properties: {grid_position: 'XATHHC,RORGQJ NAOORA,LKRMFV'}
+  - type: ColumnPanel
+    properties: {role: card}
+    name: card_3
+    layout_properties: {grid_position: 'XATHHC,UMZXQR'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:commenting', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+    name: link_11
+    layout_properties: {}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:bell', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: ''}
+    name: link_10
+    layout_properties: {}
+  - type: Button
+    properties: {role: raised, bold: false, align: center, spacing_above: small, background: '#f87c7c', icon: 'fa:plus', underline: false, font: '', icon_align: left, foreground: 'theme:On Primary', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: null, tooltip: '', text: New product}
+    name: button_1
+    layout_properties: {}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: column_panel_1
   layout_properties: {slot: left-nav}
   components:
   - type: Link
-    properties: {}
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:building', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Insight}
     name: link_1
     layout_properties: {grid_position: 'UFMJDB,DSUABC'}
   - type: Link
-    properties: {}
+    properties: {role: null, bold: false, align: left, col_widths: '{}', spacing_above: small, background: '', icon: 'fa:cc-paypal', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Transaction}
     name: link_2
     layout_properties: {grid_position: 'LAVAGX,IMTNKD'}
+    components: []
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:users', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Customer}
+    name: link_3
+    layout_properties: {grid_position: 'CFWZOD,OECTRH'}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:medkit', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Shop}
+    name: link_4
+    layout_properties: {grid_position: 'PXHVZY,QGBCEY'}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:money', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Income}
+    name: link_5
+    layout_properties: {grid_position: 'EVJKGP,ZOXOYS'}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:stethoscope', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Promote}
+    name: link_6
+    layout_properties: {grid_position: 'HOUSWQ,HCIOYM'}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:cogs', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Settings}
+    name: link_7
+    layout_properties: {grid_position: 'FESBAS,HHARZM'}
+  - type: Spacer
+    properties: {height: 36}
+    name: spacer_1
+    layout_properties: {grid_position: 'KHYXKG,RVLMRR'}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:sign-out', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Sign out}
+    name: link_8
+    layout_properties: {grid_position: 'ZQSDRQ,SRCXJA'}
+  - type: Link
+    properties: {role: null, bold: false, align: left, col_widths: '', spacing_above: small, background: '', icon: 'fa:thumb-tack', wrap_on: mobile, underline: false, font: '', col_spacing: medium, icon_align: left, foreground: red, url: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Help}
+    name: link_9
+    layout_properties: {grid_position: 'BQMPMM,JRAHXK'}

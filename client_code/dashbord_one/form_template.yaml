@@ -43,13 +43,43 @@ components:
       name: label_1
       layout_properties: {grid_position: 'KPQJXK,LMGZSN'}
   - type: ColumnPanel
-    properties: {role: card}
+    properties: {role: card, col_widths: '{}'}
     name: card_2
     layout_properties: {grid_position: 'XATHHC,RORGQJ NAOORA,LKRMFV'}
+    components:
+    - type: Label
+      properties: {}
+      name: label_4
+      layout_properties: {grid_position: 'CCNUNF,NVIQNK'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_3
+    layout_properties: {grid_position: 'XATHHC,UMZXQR AVUVJJ,IRCSNQ'}
+    components:
+    - type: Label
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: 19, tooltip: '', text: Transact}
+      name: label_5
+      layout_properties: {grid_position: 'LRGKSK,YIQVUL'}
+    - type: DropDown
+      properties: {}
+      name: drop_down_1
+      layout_properties: {grid_position: 'LRGKSK,HWICHE'}
+    - type: Label
+      properties: {role: null, bold: true, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: red, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Green sandal}
+      name: label_6
+      layout_properties: {grid_position: 'QRBUDI,TKIYSX'}
+    - type: Label
+      properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: green, spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: $ 40.00}
+      name: label_7
+      layout_properties: {grid_position: 'QRBUDI,RWRNEG'}
+  - type: Spacer
+    properties: {height: 32}
+    name: spacer_2
+    layout_properties: {grid_position: 'XATHHC,UMZXQR YNTMAL,JOXQYR'}
   - type: ColumnPanel
     properties: {role: card}
-    name: card_3
-    layout_properties: {grid_position: 'XATHHC,UMZXQR'}
+    name: card_4
+    layout_properties: {grid_position: 'XATHHC,UMZXQR XLCRTM,FTKKQQ'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

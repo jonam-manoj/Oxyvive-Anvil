@@ -30,4 +30,8 @@ class dashbord_one(dashbord_oneTemplate):
         """This method is called when the TextBox loses focus"""
         self.text_box_1.role = ''
 
+  def link_8_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('home')
+
  
